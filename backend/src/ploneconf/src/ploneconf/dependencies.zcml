@@ -1,0 +1,10 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <!-- List all packages you depend here -->
+  <include package="plone.volto" />
+  <include package="plone.restapi" />
+  <include package="collective.exportimport" />
+  <include package="pas.plugins.authomatic" />
+  <include package="collective.volto.formsupport" />
+
+</configure>

@@ -1,0 +1,108 @@
+{
+    "@id": "/en/sponsors/organizer",
+    "@type": "SponsorLevel",
+    "UID": "835174bcbad2499d89d3f614508bf4dd",
+    "allow_discussion": false,
+    "blocks": {
+        "4fad3797-1682-4396-83b3-49ffa2b9f735": {
+            "@type": "slate",
+            "plaintext": "The 2024 Plone Conference  and the Python Cerrado 2024 are supported by the following organizations",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "The 2024 Plone Conference  and the Python Cerrado 2024 are supported by the following organizations"
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "6cde9fdd-e005-4005-93a1-ffbf8959a37d": {
+            "@type": "slate",
+            "plaintext": "",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "a38e94e0-ca9d-48e8-a31d-eb7e2d9fc15a": {
+            "@type": "sponsorLevel"
+        },
+        "b73a2210-72a5-4f42-8853-b816360a533f": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "b73a2210-72a5-4f42-8853-b816360a533f",
+            "4fad3797-1682-4396-83b3-49ffa2b9f735",
+            "a38e94e0-ca9d-48e8-a31d-eb7e2d9fc15a",
+            "6cde9fdd-e005-4005-93a1-ffbf8959a37d"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-08T22:07:32+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "display_frontpage": true,
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "organizer",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-12-13T18:30:20+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/sponsors",
+        "@type": "SponsorsDB",
+        "UID": "55d9947b86084264add5cf963ced75ba",
+        "description": "Support our conference",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Sponsorship",
+        "type_title": "Sponsors Database"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Organized by",
+    "type_title": "Sponsorship Level",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T22:07:32+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-08T22:07:53+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

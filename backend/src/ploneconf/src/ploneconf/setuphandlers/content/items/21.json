@@ -1,0 +1,105 @@
+{
+    "@id": "/en/news",
+    "@type": "Document",
+    "UID": "6ced7abc8cb4482aad806cbd43e23378",
+    "allow_discussion": false,
+    "blocks": {
+        "201d8968-8140-497f-8e71-8f32bffbba77": {
+            "@type": "slate"
+        },
+        "820ecf7e-9add-4c18-9daa-9178d709bf30": {
+            "@type": "listing",
+            "headlineTag": "h2",
+            "querystring": {
+                "b_size": "10",
+                "query": [
+                    {
+                        "i": "portal_type",
+                        "o": "plone.app.querystring.operation.selection.any",
+                        "v": [
+                            "News Item"
+                        ]
+                    },
+                    {
+                        "i": "path",
+                        "o": "plone.app.querystring.operation.string.absolutePath",
+                        "v": "/en/news/"
+                    }
+                ],
+                "sort_on": "effective",
+                "sort_order": "descending",
+                "sort_order_boolean": true
+            },
+            "styles": {},
+            "variation": "grid"
+        },
+        "fb3fdb18-eed3-4f9d-9f78-5898e965cd70": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "fb3fdb18-eed3-4f9d-9f78-5898e965cd70",
+            "820ecf7e-9add-4c18-9daa-9178d709bf30",
+            "201d8968-8140-497f-8e71-8f32bffbba77"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-09T16:27:48+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Everything about Plone Conference and Python Cerrado",
+    "effective": "2023-12-09T14:09:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "news",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T17:11:15+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en",
+        "@type": "LRF",
+        "UID": "bdec9a22690a459b8190ff7d82c1f5d2",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "2024 Plone Conference",
+        "type_title": "Language Root Folder"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "News",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-09T16:27:48+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-09T17:09:31+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

@@ -1,0 +1,164 @@
+{
+    "@id": "/en/news/melissa-weber-mendonca-announced-as-a-keynote-speaker",
+    "@type": "News Item",
+    "UID": "b5cfb558d04c4b56af27554e46a50179",
+    "allow_discussion": false,
+    "blocks": {
+        "36d00b6a-f371-4027-bff2-76e014451c85": {
+            "@type": "slate",
+            "plaintext": "Mark your calendars, as the Plone Conference and Python Cerrado will take place from November 18th to 24th in Bras\u00edlia, Brazil.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Mark your calendars, as the Plone Conference and Python Cerrado will take place from November 18th to 24th in Bras\u00edlia, Brazil."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "494a6459-ac46-4f7c-9ca0-e35bf190e5c0": {
+            "@type": "leadimage",
+            "align": "center"
+        },
+        "781379cd-c552-4453-9e9b-bb4404bc84ae": {
+            "@type": "slate",
+            "plaintext": "Melissa's connection with the Plone community traces back to the 2013 edition of the Plone Conference, which coincided with that year's PythonBrasil, the annual Brazilian Python conference. We are thrilled to welcome her back to our stage!",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Melissa's connection with the Plone community traces back to the 2013 edition of the Plone Conference, which coincided with that year's PythonBrasil, the annual Brazilian Python conference. We are thrilled to welcome her back to our stage!"
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "7cf1f4b6-d1ed-4cc8-98bd-465632f31e3c": {
+            "@type": "slate",
+            "plaintext": "Melissa is a mathematician and serves as a Senior Developer Experience Engineer at Quansight, where she actively contributes to open source projects such as NumPy and SciPy.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Melissa is a mathematician and serves as a Senior Developer Experience Engineer at Quansight, where she actively contributes to open source projects such as NumPy and SciPy."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "a8464a7a-557a-4623-93e6-5e709762a5c3": {
+            "@type": "slate",
+            "plaintext": "We are delighted to announce the first keynote speaker \u2013 Melissa Weber Mendon\u00e7a!",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "We are delighted to announce the first keynote speaker \u2013 Melissa Weber Mendon\u00e7a!"
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "b2a8d1ae-e0e7-4665-94f1-a5941c96e6e2": {
+            "@type": "slate",
+            "plaintext": "Her academic journey includes a Bachelor of Science in Mathematics and Scientific Computing from the Federal University of Santa Catarina in Brazil, a Master of Science in Mathematics from the same university, and a Ph.D. in Applied Mathematics from the Facult\u00e9s Universitaires Notre Dame de la Paix in Namur, Belgium.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Her academic journey includes a Bachelor of Science in Mathematics and Scientific Computing from the Federal University of Santa Catarina in Brazil, a Master of Science in Mathematics from the same university, and a Ph.D. in Applied Mathematics from the Facult\u00e9s Universitaires Notre Dame de la Paix in Namur, Belgium."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "f630846b-f624-4bfc-8c67-4804fa321694": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "f630846b-f624-4bfc-8c67-4804fa321694",
+            "494a6459-ac46-4f7c-9ca0-e35bf190e5c0",
+            "a8464a7a-557a-4623-93e6-5e709762a5c3",
+            "7cf1f4b6-d1ed-4cc8-98bd-465632f31e3c",
+            "b2a8d1ae-e0e7-4665-94f1-a5941c96e6e2",
+            "781379cd-c552-4453-9e9b-bb4404bc84ae",
+            "36d00b6a-f371-4027-bff2-76e014451c85"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-09T16:46:19+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Melissa is a Senior DevEx Engineer at Quansight, working on NumPy, SciPy and other open source projects. ",
+    "effective": "2023-12-09T13:46:00",
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "melissa-weber-mendonca-announced-as-a-keynote-speaker",
+    "image": {
+        "blob_path": "blobs/b5cfb558d04c4b56af27554e46a50179-image/photo_2023-12-12_11-47-44.jpg",
+        "content-type": "image/jpeg",
+        "filename": "photo_2023-12-12_11-47-44.jpg",
+        "height": 900,
+        "size": 235653,
+        "width": 1599
+    },
+    "image_caption": null,
+    "is_folderish": true,
+    "language": "en",
+    "layout": "newsitem_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-12T21:38:22+00:00",
+    "parent": {
+        "@id": "/en/news",
+        "@type": "Document",
+        "UID": "6ced7abc8cb4482aad806cbd43e23378",
+        "description": "Everything about Plone Conference and Python Cerrado",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "News",
+        "type_title": "Page"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [
+        "Speakers"
+    ],
+    "title": "Melissa Weber Mendon\u00e7a announced as a keynote speaker",
+    "type_title": "News Item",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-09T16:46:19+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-09T16:46:57+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

@@ -1,0 +1,910 @@
+{
+    "@id": "/en/sponsors",
+    "@type": "SponsorsDB",
+    "UID": "55d9947b86084264add5cf963ced75ba",
+    "allow_discussion": false,
+    "blocks": {
+        "0216a681-99f5-4f0b-b5c3-5e006d5e049e": {
+            "@type": "slate",
+            "plaintext": "This event attracts a wide variety of people every year, but everyone has the same thing in common: The community .",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "This event attracts a wide variety of people every year, but everyone has the same thing in common:\u00a0"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": "The community"
+                                }
+                            ],
+                            "type": "strong"
+                        },
+                        {
+                            "text": "."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "0cfd61a1-4e25-498d-b9fd-6dc7af81b419": {
+            "@type": "slate",
+            "plaintext": "The Plone Conference is the annual gathering of the Plone, Zope, Guillotina, Pyramid and Volto communities. We are honoured to be the organizers of the 22th edition of this amazing event. We invite you to take advantage of one of our sponsorship packages to ensure maximum visibility for your company during the leading conference in the Plone industry.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "The Plone Conference is the annual gathering of the Plone, Zope, Guillotina, Pyramid and Volto communities. We are honoured to be the organizers of the 22th edition of this amazing event. We invite you to take advantage of one of our sponsorship packages to ensure\u00a0"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": "maximum visibility"
+                                }
+                            ],
+                            "type": "b"
+                        },
+                        {
+                            "text": "\u00a0for your company during the leading conference in the Plone industry."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "3dc47837-b447-4288-99db-21d582b9ed28": {
+            "@type": "title"
+        },
+        "6a4b7c45-9038-4ed5-aba4-0705ca451bbe": {
+            "@type": "gridBlock",
+            "blocks": {
+                "d962d9cd-4714-482c-9cf4-8f2bbba54b8b": {
+                    "@type": "__button",
+                    "href": [
+                        {
+                            "@id": "/en/sponsors/sponsor",
+                            "Description": "Sponsor both events",
+                            "Title": "Sponsor",
+                            "hasPreviewImage": null,
+                            "title": "Sponsor"
+                        }
+                    ],
+                    "inneralign": "center",
+                    "title": "Sponsor the conference"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "d962d9cd-4714-482c-9cf4-8f2bbba54b8b"
+                ]
+            },
+            "headline": "Join Us",
+            "styles": {}
+        },
+        "6c536774-8e99-4553-8dd3-53c7d1ccba4d": {
+            "@type": "sponsorsList"
+        },
+        "85fc1423-d7ce-4490-80a9-0e709a90262f": {
+            "@type": "gridBlock",
+            "blocks": {
+                "35e94df7-c45d-494b-a382-b8c778e62f46": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/en/sponsors/bronze",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Bronze",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-e740dd995eaba9de53ba899f0adef110.png",
+                                        "filename": "Bronze.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-4ee098f9b6967e59edad55960b766f33.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-29cfb3f0ac0aa7af675762d063c4d272.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-b6d681d22a2ce6606580db5b7780d71f.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-5473f1d930ce35073dfa60be89cb4a95.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-14e8299263fbdeaa5ca8e09c65f01303.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-4e2a44d447600ddbe2e5ab80c162c005.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-118b5ee9b669942a5362afc0e1d46378.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-62a197a1f32d3d538c0422347562a941.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-a3c0f5427563abd3974cb3761eb5c862.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-525ba12934902b4dfa4e58e68f637d64.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 530943,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Bronze"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Bronze"
+                },
+                "42e4c18d-486c-4422-b18d-085a3c4159ce": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/en/sponsors/supporting",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Supporting",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-2dbb0f9df9b726c2903cfbd49e20018a.png",
+                                        "filename": "Other Packages.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-b6c07ba75d510c30618b1c2e88b58c17.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-44276b1ffcb5e53eae136992da510724.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-4197e1e8cc10e52ac1a8496173803b6b.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-bd10945f2f5119545d628f0166f0aba1.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-b1db86c344eff267b85d5bacea82c256.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-d6a6d08c8c7586a0516e7cfb37e6c8c3.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-f64ddf49e567447889e6d94897b352bf.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-184089abf2c11f9d979efb379a7b42ce.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-516a2581f133c872c25f78a829c3187f.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-14c4acd102ce7ad0f20a4f7027e0ea8a.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 838958,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Supporting"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Supporting"
+                },
+                "6cab9773-c55d-4047-ad53-0bd064515f2c": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/en/sponsors/silver",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Silver",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-e620a3437014b6fef84a05ed5501f44a.png",
+                                        "filename": "Silver.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-331850a33a534f69faf82980f0586cf2.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-981dd6a676724fc5977b77305b040d38.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-627b310707f98ffe34b2d247ec4ecddc.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-fa33c573a85af9376306eebd4d3f1a84.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-fdae99442156b719d35c894ae2584758.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-2a7ccdfbe092133fc261b77bf6c825ee.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-8c63af9bc3833a1179a5a2dff040a998.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-fd6c39bfb2e8dda5ba848b9cecc88532.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-cc96dcc45172a439f4a005117d779b8d.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-115cbfbe9f2253cffe9114c20f2c3c9c.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 589048,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Silver"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Silver"
+                },
+                "9035d22c-b2b2-460f-a9cd-7c813a77caf5": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/en/sponsors/oss",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Open Source",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-74177911555290e9f61d2fe6cb5b5acd.png",
+                                        "filename": "Open source.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-eeccc7d0ab522ab1a095fe1038b86a66.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-0f77d3b2f6f4738f710ef40cb26ecefc.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-2e9542f8755cfa2845eb12bdf5126e9e.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-858df23b0298319de4ab1ace63b71f22.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-42f9f1c4b0ef33b9d98bb2d80023b004.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-2c02f268532a94f37969a7ec2653c248.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-b9fc162e6e66b7a325dc1413bb96cf49.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-1c84d420762e08cd52b3b1e74da0ac63.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-a78e932f9194847a46bb41b16e123257.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-8b4ccb75742f9c4b2172cbd8b5d0e7a9.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 719657,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Open Source"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Open Source"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "6cab9773-c55d-4047-ad53-0bd064515f2c",
+                    "35e94df7-c45d-494b-a382-b8c778e62f46",
+                    "42e4c18d-486c-4422-b18d-085a3c4159ce",
+                    "9035d22c-b2b2-460f-a9cd-7c813a77caf5"
+                ]
+            },
+            "styles": {
+                "backgroundColor": "mainColor"
+            }
+        },
+        "8ad0d0c3-fcb7-4e3b-964b-e23f54d4913e": {
+            "@type": "slate",
+            "plaintext": "It doesn\u2019t matter if you are involved in Plone as a user (content creator, editor, site administrator), an integrator or a core developer. With your sponsorship you can help us organize an event where we can:",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "It doesn\u2019t matter if you are involved in Plone as a user (content creator, editor, site administrator), an integrator or a core developer. With your sponsorship you can help us organize an event where we can:"
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "942b544e-ce7b-4aa5-9dec-fa33eda383aa": {
+            "@type": "slate",
+            "plaintext": "Sponsorship opportunities",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Sponsorship opportunities"
+                        }
+                    ],
+                    "type": "h2"
+                }
+            ]
+        },
+        "97c3290f-0cab-4fff-808c-d906df0f3640": {
+            "@type": "gridBlock",
+            "blocks": {
+                "3ebef10e-1c3d-4f78-a774-07451cb319a8": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/en/sponsors/platinum",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Platinum",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-cb451e52dfc293a7e64693c6ca73cac5.png",
+                                        "filename": "Platinum.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-fe30645f1fe56f54b734a241ecdae41b.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-41189656f4b85593644379158f774519.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-e997fbf16ea9f0407d3f2b7f4a02f05a.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-2e68250532fcb2ad57a4df1ddc3663c9.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-0ad993277d74b997d76997b3fa1be245.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-62e9415685a3a5cb4bbbe28b3a9fa2eb.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-96028db1c18265f5dc0bb7e98434107a.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-1a7e814f3a5149e1e919595c8fecf054.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-aa8106f4f11d26a75640b000259a2681.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-6325b8809f86e0bc5a3b4b87d1d0a483.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 642078,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Platinum"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Platinum"
+                },
+                "ceb745d1-9a19-489d-8a81-8859d02a4278": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/en/sponsors/gold",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Gold",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-a323ff5ea8a15a31760941fce3c276e6.png",
+                                        "filename": "Gold.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-dd88a2cb698a86eb38082272b265afb5.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-fc48e52596c7da0d3486e0b472fcc262.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-a4ff8dc1823fbcb44cd66296f7b874da.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-911238c6176f2ce4cb1ea416e52b8997.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-5a9d74d53e2fcb60ee6e20d9cf786339.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-47d59da94e5a20354fec237444a98fe8.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-a012f9a3b40312fb9a460f6b55de6148.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-0dd3ad0c04fae12af0d46f75c38f97fe.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-19d072e9a67b6ea16789ec1498095eb7.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-97b8caf143b37a2ed0b29d3c33f75be2.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 605367,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Gold"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Gold"
+                },
+                "cfea6dd0-0215-43a4-9e20-1ff440c807b7": {
+                    "@type": "teaser",
+                    "href": [
+                        {
+                            "@id": "/en/sponsors/diamond",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Diamond",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-e3e397cb12287c04b2c217affb972bc0.png",
+                                        "filename": "Diamond.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-9f2cc8f310d894f2d4c99b038c453bb8.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-ed27d48a281f155843c45f283f617177.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-fb453720929839e3933811f1427719d0.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-df3c1f5e377109bce80fb856b9219905.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-f674f5cac91d5004f1e87a197057fec3.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-eb51a881cbccc2bb9914212ec3ba567a.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-539c2803e7cae4caec4dfea32757bb83.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-b9c8c984b069ae176258d03c4d3409d4.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-2cbf4e8ac691368bcecb8bf16bc5df34.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-cb42650dbc37d52af36451feecf63210.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 578626,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Diamond"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Diamond"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "cfea6dd0-0215-43a4-9e20-1ff440c807b7",
+                    "3ebef10e-1c3d-4f78-a774-07451cb319a8",
+                    "ceb745d1-9a19-489d-8a81-8859d02a4278"
+                ]
+            },
+            "headline": "Packages",
+            "styles": {
+                "backgroundColor": "mainColor"
+            }
+        },
+        "b4360d3f-6538-4163-aab8-38bbc7707d7b": {
+            "@type": "slate",
+            "plaintext": "The Plone Conference is an event organized by the community itself and supported by the Plone Foundation. We need your help to maintain its top quality and to keep it open. Sponsoring the annual conference is the best way to help Plone and its community to keep growing and evolving.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "The Plone Conference is an event organized by the community itself and supported by the Plone Foundation. We need your help to maintain its top quality and to keep it open. Sponsoring the annual conference is the best way to help Plone and its community to keep growing and evolving."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "c912f863-f355-4d2e-8948-8c0b0beebad9": {
+            "@type": "slate",
+            "plaintext": "We have several levels of sponsorship that provide you with different benefits, as listed below.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "We have several levels of sponsorship that provide you with different benefits, as listed below."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "d814d359-72e8-4afe-ba8f-5989b64bdce5": {
+            "@type": "slate",
+            "plaintext": "Train new people to use and develop Plone technologies Show other people amazing projects and solutions made with Plone Find new ways to improve our products Hang out with an amazing community of people from all over the world",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "text": "Train new people to use and develop Plone technologies"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": "Show other people amazing projects and solutions made with Plone"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": "Find new ways to improve our products"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": "Hang out with an amazing community of people from all over the world"
+                                }
+                            ],
+                            "type": "li"
+                        }
+                    ],
+                    "type": "ul"
+                }
+            ]
+        },
+        "f28ae817-f25f-40d9-9f45-34ce64417978": {
+            "@type": "slate",
+            "plaintext": "With your sponsorship you will get unique visibility on a qualified audience.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "With your sponsorship you will get unique visibility on a qualified audience."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "3dc47837-b447-4288-99db-21d582b9ed28",
+            "942b544e-ce7b-4aa5-9dec-fa33eda383aa",
+            "0cfd61a1-4e25-498d-b9fd-6dc7af81b419",
+            "b4360d3f-6538-4163-aab8-38bbc7707d7b",
+            "0216a681-99f5-4f0b-b5c3-5e006d5e049e",
+            "8ad0d0c3-fcb7-4e3b-964b-e23f54d4913e",
+            "d814d359-72e8-4afe-ba8f-5989b64bdce5",
+            "f28ae817-f25f-40d9-9f45-34ce64417978",
+            "c912f863-f355-4d2e-8948-8c0b0beebad9",
+            "97c3290f-0cab-4fff-808c-d906df0f3640",
+            "85fc1423-d7ce-4490-80a9-0e709a90262f",
+            "6a4b7c45-9038-4ed5-aba4-0705ca451bbe",
+            "6c536774-8e99-4553-8dd3-53c7d1ccba4d"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-08T22:06:32+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Support our conference",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "sponsors",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-12-14T14:19:29+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en",
+        "@type": "LRF",
+        "UID": "bdec9a22690a459b8190ff7d82c1f5d2",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "2024 Plone Conference",
+        "type_title": "Language Root Folder"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Sponsorship",
+    "type_title": "Sponsors Database",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T22:06:32+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-08T22:06:35+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    >
+
+  <plone:behavior
+      name="ploneconf.schedule"
+      title="Conference: Scheduling"
+      description="Implements support to schedule a content"
+      provides=".schedule.IScheduleSlot"
+      />
+
+  <plone:behavior
+      name="ploneconf.session"
+      title="Conference: Session"
+      description=""
+      provides=".session.IConferenceSession"
+      />
+
+  <plone:behavior
+      name="ploneconf.links"
+      title="Conference: Links Informatiin"
+      description=""
+      provides=".links.ILinkInformation"
+      />
+
+
+</configure>

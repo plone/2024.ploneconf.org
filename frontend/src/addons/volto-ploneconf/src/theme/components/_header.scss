@@ -1,0 +1,112 @@
+.header-wrapper .header {
+  margin-right: 0px;
+  margin-left: 0px;
+
+  .logo-nav-wrapper {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.navigation {
+  .item {
+    text-transform: uppercase !important;
+
+    &.active,
+    &:hover {
+      color: var(--main-color);
+
+      &::before {
+        bottom: -22px;
+        border-bottom: 9px solid var(--main-color);
+      }
+    }
+  }
+
+  ul.desktop-menu .submenu-wrapper {
+    margin-top: 30px;
+
+    .submenu {
+      background: var(--main-color);
+
+      &.active {
+        .close {
+          color: var(--reverse-color);
+        }
+      }
+
+      .submenu-inner {
+        h2 {
+          color: var(--reverse-color);
+        }
+
+        .subitem-wrapper {
+          border-left: 1px solid var(--reverse-color);
+
+          a > span {
+            color: var(--reverse-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo-nav-wrapper {
+  img.image {
+    &.logoConf {
+      &.main {
+        width: 267px;
+        height: 150px;
+      }
+
+      &.switch {
+        width: 89px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.header-wrapper .header .logo-nav-wrapper .site-selector {
+  flex: 1 1 0;
+  align-self: center;
+  @media only screen and (max-width: $largest-mobile-screen) {
+    display: none;
+  }
+}
+
+.header-wrapper .header .logo-nav-wrapper .mobile-nav .site-selector {
+  @media only screen and (max-width: $largest-mobile-screen) {
+    display: block;
+  }
+}
+
+.header-wrapper .header .logo-nav-wrapper .mobile-nav {
+  @media only screen and (max-width: $largest-mobile-screen) {
+    align-self: center;
+    margin-right: 10px;
+
+    .hamburger-wrapper .hamburger {
+      &::before {
+        background-color: var(--main-color);
+      }
+
+      &::after {
+        background-color: var(--main-color);
+      }
+
+      .hamburger-box {
+        .hamburger-inner {
+          &::before {
+            background-color: var(--main-color);
+          }
+
+          &::after {
+            background-color: var(--main-color);
+          }
+        }
+      }
+    }
+  }
+}

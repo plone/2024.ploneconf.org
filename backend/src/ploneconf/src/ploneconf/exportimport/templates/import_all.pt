@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone.distribution"
+>
+
+  <div metal:fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+
+      <h1 class="documentFirstHeading"
+          i18n:translate=""
+      >Import Content Data</h1>
+
+      <p class="documentDescription"
+         i18n:translate=""
+      >Run all imports</p>
+
+      <form action="@@import_all"
+            enctype="multipart/form-data"
+            method="post"
+            tal:attributes="
+              action request/URL;
+            "
+      >
+
+        <div class="form-group">
+          <input name="form.submitted"
+                 type="hidden"
+                 value="1"
+          />
+
+          <button class="btn btn-primary submit-widget button-field context"
+                  name="submit"
+                  type="submit"
+                  value="export"
+                  i18n:translate=""
+          >Import all
+          </button>
+        </div>
+
+      </form>
+
+    </tal:main-macro>
+  </div>
+
+</html>

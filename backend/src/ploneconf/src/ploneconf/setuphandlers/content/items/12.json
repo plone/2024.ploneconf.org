@@ -1,0 +1,48 @@
+{
+    "@id": "/en/assets/bsb-pontao.jpg",
+    "@type": "Image",
+    "UID": "b1e69d0eb418464da41b1a32f564601c",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-12-13T15:44:51+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Governo do Distrito Federal/Bento Viana",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "bsb-pontao.jpg",
+    "image": {
+        "blob_path": "blobs/b1e69d0eb418464da41b1a32f564601c-en-image/42238693494_70315faab8_k.jpg",
+        "content-type": "image/jpeg",
+        "filename": "42238693494_70315faab8_k.jpg",
+        "height": 1365,
+        "size": 1074127,
+        "width": 2048
+    },
+    "is_folderish": false,
+    "language": "en",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-12-13T15:48:04+00:00",
+    "parent": {
+        "@id": "/en/assets",
+        "@type": "LIF",
+        "UID": "72071f265b7a40058b32e75ce6d4e597",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Assets",
+        "type_title": "Language Independent Folder"
+    },
+    "review_state": null,
+    "rights": "Governo do Distrito Federal/Bento Viana",
+    "subjects": [],
+    "title": "Pont\u00e3o",
+    "type_title": "Image",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+}

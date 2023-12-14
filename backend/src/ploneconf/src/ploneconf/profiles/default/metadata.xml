@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+  <version>20231128001</version>
+  <dependencies>
+    <dependency>profile-plone.app.multilingual:default</dependency>
+    <dependency>profile-plone.volto:default</dependency>
+    <dependency>profile-collective.volto.formsupport:default</dependency>
+  </dependencies>
+</metadata>

@@ -1,0 +1,69 @@
+{
+    "@id": "/en/sponsors/organizer/plonegov-br",
+    "@type": "Sponsor",
+    "UID": "c7e5e32420264cde8a0a57dbf861f5a6",
+    "allow_discussion": false,
+    "created": "2023-12-12T21:21:23+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Our community, PloneGov-BR, comprises over 200 members, including public sector employees, independent professionals, and enterprises that cater to government needs. Established in Brazil in July 2009, PloneGov-BR serves as a regional arm of the global PloneGov initiative. Our primary mission is to enhance and solidify the adoption of Plone within the Brazilian Government.",
+    "exclude_from_nav": false,
+    "github": "https://github.com/plonegovbr",
+    "id": "plonegov-br",
+    "image": {
+        "blob_path": "blobs/c7e5e32420264cde8a0a57dbf861f5a6-image/PloneGovbr.png",
+        "content-type": "image/png",
+        "filename": "PloneGovbr.png",
+        "height": 768,
+        "size": 50312,
+        "width": 1024
+    },
+    "image_caption": null,
+    "instagram": "https://instagram.com/plonebr",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "linkedin": null,
+    "lock": {},
+    "mastodon": "https://plone.social/ploneorgbr",
+    "modified": "2023-12-13T20:07:24+00:00",
+    "parent": {
+        "@id": "/en/sponsors/organizer",
+        "@type": "SponsorLevel",
+        "UID": "835174bcbad2499d89d3f614508bf4dd",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Organized by",
+        "type_title": "Sponsorship Level"
+    },
+    "remoteUrl": "https://plone.org.br/",
+    "review_state": "published",
+    "subjects": [],
+    "title": "PloneGov-BR",
+    "twitter": "https://twitter.com/ploneorgbr",
+    "type_title": "Sponsor",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T21:21:23+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T21:28:22+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

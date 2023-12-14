@@ -1,0 +1,48 @@
+{
+    "@id": "/en/assets/pyladiesdf.png",
+    "@type": "Image",
+    "UID": "549e90c6295c4ac386faab1c145a2b09",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-12-13T19:21:49+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "pyladiesdf.png",
+    "image": {
+        "blob_path": "blobs/549e90c6295c4ac386faab1c145a2b09-en-image/PyladiesDF.png",
+        "content-type": "image/png",
+        "filename": "PyladiesDF.png",
+        "height": 768,
+        "size": 127794,
+        "width": 1024
+    },
+    "is_folderish": false,
+    "language": null,
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-12-13T19:21:49+00:00",
+    "parent": {
+        "@id": "/en/assets",
+        "@type": "LIF",
+        "UID": "72071f265b7a40058b32e75ce6d4e597",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Assets",
+        "type_title": "Language Independent Folder"
+    },
+    "review_state": null,
+    "rights": "",
+    "subjects": [],
+    "title": "PyladiesDF.png",
+    "type_title": "Image",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+}

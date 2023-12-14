@@ -1,0 +1,48 @@
+{
+    "@id": "/en/assets/bsb-igreja-nossa-senhora.jpg",
+    "@type": "Image",
+    "UID": "781a232efb6d4daa8873269593b88854",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-12-13T15:44:51+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Roberto Castro - MTUR",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "bsb-igreja-nossa-senhora.jpg",
+    "image": {
+        "blob_path": "blobs/781a232efb6d4daa8873269593b88854-en-image/40015024265_0b74856540_k.jpg",
+        "content-type": "image/jpeg",
+        "filename": "40015024265_0b74856540_k.jpg",
+        "height": 1365,
+        "size": 320999,
+        "width": 2048
+    },
+    "is_folderish": false,
+    "language": "en",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-12-13T15:47:12+00:00",
+    "parent": {
+        "@id": "/en/assets",
+        "@type": "LIF",
+        "UID": "72071f265b7a40058b32e75ce6d4e597",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Assets",
+        "type_title": "Language Independent Folder"
+    },
+    "review_state": null,
+    "rights": "Roberto Castro - MTUR",
+    "subjects": [],
+    "title": "Igreja Nossa Senhora de F\u00e1tima",
+    "type_title": "Image",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+}

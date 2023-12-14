@@ -1,0 +1,69 @@
+{
+    "@id": "/en/sponsors/platinum/kitconcept-gmbh",
+    "@type": "Sponsor",
+    "UID": "ee7b63131cb14f73a046fc021b01dbdf",
+    "allow_discussion": false,
+    "created": "2023-12-08T22:26:34+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "exclude_from_nav": false,
+    "github": null,
+    "id": "kitconcept-gmbh",
+    "image": {
+        "blob_path": "blobs/ee7b63131cb14f73a046fc021b01dbdf-image/Kitconcept.png",
+        "content-type": "image/png",
+        "filename": "Kitconcept.png",
+        "height": 768,
+        "size": 47010,
+        "width": 1024
+    },
+    "image_caption": null,
+    "instagram": null,
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "linkedin": null,
+    "lock": {},
+    "mastodon": null,
+    "modified": "2023-12-13T01:48:18+00:00",
+    "parent": {
+        "@id": "/en/sponsors/platinum",
+        "@type": "SponsorLevel",
+        "UID": "67adfb7681aa434c8a671884ee23ef3f",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Platinum",
+        "type_title": "Sponsorship Level"
+    },
+    "remoteUrl": "https://kitconcept.com",
+    "review_state": "published",
+    "subjects": [],
+    "title": "kitconcept GmbH",
+    "twitter": null,
+    "type_title": "Sponsor",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T22:26:34+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-08T22:26:40+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

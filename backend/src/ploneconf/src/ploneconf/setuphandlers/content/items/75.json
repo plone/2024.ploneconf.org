@@ -1,0 +1,78 @@
+{
+    "@id": "/pt-br/sobre/python-cerrado",
+    "@type": "Document",
+    "UID": "c05b040d5c5940d5bf512375c37aad19",
+    "allow_discussion": false,
+    "blocks": {
+        "2b5c0321-8365-44e7-98ae-def9672b26c7": {
+            "@type": "slate"
+        },
+        "e4e3713a-6438-47b0-9ab3-620560a38117": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "e4e3713a-6438-47b0-9ab3-620560a38117",
+            "2b5c0321-8365-44e7-98ae-def9672b26c7"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-13T04:27:37+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": "2023-12-13T01:28:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "python-cerrado",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T04:28:02+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/pt-br/sobre",
+        "@type": "Document",
+        "UID": "4e620ce45c1f4e69be7d2b0938045227",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Sobre",
+        "type_title": "Page"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Python Cerrado",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T04:27:37+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-13T04:28:02+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

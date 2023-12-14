@@ -1,0 +1,316 @@
+{
+    "@id": "/pt-br/patrocinio/gold",
+    "@type": "SponsorLevel",
+    "UID": "91e98fc0871c4d88b69e29a2a6592e9e",
+    "allow_discussion": false,
+    "blocks": {
+        "0877cc80-ec32-4b32-90db-d7f18d5770e2": {
+            "@type": "title"
+        },
+        "7712e2fa-c6be-459e-b974-64f5c3c0d7e3": {
+            "@type": "slate",
+            "plaintext": "",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "8a4bf6d0-2d09-436d-a398-322b3375ad87": {
+            "@type": "accordion",
+            "collapsed": false,
+            "data": {
+                "blocks": {
+                    "8d0cfe2a-2134-49e8-94af-ea7e2ddd4460": {
+                        "@type": "accordionPanel",
+                        "blocks": {
+                            "1a1015d6-7db0-4659-8fe5-679895b55d80": {
+                                "@type": "slateTable",
+                                "styles": {},
+                                "table": {
+                                    "basic": false,
+                                    "celled": true,
+                                    "compact": false,
+                                    "fixed": true,
+                                    "hideHeaders": false,
+                                    "inverted": false,
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "key": "90p1",
+                                                    "type": "header",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": "Valor"
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "key": "9jag",
+                                                    "type": "header",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": "Patrocinadores da Plone Foundation"
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "key": "6pek6"
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "key": "3il74",
+                                                    "type": "data",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": ""
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "text": "R$24.000"
+                                                                        }
+                                                                    ],
+                                                                    "type": "strong"
+                                                                },
+                                                                {
+                                                                    "text": ""
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "key": "9iit1",
+                                                    "type": "data",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": ""
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "text": ""
+                                                                        }
+                                                                    ],
+                                                                    "type": "strong"
+                                                                },
+                                                                {
+                                                                    "text": ""
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "text": "R$18.000"
+                                                                        }
+                                                                    ],
+                                                                    "type": "strong"
+                                                                },
+                                                                {
+                                                                    "text": ""
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "key": "6k7rm"
+                                        }
+                                    ],
+                                    "striped": false
+                                }
+                            }
+                        },
+                        "blocks_layout": {
+                            "items": [
+                                "1a1015d6-7db0-4659-8fe5-679895b55d80"
+                            ]
+                        },
+                        "title": "Investimento"
+                    },
+                    "a90353f1-a256-4c59-b602-8ecde534cea1": {
+                        "@type": "accordionPanel",
+                        "blocks": {
+                            "4564efd6-7af1-42c4-9d08-a73d5e01a8d7": {
+                                "@type": "slate",
+                                "plaintext": "10 ingressos para o evento Sua marca na entrada do evento Sua marca exibida em v\u00eddeos entre as palestras Sua marca exibida nos v\u00eddeos publicados no YouTube M\u00ednimo de 10 men\u00e7\u00f5es em nossas redes sociais Seu material distribu\u00eddo para os participantes",
+                                "styles": {},
+                                "value": [
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "10 ingressos para o evento"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Sua marca na entrada do evento"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Sua marca exibida em v\u00eddeos entre as palestras"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Sua marca exibida nos v\u00eddeos publicados no YouTube"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "M\u00ednimo de 10 men\u00e7\u00f5es em nossas redes sociais"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Seu material distribu\u00eddo para os participantes"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            }
+                                        ],
+                                        "type": "ul"
+                                    }
+                                ]
+                            }
+                        },
+                        "blocks_layout": {
+                            "items": [
+                                "4564efd6-7af1-42c4-9d08-a73d5e01a8d7"
+                            ]
+                        },
+                        "title": "Benef\u00edcios"
+                    }
+                },
+                "blocks_layout": {
+                    "items": [
+                        "a90353f1-a256-4c59-b602-8ecde534cea1",
+                        "8d0cfe2a-2134-49e8-94af-ea7e2ddd4460"
+                    ]
+                }
+            },
+            "filtering": false,
+            "non_exclusive": false,
+            "right_arrows": true,
+            "styles": {}
+        },
+        "c6fe6717-24e7-46fc-9b51-062bcc3acedd": {
+            "@canonical": "a952c397-8c3c-4ceb-ae7b-947f4f81c6ca",
+            "@type": "sponsorLevel",
+            "block": "6fbef600-333c-4ef5-a2e7-b189c4e27d4e"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "7712e2fa-c6be-459e-b974-64f5c3c0d7e3",
+            "0877cc80-ec32-4b32-90db-d7f18d5770e2",
+            "8a4bf6d0-2d09-436d-a398-322b3375ad87",
+            "c6fe6717-24e7-46fc-9b51-062bcc3acedd"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-12T21:07:50+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "display_frontpage": true,
+    "effective": "2023-12-12T18:13:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "gold",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-12-14T13:43:05+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/pt-br/patrocinio",
+        "@type": "SponsorsDB",
+        "UID": "70a87f4d82604ccda0a2e92fb367f337",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Patroc\u00ednio",
+        "type_title": "Sponsors Database"
+    },
+    "preview_caption": null,
+    "preview_image": {
+        "blob_path": "blobs/91e98fc0871c4d88b69e29a2a6592e9e-preview_image/Gold.png",
+        "content-type": "image/png",
+        "filename": "Gold.png",
+        "height": 1080,
+        "size": 605367,
+        "width": 1920
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Ouro",
+    "type_title": "Sponsorship Level",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T21:07:50+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T21:13:48+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

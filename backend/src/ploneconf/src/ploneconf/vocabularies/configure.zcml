@@ -1,0 +1,36 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <utility
+      name="ploneconf.vocabularies.sponsorship_levels"
+      component=".sponsorship.sponsorship_levels"
+      />
+  <utility
+      name="ploneconf.vocabularies.slot_tracks"
+      component=".slot.slot_tracks"
+      />
+  <utility
+      name="ploneconf.vocabularies.slot_levels"
+      component=".slot.slot_levels"
+      />
+  <utility
+      name="ploneconf.vocabularies.slot_audiences"
+      component=".slot.slot_audiences"
+      />
+  <utility
+      name="ploneconf.vocabularies.talk_duration"
+      component=".talk.talk_duration"
+      />
+  <utility
+      name="ploneconf.vocabularies.training_duration"
+      component=".training.training_duration"
+      />
+  <utility
+      name="ploneconf.vocabularies.persons"
+      component=".person.PersonsVocabularyFactory"
+      />
+  <utility
+      name="ploneconf.vocabularies.person_labels"
+      component=".person.person_labels"
+      />
+
+</configure>

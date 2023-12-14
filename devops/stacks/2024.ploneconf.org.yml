@@ -1,0 +1,88 @@
+version: "3.8"
+
+services:
+  frontend:
+    image: ghcr.io/plone/ploneconf-2024-frontend:${STACK_PARAM:-latest}
+    environment:
+      RAZZLE_INTERNAL_API_PATH: http://2024-ploneconf-org_backend:8080/Plone
+    depends_on:
+      - backend
+    networks:
+      - public
+      - nw-2024-ploneconf
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 1
+        delay: 5s
+        order: start-first
+      placement:
+        constraints:
+          - node.labels.type == app
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # SERVICE
+        - traefik.http.services.svc-2024-ploneconf-frontend.loadbalancer.server.port=3000
+        # HOSTS: Main
+        - traefik.http.routers.rt-2024-ploneconf-frontend.rule=Host(`2024.ploneconf.org`)
+        - traefik.http.routers.rt-2024-ploneconf-frontend.entrypoints=https
+        - traefik.http.routers.rt-2024-ploneconf-frontend.tls=true
+        - traefik.http.routers.rt-2024-ploneconf-frontend.tls.certresolver=le
+        - traefik.http.routers.rt-2024-ploneconf-frontend.service=svc-2024-ploneconf-frontend
+        - traefik.http.routers.rt-2024-ploneconf-frontend.middlewares=gzip
+
+  backend:
+    image: ghcr.io/plone/ploneconf-2024-backend:${STACK_PARAM:-latest}
+    environment:
+      RELSTORAGE_DSN: "dbname='${DB_NAME:-plone}' user='${DB_USER:-plone}' host='${DB_HOST:-db}' password='${DB_PASSWORD:-plone}'"
+    networks:
+      - nw-2024-ploneconf
+      - public
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 1
+        delay: 5s
+        order: start-first
+      placement:
+        constraints:
+          - node.labels.type == app
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # SERVICE
+        - traefik.http.services.svc-2024-ploneconf-backend.loadbalancer.server.port=8080
+        # MIDDLEWARES
+        ### ClassicUI Access Authentication
+        - traefik.http.middlewares.mw-2024-ploneconf-backend-auth.basicauth.users=ploneconf:$$2y$$05$$SLsKIKgK.NlD.64HMV42hOUNi3pQM/T.iW4qziWs0xcKHzkaa8T8C
+        ### Backend ++api++ VHM
+        - "traefik.http.middlewares.mw-2024-ploneconf-vhm-cleanup.replacepathregex.regex=^/((\\+\\+api\\+\\+/){1,})($$|.*)"
+        - "traefik.http.middlewares.mw-2024-ploneconf-vhm-cleanup.replacepathregex.replacement=/VirtualHostBase/https/2024.ploneconf.org/Plone/++api++/VirtualHostRoot/$$3"
+        - "traefik.http.middlewares.mw-2024-ploneconf-vhm-api.replacepathregex.regex=^/\\+\\+api\\+\\+($$|/.*)"
+        - "traefik.http.middlewares.mw-2024-ploneconf-vhm-api.replacepathregex.replacement=/VirtualHostBase/https/2024.ploneconf.org/Plone/++api++/VirtualHostRoot/$$1"
+        ### Backend ClassicUI VHM
+        - "traefik.http.middlewares.mw-2024-ploneconf-vhm-classicui.replacepathregex.regex=^/ClassicUI($$|/.*)"
+        - "traefik.http.middlewares.mw-2024-ploneconf-vhm-classicui.replacepathregex.replacement=/VirtualHostBase/https/2024.ploneconf.org/Plone/VirtualHostRoot/_vh_ClassicUI/$$1"
+        # ROUTES
+        ## ploneconf.org API
+        - traefik.http.routers.rt-2024-ploneconf-backend.rule=Host(`2024.ploneconf.org`) && (PathPrefix(`/++api++`))
+        - traefik.http.routers.rt-2024-ploneconf-backend.entrypoints=https
+        - traefik.http.routers.rt-2024-ploneconf-backend.tls=true
+        - traefik.http.routers.rt-2024-ploneconf-backend.service=svc-2024-ploneconf-backend
+        - traefik.http.routers.rt-2024-ploneconf-backend.middlewares=gzip,mw-2024-ploneconf-vhm-cleanup,mw-2024-ploneconf-vhm-api
+        ### ploneconf.org /ClassicUI - protected with basic auth (prevent SEOs from crawl it)
+        - traefik.http.routers.rt-2024-ploneconf-classicui.rule=Host(`2024.ploneconf.org`) && (PathPrefix(`/ClassicUI`))
+        - traefik.http.routers.rt-2024-ploneconf-classicui.entrypoints=https
+        - traefik.http.routers.rt-2024-ploneconf-classicui.tls=true
+        - traefik.http.routers.rt-2024-ploneconf-classicui.service=svc-2024-ploneconf-backend
+        - traefik.http.routers.rt-2024-ploneconf-classicui.middlewares=gzip,mw-2024-ploneconf-backend-auth,mw-2024-ploneconf-vhm-classicui
+
+networks:
+  public:
+    external: true
+    driver: overlay
+  nw-2024-ploneconf:
+    driver: overlay

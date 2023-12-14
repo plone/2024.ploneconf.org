@@ -1,0 +1,14 @@
+body.section-sponsors,
+body.section-patrocinio {
+  &.contenttype-sponsorlevel {
+    .accordion-block {
+      ul {
+        > li {
+          &::marker {
+            content: '✅ ';
+          }
+        }
+      }
+    }
+  }
+}

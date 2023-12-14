@@ -1,0 +1,120 @@
+{
+    "@id": "/en/schedule/sprints",
+    "@type": "Document",
+    "UID": "81121618edf64555ba1b4fc5b346dd0f",
+    "allow_discussion": false,
+    "blocks": {
+        "3a332578-791c-42e2-a103-91e2099fc1df": {
+            "@type": "slate",
+            "plaintext": "After an inspiring week of training and talks, its possible to gather together to develop new features, crush bugs or plan something new.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "After an inspiring week of training and talks, its possible to gather together to develop new features, crush bugs or plan something new."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "a0129161-4299-421a-a8e4-5117c63f2ff6": {
+            "@type": "title"
+        },
+        "ba72d720-22c7-4f6c-844c-1063daae79ba": {
+            "@type": "slate",
+            "plaintext": "Two days of sprint, 23rd and 24th of November.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Two days of sprint, 23rd and 24th of November."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "a0129161-4299-421a-a8e4-5117c63f2ff6",
+            "ba72d720-22c7-4f6c-844c-1063daae79ba",
+            "3a332578-791c-42e2-a103-91e2099fc1df"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-12T16:25:37+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "After an inspiring week of training and talks, its possible to gather together to develop new features, crush bugs or plan something new.",
+    "effective": "2023-12-12T13:26:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "sprints",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-12T16:26:32+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/schedule",
+        "@type": "Document",
+        "UID": "5be1a6c718c84a268793bdbae8e4eca8",
+        "description": "The 2024 edition of the Plone Conference will be held from the 18th to 24th of October 2024 in Bras\u00edlia, Brazil.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "private",
+        "title": "Schedule",
+        "type_title": "Page"
+    },
+    "preview_caption": null,
+    "preview_image": {
+        "blob_path": "blobs/81121618edf64555ba1b4fc5b346dd0f-preview_image/sprint.jpg",
+        "content-type": "image/jpeg",
+        "filename": "sprint.jpg",
+        "height": 1082,
+        "size": 475864,
+        "width": 1925
+    },
+    "review_state": "private",
+    "rights": "",
+    "subjects": [],
+    "title": "Sprints",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T16:25:37+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T16:26:09+00:00"
+            },
+            {
+                "action": "retract",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T18:30:48+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

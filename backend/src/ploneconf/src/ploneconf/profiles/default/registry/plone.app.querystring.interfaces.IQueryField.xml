@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="ploneconf"
+>
+
+  <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.session_level"
+  >
+    <value key="title"
+           i18n:translate=""
+    >Level</value>
+    <value key="description"
+           i18n:translate=""
+    >Session Level.</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="operations">
+      <element>plone.app.querystring.operation.selection.any</element>
+      <element>plone.app.querystring.operation.selection.all</element>
+    </value>
+    <value key="vocabulary">ploneconf.vocabularies.slot_levels</value>
+    <value key="group"
+           i18n:translate=""
+    >Metadata</value>
+  </records>
+
+  <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.slot_audience"
+  >
+    <value key="title"
+           i18n:translate=""
+    >Audience</value>
+    <value key="description"
+           i18n:translate=""
+    >Target Audience.</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="operations">
+      <element>plone.app.querystring.operation.selection.any</element>
+      <element>plone.app.querystring.operation.selection.all</element>
+    </value>
+    <value key="vocabulary">ploneconf.vocabularies.slot_audiences</value>
+    <value key="group"
+           i18n:translate=""
+    >Metadata</value>
+  </records>
+
+  <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.slot_track"
+  >
+    <value key="title"
+           i18n:translate=""
+    >Track</value>
+    <value key="description"
+           i18n:translate=""
+    >Session Track.</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="operations">
+      <element>plone.app.querystring.operation.selection.any</element>
+      <element>plone.app.querystring.operation.selection.all</element>
+    </value>
+    <value key="vocabulary">ploneconf.vocabularies.slot_tracks</value>
+    <value key="group"
+           i18n:translate=""
+    >Metadata</value>
+  </records>
+
+  <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.labels"
+  >
+    <value key="title"
+           i18n:translate=""
+    >Person Label</value>
+    <value key="description"
+           i18n:translate=""
+    >.</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="operations">
+      <element>plone.app.querystring.operation.selection.any</element>
+      <element>plone.app.querystring.operation.selection.all</element>
+    </value>
+    <value key="vocabulary">ploneconf.vocabularies.person_labels</value>
+    <value key="group"
+           i18n:translate=""
+    >Metadata</value>
+  </records>
+
+</registry>

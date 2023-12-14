@@ -1,0 +1,48 @@
+{
+    "@id": "/en/assets/plonegovbr.png",
+    "@type": "Image",
+    "UID": "9e998a592b454caaaf7c169f76ca54cb",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-12-13T19:21:49+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "plonegovbr.png",
+    "image": {
+        "blob_path": "blobs/9e998a592b454caaaf7c169f76ca54cb-en-image/PloneGovbr.png",
+        "content-type": "image/png",
+        "filename": "PloneGovbr.png",
+        "height": 768,
+        "size": 50312,
+        "width": 1024
+    },
+    "is_folderish": false,
+    "language": null,
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-12-13T19:21:49+00:00",
+    "parent": {
+        "@id": "/en/assets",
+        "@type": "LIF",
+        "UID": "72071f265b7a40058b32e75ce6d4e597",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Assets",
+        "type_title": "Language Independent Folder"
+    },
+    "review_state": null,
+    "rights": "",
+    "subjects": [],
+    "title": "PloneGovbr.png",
+    "type_title": "Image",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+}

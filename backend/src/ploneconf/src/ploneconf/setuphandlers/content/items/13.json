@@ -1,0 +1,48 @@
+{
+    "@id": "/en/assets/bsb-stf.jpg",
+    "@type": "Image",
+    "UID": "d01a2daa96024da48a617eb63f2d9cb7",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-12-13T15:44:51+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Roberto Castro - MTUR",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "bsb-stf.jpg",
+    "image": {
+        "blob_path": "blobs/d01a2daa96024da48a617eb63f2d9cb7-en-image/39098942930_b89d11cc8e_k.jpg",
+        "content-type": "image/jpeg",
+        "filename": "39098942930_b89d11cc8e_k.jpg",
+        "height": 1152,
+        "size": 273725,
+        "width": 2048
+    },
+    "is_folderish": false,
+    "language": "en",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-12-13T15:46:25+00:00",
+    "parent": {
+        "@id": "/en/assets",
+        "@type": "LIF",
+        "UID": "72071f265b7a40058b32e75ce6d4e597",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Assets",
+        "type_title": "Language Independent Folder"
+    },
+    "review_state": null,
+    "rights": "Roberto Castro - MTUR",
+    "subjects": [],
+    "title": "Supremo Tribunal Federal",
+    "type_title": "Image",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+}

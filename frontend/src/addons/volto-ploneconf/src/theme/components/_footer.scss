@@ -1,0 +1,29 @@
+#footer {
+  margin-top: 20px;
+  background-color: var(--main-color) !important;
+
+  .footer {
+    padding: 2rem 2rem;
+    background-color: var(--main-color) !important;
+
+    .item {
+      color: var(--reverse-color);
+    }
+
+    .social-network.item {
+      .social-network.icon {
+        color: var(--reverse-color);
+      }
+    }
+  }
+
+  .signature {
+    max-width: 100%;
+    padding: 1rem 1rem;
+    background-color: black !important;
+
+    .item {
+      color: var(--reverse-color);
+    }
+  }
+}

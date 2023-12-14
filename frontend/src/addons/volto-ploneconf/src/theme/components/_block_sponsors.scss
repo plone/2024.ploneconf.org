@@ -1,0 +1,134 @@
+.block.sponsorsBlock {
+  @include default-container-width;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  .sponsors {
+    .title {
+      margin-bottom: 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .sponsorLevel {
+      .title {
+        position: relative;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #000023;
+        margin-top: 1.2rem !important;
+        margin-bottom: 1.2rem !important;
+        font-size: 1.2rem;
+        text-align: center;
+
+        &::before {
+          position: absolute;
+          right: 0;
+          bottom: -1px;
+          left: 0;
+          width: 400px;
+          height: 3px;
+          margin: 0 auto;
+          background: #000023;
+          content: '';
+        }
+      }
+
+      .sponsorList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .sponsor {
+          max-width: 25%;
+
+          &.diamond {
+            max-width: 100%;
+            @include sponsor-size-01;
+          }
+
+          &.platinum {
+            max-width: 50%;
+            @include sponsor-size-02;
+          }
+
+          &.gold {
+            max-width: 33%;
+            @include sponsor-size-03;
+          }
+
+          &.silver {
+            @include sponsor-size-04;
+          }
+
+          &.bronze {
+            @include sponsor-size-05;
+          }
+
+          &.oss {
+            @include sponsor-size-06;
+          }
+
+          &.supporting {
+            @include sponsor-size-06;
+          }
+
+          &.organizer {
+            max-width: 33%;
+            @include sponsor-size-04;
+          }
+
+          &.patronage {
+            max-width: 50%;
+            @include sponsor-size-02;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.contenttype-plone-site,
+body.contenttype-lrf {
+  #main .block.sponsorsBlock {
+    .sponsors {
+      .sponsorLevel {
+        .sponsorList {
+          .sponsor {
+            &.diamond {
+              max-width: 100%;
+              @include sponsor-size-02;
+            }
+
+            &.platinum {
+              max-width: 50%;
+              @include sponsor-size-03;
+            }
+
+            &.gold {
+              max-width: 33%;
+              @include sponsor-size-04;
+            }
+
+            &.silver {
+              @include sponsor-size-05;
+            }
+
+            &.bronze {
+              @include sponsor-size-06;
+            }
+
+            &.organizer {
+              max-width: 33%;
+              @include sponsor-size-04;
+            }
+
+            &.patronage {
+              max-width: 50%;
+              @include sponsor-size-03;
+            }
+          }
+        }
+      }
+    }
+  }
+}

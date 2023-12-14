@@ -1,0 +1,247 @@
+{
+    "@id": "/en",
+    "@type": "LRF",
+    "UID": "bdec9a22690a459b8190ff7d82c1f5d2",
+    "allow_discussion": false,
+    "blocks": {
+        "1c441be1-ca33-4b62-bdc4-7cfcec80bcde": {
+            "@type": "statistic_block",
+            "animation": {
+                "enabled": true
+            },
+            "horizontal": false,
+            "inverted": true,
+            "items": [
+                {
+                    "@id": "755350b7-3a1d-4d8a-afd8-cd824b69667e",
+                    "info": [
+                        {
+                            "children": [
+                                {
+                                    "text": ""
+                                }
+                            ],
+                            "type": "p"
+                        }
+                    ],
+                    "label": [
+                        {
+                            "children": [
+                                {
+                                    "text": "Days"
+                                }
+                            ],
+                            "type": "p"
+                        }
+                    ],
+                    "value": [
+                        {
+                            "children": [
+                                {
+                                    "text": "7"
+                                }
+                            ],
+                            "type": "p"
+                        }
+                    ]
+                },
+                {
+                    "@id": "b4eed82e-7887-432f-8859-6dc565c23f19",
+                    "label": [
+                        {
+                            "children": [
+                                {
+                                    "text": "Talks"
+                                }
+                            ],
+                            "type": "p"
+                        }
+                    ],
+                    "value": [
+                        {
+                            "children": [
+                                {
+                                    "text": "60"
+                                }
+                            ],
+                            "type": "p"
+                        }
+                    ]
+                },
+                {
+                    "@id": "424b7f8b-2249-4447-b8dc-6c674b574e8f",
+                    "label": [
+                        {
+                            "children": [
+                                {
+                                    "text": "Training Sessions"
+                                }
+                            ],
+                            "type": "p"
+                        }
+                    ],
+                    "value": [
+                        {
+                            "children": [
+                                {
+                                    "text": "20"
+                                }
+                            ],
+                            "type": "p"
+                        }
+                    ]
+                }
+            ],
+            "size": "huge",
+            "styles": {
+                "align": "center",
+                "backgroundInverted": "primary",
+                "textAlign": "center"
+            },
+            "widths": "three"
+        },
+        "415bec08-ae46-4098-b720-00bc79e53300": {
+            "@type": "sponsorsList"
+        },
+        "ccdffe12-09a3-4fe1-afb8-c5c7bf7d0215": {
+            "@type": "slider",
+            "slides": [
+                {
+                    "@id": "88c2a648-dd38-40c5-ac6d-7ada4595acbe",
+                    "description": "Melissa is a Senior DevEx Engineer at Quansight, working on NumPy, SciPy and other open source projects. ",
+                    "flagAlign": "left",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/en/news/melissa-weber-mendonca-announced-as-a-keynote-speaker",
+                            "@type": "News Item",
+                            "Description": "Melissa is a Senior DevEx Engineer at Quansight, working on NumPy, SciPy and other open source projects. ",
+                            "Title": "Melissa Weber Mendon\u00e7a announced as a keynote speaker",
+                            "hasPreviewImage": null,
+                            "head_title": null,
+                            "image_field": "image",
+                            "image_scales": {
+                                "image": [
+                                    {
+                                        "content-type": "image/jpeg",
+                                        "download": "@@images/image-1599-b33d4c2440eaecd344f507550a83d8a5.jpeg",
+                                        "filename": "photo_2023-12-12_11-47-44.jpg",
+                                        "height": 900,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/image-1200-958e66e8fc28896ec1418dfaf4b95ce1.jpeg",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "icon": {
+                                                "download": "@@images/image-32-33c5a646f114b3567c9f069fbeabc74b.jpeg",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/image-800-9330dc3210bf43933f8dbbc567fe8317.jpeg",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/image-1000-43d191269518ad18f88a74d8557405ac.jpeg",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/image-200-2649eb49955cc0d325f5d5aee538d084.jpeg",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/image-400-8363093ce01d206d3c2567274e1c9a68.jpeg",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/image-600-02d9d62f0688ff408b663ac93682fa2d.jpeg",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/image-128-b8c2523a4b82cea1f00464e95d41a9a0.jpeg",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/image-64-bb28c777e72c87182814ecda72de1bd8.jpeg",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 235653,
+                                        "width": 1599
+                                    }
+                                ]
+                            },
+                            "title": "Melissa Weber Mendon\u00e7a announced as a keynote speaker"
+                        }
+                    ],
+                    "title": "Melissa Weber Mendon\u00e7a announced as a keynote speaker"
+                }
+            ],
+            "styles": {}
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "ccdffe12-09a3-4fe1-afb8-c5c7bf7d0215",
+            "1c441be1-ca33-4b62-bdc4-7cfcec80bcde",
+            "415bec08-ae46-4098-b720-00bc79e53300"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-08T20:54:10+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "en",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-12-14T13:16:03+00:00",
+    "parent": {
+        "@id": "/",
+        "@type": "Plone Site",
+        "UID": "61aa94d0c5a0471bbefcd1ff128795f1",
+        "description": "",
+        "title": "Plone Conference 2024",
+        "type_title": "Plone Site"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "2024 Plone Conference",
+    "type_title": "Language Root Folder",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T20:54:10+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-08T20:54:10+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

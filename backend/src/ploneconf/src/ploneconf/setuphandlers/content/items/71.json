@@ -1,0 +1,179 @@
+{
+    "@id": "/pt-br/sobre",
+    "@type": "Document",
+    "UID": "4e620ce45c1f4e69be7d2b0938045227",
+    "allow_discussion": false,
+    "blocks": {
+        "23d5cd1a-e9fb-424a-b006-4142636882a3": {
+            "@type": "slate",
+            "plaintext": "Seguindo os passos da Plone Conference 2013, organizaremos a edi\u00e7\u00e3o de 2024 em conjunto com a Python Cerrado.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Seguindo os passos da Plone Conference 2013, organizaremos a edi\u00e7\u00e3o de 2024 em conjunto com a Python Cerrado."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "337ca1fc-f420-42a8-9475-fe7c3d451a41": {
+            "@type": "slate",
+            "plaintext": "Eventos",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Eventos"
+                        }
+                    ],
+                    "type": "h2"
+                }
+            ]
+        },
+        "764bc81e-db07-4977-9dd0-75ce234708e5": {
+            "@type": "gridBlock",
+            "blocks": {
+                "5c82198f-3983-4592-8dd3-dfab55dbe24a": {
+                    "@type": "teaser",
+                    "description": "Confer\u00eancia anual da comunidade Plone, em sua 22a. edi\u00e7\u00e3o.",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/pt-br/sobre/plone-conference",
+                            "@type": "Document",
+                            "Description": "Confer\u00eancia anual da comunidade Plone, em sua 22a. edi\u00e7\u00e3o.",
+                            "Title": "Plone Conference",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": null,
+                            "head_title": null,
+                            "image_field": "",
+                            "title": "Plone Conference"
+                        }
+                    ],
+                    "preview_image": [
+                        {
+                            "@id": "/en/assets/ploneconference-2024.png",
+                            "image_field": "image",
+                            "title": "Logo Plone Conference"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Plone Conference"
+                },
+                "af2f959a-123f-4c1d-9d05-cc04b8bec440": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/pt-br/sobre/python-cerrado",
+                            "@type": "Document",
+                            "Description": "",
+                            "Title": "Python Cerrado",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": null,
+                            "head_title": null,
+                            "image_field": "",
+                            "title": "Python Cerrado"
+                        }
+                    ],
+                    "preview_image": [
+                        {
+                            "@id": "/en/assets/pythoncerrado-2024.png",
+                            "image_field": "image",
+                            "title": "Logo Python Cerrado"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Python Cerrado"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "af2f959a-123f-4c1d-9d05-cc04b8bec440",
+                    "5c82198f-3983-4592-8dd3-dfab55dbe24a"
+                ]
+            },
+            "styles": {}
+        },
+        "e9381582-f6ee-4027-83e8-db4441cce07e": {
+            "@canonical": "260cd31f-18f3-4d49-bd85-440915888207",
+            "@type": "title",
+            "block": "e9381582-f6ee-4027-83e8-db4441cce07e"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "e9381582-f6ee-4027-83e8-db4441cce07e",
+            "23d5cd1a-e9fb-424a-b006-4142636882a3",
+            "337ca1fc-f420-42a8-9475-fe7c3d451a41",
+            "764bc81e-db07-4977-9dd0-75ce234708e5"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-12T13:13:43+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": "2023-12-12T18:13:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "sobre",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-14T02:58:03+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/pt-br",
+        "@type": "LRF",
+        "UID": "6c100fff1fd84349816f5b0eac07f12f",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Python Cerrado 2024",
+        "type_title": "Language Root Folder"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Sobre",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T13:13:43+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T21:13:59+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

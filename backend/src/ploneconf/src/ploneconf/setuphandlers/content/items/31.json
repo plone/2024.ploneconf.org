@@ -1,0 +1,303 @@
+{
+    "@id": "/en/sponsors/diamond",
+    "@type": "SponsorLevel",
+    "UID": "7eef1cfd2a37419e9eecaff9d46de95a",
+    "allow_discussion": false,
+    "blocks": {
+        "58631db5-4dde-4fda-8f7d-df2a7c103aeb": {
+            "@type": "accordion",
+            "collapsed": false,
+            "data": {
+                "blocks": {
+                    "8d0cfe2a-2134-49e8-94af-ea7e2ddd4460": {
+                        "@type": "accordionPanel",
+                        "blocks": {
+                            "1a1015d6-7db0-4659-8fe5-679895b55d80": {
+                                "@type": "slateTable",
+                                "styles": {},
+                                "table": {
+                                    "basic": false,
+                                    "celled": true,
+                                    "compact": false,
+                                    "fixed": true,
+                                    "hideHeaders": false,
+                                    "inverted": false,
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "key": "90p1",
+                                                    "type": "header",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": "Full Price"
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "key": "9jag",
+                                                    "type": "header",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": "Plone Foundation Sponsors"
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "key": "6pek6"
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "key": "3il74",
+                                                    "type": "data",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": ""
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "text": "USD 12,000"
+                                                                        }
+                                                                    ],
+                                                                    "type": "strong"
+                                                                },
+                                                                {
+                                                                    "text": ""
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "key": "9iit1",
+                                                    "type": "data",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": ""
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "text": "USD 12,000"
+                                                                        }
+                                                                    ],
+                                                                    "type": "strong"
+                                                                },
+                                                                {
+                                                                    "text": ""
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "key": "6k7rm"
+                                        }
+                                    ],
+                                    "striped": false
+                                }
+                            }
+                        },
+                        "blocks_layout": {
+                            "items": [
+                                "1a1015d6-7db0-4659-8fe5-679895b55d80"
+                            ]
+                        },
+                        "title": "Investment"
+                    },
+                    "a90353f1-a256-4c59-b602-8ecde534cea1": {
+                        "@type": "accordionPanel",
+                        "blocks": {
+                            "4564efd6-7af1-42c4-9d08-a73d5e01a8d7": {
+                                "@type": "slate",
+                                "plaintext": "20 complimentary tickets Table at the venue Logo at Registration Desk Logo at Training and Conference Rooms Logo in video shown between Talks Logo in post-conference videos (YouTube) Social Media: Minimum of 12 mentions Material distributed to the attendees",
+                                "styles": {},
+                                "value": [
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "20 complimentary tickets"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Table at the venue"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Logo at Registration Desk"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Logo at Training and Conference Rooms"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Logo in video shown between Talks"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Logo in post-conference videos (YouTube)"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Social Media: Minimum of 12 mentions"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Material distributed to the attendees"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            }
+                                        ],
+                                        "type": "ul"
+                                    }
+                                ]
+                            }
+                        },
+                        "blocks_layout": {
+                            "items": [
+                                "4564efd6-7af1-42c4-9d08-a73d5e01a8d7"
+                            ]
+                        },
+                        "title": "Benefits"
+                    }
+                },
+                "blocks_layout": {
+                    "items": [
+                        "a90353f1-a256-4c59-b602-8ecde534cea1",
+                        "8d0cfe2a-2134-49e8-94af-ea7e2ddd4460"
+                    ]
+                }
+            },
+            "filtering": false,
+            "non_exclusive": false,
+            "right_arrows": true,
+            "styles": {}
+        },
+        "8bf4cf85-2946-4c88-9e8d-9609624f37a1": {
+            "@type": "title"
+        },
+        "d0932360-bc55-4343-a457-8e959a0eb652": {
+            "@type": "sponsorLevel"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "8bf4cf85-2946-4c88-9e8d-9609624f37a1",
+            "58631db5-4dde-4fda-8f7d-df2a7c103aeb",
+            "d0932360-bc55-4343-a457-8e959a0eb652"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-08T22:15:35+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "display_frontpage": true,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "diamond",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-12-14T00:11:42+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/sponsors",
+        "@type": "SponsorsDB",
+        "UID": "55d9947b86084264add5cf963ced75ba",
+        "description": "Support our conference",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Sponsorship",
+        "type_title": "Sponsors Database"
+    },
+    "preview_caption": null,
+    "preview_image": {
+        "blob_path": "blobs/7eef1cfd2a37419e9eecaff9d46de95a-preview_image/Diamond.png",
+        "content-type": "image/png",
+        "filename": "Diamond.png",
+        "height": 1080,
+        "size": 578626,
+        "width": 1920
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Diamond",
+    "type_title": "Sponsorship Level",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T22:15:35+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-08T22:15:35+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

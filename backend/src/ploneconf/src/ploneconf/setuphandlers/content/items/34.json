@@ -1,0 +1,69 @@
+{
+    "@id": "/en/sponsors/organizer/apyb",
+    "@type": "Sponsor",
+    "UID": "324858dff84c4e5e90d3e801cefcc45d",
+    "allow_discussion": false,
+    "created": "2023-12-12T21:28:09+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "The Associa\u00e7\u00e3o Python Brasil (APyB), also known as the Python Brazil Association, is a non-profit organization formed with the primary objective of nurturing and supporting the Python programming language community in Brazil. Established in 2007 to promote the growth and dissemination of Python-related knowledge and technologies, APyB has been a driving force in fostering a vibrant Python community in the country. Since its inception, the association has played a pivotal role in organizing events, conferences, and meetups that bring together Python enthusiasts, developers, and professionals from various backgrounds.",
+    "exclude_from_nav": false,
+    "github": "https://github.com/pythonbrasil",
+    "id": "apyb",
+    "image": {
+        "blob_path": "blobs/324858dff84c4e5e90d3e801cefcc45d-image/APYB.png",
+        "content-type": "image/png",
+        "filename": "APYB.png",
+        "height": 768,
+        "size": 104445,
+        "width": 1024
+    },
+    "image_caption": null,
+    "instagram": null,
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "linkedin": null,
+    "lock": {},
+    "mastodon": null,
+    "modified": "2023-12-13T20:12:03+00:00",
+    "parent": {
+        "@id": "/en/sponsors/organizer",
+        "@type": "SponsorLevel",
+        "UID": "835174bcbad2499d89d3f614508bf4dd",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Organized by",
+        "type_title": "Sponsorship Level"
+    },
+    "remoteUrl": "https://python.org.br/apyb/",
+    "review_state": "published",
+    "subjects": [],
+    "title": "Associa\u00e7\u00e3o Python Brasil",
+    "twitter": "https://twitter.com/apyb",
+    "type_title": "Sponsor",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T21:28:09+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T21:28:22+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

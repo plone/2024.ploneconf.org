@@ -1,0 +1,19 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <!-- Conference SponsorsDB Subscribers -->
+  <subscriber
+      for="ploneconf.content.sponsors.sponsors_db.ISponsorsDB
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".sponsors_db.impose_limit"
+      />
+
+
+  <!-- Conference Session Subscribers -->
+  <subscriber
+      for="ploneconf.behaviors.session.IConferenceSession
+           zope.lifecycleevent.IObjectModifiedEvent"
+      handler=".session.modification_handler"
+      />
+
+
+</configure>

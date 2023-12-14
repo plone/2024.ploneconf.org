@@ -1,0 +1,55 @@
+{
+    "groups": [
+        {
+            "description": "",
+            "email": "",
+            "groupid": "Administrators",
+            "groups": [],
+            "principals": [],
+            "roles": [
+                "Manager"
+            ],
+            "title": "Administrators"
+        },
+        {
+            "description": "",
+            "email": "",
+            "groupid": "Reviewers",
+            "groups": [],
+            "principals": [],
+            "roles": [
+                "Reviewer"
+            ],
+            "title": "Reviewers"
+        },
+        {
+            "description": "",
+            "email": "",
+            "groupid": "Site Administrators",
+            "groups": [],
+            "principals": [],
+            "roles": [
+                "Site Administrator"
+            ],
+            "title": "Site Administrators"
+        }
+    ],
+    "members": [
+        {
+            "description": "",
+            "email": "conf24@plone.org.br",
+            "fullname": "Conference Organizer",
+            "groups": [],
+            "home_page": "",
+            "last_login_time": "2000-01-01T00:00:00",
+            "listed": true,
+            "location": "",
+            "login_time": "2000-01-01T00:00:00",
+            "password": "{SSHA}36NqvAijfS8Bz/gE59VtPtn5mcGY2wGAZRbM",
+            "roles": [
+                "Member"
+            ],
+            "username": "organizer"
+        }
+    ]
+}

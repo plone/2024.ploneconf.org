@@ -1,0 +1,69 @@
+{
+    "@id": "/pt-br/patrocinio/bronze/starzel",
+    "@type": "Sponsor",
+    "UID": "0a30779f7ab94a03b61e9fc8f049e359",
+    "allow_discussion": false,
+    "created": "2023-12-13T02:02:49+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "exclude_from_nav": false,
+    "github": "https://github.com/starzelde",
+    "id": "starzel",
+    "image": {
+        "blob_path": "blobs/0a30779f7ab94a03b61e9fc8f049e359-image/Starzel.png",
+        "content-type": "image/png",
+        "filename": "Starzel.png",
+        "height": 768,
+        "size": 73476,
+        "width": 1024
+    },
+    "image_caption": null,
+    "instagram": null,
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "view",
+    "linkedin": null,
+    "lock": {},
+    "mastodon": null,
+    "modified": "2023-12-13T02:06:05+00:00",
+    "parent": {
+        "@id": "/pt-br/patrocinio/bronze",
+        "@type": "SponsorLevel",
+        "UID": "255987ffc1a149699fb697c6cc2c8b83",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Bronze",
+        "type_title": "Sponsorship Level"
+    },
+    "remoteUrl": "https://starzel.de/",
+    "review_state": "published",
+    "subjects": [],
+    "title": "Starzel",
+    "twitter": "https://twitter.com/starzelde",
+    "type_title": "Sponsor",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T02:02:49+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-13T02:06:05+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

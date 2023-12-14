@@ -1,0 +1,22 @@
+:root {
+  --teaser-images-aspect-ratio: #{$teaser-images-aspect-ratio};
+  --narrow-container-width: 1024px;
+  --default-container-width: 1024px;
+  --layout-container-width: 1440px;
+}
+
+a {
+  color: $link-color;
+  text-decoration: solid;
+
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: solid;
+  }
+}
+
+#page-controlpanel-layout {
+  max-width: var(--default-container-width);
+  margin-right: auto;
+  margin-left: auto;
+}

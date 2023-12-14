@@ -1,0 +1,90 @@
+{
+    "@id": "/pt-br/sobre/plone-conference",
+    "@type": "Document",
+    "UID": "22e79ff94d624b9ca07df970b02d560d",
+    "allow_discussion": false,
+    "blocks": {
+        "83a00bf5-6283-428d-971b-8411b476da2b": {
+            "@type": "slate",
+            "plaintext": "",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "b0b98e73-b9c1-449e-be5a-07956e36dccf": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "b0b98e73-b9c1-449e-be5a-07956e36dccf",
+            "83a00bf5-6283-428d-971b-8411b476da2b"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-13T04:27:48+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Confer\u00eancia anual da comunidade Plone, em sua 22a. edi\u00e7\u00e3o.",
+    "effective": "2023-12-13T01:28:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "plone-conference",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-14T02:57:42+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/pt-br/sobre",
+        "@type": "Document",
+        "UID": "4e620ce45c1f4e69be7d2b0938045227",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Sobre",
+        "type_title": "Page"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Plone Conference",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T04:27:48+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-13T04:28:01+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

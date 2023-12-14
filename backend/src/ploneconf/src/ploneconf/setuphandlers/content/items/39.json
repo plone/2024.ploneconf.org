@@ -1,0 +1,69 @@
+{
+    "@id": "/en/sponsors/organizer/simples-consultoria",
+    "@type": "Sponsor",
+    "UID": "7a54dabdd352485e9f3755de2415f749",
+    "allow_discussion": false,
+    "created": "2023-12-12T21:31:58+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "exclude_from_nav": false,
+    "github": null,
+    "id": "simples-consultoria",
+    "image": {
+        "blob_path": "blobs/7a54dabdd352485e9f3755de2415f749-image/SimplesConsultoria.png",
+        "content-type": "image/png",
+        "filename": "SimplesConsultoria.png",
+        "height": 768,
+        "size": 50184,
+        "width": 1024
+    },
+    "image_caption": null,
+    "instagram": null,
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "linkedin": null,
+    "lock": {},
+    "mastodon": null,
+    "modified": "2023-12-13T01:49:51+00:00",
+    "parent": {
+        "@id": "/en/sponsors/organizer",
+        "@type": "SponsorLevel",
+        "UID": "835174bcbad2499d89d3f614508bf4dd",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Organized by",
+        "type_title": "Sponsorship Level"
+    },
+    "remoteUrl": "https://simplesconsultoria.com.br/",
+    "review_state": "published",
+    "subjects": [],
+    "title": "Simples Consultoria",
+    "twitter": null,
+    "type_title": "Sponsor",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T21:31:58+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T21:32:02+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

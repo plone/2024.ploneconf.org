@@ -1,0 +1,69 @@
+{
+    "@id": "/pt-br/patrocinio/organizer/plone-foundation",
+    "@type": "Sponsor",
+    "UID": "3b7949500c0e415ba4dff19bd559ff70",
+    "allow_discussion": false,
+    "created": "2023-12-13T02:05:10+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "A Plone Foundation \u00e9 uma organiza\u00e7\u00e3o sem fins lucrativos dedicada a apoiar e promover o sistema de gerenciamento de conte\u00fado de c\u00f3digo aberto, Plone. Fundada em 2004, a funda\u00e7\u00e3o desempenha um papel crucial na comunidade Plone, fornecendo apoio governamental, jur\u00eddico e financeiro para o desenvolvimento e promo\u00e7\u00e3o da plataforma Plone. Com alcance global, a Plone Foundation promove a colabora\u00e7\u00e3o entre um grupo diversificado de desenvolvedores, usu\u00e1rios e organiza\u00e7\u00f5es que contribuem para o crescimento e a sustentabilidade do Plone. Sua miss\u00e3o \u00e9 proteger e promover o Plone como uma solu\u00e7\u00e3o CMS de c\u00f3digo aberto poderosa e segura para organiza\u00e7\u00f5es e comunidades em todo o mundo.",
+    "exclude_from_nav": false,
+    "github": "https://github.com/plone",
+    "id": "plone-foundation",
+    "image": {
+        "blob_path": "blobs/3b7949500c0e415ba4dff19bd559ff70-image/PloneFoundation.png",
+        "content-type": "image/png",
+        "filename": "PloneFoundation.png",
+        "height": 768,
+        "size": 48492,
+        "width": 1024
+    },
+    "image_caption": null,
+    "instagram": "https://www.instagram.com/plonecms/",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "view",
+    "linkedin": null,
+    "lock": {},
+    "mastodon": "https://plone.social/@plone",
+    "modified": "2023-12-14T02:50:12+00:00",
+    "parent": {
+        "@id": "/pt-br/patrocinio/organizer",
+        "@type": "SponsorLevel",
+        "UID": "7ba960fa24fc4e15a90a8d813db465bc",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Organiza\u00e7\u00e3o",
+        "type_title": "Sponsorship Level"
+    },
+    "remoteUrl": "https://plone.org/foundation",
+    "review_state": "published",
+    "subjects": [],
+    "title": "Plone Foundation",
+    "twitter": "https://twitter.com/plone",
+    "type_title": "Sponsor",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T02:05:10+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-13T02:06:15+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

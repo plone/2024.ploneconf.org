@@ -1,0 +1,48 @@
+{
+    "@id": "/en/assets/ploneconference-2024.png",
+    "@type": "Image",
+    "UID": "84eeb95fb4a449779bd463d30b68c0fa",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-12-13T02:51:36+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "ploneconference-2024.png",
+    "image": {
+        "blob_path": "blobs/84eeb95fb4a449779bd463d30b68c0fa-en-image/Logotipo Plone Conference PNG 1920x1080.png",
+        "content-type": "image/png",
+        "filename": "Logotipo Plone Conference PNG 1920x1080.png",
+        "height": 1080,
+        "size": 85506,
+        "width": 1920
+    },
+    "is_folderish": false,
+    "language": "en",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-12-13T02:52:33+00:00",
+    "parent": {
+        "@id": "/en/assets",
+        "@type": "LIF",
+        "UID": "72071f265b7a40058b32e75ce6d4e597",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Assets",
+        "type_title": "Language Independent Folder"
+    },
+    "review_state": null,
+    "rights": "",
+    "subjects": [],
+    "title": "Logo Plone Conference",
+    "type_title": "Image",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+}

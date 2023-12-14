@@ -1,0 +1,58 @@
+{
+    "@id": "/en/assets",
+    "@type": "LIF",
+    "UID": "72071f265b7a40058b32e75ce6d4e597",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-12-08T20:54:10+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "assets",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-12-13T19:21:49+00:00",
+    "parent": {
+        "@id": "/en",
+        "@type": "LRF",
+        "UID": "bdec9a22690a459b8190ff7d82c1f5d2",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "2024 Plone Conference",
+        "type_title": "Language Root Folder"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Assets",
+    "type_title": "Language Independent Folder",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T20:54:10+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-08T20:54:10+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

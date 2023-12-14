@@ -1,0 +1,177 @@
+{
+    "@id": "/en/schedule",
+    "@type": "Document",
+    "UID": "5be1a6c718c84a268793bdbae8e4eca8",
+    "allow_discussion": false,
+    "blocks": {
+        "4d1e89af-6cf5-4fea-9bb1-7606108cc9bf": {
+            "@type": "slate",
+            "plaintext": "The 2024 edition of the Plone Conference will be held from the 18th to 24th of October 2024 in Bras\u00edlia, Brazil.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "The 2024 edition of the Plone Conference will be held from the 18th to 24th of October 2024 in Bras\u00edlia, Brazil."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "63c6d356-f429-4274-88c8-c3f216c48fef": {
+            "@type": "title"
+        },
+        "ea3cede6-2525-4d45-93bb-fd55a1591056": {
+            "@type": "gridBlock",
+            "blocks": {
+                "108ed030-376d-4dd8-b2f9-039a0923b876": {
+                    "@type": "teaser",
+                    "description": "Three days of technical talks, success stories, and panels  about Plone and Python, both in English and Portuguese,",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/en/schedule/talks",
+                            "@type": "Document",
+                            "Description": "Three days of talks about Plone and Python.",
+                            "Title": "Talks",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "title": "Talks"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Talks"
+                },
+                "8aedc1a7-22b4-49df-a9c9-0843a9f235a8": {
+                    "@type": "teaser",
+                    "description": "Training classes will take place on November 18th and 19th, and are included in the ticket price.",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/en/schedule/training",
+                            "@type": "Document",
+                            "Description": "Training classes will take place on November 18th and 19th, and are included in the ticket price.",
+                            "Title": "Training",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "title": "Training"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Training"
+                },
+                "bbbde88f-349a-45bd-88cd-f838ab0251c2": {
+                    "@type": "teaser",
+                    "description": "After an inspiring week of training and talks, its possible to gather together to develop new features, crush bugs or plan something new.",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/en/schedule/sprints",
+                            "@type": "Document",
+                            "Description": "After an inspiring week of training and talks, its possible to gather together to develop new features, crush bugs or plan something new.",
+                            "Title": "Sprints",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "title": "Sprints"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Sprints"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "8aedc1a7-22b4-49df-a9c9-0843a9f235a8",
+                    "108ed030-376d-4dd8-b2f9-039a0923b876",
+                    "bbbde88f-349a-45bd-88cd-f838ab0251c2"
+                ]
+            },
+            "styles": {}
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "63c6d356-f429-4274-88c8-c3f216c48fef",
+            "4d1e89af-6cf5-4fea-9bb1-7606108cc9bf",
+            "ea3cede6-2525-4d45-93bb-fd55a1591056"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-08T20:57:14+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "The 2024 edition of the Plone Conference will be held from the 18th to 24th of October 2024 in Bras\u00edlia, Brazil.",
+    "effective": "2023-12-12T13:05:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "schedule",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T17:11:17+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en",
+        "@type": "LRF",
+        "UID": "bdec9a22690a459b8190ff7d82c1f5d2",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "2024 Plone Conference",
+        "type_title": "Language Root Folder"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "private",
+    "rights": "",
+    "subjects": [],
+    "title": "Schedule",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T20:57:14+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T16:05:34+00:00"
+            },
+            {
+                "action": "retract",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T18:30:38+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

@@ -1,0 +1,120 @@
+{
+    "@id": "/en/schedule/talks",
+    "@type": "Document",
+    "UID": "dbd521cdd6b2426987c20d2494e0e328",
+    "allow_discussion": false,
+    "blocks": {
+        "3773a602-d9af-41d5-b16a-bd8b224a6a9a": {
+            "@type": "slate",
+            "plaintext": "From November 20th to 22nd, over 50 talks covering Plone and Python topics.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "From November 20th to 22nd, over 50 talks covering Plone and Python topics."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "89720526-4053-40a5-8726-8a9c3af26d01": {
+            "@type": "title"
+        },
+        "89f7dcf4-831b-4a60-85b6-865737bec94b": {
+            "@type": "slate",
+            "plaintext": "",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "89720526-4053-40a5-8726-8a9c3af26d01",
+            "3773a602-d9af-41d5-b16a-bd8b224a6a9a",
+            "89f7dcf4-831b-4a60-85b6-865737bec94b"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-12T16:23:58+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Three days of talks about Plone and Python.",
+    "effective": "2023-12-12T13:26:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "talks",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-12T16:26:08+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/schedule",
+        "@type": "Document",
+        "UID": "5be1a6c718c84a268793bdbae8e4eca8",
+        "description": "The 2024 edition of the Plone Conference will be held from the 18th to 24th of October 2024 in Bras\u00edlia, Brazil.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "private",
+        "title": "Schedule",
+        "type_title": "Page"
+    },
+    "preview_caption": null,
+    "preview_image": {
+        "blob_path": "blobs/dbd521cdd6b2426987c20d2494e0e328-preview_image/conference.jpg",
+        "content-type": "image/jpeg",
+        "filename": "conference.jpg",
+        "height": 1151,
+        "size": 469760,
+        "width": 2048
+    },
+    "review_state": "private",
+    "rights": "",
+    "subjects": [],
+    "title": "Talks",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T16:23:58+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T16:26:08+00:00"
+            },
+            {
+                "action": "retract",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T18:30:48+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

@@ -1,0 +1,44 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="ploneconf"
+    >
+
+  <configure zcml:condition="installed AccessControl.security">
+    <!-- -*- extra stuff goes here -*- -->
+    <permission
+        id="ploneconf.AddSponsorsDB"
+        title="ploneconf: Add SponsorsDB"
+        />
+    <permission
+        id="ploneconf.AddSponsorLevel"
+        title="ploneconf: Add SponsorLevel"
+        />
+    <permission
+        id="ploneconf.AddSponsor"
+        title="ploneconf: Add Sponsor"
+        />
+    <permission
+        id="ploneconf.AddPerson"
+        title="ploneconf: Add Person"
+        />
+    <permission
+        id="ploneconf.AddSlot"
+        title="ploneconf: Add Slot"
+        />
+    <permission
+        id="ploneconf.AddTraining"
+        title="ploneconf: Add Training"
+        />
+    <permission
+        id="ploneconf.AddTalk"
+        title="ploneconf: Add Talk"
+        />
+    <permission
+        id="ploneconf.AddKeynote"
+        title="ploneconf: Add Keynote"
+        />
+
+  </configure>
+
+</configure>

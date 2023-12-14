@@ -1,0 +1,90 @@
+{
+    "@id": "/en/about/plone-conference-history",
+    "@type": "Document",
+    "UID": "27b4175916ec44f6b4bad329fd73e0fc",
+    "allow_discussion": false,
+    "blocks": {
+        "242d7044-f5a6-482f-96f8-b1df2033a0b5": {
+            "@type": "title"
+        },
+        "451a525b-19bb-43ef-b6df-8772028baa65": {
+            "@type": "slate",
+            "plaintext": "",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "242d7044-f5a6-482f-96f8-b1df2033a0b5",
+            "451a525b-19bb-43ef-b6df-8772028baa65"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-09T16:58:27+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "This is the 22nd edition of the annual Plone Conference",
+    "effective": "2023-12-09T14:09:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "plone-conference-history",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T04:25:15+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/about",
+        "@type": "Document",
+        "UID": "22dd8a04f75c452a84149167914836cd",
+        "description": "Two conferences, one location",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "About",
+        "type_title": "Page"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Plone Conference",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-09T16:58:27+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-09T17:09:56+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

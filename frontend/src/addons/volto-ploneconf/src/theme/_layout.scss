@@ -1,0 +1,51 @@
+@mixin sponsor-size-01() {
+  max-width: 600px;
+  max-height: 450px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@mixin sponsor-size-02() {
+  max-width: 480px;
+  max-height: 360px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@mixin sponsor-size-03() {
+  max-width: 400px;
+  max-height: 300px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@mixin sponsor-size-04() {
+  max-width: 320px;
+  max-height: 240px;
+
+  img {
+    max-width: 100%;
+  }
+}
+@mixin sponsor-size-05() {
+  max-width: 260px;
+  max-height: 195px;
+
+  img {
+    max-width: 100%;
+  }
+}
+@mixin sponsor-size-06() {
+  max-width: 180px;
+  max-height: 135px;
+
+  img {
+    max-width: 100%;
+  }
+}

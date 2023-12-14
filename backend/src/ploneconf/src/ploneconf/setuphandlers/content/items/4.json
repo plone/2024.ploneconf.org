@@ -1,0 +1,256 @@
+{
+    "@id": "/en/about/code-of-conduct",
+    "@type": "Document",
+    "UID": "8428e9023cef4ab1a4a0344641a31723",
+    "allow_discussion": false,
+    "blocks": {
+        "3ae205b8-4d62-4181-8023-8fc268a5a80d": {
+            "@type": "slate",
+            "plaintext": "If a participant engages in harassing behavior, representatives of the community may take reasonable action they deem appropriate, including warning the offender, expulsion from any Plone event, or expulsion from mailing lists, Slack chats, discussion boards and other electronic communications channels to resolve the issue. This may include expulsion from Plone Foundation membership.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "If a participant engages in harassing behavior, representatives of the community may take reasonable action they deem appropriate, including warning the offender, expulsion from any Plone event, or expulsion from mailing lists, Slack chats, discussion boards and other electronic communications channels to resolve the issue. This may include expulsion from Plone Foundation membership."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "4850fa55-756e-4e37-a1b3-c7a8f2e4af9c": {
+            "@type": "slate",
+            "plaintext": "Anti-Harassment and Anti-Bullying Code of Conduct",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Anti-Harassment and Anti-Bullying Code of Conduct"
+                        }
+                    ],
+                    "type": "h2"
+                }
+            ]
+        },
+        "4bfa609b-5bbf-4535-a9c3-f1d1e7d42829": {
+            "@type": "slate",
+            "plaintext": "The Code of Conduct is valid for  all  shared activities during the entire time of the conference. That includes the conference itself, training classes, the party, and also shared outings and dinners with fellow participants. We want everyone to have an  excellent  time, and that includes everyone feeling safe and supported while interacting with other participants both off-site and on-site.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "The Code of Conduct is valid for\u00a0"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "text": "all"
+                                        }
+                                    ],
+                                    "type": "strong"
+                                },
+                                {
+                                    "text": ""
+                                }
+                            ],
+                            "type": "em"
+                        },
+                        {
+                            "text": "\u00a0shared activities during the entire time of the conference. That includes the conference itself, training classes, the party, and also shared outings and dinners with fellow participants. We want everyone to have an\u00a0"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "text": "excellent"
+                                        }
+                                    ],
+                                    "type": "strong"
+                                },
+                                {
+                                    "text": ""
+                                }
+                            ],
+                            "type": "em"
+                        },
+                        {
+                            "text": "\u00a0time, and that includes everyone feeling safe and supported while interacting with other participants both off-site and on-site."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "59b71370-c4e9-4486-874d-26bdddba6310": {
+            "@type": "slate",
+            "plaintext": "The Plone Foundation is dedicated to providing a respectful, harassment-free community for everyone. We do not tolerate harassment or bullying of any community member in any form. This does not only extend to members of the Plone Foundation, but to anyone who chooses to become involved in the larger Plone community of users, developers and integrators through events or interactions.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "The Plone Foundation is dedicated to providing a respectful, harassment-free community for everyone. We do not tolerate harassment or bullying of any community member in any form. This does not only extend to members of the Plone Foundation, but to anyone who chooses to become involved in the larger Plone community of users, developers and integrators through events or interactions."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "68a8f685-0a48-47f5-8f22-a80d50279fc7": {
+            "@type": "slate",
+            "plaintext": "All conference attendees, trainers, and organizers agree to abide by the Plone Code of Conduct, quoted below.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "All conference attendees, trainers, and organizers agree to abide by the Plone Code of Conduct, quoted below."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "8a1a04a3-bac8-4a22-87b4-1e3d154e0919": {
+            "@type": "slate",
+            "plaintext": "If you are being harassed, notice that someone else is being harassed, or have any other concerns, please act to intercede or ask for help from any member of the Plone Foundation Board, any Plone Foundation member, Slack admins, website admins, or the conference organizers. The email to report an incident is codeofconduct@plone.org.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "If you are being harassed, notice that someone else is being harassed, or have any other concerns, please act to intercede or ask for help from any member of the Plone Foundation Board, any Plone Foundation member, Slack admins, website admins, or the conference organizers. The email to report an incident is codeofconduct@plone.org."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "8d10b026-dbde-4647-b939-0021e407f972": {
+            "@type": "slate",
+            "plaintext": "Harassment includes offensive verbal/electronic comments related to personal characteristics or choices, sexual images or comments in public or online spaces, deliberate intimidation, bullying, stalking, following, harassing photography or recording, sustained disruption of talks, Slack chats, electronic meetings, physical meetings or other events, inappropriate physical contact, or unwelcome sexual attention. Participants asked to stop any harassing or bullying behavior are expected to comply immediately.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Harassment includes offensive verbal/electronic comments related to personal characteristics or choices, sexual images or comments in public or online spaces, deliberate intimidation, bullying, stalking, following, harassing photography or recording, sustained disruption of talks, Slack chats, electronic meetings, physical meetings or other events, inappropriate physical contact, or unwelcome sexual attention. Participants asked to stop any harassing or bullying behavior are expected to comply immediately."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "a9fd8fa1-c3db-45e3-b19b-e06ad31b1920": {
+            "@type": "slate",
+            "plaintext": "If you are being harassed, notice that someone else is being harassed, or have any other concerns, please act to intercede or ask for help from any member of the Plone Foundation, Slack admins, website admins, or organizers/representatives of any physical events put on under the auspices of the Plone Foundation.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "If you are being harassed, notice that someone else is being harassed, or have any other concerns, please act to intercede or ask for help from any member of the Plone Foundation, Slack admins, website admins, or organizers/representatives of any physical events put on under the auspices of the Plone Foundation."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "c8236bf7-6288-435d-a833-d3313f391552": {
+            "@type": "title"
+        },
+        "c9e74516-f2f9-4bec-96fe-bdbfee64e962": {
+            "@type": "slate",
+            "plaintext": "All reports to codeofconduct@plone.org will be handled with confidentiality. The responder team can also assist in finding further help if desired, but will do so only with your consent.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "All reports to codeofconduct@plone.org will be handled with confidentiality. The responder team can also assist in finding further help if desired, but will do so only with your consent."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "c8236bf7-6288-435d-a833-d3313f391552",
+            "68a8f685-0a48-47f5-8f22-a80d50279fc7",
+            "8a1a04a3-bac8-4a22-87b4-1e3d154e0919",
+            "4bfa609b-5bbf-4535-a9c3-f1d1e7d42829",
+            "c9e74516-f2f9-4bec-96fe-bdbfee64e962",
+            "4850fa55-756e-4e37-a1b3-c7a8f2e4af9c",
+            "59b71370-c4e9-4486-874d-26bdddba6310",
+            "8d10b026-dbde-4647-b939-0021e407f972",
+            "3ae205b8-4d62-4181-8023-8fc268a5a80d",
+            "a9fd8fa1-c3db-45e3-b19b-e06ad31b1920"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-13T03:03:33+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": "2023-12-13T00:03:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "code-of-conduct",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T03:03:44+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/about",
+        "@type": "Document",
+        "UID": "22dd8a04f75c452a84149167914836cd",
+        "description": "Two conferences, one location",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "About",
+        "type_title": "Page"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Code of Conduct",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T03:03:33+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-13T03:03:44+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

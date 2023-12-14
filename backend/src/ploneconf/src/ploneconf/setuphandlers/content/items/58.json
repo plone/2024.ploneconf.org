@@ -1,0 +1,69 @@
+{
+    "@id": "/pt-br/patrocinio/organizer/associacao-python-brasil",
+    "@type": "Sponsor",
+    "UID": "bfa1ae4b0c5c4402b360e0aa28744626",
+    "allow_discussion": false,
+    "created": "2023-12-13T02:05:28+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "A Associa\u00e7\u00e3o Python Brasil (APyB), tamb\u00e9m conhecida como Associa\u00e7\u00e3o Python Brasil, \u00e9 uma organiza\u00e7\u00e3o sem fins lucrativos formada com o objetivo principal de nutrir e apoiar a comunidade da linguagem de programa\u00e7\u00e3o Python no Brasil. Fundada em 2007 para promover o crescimento e a dissemina\u00e7\u00e3o de conhecimentos e tecnologias relacionadas ao Python, a APyB tem sido uma for\u00e7a motriz na promo\u00e7\u00e3o de uma comunidade Python vibrante no pa\u00eds. Desde a sua cria\u00e7\u00e3o, a associa\u00e7\u00e3o tem desempenhado um papel fundamental na organiza\u00e7\u00e3o de eventos, confer\u00eancias e encontros que re\u00fanem entusiastas, desenvolvedores e profissionais de Python de diversas origens.",
+    "exclude_from_nav": false,
+    "github": "https://github.com/pythonbrasil",
+    "id": "associacao-python-brasil",
+    "image": {
+        "blob_path": "blobs/bfa1ae4b0c5c4402b360e0aa28744626-image/APYB.png",
+        "content-type": "image/png",
+        "filename": "APYB.png",
+        "height": 768,
+        "size": 104445,
+        "width": 1024
+    },
+    "image_caption": null,
+    "instagram": null,
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "view",
+    "linkedin": null,
+    "lock": {},
+    "mastodon": null,
+    "modified": "2023-12-14T02:50:36+00:00",
+    "parent": {
+        "@id": "/pt-br/patrocinio/organizer",
+        "@type": "SponsorLevel",
+        "UID": "7ba960fa24fc4e15a90a8d813db465bc",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Organiza\u00e7\u00e3o",
+        "type_title": "Sponsorship Level"
+    },
+    "remoteUrl": "https://python.org.br/apyb/",
+    "review_state": "published",
+    "subjects": [],
+    "title": "Associa\u00e7\u00e3o Python Brasil",
+    "twitter": "https://twitter.com/apyb",
+    "type_title": "Sponsor",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T02:05:28+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-13T02:06:16+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

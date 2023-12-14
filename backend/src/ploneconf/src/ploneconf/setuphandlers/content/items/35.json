@@ -1,0 +1,69 @@
+{
+    "@id": "/en/sponsors/organizer/grupy-df",
+    "@type": "Sponsor",
+    "UID": "e6ff6cdf5dd143d6a5292f0434c508cb",
+    "allow_discussion": false,
+    "created": "2023-12-12T21:22:53+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Grupy-DF is a vibrant community of Python language enthusiasts, formed in 2015, including both professionals and hobbyists, centered in Bras\u00edlia. We prioritize the exchange of knowledge, mutual respect, and diversity as our core values.",
+    "exclude_from_nav": false,
+    "github": "https://github.com/grupydf",
+    "id": "grupy-df",
+    "image": {
+        "blob_path": "blobs/e6ff6cdf5dd143d6a5292f0434c508cb-image/GrupyDF.png",
+        "content-type": "image/png",
+        "filename": "GrupyDF.png",
+        "height": 768,
+        "size": 31728,
+        "width": 1024
+    },
+    "image_caption": null,
+    "instagram": null,
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "linkedin": null,
+    "lock": {},
+    "mastodon": null,
+    "modified": "2023-12-13T20:08:35+00:00",
+    "parent": {
+        "@id": "/en/sponsors/organizer",
+        "@type": "SponsorLevel",
+        "UID": "835174bcbad2499d89d3f614508bf4dd",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Organized by",
+        "type_title": "Sponsorship Level"
+    },
+    "remoteUrl": "https://grupydf.github.io/",
+    "review_state": "published",
+    "subjects": [],
+    "title": "GruPy-DF",
+    "twitter": null,
+    "type_title": "Sponsor",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T21:22:53+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T21:28:24+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

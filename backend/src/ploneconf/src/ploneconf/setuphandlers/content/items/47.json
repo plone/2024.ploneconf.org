@@ -1,0 +1,150 @@
+{
+    "@id": "/pt-br",
+    "@type": "LRF",
+    "UID": "6c100fff1fd84349816f5b0eac07f12f",
+    "allow_discussion": false,
+    "blocks": {
+        "4830fe4b-402a-4d44-aa6a-3e2840bf72d8": {
+            "@type": "slider",
+            "slides": [
+                {
+                    "@id": "93531c8f-1fe0-4508-8fba-b20acb875b6d",
+                    "description": "Engenheira s\u00eanior de experi\u00eancia do desenvolvedor na Quansight, onde contribui para projetos como NumPy e SciPy",
+                    "flagAlign": "left",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/pt-br/noticias/melissa-weber-mendonca-anunciada-como-keynote",
+                            "@type": "News Item",
+                            "Description": "Engenheira s\u00eanior de experi\u00eancia do desenvolvedor na Quansight, onde contribui para projetos como NumPy e SciPy",
+                            "Title": "Melissa Weber Mendon\u00e7a anunciada como keynote",
+                            "hasPreviewImage": null,
+                            "head_title": null,
+                            "image_field": "image",
+                            "image_scales": {
+                                "image": [
+                                    {
+                                        "content-type": "image/jpeg",
+                                        "download": "@@images/image-1599-04d7109c8f2c148bc3655118227fb581.jpeg",
+                                        "filename": "photo_2023-12-12_11-47-44.jpg",
+                                        "height": 900,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/image-1200-97096e5f68a469aaaee5957c3a39bf85.jpeg",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "icon": {
+                                                "download": "@@images/image-32-f225ae199a3062d6a3c10653a3902cac.jpeg",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/image-800-f25890d191bf3677f526e92bc83989a0.jpeg",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/image-1000-b2a034d1a0fbee8be3e97288d2a32548.jpeg",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/image-200-73dc612840cb7f7b77195a86ffa04de1.jpeg",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/image-400-bfc23256a2cee3bb307776fddff8bf16.jpeg",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/image-600-84254999a354181174b116dfdea7110d.jpeg",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/image-128-838082758b8cf67d4523d982e30b90f6.jpeg",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/image-64-15de85c095f89ba4cfd9742d2ab99dec.jpeg",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 235653,
+                                        "width": 1599
+                                    }
+                                ]
+                            },
+                            "title": "Melissa Weber Mendon\u00e7a anunciada como keynote"
+                        }
+                    ],
+                    "title": "Melissa Weber Mendon\u00e7a anunciada como keynote"
+                }
+            ],
+            "styles": {}
+        },
+        "4fd0965b-efcf-4c06-8492-adbc9e8da1f2": {
+            "@type": "sponsorsList"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "4830fe4b-402a-4d44-aa6a-3e2840bf72d8",
+            "4fd0965b-efcf-4c06-8492-adbc9e8da1f2"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-08T20:54:10+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "pt-br",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-12-13T17:12:20+00:00",
+    "parent": {
+        "@id": "/",
+        "@type": "Plone Site",
+        "UID": "61aa94d0c5a0471bbefcd1ff128795f1",
+        "description": "",
+        "title": "Plone Conference 2024",
+        "type_title": "Plone Site"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Python Cerrado 2024",
+    "type_title": "Language Root Folder",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T20:54:10+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-08T20:54:10+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

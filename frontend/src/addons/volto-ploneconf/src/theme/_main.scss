@@ -1,0 +1,23 @@
+// This theme extends the volto-light-theme
+// it is injected
+
+@import 'root';
+@import 'layout';
+@import 'typography';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumbs';
+@import 'components/links';
+@import 'components/tags';
+@import 'components/sponsor';
+@import 'components/blocks_group_wrapper';
+@import 'components/block_accordion';
+@import 'components/block_button';
+@import 'components/block_grid';
+@import 'components/block_sponsorLevel';
+@import 'components/block_sponsors';
+@import 'components/block_statistics';
+@import 'components/color_picker';
+@import 'components/view_sponsor';
+@import 'sections/section_about';
+@import 'sections/section_sponsors';

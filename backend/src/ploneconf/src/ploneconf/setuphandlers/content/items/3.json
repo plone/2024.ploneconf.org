@@ -1,0 +1,371 @@
+{
+    "@id": "/en/about",
+    "@type": "Document",
+    "UID": "22dd8a04f75c452a84149167914836cd",
+    "allow_discussion": false,
+    "blocks": {
+        "12018a07-d9da-4b20-b9c7-0fb321d28d38": {
+            "@type": "teaser",
+            "description": "This is the 22nd edition of the annual Plone Conference",
+            "head_title": null,
+            "href": [
+                {
+                    "@id": "/en/about/plone-conference-history",
+                    "@type": "Document",
+                    "Description": "This is the 22nd edition of the annual Plone Conference",
+                    "Title": "Plone Conference",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": null,
+                    "head_title": null,
+                    "image_field": "",
+                    "title": "Plone Conference"
+                }
+            ],
+            "preview_image": [
+                {
+                    "@id": "/en/assets/ploneconference-2024.png",
+                    "image_field": "image",
+                    "title": "Logo Plone Conference"
+                }
+            ],
+            "styles": {
+                "align": "right"
+            },
+            "title": "Plone Conference"
+        },
+        "1607aaf4-785c-46fa-9b0f-37ad658e2cee": {
+            "@type": "slate",
+            "plaintext": "Following on the footsteps of the 2013 Plone Conference, this year's edition will be held together with a Brazilian regional Python Conference: Python Cerrado.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Following on the footsteps of the 2013 Plone Conference, this year's edition will be held together with a Brazilian regional Python Conference: Python Cerrado."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "260cd31f-18f3-4d49-bd85-440915888207": {
+            "@type": "title"
+        },
+        "4c973ec5-a206-413d-a528-2f73f6d5727f": {
+            "@type": "slate",
+            "plaintext": "Bras\u00edlia",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Bras\u00edlia"
+                        }
+                    ],
+                    "type": "h2"
+                }
+            ]
+        },
+        "5bc54b26-b943-441d-aa22-6d92df3eecd9": {
+            "@type": "gridBlock",
+            "blocks": {
+                "255a4542-0058-42c9-9551-a4a1cb6fc926": {
+                    "@type": "image",
+                    "align": "center",
+                    "credit": {},
+                    "description": "Roberto Castro - MTUR",
+                    "image_field": "image",
+                    "image_scales": {
+                        "image": [
+                            {
+                                "content-type": "image/jpeg",
+                                "download": "@@images/image-2048-69993673c715c9ccefbf716aa428c301.jpeg",
+                                "filename": "40015024265_0b74856540_k.jpg",
+                                "height": 1365,
+                                "scales": {
+                                    "great": {
+                                        "download": "@@images/image-1200-5b2aa28d9f9c9e050e54751bd3e1d2fe.jpeg",
+                                        "height": 799,
+                                        "width": 1200
+                                    },
+                                    "huge": {
+                                        "download": "@@images/image-1600-809651c05f3056eae60e706ae4226368.jpeg",
+                                        "height": 1066,
+                                        "width": 1600
+                                    },
+                                    "icon": {
+                                        "download": "@@images/image-32-e5375e16d28a5d44eb7943635adb255e.jpeg",
+                                        "height": 21,
+                                        "width": 32
+                                    },
+                                    "large": {
+                                        "download": "@@images/image-800-00409218ab67d94e7794a1e9f29fe25a.jpeg",
+                                        "height": 533,
+                                        "width": 800
+                                    },
+                                    "larger": {
+                                        "download": "@@images/image-1000-04381caa938a05c3e32df29235364c3b.jpeg",
+                                        "height": 666,
+                                        "width": 1000
+                                    },
+                                    "mini": {
+                                        "download": "@@images/image-200-89633c466c81c1f9ce0521342ded5fd6.jpeg",
+                                        "height": 133,
+                                        "width": 200
+                                    },
+                                    "preview": {
+                                        "download": "@@images/image-400-e11b03f20a33cc815891dd7b5448618c.jpeg",
+                                        "height": 266,
+                                        "width": 400
+                                    },
+                                    "teaser": {
+                                        "download": "@@images/image-600-fe0c5ad2f592ed6d7ffde74880f7adb7.jpeg",
+                                        "height": 399,
+                                        "width": 600
+                                    },
+                                    "thumb": {
+                                        "download": "@@images/image-128-a1eed5b5632b674abe83d7005a021ce1.jpeg",
+                                        "height": 85,
+                                        "width": 128
+                                    },
+                                    "tile": {
+                                        "download": "@@images/image-64-b4f777df1d87db44645a8310003be1e5.jpeg",
+                                        "height": 42,
+                                        "width": 64
+                                    }
+                                },
+                                "size": 320999,
+                                "width": 2048
+                            }
+                        ]
+                    },
+                    "size": "l",
+                    "url": "/en/assets/bsb-igreja-nossa-senhora.jpg"
+                },
+                "d12a0dbd-b350-4060-9d6c-c99d45a9b244": {
+                    "@type": "image",
+                    "align": "center",
+                    "credit": {},
+                    "description": "Governo do Distrito Federal/Bento Viana",
+                    "image_field": "image",
+                    "image_scales": {
+                        "image": [
+                            {
+                                "content-type": "image/jpeg",
+                                "download": "@@images/image-2048-1899b73d0807a8c949ac702d1d2ba4ae.jpeg",
+                                "filename": "42238693494_70315faab8_k.jpg",
+                                "height": 1365,
+                                "scales": {
+                                    "great": {
+                                        "download": "@@images/image-1200-1e566dc567581dd32c029595b188078f.jpeg",
+                                        "height": 799,
+                                        "width": 1200
+                                    },
+                                    "huge": {
+                                        "download": "@@images/image-1600-9e52502db3163cd788a2154bde34287d.jpeg",
+                                        "height": 1066,
+                                        "width": 1600
+                                    },
+                                    "icon": {
+                                        "download": "@@images/image-32-a5dce6219c4061cfd4ad54e8d2ac50f7.jpeg",
+                                        "height": 21,
+                                        "width": 32
+                                    },
+                                    "large": {
+                                        "download": "@@images/image-800-af07ca4811be3e3575a38b4ab4d91895.jpeg",
+                                        "height": 533,
+                                        "width": 800
+                                    },
+                                    "larger": {
+                                        "download": "@@images/image-1000-7cb2a2f6dcf9ceba002388199d04b018.jpeg",
+                                        "height": 666,
+                                        "width": 1000
+                                    },
+                                    "mini": {
+                                        "download": "@@images/image-200-c4c8522fcbf1e2db6afe9584248abc06.jpeg",
+                                        "height": 133,
+                                        "width": 200
+                                    },
+                                    "preview": {
+                                        "download": "@@images/image-400-2aaad187e88bc62db9cf264a2cb5a9e6.jpeg",
+                                        "height": 266,
+                                        "width": 400
+                                    },
+                                    "teaser": {
+                                        "download": "@@images/image-600-530f8f16f723e6d59e1f1102b94fda2f.jpeg",
+                                        "height": 399,
+                                        "width": 600
+                                    },
+                                    "thumb": {
+                                        "download": "@@images/image-128-757e24011f0aeccd9250d8ff72168bb2.jpeg",
+                                        "height": 85,
+                                        "width": 128
+                                    },
+                                    "tile": {
+                                        "download": "@@images/image-64-a495863e47ef24fda9c5f2dc4e922c57.jpeg",
+                                        "height": 42,
+                                        "width": 64
+                                    }
+                                },
+                                "size": 1074127,
+                                "width": 2048
+                            }
+                        ]
+                    },
+                    "size": "l",
+                    "url": "/en/assets/bsb-pontao.jpg"
+                },
+                "d289caef-59d2-40ef-a9a8-0afa48187187": {
+                    "@type": "image",
+                    "align": "center",
+                    "credit": {},
+                    "description": "Roberto Castro - MTUR",
+                    "image_field": "image",
+                    "image_scales": {
+                        "image": [
+                            {
+                                "content-type": "image/jpeg",
+                                "download": "@@images/image-2048-9bb361b36ee6ce8a95454b7461e5369d.jpeg",
+                                "filename": "39098942930_b89d11cc8e_k.jpg",
+                                "height": 1152,
+                                "scales": {
+                                    "great": {
+                                        "download": "@@images/image-1200-e7696ffa9224ee7e833a86bd219e3592.jpeg",
+                                        "height": 675,
+                                        "width": 1200
+                                    },
+                                    "huge": {
+                                        "download": "@@images/image-1600-427480c995cb72804afea0a5efd5abf5.jpeg",
+                                        "height": 900,
+                                        "width": 1600
+                                    },
+                                    "icon": {
+                                        "download": "@@images/image-32-e238e11413360b8c6de30ace53c03c8d.jpeg",
+                                        "height": 18,
+                                        "width": 32
+                                    },
+                                    "large": {
+                                        "download": "@@images/image-800-832ceb6307cae85ce5283a14821bd02b.jpeg",
+                                        "height": 450,
+                                        "width": 800
+                                    },
+                                    "larger": {
+                                        "download": "@@images/image-1000-71eb1b300f85d7c08c1eaf065e4e2794.jpeg",
+                                        "height": 562,
+                                        "width": 1000
+                                    },
+                                    "mini": {
+                                        "download": "@@images/image-200-706fe2cd2ffd7a634704e090f988f4b6.jpeg",
+                                        "height": 112,
+                                        "width": 200
+                                    },
+                                    "preview": {
+                                        "download": "@@images/image-400-0ba44113548608e49384fe689e4d02fc.jpeg",
+                                        "height": 225,
+                                        "width": 400
+                                    },
+                                    "teaser": {
+                                        "download": "@@images/image-600-9273180fcdf31ae6eb76999c6d8eea68.jpeg",
+                                        "height": 337,
+                                        "width": 600
+                                    },
+                                    "thumb": {
+                                        "download": "@@images/image-128-3bad1049e45efb27420c8d5a85d6ceb8.jpeg",
+                                        "height": 72,
+                                        "width": 128
+                                    },
+                                    "tile": {
+                                        "download": "@@images/image-64-40f4d0d5b6e8f06d7d463cda3c31a1d2.jpeg",
+                                        "height": 36,
+                                        "width": 64
+                                    }
+                                },
+                                "size": 273725,
+                                "width": 2048
+                            }
+                        ]
+                    },
+                    "size": "l",
+                    "url": "/en/assets/bsb-stf.jpg"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "255a4542-0058-42c9-9551-a4a1cb6fc926",
+                    "d12a0dbd-b350-4060-9d6c-c99d45a9b244",
+                    "d289caef-59d2-40ef-a9a8-0afa48187187"
+                ]
+            },
+            "styles": {
+                "backgroundColor": "grey"
+            }
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "260cd31f-18f3-4d49-bd85-440915888207",
+            "1607aaf4-785c-46fa-9b0f-37ad658e2cee",
+            "12018a07-d9da-4b20-b9c7-0fb321d28d38",
+            "4c973ec5-a206-413d-a528-2f73f6d5727f",
+            "5bc54b26-b943-441d-aa22-6d92df3eecd9"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-08T20:58:36+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Two conferences, one location",
+    "effective": "2023-12-09T14:09:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "about",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T20:25:08+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en",
+        "@type": "LRF",
+        "UID": "bdec9a22690a459b8190ff7d82c1f5d2",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "2024 Plone Conference",
+        "type_title": "Language Root Folder"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "About",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T20:58:36+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-09T17:09:32+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

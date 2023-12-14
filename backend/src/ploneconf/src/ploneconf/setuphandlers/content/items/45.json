@@ -1,0 +1,136 @@
+{
+    "@id": "/en/sponsors/sponsor",
+    "@type": "Document",
+    "UID": "e1c2c18136e6457e97eed3a1022ebb5d",
+    "allow_discussion": false,
+    "blocks": {
+        "745701ca-2121-430d-b47b-456ec5b7270a": {
+            "@type": "title"
+        },
+        "a50d2c28-df93-4ffc-8706-d06346a148aa": {
+            "@type": "form",
+            "default_from": "conf@plone.org",
+            "default_subject": "New Sponsor",
+            "default_to": "sponsor@plone.org",
+            "lastChange": 1702490642188,
+            "send_email": true,
+            "show_cancel": false,
+            "store": true,
+            "subblocks": [
+                {
+                    "description": "Please tell us the organization that wants to sponsor the conference",
+                    "field_id": "1702490424402",
+                    "field_type": "text",
+                    "id": "1702490424402",
+                    "label": "Company Name",
+                    "required": true
+                },
+                {
+                    "field_id": "1702490554297",
+                    "field_type": "text",
+                    "id": "1702490554297",
+                    "label": "Your Name",
+                    "required": true
+                },
+                {
+                    "field_id": "1702490562417",
+                    "field_type": "from",
+                    "id": "1702490562417",
+                    "label": "E-mail",
+                    "required": true
+                },
+                {
+                    "field_id": "1702490582371",
+                    "field_type": "single_choice",
+                    "id": "1702490582371",
+                    "input_values": [
+                        "Diamond",
+                        "Platinum",
+                        "Gold",
+                        "Silver",
+                        "Bronze",
+                        "Supporting"
+                    ],
+                    "label": "Sponsorship level",
+                    "required": true
+                },
+                {
+                    "field_id": "1702490633310",
+                    "field_type": "textarea",
+                    "id": "1702490633310",
+                    "label": "Additional Comments",
+                    "required": false
+                }
+            ],
+            "submit_label": "Send"
+        },
+        "d4eb8292-a9a3-460c-bc71-5136144c9a51": {
+            "@type": "slate"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "745701ca-2121-430d-b47b-456ec5b7270a",
+            "a50d2c28-df93-4ffc-8706-d06346a148aa",
+            "d4eb8292-a9a3-460c-bc71-5136144c9a51"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-13T18:04:15+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "Sponsor both events",
+    "effective": "2023-12-13T15:06:39",
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "sponsor",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T18:06:49+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/sponsors",
+        "@type": "SponsorsDB",
+        "UID": "55d9947b86084264add5cf963ced75ba",
+        "description": "Support our conference",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Sponsorship",
+        "type_title": "Sponsors Database"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Sponsor",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T18:04:15+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-13T18:06:39+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

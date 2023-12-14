@@ -1,0 +1,96 @@
+{
+    "@id": "/pt-br/patrocinio/organizer",
+    "@type": "SponsorLevel",
+    "UID": "7ba960fa24fc4e15a90a8d813db465bc",
+    "allow_discussion": false,
+    "blocks": {
+        "1b262b61-70a7-438e-bc6b-7afc68ffdb0d": {
+            "@type": "sponsorLevel"
+        },
+        "292a34c9-4570-4f2c-9274-e3f427abdac2": {
+            "@canonical": "b73a2210-72a5-4f42-8853-b816360a533f",
+            "@type": "title",
+            "block": "292a34c9-4570-4f2c-9274-e3f427abdac2"
+        },
+        "cb0c1aeb-64d0-4f0d-a63d-28269232c030": {
+            "@canonical": "4fad3797-1682-4396-83b3-49ffa2b9f735",
+            "@type": "slate",
+            "block": "cb0c1aeb-64d0-4f0d-a63d-28269232c030",
+            "plaintext": "O Python Cerrado 2024 e a Plone Conference 2024 tem organiza\u00e7\u00e3o",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "O Python Cerrado 2024 e a Plone Conference 2024 tem organiza\u00e7\u00e3o"
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "292a34c9-4570-4f2c-9274-e3f427abdac2",
+            "cb0c1aeb-64d0-4f0d-a63d-28269232c030",
+            "1b262b61-70a7-438e-bc6b-7afc68ffdb0d"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-12T21:12:25+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "display_frontpage": false,
+    "effective": "2023-12-12T18:13:00",
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "organizer",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-12-13T17:11:17+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/pt-br/patrocinio",
+        "@type": "SponsorsDB",
+        "UID": "70a87f4d82604ccda0a2e92fb367f337",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Patroc\u00ednio",
+        "type_title": "Sponsors Database"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Organiza\u00e7\u00e3o",
+    "type_title": "Sponsorship Level",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T21:12:25+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T21:13:48+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

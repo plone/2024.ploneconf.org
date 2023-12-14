@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object meta_type="Plone Types Tool"
+        name="portal_types"
+>
+  <!-- Our Content types -->
+  <object meta_type="Dexterity FTI"
+          name="SponsorsDB"
+  />
+  <object meta_type="Dexterity FTI"
+          name="SponsorLevel"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Sponsor"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Person"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Slot"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Training"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Talk"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Keynote"
+  />
+</object>

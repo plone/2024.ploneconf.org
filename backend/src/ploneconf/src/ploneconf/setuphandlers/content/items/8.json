@@ -1,0 +1,78 @@
+{
+    "@id": "/en/about/python-cerrado-history",
+    "@type": "Document",
+    "UID": "5b6afec945724f2a8278c01084dae998",
+    "allow_discussion": false,
+    "blocks": {
+        "0924c341-7005-40f4-9fb0-5596d6567df7": {
+            "@type": "slate"
+        },
+        "2faf666a-c4ec-4876-9b09-94d785b0ba6d": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "2faf666a-c4ec-4876-9b09-94d785b0ba6d",
+            "0924c341-7005-40f4-9fb0-5596d6567df7"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-09T16:59:14+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": "2023-12-09T14:09:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "python-cerrado-history",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T04:25:22+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/about",
+        "@type": "Document",
+        "UID": "22dd8a04f75c452a84149167914836cd",
+        "description": "Two conferences, one location",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "About",
+        "type_title": "Page"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Python Cerrado",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-09T16:59:14+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-09T17:09:56+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

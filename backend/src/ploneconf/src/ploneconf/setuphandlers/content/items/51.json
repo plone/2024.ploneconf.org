@@ -1,0 +1,883 @@
+{
+    "@id": "/pt-br/patrocinio",
+    "@type": "SponsorsDB",
+    "UID": "70a87f4d82604ccda0a2e92fb367f337",
+    "allow_discussion": false,
+    "blocks": {
+        "0b646c27-6d56-4fb2-8438-d9c93a4a193b": {
+            "@type": "slate",
+            "plaintext": "Treinar novas pessoas para usar e desenvolver em Python e Plone Mostrar a outras pessoas projetos e solu\u00e7\u00f5es incr\u00edveis feitos com essas tecnologias Aprimorar e desenvolver novos produtos Conviver com uma comunidade incr\u00edvel de pessoas de todo o mundo",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "text": "Treinar novas pessoas para usar e desenvolver em Python e Plone"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": "Mostrar a outras pessoas projetos e solu\u00e7\u00f5es incr\u00edveis feitos com essas tecnologias"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": "Aprimorar e desenvolver novos produtos"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": "Conviver com uma comunidade incr\u00edvel de pessoas de todo o mundo"
+                                }
+                            ],
+                            "type": "li"
+                        }
+                    ],
+                    "type": "ul"
+                }
+            ]
+        },
+        "0d1faea1-5dd9-449c-be66-5c29e21f00ce": {
+            "@canonical": "3dc47837-b447-4288-99db-21d582b9ed28",
+            "@type": "title",
+            "block": "0d1faea1-5dd9-449c-be66-5c29e21f00ce"
+        },
+        "2627204c-99ca-4a96-bab3-95dea6dc445d": {
+            "@canonical": "97c3290f-0cab-4fff-808c-d906df0f3640",
+            "@type": "gridBlock",
+            "block": "2627204c-99ca-4a96-bab3-95dea6dc445d",
+            "blocks": {
+                "3ebef10e-1c3d-4f78-a774-07451cb319a8": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/pt-br/patrocinio/platinum",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Platina",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-b16acd57b5e0725d6c2c5eaee0c38bed.png",
+                                        "filename": "Platinum.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-2b91ce62f93e71a8634df8ee6d9db376.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-cb8929555ae9dbd381b4ce74e8af9163.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-8d23599e06e945642538765127f88b8e.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-625df25387a8ab1a3a983e926b958c01.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-b2064ee01ff0c7aec021b87bde556921.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-0e4a0fbf1a9dec42ff53dbfb392cf421.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-01421899efc9fef31be2b91279cd4754.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-768b8e276f031c65fedd28e633e8d0e0.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-3473ac52c7d3d39293ef2a5ec0b0f62e.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-eb29fbbb48d90f67d8aaac28a607fc90.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 642078,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Platina"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Platina"
+                },
+                "ceb745d1-9a19-489d-8a81-8859d02a4278": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/pt-br/patrocinio/gold",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Ouro",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-d0e4dc72b3aca0aadf8e4f88628c19bd.png",
+                                        "filename": "Gold.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-37b93d5878fa266fb7b818f02296a12e.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-756463d4bc76f803328f73862cfc0089.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-62aa9ebc263fc68e9107de29cff879e2.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-9778e12d9f8f1a7ba434c8605df50333.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-62d50ce437fb6a6e8ec7345715a72967.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-c8ec3cccc08c6b43591d33db0df78b8e.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-24f7b99de822375ac8db821d2a0b30d7.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-23834c642f07036d78a536285c98ee92.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-668ba2b2b79b3f0d962139a5edb61e9e.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-782f3c9d97144ba41cb05e5f82e223a4.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 605367,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Ouro"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Ouro"
+                },
+                "cfea6dd0-0215-43a4-9e20-1ff440c807b7": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/pt-br/patrocinio/diamond",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Diamante",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-18741be6b185c8b497c7fa2868581771.png",
+                                        "filename": "Diamond.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-b5e113016fa4bedc4728c3f3f418a627.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-0659b6ea59ea3e5ffc95be4337bb68e9.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-a20fe21f9039c976281750b754b65421.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-632ff48c34a890c3b8c0dcdbd486c765.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-55ee35b9a89474d141c6556b44f99f4d.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-035a0836ab537c51c9f8316908eac6e2.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-6789ba9a690c65130119227a917259e9.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-d4927157a4263ffcbb3876190b6d7fe1.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-6925bf4eb33262d0e7cf1b38f1ef04be.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-ba886761a540a898a924ad3500fec69e.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 578626,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Diamante"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Diamante"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "cfea6dd0-0215-43a4-9e20-1ff440c807b7",
+                    "3ebef10e-1c3d-4f78-a774-07451cb319a8",
+                    "ceb745d1-9a19-489d-8a81-8859d02a4278"
+                ]
+            },
+            "headline": "Pacotes",
+            "styles": {
+                "backgroundColor": "mainColor"
+            }
+        },
+        "2d0cae33-c784-4d30-9a7a-37256ddef8e4": {
+            "@canonical": "942b544e-ce7b-4aa5-9dec-fa33eda383aa",
+            "@type": "slate",
+            "block": "2d0cae33-c784-4d30-9a7a-37256ddef8e4",
+            "plaintext": "Oportunidades de apoio",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Oportunidades de apoio"
+                        }
+                    ],
+                    "type": "h2"
+                }
+            ]
+        },
+        "2f5bafbe-1cfe-4488-b90a-cd4dceb0d09d": {
+            "@type": "slate",
+            "plaintext": "Temos v\u00e1rios n\u00edveis de patroc\u00ednio que lhe proporcionam diferentes benef\u00edcios, conforme listado abaixo.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Temos v\u00e1rios n\u00edveis de patroc\u00ednio que lhe proporcionam diferentes benef\u00edcios, conforme listado abaixo."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "6a36ac7a-5fa4-4462-bdb3-176f3a1e4329": {
+            "@type": "slate",
+            "plaintext": "Com o seu patroc\u00ednio, voc\u00ea ter\u00e1 visibilidade \u00fanica para um p\u00fablico qualificado.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Com o seu patroc\u00ednio, voc\u00ea ter\u00e1 visibilidade \u00fanica para um p\u00fablico qualificado."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "b3e93e3e-d77f-49b9-bcaa-a2749fbc28da": {
+            "@canonical": "85fc1423-d7ce-4490-80a9-0e709a90262f",
+            "@type": "gridBlock",
+            "block": "b3e93e3e-d77f-49b9-bcaa-a2749fbc28da",
+            "blocks": {
+                "35e94df7-c45d-494b-a382-b8c778e62f46": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/pt-br/patrocinio/bronze",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Bronze",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-c0af934f2763cfb4e49933aa981fc8d4.png",
+                                        "filename": "Bronze.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-1cd05a81dfad3274b8c7b7182bb03566.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-714da033c700cada2d62a5e428cd4d86.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-992a65bbc9834470cbe5baf9a9b3a65b.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-d8cc43166971e198781aa79de3e710c3.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-ee886b537dba86ec59a80b89d4fbde42.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-a8a1f2e4fb2b50e34c9aa3997f8b1616.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-5fd593dbe467eedc422a5685fff1e201.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-75811a6423d2764b5baa700c17487ee8.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-46e99fca3ce487094057c4e5d7235760.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-e96d2f1a32b10f40fb4db25f7a3af06a.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 530943,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Bronze"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Bronze"
+                },
+                "42e4c18d-486c-4422-b18d-085a3c4159ce": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/pt-br/patrocinio/supporting",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Apoio",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-0203724e36c7d5042d28f98c93280ec8.png",
+                                        "filename": "Other Packages.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-601afd3f0201c98b68d1470fa78a0ed0.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-2b0293e4d629e7ec492f1534bc20d9f0.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-fcf7f74a13e93a36816dc28e4c27dc5e.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-29b7dde02ba99b8677862712e5d291b4.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-60f28908bd332eeffa1830564044e51b.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-d8aaf2b2c350dbe6615d2f97a357a52f.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-5fbf2fcfa43a3cd17cfb2dc0f8d0b467.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-8ca7500c5eae74fee3ff1481a489cd8f.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-6024ee4ae3de48b93c7fa9c3416da084.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-1c4d9930b11183e090614b36a6e0424d.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 838958,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Apoio"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Apoio"
+                },
+                "6cab9773-c55d-4047-ad53-0bd064515f2c": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/pt-br/patrocinio/silver",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Prata",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-3bca33b92da75a90e80bdc6742b5cf3b.png",
+                                        "filename": "Silver.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-ab7d1f677df10917e041528115b020c7.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-d8ed5dfb7e8dcd8c2baec2d2ee5907ce.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-be8c80154fd65d1aeb8fecd8a9a4cb9d.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-6d1990fd571370fecb2ecf324a4b7a5d.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-1c761f42326a3a3bbcd616796092e978.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-38a421041e16f9fa47708aec85ce80a6.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-70f5b0ab8c5eb45a31774433bf41c7f3.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-a480e02f2d333c2fcd6b6c2f87feb2ee.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-2978e4c8177a16659b1abe1825a0f268.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-c391f2f412138ac87cdc73064941ed22.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 589048,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Prata"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Prata"
+                },
+                "9035d22c-b2b2-460f-a9cd-7c813a77caf5": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/pt-br/patrocinio/oss",
+                            "@type": "SponsorLevel",
+                            "Description": "",
+                            "Title": "Comunidades",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "image_scales": {
+                                "preview_image": [
+                                    {
+                                        "content-type": "image/png",
+                                        "download": "@@images/preview_image-1920-eda93c5e95523bbf02f4e1966ed96556.png",
+                                        "filename": "Open source.png",
+                                        "height": 1080,
+                                        "scales": {
+                                            "great": {
+                                                "download": "@@images/preview_image-1200-af0c3c3f6c50c649534d982f16c5eb30.png",
+                                                "height": 675,
+                                                "width": 1200
+                                            },
+                                            "huge": {
+                                                "download": "@@images/preview_image-1600-543bfd98d7327d61fe78a8d260bb3881.png",
+                                                "height": 900,
+                                                "width": 1600
+                                            },
+                                            "icon": {
+                                                "download": "@@images/preview_image-32-604cd739a5bccbccf0a1cdcf7ee50766.png",
+                                                "height": 18,
+                                                "width": 32
+                                            },
+                                            "large": {
+                                                "download": "@@images/preview_image-800-15b293cabff2b8d0d5097ad1c5e04d50.png",
+                                                "height": 450,
+                                                "width": 800
+                                            },
+                                            "larger": {
+                                                "download": "@@images/preview_image-1000-aa76c1dee655109023f03d8b215351b7.png",
+                                                "height": 562,
+                                                "width": 1000
+                                            },
+                                            "mini": {
+                                                "download": "@@images/preview_image-200-63f915bb63ecb9a2022a4daea7a84890.png",
+                                                "height": 112,
+                                                "width": 200
+                                            },
+                                            "preview": {
+                                                "download": "@@images/preview_image-400-1544e7f423ba3d626916c34a21f439ce.png",
+                                                "height": 225,
+                                                "width": 400
+                                            },
+                                            "teaser": {
+                                                "download": "@@images/preview_image-600-e8cf35770d6e06961e456697e3f16b73.png",
+                                                "height": 337,
+                                                "width": 600
+                                            },
+                                            "thumb": {
+                                                "download": "@@images/preview_image-128-1da51bb25cac83f291cbc46885725429.png",
+                                                "height": 72,
+                                                "width": 128
+                                            },
+                                            "tile": {
+                                                "download": "@@images/preview_image-64-dc908b34127a170a3d1d62b76402fa07.png",
+                                                "height": 36,
+                                                "width": 64
+                                            }
+                                        },
+                                        "size": 719657,
+                                        "width": 1920
+                                    }
+                                ]
+                            },
+                            "title": "Comunidades"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Comunidades"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "6cab9773-c55d-4047-ad53-0bd064515f2c",
+                    "35e94df7-c45d-494b-a382-b8c778e62f46",
+                    "42e4c18d-486c-4422-b18d-085a3c4159ce",
+                    "9035d22c-b2b2-460f-a9cd-7c813a77caf5"
+                ]
+            },
+            "styles": {
+                "backgroundColor": "mainColor"
+            }
+        },
+        "cb13fb45-350e-4dec-9c7d-2d6a27d8a49f": {
+            "@type": "slate",
+            "plaintext": "N\u00e3o importa se voc\u00ea est\u00e1 envolvido com o Plone como usu\u00e1rio (criador de conte\u00fado, editor, administrador de site), integrador ou desenvolvedor. Com o seu patroc\u00ednio, voc\u00ea pode nos ajudar a organizar um evento onde podemos:",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "N\u00e3o importa se voc\u00ea est\u00e1 envolvido com o Plone como usu\u00e1rio (criador de conte\u00fado, editor, administrador de site), integrador ou desenvolvedor. Com o seu patroc\u00ednio, voc\u00ea pode nos ajudar a organizar um evento onde podemos:"
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "f4a74fa3-a1c0-4d05-a483-fe3f1b197fa3": {
+            "@canonical": "6c536774-8e99-4553-8dd3-53c7d1ccba4d",
+            "@type": "sponsorsList",
+            "block": "f4a74fa3-a1c0-4d05-a483-fe3f1b197fa3"
+        },
+        "faf1ca8d-7b76-4d5f-90d0-db29e5daddaa": {
+            "@type": "slate",
+            "plaintext": "Esse evento atrai uma grande variedade de pessoas todos os anos, mas todos t\u00eam a mesma coisa em comum: a comunidade .",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Esse evento atrai uma grande variedade de pessoas todos os anos, mas todos t\u00eam a mesma coisa em comum: "
+                        },
+                        {
+                            "children": [
+                                {
+                                    "text": "a comunidade"
+                                }
+                            ],
+                            "type": "strong"
+                        },
+                        {
+                            "text": "."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "fff1b318-e9eb-44bc-afe5-eac1d45d69ca": {
+            "@type": "gridBlock",
+            "blocks": {
+                "989642c8-2ebf-4bcf-a37e-d2d06e657182": {
+                    "@type": "__button",
+                    "href": [
+                        {
+                            "@id": "/pt-br/patrocinio/patrocine",
+                            "Description": "",
+                            "Title": "Patrocine",
+                            "hasPreviewImage": null,
+                            "title": "Patrocine"
+                        }
+                    ],
+                    "inneralign": "center",
+                    "title": "Patrocine j\u00e1!"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "989642c8-2ebf-4bcf-a37e-d2d06e657182"
+                ]
+            },
+            "headline": "Apoie",
+            "styles": {}
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "0d1faea1-5dd9-449c-be66-5c29e21f00ce",
+            "2d0cae33-c784-4d30-9a7a-37256ddef8e4",
+            "faf1ca8d-7b76-4d5f-90d0-db29e5daddaa",
+            "cb13fb45-350e-4dec-9c7d-2d6a27d8a49f",
+            "0b646c27-6d56-4fb2-8438-d9c93a4a193b",
+            "6a36ac7a-5fa4-4462-bdb3-176f3a1e4329",
+            "2f5bafbe-1cfe-4488-b90a-cd4dceb0d09d",
+            "2627204c-99ca-4a96-bab3-95dea6dc445d",
+            "b3e93e3e-d77f-49b9-bcaa-a2749fbc28da",
+            "fff1b318-e9eb-44bc-afe5-eac1d45d69ca",
+            "f4a74fa3-a1c0-4d05-a483-fe3f1b197fa3"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-12T17:03:28+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": "2023-12-12T14:09:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "patrocinio",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-12-14T14:22:15+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/pt-br",
+        "@type": "LRF",
+        "UID": "6c100fff1fd84349816f5b0eac07f12f",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Python Cerrado 2024",
+        "type_title": "Language Root Folder"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Patroc\u00ednio",
+    "type_title": "Sponsors Database",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T17:03:28+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T17:09:19+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

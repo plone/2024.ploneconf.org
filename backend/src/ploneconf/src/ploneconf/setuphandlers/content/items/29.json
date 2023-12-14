@@ -1,0 +1,69 @@
+{
+    "@id": "/en/sponsors/bronze/affinitic",
+    "@type": "Sponsor",
+    "UID": "a6ee77719d4c47e8abeb47de30e1b6c8",
+    "allow_discussion": false,
+    "created": "2023-12-08T22:23:30+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "exclude_from_nav": false,
+    "github": null,
+    "id": "affinitic",
+    "image": {
+        "blob_path": "blobs/a6ee77719d4c47e8abeb47de30e1b6c8-image/Affinitic.png",
+        "content-type": "image/png",
+        "filename": "Affinitic.png",
+        "height": 768,
+        "size": 64786,
+        "width": 1024
+    },
+    "image_caption": null,
+    "instagram": null,
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "linkedin": null,
+    "lock": {},
+    "mastodon": null,
+    "modified": "2023-12-13T01:48:54+00:00",
+    "parent": {
+        "@id": "/en/sponsors/bronze",
+        "@type": "SponsorLevel",
+        "UID": "667f949be2d2456f856e055b0e0245bd",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Bronze",
+        "type_title": "Sponsorship Level"
+    },
+    "remoteUrl": "https://affinitic.be/",
+    "review_state": "published",
+    "subjects": [],
+    "title": "Affinitic",
+    "twitter": null,
+    "type_title": "Sponsor",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T22:23:30+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-08T22:23:45+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

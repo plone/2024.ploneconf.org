@@ -1,0 +1,110 @@
+{
+    "@id": "/pt-br/patrocinio/patronage",
+    "@type": "SponsorLevel",
+    "UID": "3843e7c81f2a444987ed169fd082f546",
+    "allow_discussion": false,
+    "blocks": {
+        "55b3ed46-2dca-4e4e-85e2-f85e6ed52af3": {
+            "@canonical": "345677a0-b018-420e-b355-4b6f6ab205b7",
+            "@type": "slate",
+            "block": "55b3ed46-2dca-4e4e-85e2-f85e6ed52af3",
+            "plaintext": "Esse evento n\u00e3o seria poss\u00edvel sem nossos apoiadores!",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Esse evento n\u00e3o seria poss\u00edvel sem nossos apoiadores!"
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "5d1a7f87-f978-47b2-9dbc-8f0009f80bc9": {
+            "@canonical": "f6b5b8b4-8d4d-4358-afb5-568f44b9e6cf",
+            "@type": "title",
+            "block": "5d1a7f87-f978-47b2-9dbc-8f0009f80bc9"
+        },
+        "a71a4c96-efc9-41c6-b241-6c406d6b5edd": {
+            "@canonical": "e82c5eb2-2261-457f-a0f1-ef4e9130a146",
+            "@type": "slate",
+            "block": "a71a4c96-efc9-41c6-b241-6c406d6b5edd",
+            "plaintext": "",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "5d1a7f87-f978-47b2-9dbc-8f0009f80bc9",
+            "55b3ed46-2dca-4e4e-85e2-f85e6ed52af3",
+            "a71a4c96-efc9-41c6-b241-6c406d6b5edd"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-12T17:05:05+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "display_frontpage": false,
+    "effective": "2023-12-12T18:13:00",
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "patronage",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-12-12T21:14:12+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/pt-br/patrocinio",
+        "@type": "SponsorsDB",
+        "UID": "70a87f4d82604ccda0a2e92fb367f337",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Patroc\u00ednio",
+        "type_title": "Sponsors Database"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Apoio",
+    "type_title": "Sponsorship Level",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T17:05:05+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T21:13:48+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

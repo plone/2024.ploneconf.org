@@ -1,0 +1,33 @@
+{
+    "@id": "/Plone",
+    "@type": "Plone Site",
+    "UID": "61aa94d0c5a0471bbefcd1ff128795f1",
+    "allow_discussion": null,
+    "blocks": {},
+    "blocks_layout": {
+        "items": []
+    },
+    "contributors": [],
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "Plone",
+    "is_folderish": true,
+    "items_total": 2,
+    "language": "en",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "parent": {},
+    "review_state": null,
+    "rights": "",
+    "subjects": [],
+    "table_of_contents": null,
+    "title": "Plone Conference 2024",
+    "type_title": "Plone Site"
+}

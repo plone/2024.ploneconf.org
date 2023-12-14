@@ -1,0 +1,32 @@
+@use 'sass:math';
+
+$link-color: #000;
+$link-color-hover: #000;
+$container-background: #ecebeb;
+
+body.section-en {
+  --main-color: #016aad;
+  --alternate-color: #001522;
+  --reverse-color: #fff;
+  --link-color: var(--main-color);
+}
+
+body.section-pt-br {
+  --main-color: #3abdc4;
+  --alternate-color: #001522;
+  --reverse-color: #fff;
+  --link-color: var(--main-color);
+}
+
+// Images
+// Image Aspect Ratio
+$aspect-ratio: math.div(16, 9) !default;
+$teaser-images-aspect-ratio: math.div(16, 9) !default;
+
+// Animation
+@mixin animate-hover() {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}

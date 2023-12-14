@@ -1,0 +1,41 @@
+#main .tags {
+  display: flex;
+  align-items: center;
+
+  &.a.container.layout {
+    max-width: var(--default-container-width);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 1px solid var(--alternate-color);
+    border-bottom: 1px solid var(--alternate-color);
+    @media only screen and (max-width: $largest-mobile-screen) {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  .icon {
+    color: var(--alternate-color);
+  }
+
+  .ui.tag {
+    display: inline-block;
+    border-radius: 4px;
+    margin-left: 8px;
+    color: var(--alternate-color);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+}
+
+#main .tags-wrapper {
+  text-align: center;
+
+  .tags {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}

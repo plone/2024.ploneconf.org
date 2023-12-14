@@ -1,0 +1,34 @@
+#page-edit .block-editor-gridBlock,
+.block.gridBlock {
+  &.has--backgroundColor--mainColor {
+    background-color: var(--main-color);
+
+    h2.headline {
+      color: var(--reverse-color);
+    }
+  }
+
+  h2.headline {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .block.image {
+    figure {
+      &::after {
+        height: 0px;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.block.gridBlock.has--backgroundColor--grey,
+#page-add .block-editor-gridBlock.has--backgroundColor--grey,
+#page-edit .block-editor-gridBlock.has--backgroundColor--grey {
+  background-color: #ecebeb;
+}

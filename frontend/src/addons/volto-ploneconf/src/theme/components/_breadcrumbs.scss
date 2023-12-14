@@ -1,0 +1,29 @@
+#main {
+  .breadcrumbs {
+    padding: 10px 0;
+    background-color: var(--main-color);
+
+    .breadcrumb {
+      max-width: var(--default-container-width);
+      margin-right: 5px;
+      margin-left: 5px;
+      color: var(--reverse-color) !important;
+      text-transform: uppercase;
+
+      a {
+        color: var(--reverse-color) !important;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .divider::before {
+        color: var(--reverse-color);
+        content: '▲';
+        font-size: 12px;
+      }
+    }
+  }
+}

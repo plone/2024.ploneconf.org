@@ -1,0 +1,16 @@
+.block.sponsorLevel {
+  @include default-container-width;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  .sponsorList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .sponsor {
+      max-width: 33%;
+      @include sponsor-size-04;
+    }
+  }
+}

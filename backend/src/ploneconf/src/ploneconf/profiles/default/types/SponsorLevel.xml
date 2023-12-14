@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+        meta_type="Dexterity FTI"
+        name="SponsorLevel"
+        i18n:domain="ploneconf"
+>
+
+  <!-- Basic properties -->
+  <property name="title"
+            i18n:translate=""
+  >Sponsorship Level</property>
+  <property name="description"
+            i18n:translate=""
+  >Package of sponsorship for the conference.</property>
+
+  <property name="allow_discussion">False</property>
+  <property name="factory">SponsorLevel</property>
+  <property name="icon_expr" />
+  <property name="link_target" />
+
+  <!-- Hierarchy control -->
+  <property name="global_allow">False</property>
+  <property name="filter_content_types">True</property>
+  <property name="allowed_content_types">
+    <element value="File" />
+    <element value="Image" />
+    <element value="Sponsor" />
+  </property>
+  <!-- Schema, class and security -->
+  <property name="add_permission">ploneconf.AddSponsorLevel</property>
+  <property name="klass">ploneconf.content.sponsors.sponsor_level.SponsorLevel</property>
+  <property name="model_file" />
+  <property name="model_source" />
+  <property name="schema">ploneconf.content.sponsors.sponsor_level.ISponsorLevel</property>
+
+  <!-- Enabled behaviors -->
+  <property name="behaviors"
+            purge="false"
+  >
+    <element value="plone.dublincore" />
+    <element value="volto.preview_image" />
+    <element value="volto.navtitle" />
+    <element value="volto.blocks" />
+    <element value="plone.namefromtitle" />
+    <element value="plone.excludefromnavigation" />
+    <element value="plone.shortname" />
+  </property>
+
+  <!-- View information -->
+  <property name="add_view_expr">string:${folder_url}/++add++SponsorLevel</property>
+  <property name="default_view">view</property>
+  <property name="default_view_fallback">False</property>
+  <property name="immediate_view">view</property>
+  <property name="view_methods">
+    <element value="view" />
+  </property>
+</object>

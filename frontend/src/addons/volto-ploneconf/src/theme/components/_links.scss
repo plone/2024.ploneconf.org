@@ -1,0 +1,24 @@
+div.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .links.wrapper {
+    display: flex;
+    max-width: var(--narrow-container-width);
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+
+    > .link.item {
+      padding: 10px;
+      color: var(--main-color);
+
+      &.external {
+        &::after {
+          content: '';
+        }
+      }
+    }
+  }
+}

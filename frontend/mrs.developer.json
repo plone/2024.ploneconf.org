@@ -1,0 +1,5 @@
+{
+  "volto-ploneconf": {
+    "local": "addons/volto-ploneconf/src"
+  }
+}

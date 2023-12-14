@@ -1,0 +1,104 @@
+{
+    "@id": "/en/sponsors/patron",
+    "@type": "SponsorLevel",
+    "UID": "754318a9ba7a4c42a88ee604776319ae",
+    "allow_discussion": false,
+    "blocks": {
+        "345677a0-b018-420e-b355-4b6f6ab205b7": {
+            "@type": "slate",
+            "plaintext": "This event would not be possible without our Patrons!",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "This event would not be possible without our Patrons!"
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "e82c5eb2-2261-457f-a0f1-ef4e9130a146": {
+            "@type": "slate",
+            "plaintext": "",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "f6b5b8b4-8d4d-4358-afb5-568f44b9e6cf": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "f6b5b8b4-8d4d-4358-afb5-568f44b9e6cf",
+            "345677a0-b018-420e-b355-4b6f6ab205b7",
+            "e82c5eb2-2261-457f-a0f1-ef4e9130a146"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-08T22:07:01+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "display_frontpage": true,
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "patron",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-12-12T17:04:27+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/sponsors",
+        "@type": "SponsorsDB",
+        "UID": "55d9947b86084264add5cf963ced75ba",
+        "description": "Support our conference",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Sponsorship",
+        "type_title": "Sponsors Database"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Patronage",
+    "type_title": "Sponsorship Level",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T22:07:01+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-08T22:07:53+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

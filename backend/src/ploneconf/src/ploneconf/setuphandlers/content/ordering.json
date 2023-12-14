@@ -1,0 +1,342 @@
+[
+    {
+        "order": 0,
+        "uuid": "72071f265b7a40058b32e75ce6d4e597"
+    },
+    {
+        "order": 0,
+        "uuid": "781a232efb6d4daa8873269593b88854-en"
+    },
+    {
+        "order": 0,
+        "uuid": "2abbb637e5034880aa15f4fe419dd61c"
+    },
+    {
+        "order": 0,
+        "uuid": "b5cfb558d04c4b56af27554e46a50179"
+    },
+    {
+        "order": 0,
+        "uuid": "54d2456b838340b18719da2d107fbf01"
+    },
+    {
+        "order": 0,
+        "uuid": "754318a9ba7a4c42a88ee604776319ae"
+    },
+    {
+        "order": 0,
+        "uuid": "ee7b63131cb14f73a046fc021b01dbdf"
+    },
+    {
+        "order": 0,
+        "uuid": "ac950fff9973488f8b762ebfb21035d3"
+    },
+    {
+        "order": 0,
+        "uuid": "c7e5e32420264cde8a0a57dbf861f5a6"
+    },
+    {
+        "order": 0,
+        "uuid": "1c197cdb15964166b5c1fdbae4a22041"
+    },
+    {
+        "order": 0,
+        "uuid": "781a232efb6d4daa8873269593b88854-pt-br"
+    },
+    {
+        "order": 0,
+        "uuid": "3a3cf8340b3247ebab0b0538b1c130d6"
+    },
+    {
+        "order": 0,
+        "uuid": "e2817b849f534412a7bdca667a14525f"
+    },
+    {
+        "order": 0,
+        "uuid": "3843e7c81f2a444987ed169fd082f546"
+    },
+    {
+        "order": 0,
+        "uuid": "72681f5b1eaf423f915112c2db0b2d36"
+    },
+    {
+        "order": 0,
+        "uuid": "0a30779f7ab94a03b61e9fc8f049e359"
+    },
+    {
+        "order": 0,
+        "uuid": "4a08aa2e40c5454a809cdc3759a69e01"
+    },
+    {
+        "order": 1,
+        "uuid": "b1e69d0eb418464da41b1a32f564601c-en"
+    },
+    {
+        "order": 1,
+        "uuid": "22dd8a04f75c452a84149167914836cd"
+    },
+    {
+        "order": 1,
+        "uuid": "27b4175916ec44f6b4bad329fd73e0fc"
+    },
+    {
+        "order": 1,
+        "uuid": "dbd521cdd6b2426987c20d2494e0e328"
+    },
+    {
+        "order": 1,
+        "uuid": "7eef1cfd2a37419e9eecaff9d46de95a"
+    },
+    {
+        "order": 1,
+        "uuid": "a6ee77719d4c47e8abeb47de30e1b6c8"
+    },
+    {
+        "order": 1,
+        "uuid": "e6ff6cdf5dd143d6a5292f0434c508cb"
+    },
+    {
+        "order": 1,
+        "uuid": "b1e69d0eb418464da41b1a32f564601c-pt-br"
+    },
+    {
+        "order": 1,
+        "uuid": "4e620ce45c1f4e69be7d2b0938045227"
+    },
+    {
+        "order": 1,
+        "uuid": "c05b040d5c5940d5bf512375c37aad19"
+    },
+    {
+        "order": 1,
+        "uuid": "a52116563cae47eca4750e1f74ea695f"
+    },
+    {
+        "order": 1,
+        "uuid": "0d72c2e8d5ba49baa8c752cc3a3a92ac"
+    },
+    {
+        "order": 1,
+        "uuid": "4befc3ce15d244adb48ea6eaec8a4b32"
+    },
+    {
+        "order": 2,
+        "uuid": "d01a2daa96024da48a617eb63f2d9cb7-en"
+    },
+    {
+        "order": 2,
+        "uuid": "5b6afec945724f2a8278c01084dae998"
+    },
+    {
+        "order": 2,
+        "uuid": "6ced7abc8cb4482aad806cbd43e23378"
+    },
+    {
+        "order": 2,
+        "uuid": "81121618edf64555ba1b4fc5b346dd0f"
+    },
+    {
+        "order": 2,
+        "uuid": "67adfb7681aa434c8a671884ee23ef3f"
+    },
+    {
+        "order": 2,
+        "uuid": "db2f6d5ecf544e8dbd091841492a582b"
+    },
+    {
+        "order": 2,
+        "uuid": "d01a2daa96024da48a617eb63f2d9cb7-pt-br"
+    },
+    {
+        "order": 2,
+        "uuid": "22e79ff94d624b9ca07df970b02d560d"
+    },
+    {
+        "order": 2,
+        "uuid": "92c9a57c012a4498938169bbb5ba6bec"
+    },
+    {
+        "order": 2,
+        "uuid": "b875269a6aae44989e0c79546cc5bb0a"
+    },
+    {
+        "order": 2,
+        "uuid": "b2aec8bab36f4d929c00763117361503"
+    },
+    {
+        "order": 3,
+        "uuid": "84eeb95fb4a449779bd463d30b68c0fa-en"
+    },
+    {
+        "order": 3,
+        "uuid": "8428e9023cef4ab1a4a0344641a31723"
+    },
+    {
+        "order": 3,
+        "uuid": "5be1a6c718c84a268793bdbae8e4eca8"
+    },
+    {
+        "order": 3,
+        "uuid": "aa99ffd5922b40c687d5d6894b015711"
+    },
+    {
+        "order": 3,
+        "uuid": "7a54dabdd352485e9f3755de2415f749"
+    },
+    {
+        "order": 3,
+        "uuid": "84eeb95fb4a449779bd463d30b68c0fa-pt-br"
+    },
+    {
+        "order": 3,
+        "uuid": "f16a0fdf0d864e709aaec7c24330483c"
+    },
+    {
+        "order": 3,
+        "uuid": "70a87f4d82604ccda0a2e92fb367f337"
+    },
+    {
+        "order": 3,
+        "uuid": "91e98fc0871c4d88b69e29a2a6592e9e"
+    },
+    {
+        "order": 3,
+        "uuid": "cdaa7436938c45c1900eef322c2fec34"
+    },
+    {
+        "order": 4,
+        "uuid": "c83fb9b2a6e34831bd325ba81e3147f3-en"
+    },
+    {
+        "order": 4,
+        "uuid": "e1ed0abdef1a492dbe58134ea412575d"
+    },
+    {
+        "order": 4,
+        "uuid": "55d9947b86084264add5cf963ced75ba"
+    },
+    {
+        "order": 4,
+        "uuid": "b42ca4370f2b4e75848cc25bb77f99aa"
+    },
+    {
+        "order": 4,
+        "uuid": "eab4b8a0059e43de93c02d60badfdc4a"
+    },
+    {
+        "order": 4,
+        "uuid": "c83fb9b2a6e34831bd325ba81e3147f3-pt-br"
+    },
+    {
+        "order": 4,
+        "uuid": "7a6ef6000d7544539871b18470dca0c6"
+    },
+    {
+        "order": 4,
+        "uuid": "3b7949500c0e415ba4dff19bd559ff70"
+    },
+    {
+        "order": 5,
+        "uuid": "0f399b5eaefd4d5cac9f86a93f33aaa8-en"
+    },
+    {
+        "order": 5,
+        "uuid": "667f949be2d2456f856e055b0e0245bd"
+    },
+    {
+        "order": 5,
+        "uuid": "324858dff84c4e5e90d3e801cefcc45d"
+    },
+    {
+        "order": 5,
+        "uuid": "0f399b5eaefd4d5cac9f86a93f33aaa8-pt-br"
+    },
+    {
+        "order": 5,
+        "uuid": "255987ffc1a149699fb697c6cc2c8b83"
+    },
+    {
+        "order": 5,
+        "uuid": "bfa1ae4b0c5c4402b360e0aa28744626"
+    },
+    {
+        "order": 6,
+        "uuid": "0745ff19dafa41e69c22c03e051f55b8-en"
+    },
+    {
+        "order": 6,
+        "uuid": "c40491ac74554d038d4b74232e87e397"
+    },
+    {
+        "order": 6,
+        "uuid": "0745ff19dafa41e69c22c03e051f55b8-pt-br"
+    },
+    {
+        "order": 6,
+        "uuid": "c5cf3ccba1ac4bd18f893759738b7a56"
+    },
+    {
+        "order": 7,
+        "uuid": "927e5d88c4744434a344986d513d4249-en"
+    },
+    {
+        "order": 7,
+        "uuid": "166fc4630e28458d9779afd93641da6f"
+    },
+    {
+        "order": 7,
+        "uuid": "927e5d88c4744434a344986d513d4249-pt-br"
+    },
+    {
+        "order": 7,
+        "uuid": "158ce7f07e2745eda9b45ca9442300ff"
+    },
+    {
+        "order": 8,
+        "uuid": "9e998a592b454caaaf7c169f76ca54cb-en"
+    },
+    {
+        "order": 8,
+        "uuid": "835174bcbad2499d89d3f614508bf4dd"
+    },
+    {
+        "order": 8,
+        "uuid": "9e998a592b454caaaf7c169f76ca54cb-pt-br"
+    },
+    {
+        "order": 8,
+        "uuid": "7ba960fa24fc4e15a90a8d813db465bc"
+    },
+    {
+        "order": 9,
+        "uuid": "549e90c6295c4ac386faab1c145a2b09-en"
+    },
+    {
+        "order": 9,
+        "uuid": "e1c2c18136e6457e97eed3a1022ebb5d"
+    },
+    {
+        "order": 9,
+        "uuid": "549e90c6295c4ac386faab1c145a2b09-pt-br"
+    },
+    {
+        "order": 9,
+        "uuid": "e5c1487b92d1406d8dc08ea99d4a60f4"
+    },
+    {
+        "order": 10,
+        "uuid": "25b61c7db38041e9902772dbd8c76295-en"
+    },
+    {
+        "order": 10,
+        "uuid": "25b61c7db38041e9902772dbd8c76295-pt-br"
+    },
+    {
+        "order": 42,
+        "uuid": "bdec9a22690a459b8190ff7d82c1f5d2"
+    },
+    {
+        "order": 43,
+        "uuid": "6c100fff1fd84349816f5b0eac07f12f"
+    }
+]

@@ -1,0 +1,458 @@
+{
+    "@id": "/en/about/organizers",
+    "@type": "Document",
+    "UID": "2abbb637e5034880aa15f4fe419dd61c",
+    "allow_discussion": false,
+    "blocks": {
+        "1199e968-292c-46d8-9c17-d2ff16764b8f": {
+            "@type": "teaser",
+            "description": "PyLadies-DF is the Bras\u00edlia chapter of a global initiative dedicated to empowering and encouraging women's participation in the Python programming community. Established in 2014, PyLadies-DF fulfills its mission through mentorship programs, workshops, and networking events.",
+            "head_title": null,
+            "href": [
+                {
+                    "@id": "/en/sponsors/organizer/pyladies-df",
+                    "@type": "Sponsor",
+                    "Description": "PyLadies-DF is the Bras\u00edlia chapter of a global initiative dedicated to empowering and encouraging women's participation in the Python programming community. Established in 2014, PyLadies-DF fulfills its mission through mentorship programs, workshops, and networking events.",
+                    "Title": "PyLadies-DF",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": null,
+                    "head_title": null,
+                    "image_field": "image",
+                    "image_scales": {
+                        "image": [
+                            {
+                                "content-type": "image/png",
+                                "download": "@@images/image-1024-eaf86b8cb55849674884b7e8ebd7673a.png",
+                                "filename": "PyladiesDF.png",
+                                "height": 768,
+                                "scales": {
+                                    "icon": {
+                                        "download": "@@images/image-32-4aedd05082c1a90184d990c88b5abc35.png",
+                                        "height": 24,
+                                        "width": 32
+                                    },
+                                    "large": {
+                                        "download": "@@images/image-800-ecce71e778b94b7da377d64d70b70aff.png",
+                                        "height": 600,
+                                        "width": 800
+                                    },
+                                    "larger": {
+                                        "download": "@@images/image-1000-9b4438ee72fee4f8f63ba4b3f6572e4d.png",
+                                        "height": 750,
+                                        "width": 1000
+                                    },
+                                    "mini": {
+                                        "download": "@@images/image-200-01ecc05d69bca8c58a561c0ea66aac6f.png",
+                                        "height": 150,
+                                        "width": 200
+                                    },
+                                    "preview": {
+                                        "download": "@@images/image-400-017484e45a9b5b8c400d4c2320c4e253.png",
+                                        "height": 300,
+                                        "width": 400
+                                    },
+                                    "teaser": {
+                                        "download": "@@images/image-600-50be24ee5e2ad4fcebe635cac1f6123b.png",
+                                        "height": 450,
+                                        "width": 600
+                                    },
+                                    "thumb": {
+                                        "download": "@@images/image-128-7f60e92409d3a9f89db67002ce339e75.png",
+                                        "height": 96,
+                                        "width": 128
+                                    },
+                                    "tile": {
+                                        "download": "@@images/image-64-eeb143e86537cf4131d1320af10fa264.png",
+                                        "height": 48,
+                                        "width": 64
+                                    }
+                                },
+                                "size": 127794,
+                                "width": 1024
+                            }
+                        ]
+                    },
+                    "title": "PyLadies-DF"
+                }
+            ],
+            "styles": {
+                "align": "left"
+            },
+            "title": "PyLadies-DF"
+        },
+        "66850067-488b-4ed1-91fa-8ea95317edd3": {
+            "@type": "teaser",
+            "description": "Grupy-DF is a vibrant community of Python language enthusiasts, formed in 2015, including both professionals and hobbyists, centered in Bras\u00edlia. We prioritize the exchange of knowledge, mutual respect, and diversity as our core values.",
+            "head_title": null,
+            "href": [
+                {
+                    "@id": "/en/sponsors/organizer/grupy-df",
+                    "@type": "Sponsor",
+                    "Description": "Grupy-DF is a vibrant community of Python language enthusiasts, formed in 2015, including both professionals and hobbyists, centered in Bras\u00edlia. We prioritize the exchange of knowledge, mutual respect, and diversity as our core values.",
+                    "Title": "GruPy-DF",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": null,
+                    "head_title": null,
+                    "image_field": "image",
+                    "image_scales": {
+                        "image": [
+                            {
+                                "content-type": "image/png",
+                                "download": "@@images/image-1024-07dd21ea37cb7b77034caf5ed82f55d5.png",
+                                "filename": "GrupyDF.png",
+                                "height": 768,
+                                "scales": {
+                                    "icon": {
+                                        "download": "@@images/image-32-9db5164c79eabdd358bbdac0a114a5ba.png",
+                                        "height": 24,
+                                        "width": 32
+                                    },
+                                    "large": {
+                                        "download": "@@images/image-800-af7cb8b19f6702938e94144d1a963920.png",
+                                        "height": 600,
+                                        "width": 800
+                                    },
+                                    "larger": {
+                                        "download": "@@images/image-1000-c947639cc6adc75ebf99b971ec95aa12.png",
+                                        "height": 750,
+                                        "width": 1000
+                                    },
+                                    "mini": {
+                                        "download": "@@images/image-200-14a81ff18531018897c7116e4411f2e5.png",
+                                        "height": 150,
+                                        "width": 200
+                                    },
+                                    "preview": {
+                                        "download": "@@images/image-400-e965f85b4cb3ddc359951b2e83b9fbf5.png",
+                                        "height": 300,
+                                        "width": 400
+                                    },
+                                    "teaser": {
+                                        "download": "@@images/image-600-d5371cd767a898ed500e54e858697ac6.png",
+                                        "height": 450,
+                                        "width": 600
+                                    },
+                                    "thumb": {
+                                        "download": "@@images/image-128-46a3368d56b0b310e406103c8858ce66.png",
+                                        "height": 96,
+                                        "width": 128
+                                    },
+                                    "tile": {
+                                        "download": "@@images/image-64-b7ec1d1ddd41870d35ad6244600c3f20.png",
+                                        "height": 48,
+                                        "width": 64
+                                    }
+                                },
+                                "size": 31728,
+                                "width": 1024
+                            }
+                        ]
+                    },
+                    "title": "GruPy-DF"
+                }
+            ],
+            "styles": {
+                "align": "right"
+            },
+            "title": "GruPy-DF"
+        },
+        "790126e3-6211-487b-847f-255f431ad524": {
+            "@type": "teaser",
+            "description": "The Associa\u00e7\u00e3o Python Brasil (APyB), also known as the Python Brazil Association, is a non-profit organization formed with the primary objective of nurturing and supporting the Python programming language community in Brazil. Established in 2007 to promote the growth and dissemination of Python-related knowledge and technologies, APyB has been a driving force in fostering a vibrant Python community in the country. Since its inception, the association has played a pivotal role in organizing events, conferences, and meetups that bring together Python enthusiasts, developers, and professionals from various backgrounds.",
+            "head_title": null,
+            "href": [
+                {
+                    "@id": "/en/sponsors/organizer/apyb",
+                    "@type": "Sponsor",
+                    "Description": "The Associa\u00e7\u00e3o Python Brasil (APyB), also known as the Python Brazil Association, is a non-profit organization formed with the primary objective of nurturing and supporting the Python programming language community in Brazil. Established in 2007 to promote the growth and dissemination of Python-related knowledge and technologies, APyB has been a driving force in fostering a vibrant Python community in the country. Since its inception, the association has played a pivotal role in organizing events, conferences, and meetups that bring together Python enthusiasts, developers, and professionals from various backgrounds.",
+                    "Title": "Associa\u00e7\u00e3o Python Brasil",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": null,
+                    "head_title": null,
+                    "image_field": "image",
+                    "image_scales": {
+                        "image": [
+                            {
+                                "content-type": "image/png",
+                                "download": "@@images/image-1024-64fac94c5dc050133d2df678de2a7c34.png",
+                                "filename": "APYB.png",
+                                "height": 768,
+                                "scales": {
+                                    "icon": {
+                                        "download": "@@images/image-32-da93ca36fa6c13ac55d2d7d41d081aaf.png",
+                                        "height": 24,
+                                        "width": 32
+                                    },
+                                    "large": {
+                                        "download": "@@images/image-800-1bca9a7b94d85dfb403d0d65a2b706e9.png",
+                                        "height": 600,
+                                        "width": 800
+                                    },
+                                    "larger": {
+                                        "download": "@@images/image-1000-bbe1823525d0476a3b37073002e48837.png",
+                                        "height": 750,
+                                        "width": 1000
+                                    },
+                                    "mini": {
+                                        "download": "@@images/image-200-0e918a8536c76eaf5126e9f238ed5877.png",
+                                        "height": 150,
+                                        "width": 200
+                                    },
+                                    "preview": {
+                                        "download": "@@images/image-400-615eb5f78e05586df02f46bc0bfb3962.png",
+                                        "height": 300,
+                                        "width": 400
+                                    },
+                                    "teaser": {
+                                        "download": "@@images/image-600-343fac7c71d210d62c546a2a1ad18ecc.png",
+                                        "height": 450,
+                                        "width": 600
+                                    },
+                                    "thumb": {
+                                        "download": "@@images/image-128-ead8b89a73abe5926ca7ea9bda015514.png",
+                                        "height": 96,
+                                        "width": 128
+                                    },
+                                    "tile": {
+                                        "download": "@@images/image-64-020e4a54cf9e5e3a5917dc6e7ab33583.png",
+                                        "height": 48,
+                                        "width": 64
+                                    }
+                                },
+                                "size": 104445,
+                                "width": 1024
+                            }
+                        ]
+                    },
+                    "title": "Associa\u00e7\u00e3o Python Brasil"
+                }
+            ],
+            "styles": {
+                "align": "left"
+            },
+            "title": "Associa\u00e7\u00e3o Python Brasil"
+        },
+        "9f7f7fdd-5ff5-43d1-b41e-5fd590e62160": {
+            "@type": "teaser",
+            "description": "Our community, PloneGov-BR, comprises over 200 members, including public sector employees, independent professionals, and enterprises that cater to government needs. Established in Brazil in July 2009, PloneGov-BR serves as a regional arm of the global PloneGov initiative. Our primary mission is to enhance and solidify the adoption of Plone within the Brazilian Government.",
+            "href": [
+                {
+                    "@id": "/en/sponsors/organizer/plonegov-br",
+                    "@type": "Sponsor",
+                    "Description": "Our community, PloneGov-BR, comprises over 200 members, including public sector employees, independent professionals, and enterprises that cater to government needs. Established in Brazil in July 2009, PloneGov-BR serves as a regional arm of the global PloneGov initiative. Our primary mission is to enhance and solidify the adoption of Plone within the Brazilian Government.",
+                    "Title": "PloneGov-BR",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": null,
+                    "head_title": null,
+                    "image_field": "image",
+                    "image_scales": {
+                        "image": [
+                            {
+                                "content-type": "image/png",
+                                "download": "@@images/image-1024-7d7e04e9dc91fcf95525b5f23b53fef8.png",
+                                "filename": "PloneGovbr.png",
+                                "height": 768,
+                                "scales": {
+                                    "icon": {
+                                        "download": "@@images/image-32-c79e23611ba6bdee4b552e5bc68c9bf7.png",
+                                        "height": 24,
+                                        "width": 32
+                                    },
+                                    "large": {
+                                        "download": "@@images/image-800-e9a5c855497b0d391510ddc38098757f.png",
+                                        "height": 600,
+                                        "width": 800
+                                    },
+                                    "larger": {
+                                        "download": "@@images/image-1000-1ba528fe7176489d4b05aa67fab43258.png",
+                                        "height": 750,
+                                        "width": 1000
+                                    },
+                                    "mini": {
+                                        "download": "@@images/image-200-830bff6789312b0b02f44ed716bd67d9.png",
+                                        "height": 150,
+                                        "width": 200
+                                    },
+                                    "preview": {
+                                        "download": "@@images/image-400-5735e6969d6c3a9313d38856915bfb9f.png",
+                                        "height": 300,
+                                        "width": 400
+                                    },
+                                    "teaser": {
+                                        "download": "@@images/image-600-adf35d87c8fe0633d0774f2e81acf2cd.png",
+                                        "height": 450,
+                                        "width": 600
+                                    },
+                                    "thumb": {
+                                        "download": "@@images/image-128-596b85ef6174e560ef27396e340c1416.png",
+                                        "height": 96,
+                                        "width": 128
+                                    },
+                                    "tile": {
+                                        "download": "@@images/image-64-6da67a2a7d1d9d8d6f1f5ecce82eb202.png",
+                                        "height": 48,
+                                        "width": 64
+                                    }
+                                },
+                                "size": 50312,
+                                "width": 1024
+                            }
+                        ]
+                    },
+                    "title": "PloneGov-BR"
+                }
+            ],
+            "styles": {
+                "align": "left"
+            },
+            "title": "PloneGov-BR"
+        },
+        "cdfaa79b-1409-476c-8473-615df83b28da": {
+            "@type": "teaser",
+            "description": "The Plone Foundation is a non-profit organization dedicated to supporting and advancing the open-source content management system, Plone. Established in 2004, the foundation plays a crucial role in the Plone community by providing governance, legal, and financial support for the development and promotion of the Plone platform. With a global reach, the Plone Foundation fosters collaboration among a diverse group of developers, users, and organizations who contribute to the growth and sustainability of Plone. Its mission is to protect and promote Plone as a powerful and secure open-source CMS solution for organizations and communities worldwide.",
+            "head_title": null,
+            "href": [
+                {
+                    "@id": "/en/sponsors/organizer/plone-foundation",
+                    "@type": "Sponsor",
+                    "Description": "The Plone Foundation is a non-profit organization dedicated to supporting and advancing the open-source content management system, Plone. Established in 2004, the foundation plays a crucial role in the Plone community by providing governance, legal, and financial support for the development and promotion of the Plone platform. With a global reach, the Plone Foundation fosters collaboration among a diverse group of developers, users, and organizations who contribute to the growth and sustainability of Plone. Its mission is to protect and promote Plone as a powerful and secure open-source CMS solution for organizations and communities worldwide.",
+                    "Title": "Plone Foundation",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": null,
+                    "head_title": null,
+                    "image_field": "image",
+                    "image_scales": {
+                        "image": [
+                            {
+                                "content-type": "image/png",
+                                "download": "@@images/image-1024-03e6dcda03189b2ceb9d29eaa12d8208.png",
+                                "filename": "PloneFoundation.png",
+                                "height": 768,
+                                "scales": {
+                                    "icon": {
+                                        "download": "@@images/image-32-dfed08148f18d9efba3aab8c4362e34b.png",
+                                        "height": 24,
+                                        "width": 32
+                                    },
+                                    "large": {
+                                        "download": "@@images/image-800-d6467fb0872b234f9086ede24040ccd3.png",
+                                        "height": 600,
+                                        "width": 800
+                                    },
+                                    "larger": {
+                                        "download": "@@images/image-1000-71cfaa6dfb1ce4f3368bcb58ed4cec10.png",
+                                        "height": 750,
+                                        "width": 1000
+                                    },
+                                    "mini": {
+                                        "download": "@@images/image-200-5e4dd4db0fca3b1546a64e0b0f53ab3d.png",
+                                        "height": 150,
+                                        "width": 200
+                                    },
+                                    "preview": {
+                                        "download": "@@images/image-400-37e4e9da8844f72937ce4d4cb2e7fc98.png",
+                                        "height": 300,
+                                        "width": 400
+                                    },
+                                    "teaser": {
+                                        "download": "@@images/image-600-761e4e0452d2a6bda450b11e3edcd396.png",
+                                        "height": 450,
+                                        "width": 600
+                                    },
+                                    "thumb": {
+                                        "download": "@@images/image-128-329c7a4b59485a4cfec9f9bf7577924e.png",
+                                        "height": 96,
+                                        "width": 128
+                                    },
+                                    "tile": {
+                                        "download": "@@images/image-64-9dcec5f32074da258f25e92f159db204.png",
+                                        "height": 48,
+                                        "width": 64
+                                    }
+                                },
+                                "size": 48492,
+                                "width": 1024
+                            }
+                        ]
+                    },
+                    "title": "Plone Foundation"
+                }
+            ],
+            "styles": {
+                "align": "right"
+            },
+            "title": "Plone Foundation"
+        },
+        "ef66a30d-c869-4899-9b17-8b5e82ad1d71": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "ef66a30d-c869-4899-9b17-8b5e82ad1d71",
+            "9f7f7fdd-5ff5-43d1-b41e-5fd590e62160",
+            "66850067-488b-4ed1-91fa-8ea95317edd3",
+            "1199e968-292c-46d8-9c17-d2ff16764b8f",
+            "cdfaa79b-1409-476c-8473-615df83b28da",
+            "790126e3-6211-487b-847f-255f431ad524"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-09T16:58:50+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": "2023-12-09T14:09:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "organizers",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T20:17:13+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/about",
+        "@type": "Document",
+        "UID": "22dd8a04f75c452a84149167914836cd",
+        "description": "Two conferences, one location",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "About",
+        "type_title": "Page"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Organizers",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-09T16:58:50+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-09T17:09:55+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

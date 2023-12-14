@@ -1,0 +1,143 @@
+{
+    "@id": "/pt-br/patrocinio/patrocine",
+    "@type": "Document",
+    "UID": "e5c1487b92d1406d8dc08ea99d4a60f4",
+    "allow_discussion": false,
+    "blocks": {
+        "6da02c89-5120-47cb-a6ef-c8718f93e51c": {
+            "@canonical": "d4eb8292-a9a3-460c-bc71-5136144c9a51",
+            "@type": "slate",
+            "block": "6da02c89-5120-47cb-a6ef-c8718f93e51c"
+        },
+        "8d831fcc-dc66-4b6b-8513-122154e46a7c": {
+            "@canonical": "a50d2c28-df93-4ffc-8706-d06346a148aa",
+            "@type": "form",
+            "block": "8d831fcc-dc66-4b6b-8513-122154e46a7c",
+            "default_from": "conf@plone.org",
+            "default_subject": "Novo Patrocinador",
+            "default_to": "sponsor@plone.org",
+            "lastChange": 1702490770357,
+            "send_email": true,
+            "show_cancel": false,
+            "store": true,
+            "subblocks": [
+                {
+                    "description": "Por favor nos diga o nome da empresa que planeja apoiar a confer\u00eancia",
+                    "field_id": "1702490424402",
+                    "field_type": "text",
+                    "id": "1702490424402",
+                    "label": "Empresa",
+                    "required": true
+                },
+                {
+                    "field_id": "1702490554297",
+                    "field_type": "text",
+                    "id": "1702490554297",
+                    "label": "Seu Nome",
+                    "required": true
+                },
+                {
+                    "field_id": "1702490562417",
+                    "field_type": "from",
+                    "id": "1702490562417",
+                    "label": "E-mail",
+                    "required": true,
+                    "use_as_bcc": false
+                },
+                {
+                    "field_id": "1702490582371",
+                    "field_type": "single_choice",
+                    "id": "1702490582371",
+                    "input_values": [
+                        "Diamante",
+                        "Platina",
+                        "Ouro",
+                        "Prata",
+                        "Bronze",
+                        "Apoio"
+                    ],
+                    "label": "Pacote",
+                    "required": true
+                },
+                {
+                    "field_id": "1702490633310",
+                    "field_type": "textarea",
+                    "id": "1702490633310",
+                    "label": "Coment\u00e1rios adicionais",
+                    "required": false
+                }
+            ],
+            "submit_label": "Enviar"
+        },
+        "b2aedb1f-7535-41a8-bcfa-9d1c5597b2b4": {
+            "@canonical": "745701ca-2121-430d-b47b-456ec5b7270a",
+            "@type": "title",
+            "block": "b2aedb1f-7535-41a8-bcfa-9d1c5597b2b4"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "b2aedb1f-7535-41a8-bcfa-9d1c5597b2b4",
+            "8d831fcc-dc66-4b6b-8513-122154e46a7c",
+            "6da02c89-5120-47cb-a6ef-c8718f93e51c"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-13T18:06:12+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": "2023-12-13T15:06:15",
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "patrocine",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T18:06:55+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/pt-br/patrocinio",
+        "@type": "SponsorsDB",
+        "UID": "70a87f4d82604ccda0a2e92fb367f337",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Patroc\u00ednio",
+        "type_title": "Sponsors Database"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Patrocine",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-13T18:06:12+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-13T18:06:15+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

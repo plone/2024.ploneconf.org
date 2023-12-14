@@ -1,0 +1,17 @@
+.block.__button {
+  .button.container {
+    button.ui.button {
+      padding: 10px 24px;
+      border: 1px solid var(--main-color);
+      border-radius: 10px;
+      background-color: var(--main-color);
+      color: var(--reverse-color);
+      font-size: 22px;
+      line-height: 30px;
+
+      &:hover {
+        @include animate-hover();
+      }
+    }
+  }
+}

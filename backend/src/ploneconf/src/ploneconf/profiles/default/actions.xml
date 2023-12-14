@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+        meta_type="Plone Actions Tool"
+        name="portal_actions"
+>
+  <action-provider name="portal_actions" />
+  <object meta_type="CMF Action Category"
+          name="portal_tabs"
+  >
+    <object meta_type="CMF Action"
+            name="index_html"
+            i18n:domain="plone"
+    >
+      <property name="visible">False</property>
+    </object>
+  </object>
+  <object meta_type="CMF Action Category"
+          name="user"
+  >
+    <object meta_type="CMF Action"
+            name="preferences"
+            i18n:domain="plone"
+    >
+      <property name="visible">True</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="dashboard"
+            i18n:domain="plone"
+    >
+      <property name="visible">False</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="login"
+            i18n:domain="plone"
+    >
+      <property name="visible">False</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="join"
+            i18n:domain="plone"
+    >
+      <property name="visible">False</property>
+    </object>
+  </object>
+  <object meta_type="CMF Action Category"
+          name="social_actions"
+  >
+    <property name="title">Social actions</property>
+    <object meta_type="CMF Action"
+            name="mastodon-en"
+    >
+      <property name="title">Mastodon (Plone Conference)</property>
+      <property name="description" />
+      <property name="url_expr">string:https://plone.social/@ploneconf</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:mastodon</property>
+      <property name="available_expr">python:path('context/@@plone_portal_state/language') == "en"</property>
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="mastodon-br"
+    >
+      <property name="title">Mastodon (Python Cerrado)</property>
+      <property name="description" />
+      <property name="url_expr">string:https://pynews.com.br/@pythoncerrado</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:mastodon</property>
+      <property name="available_expr">python:path('context/@@plone_portal_state/language') == "pt-br"</property>
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="twitter-en"
+    >
+      <property name="title">Twitter (Plone Conference)</property>
+      <property name="description" />
+      <property name="url_expr">string:https://twitter.com/ploneconf/</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:twitter</property>
+      <property name="available_expr">python:path('context/@@plone_portal_state/language') == "en"</property>
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="twitter-br"
+    >
+      <property name="title">Twitter (Python Cerrado)</property>
+      <property name="description" />
+      <property name="url_expr">string:https://twitter.com/pythoncerrado/</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:twitter</property>
+      <property name="available_expr">python:path('context/@@plone_portal_state/language') == "pt-br"</property>
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="insta-en"
+    >
+      <property name="title">Instagram (Plone Conference)</property>
+      <property name="description" />
+      <property name="url_expr">string:https://instagram.com/ploneconf/</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:instagram</property>
+      <property name="available_expr">python:path('context/@@plone_portal_state/language') == "en"</property>
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="insta-br"
+    >
+      <property name="title">Instagram (Python Cerrado)</property>
+      <property name="description" />
+      <property name="url_expr">string:https://instagram.com/pythoncerrado/</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:instagram</property>
+      <property name="available_expr">python:path('context/@@plone_portal_state/language') == "pt-br"</property>
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+  </object>
+</object>

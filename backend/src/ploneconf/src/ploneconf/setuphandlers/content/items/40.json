@@ -1,0 +1,271 @@
+{
+    "@id": "/en/sponsors/oss",
+    "@type": "SponsorLevel",
+    "UID": "166fc4630e28458d9779afd93641da6f",
+    "allow_discussion": false,
+    "blocks": {
+        "48c9818d-2c89-4557-9380-2e4c1141c4c2": {
+            "@type": "sponsorLevel"
+        },
+        "52f460a3-cd25-46b2-af0f-2b93d6d721d4": {
+            "@type": "accordion",
+            "collapsed": false,
+            "data": {
+                "blocks": {
+                    "8d0cfe2a-2134-49e8-94af-ea7e2ddd4460": {
+                        "@type": "accordionPanel",
+                        "blocks": {
+                            "1a1015d6-7db0-4659-8fe5-679895b55d80": {
+                                "@type": "slateTable",
+                                "styles": {},
+                                "table": {
+                                    "basic": false,
+                                    "celled": true,
+                                    "compact": false,
+                                    "fixed": true,
+                                    "hideHeaders": false,
+                                    "inverted": false,
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "key": "90p1",
+                                                    "type": "header",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": "Full Price"
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "key": "9jag",
+                                                    "type": "header",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": "Plone Foundation Sponsors"
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "key": "6pek6"
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "key": "3il74",
+                                                    "type": "data",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": "Contact Us"
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "text": ""
+                                                                        }
+                                                                    ],
+                                                                    "type": "strong"
+                                                                },
+                                                                {
+                                                                    "text": ""
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "key": "9iit1",
+                                                    "type": "data",
+                                                    "value": [
+                                                        {
+                                                            "children": [
+                                                                {
+                                                                    "text": ""
+                                                                },
+                                                                {
+                                                                    "children": [
+                                                                        {
+                                                                            "text": ""
+                                                                        }
+                                                                    ],
+                                                                    "type": "strong"
+                                                                },
+                                                                {
+                                                                    "text": "Contact Us"
+                                                                }
+                                                            ],
+                                                            "type": "p"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "key": "6k7rm"
+                                        }
+                                    ],
+                                    "striped": false
+                                }
+                            }
+                        },
+                        "blocks_layout": {
+                            "items": [
+                                "1a1015d6-7db0-4659-8fe5-679895b55d80"
+                            ]
+                        },
+                        "title": "Investment"
+                    },
+                    "a90353f1-a256-4c59-b602-8ecde534cea1": {
+                        "@type": "accordionPanel",
+                        "blocks": {
+                            "4564efd6-7af1-42c4-9d08-a73d5e01a8d7": {
+                                "@type": "slate",
+                                "plaintext": "1 complimentary ticket Logo at Registration Desk Logo in video shown between Talks Social Media: Minimum of 1 mention",
+                                "styles": {},
+                                "value": [
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "1 complimentary ticket"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Logo at Registration Desk"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Logo in video shown between Talks"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "text": "Social Media: Minimum of 1 mention"
+                                                    }
+                                                ],
+                                                "type": "li"
+                                            }
+                                        ],
+                                        "type": "ul"
+                                    }
+                                ]
+                            }
+                        },
+                        "blocks_layout": {
+                            "items": [
+                                "4564efd6-7af1-42c4-9d08-a73d5e01a8d7"
+                            ]
+                        },
+                        "title": "Benefits"
+                    }
+                },
+                "blocks_layout": {
+                    "items": [
+                        "a90353f1-a256-4c59-b602-8ecde534cea1",
+                        "8d0cfe2a-2134-49e8-94af-ea7e2ddd4460"
+                    ]
+                }
+            },
+            "filtering": false,
+            "non_exclusive": false,
+            "right_arrows": true,
+            "styles": {}
+        },
+        "6f78d35b-0771-44b4-a0bb-aaf4c500e722": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "6f78d35b-0771-44b4-a0bb-aaf4c500e722",
+            "52f460a3-cd25-46b2-af0f-2b93d6d721d4",
+            "48c9818d-2c89-4557-9380-2e4c1141c4c2"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-08T22:15:35+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "display_frontpage": false,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "oss",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-12-14T13:33:38+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/en/sponsors",
+        "@type": "SponsorsDB",
+        "UID": "55d9947b86084264add5cf963ced75ba",
+        "description": "Support our conference",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Sponsorship",
+        "type_title": "Sponsors Database"
+    },
+    "preview_caption": null,
+    "preview_image": {
+        "blob_path": "blobs/166fc4630e28458d9779afd93641da6f-preview_image/Open source.png",
+        "content-type": "image/png",
+        "filename": "Open source.png",
+        "height": 1080,
+        "size": 719657,
+        "width": 1920
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Open Source",
+    "type_title": "Sponsorship Level",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-08T22:15:35+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-08T22:15:35+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

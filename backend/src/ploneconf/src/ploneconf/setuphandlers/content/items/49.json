@@ -1,0 +1,111 @@
+{
+    "@id": "/pt-br/noticias",
+    "@type": "Document",
+    "UID": "92c9a57c012a4498938169bbb5ba6bec",
+    "allow_discussion": false,
+    "blocks": {
+        "39ad8b91-f355-48cb-9eb3-236452f612a7": {
+            "@canonical": "fb3fdb18-eed3-4f9d-9f78-5898e965cd70",
+            "@type": "title",
+            "block": "39ad8b91-f355-48cb-9eb3-236452f612a7"
+        },
+        "776aea93-875a-4df8-9cea-f0e307ac5191": {
+            "@canonical": "201d8968-8140-497f-8e71-8f32bffbba77",
+            "@type": "slate",
+            "block": "776aea93-875a-4df8-9cea-f0e307ac5191"
+        },
+        "7dfb53a5-0986-4fb6-bd91-add72b11ccb2": {
+            "@canonical": "820ecf7e-9add-4c18-9daa-9178d709bf30",
+            "@type": "listing",
+            "block": "7dfb53a5-0986-4fb6-bd91-add72b11ccb2",
+            "headlineTag": "h2",
+            "querystring": {
+                "b_size": "10",
+                "query": [
+                    {
+                        "i": "portal_type",
+                        "o": "plone.app.querystring.operation.selection.any",
+                        "v": [
+                            "News Item"
+                        ]
+                    },
+                    {
+                        "i": "path",
+                        "o": "plone.app.querystring.operation.string.absolutePath",
+                        "v": "/pt-br/noticias/"
+                    }
+                ],
+                "sort_on": "effective",
+                "sort_order": "descending",
+                "sort_order_boolean": true
+            },
+            "styles": {},
+            "variation": "grid"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "39ad8b91-f355-48cb-9eb3-236452f612a7",
+            "7dfb53a5-0986-4fb6-bd91-add72b11ccb2",
+            "776aea93-875a-4df8-9cea-f0e307ac5191"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-12-12T15:44:13+00:00",
+    "creators": [
+        "organizer"
+    ],
+    "description": "",
+    "effective": "2023-12-12T18:14:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "noticias",
+    "is_folderish": true,
+    "language": "pt-br",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-12-13T17:11:16+00:00",
+    "nav_title": null,
+    "parent": {
+        "@id": "/pt-br",
+        "@type": "LRF",
+        "UID": "6c100fff1fd84349816f5b0eac07f12f",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Python Cerrado 2024",
+        "type_title": "Language Root Folder"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Not\u00edcias",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2023-12-12T15:44:13+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2023-12-12T21:14:00+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}
