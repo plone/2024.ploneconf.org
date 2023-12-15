@@ -7,8 +7,7 @@ on:
       - main
     paths:
       - "backend/**"
-
-#      - ".github/workflows/backend-testing.yml"
+      - ".github/workflows/backend-testing.yml"
 
 env:
   IMAGE_NAME_PREFIX: ghcr.io/plone/ploneconf-2024
@@ -134,7 +133,7 @@ jobs:
         with:
           platforms: linux/amd64
           context: backend
-          file: backend/dockerfiles/Dockerfile
+          file: backend/Dockerfile
           build-args: |
             PLONE_VERSION=${{ needs.meta.outputs.PLONE_VERSION }}
           push: ${{ github.event_name != 'pull_request' }}

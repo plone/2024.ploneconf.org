@@ -7,8 +7,7 @@ on:
       - main
     paths:
       - "frontend/**"
-
-#      - ".github/workflows/frontend-testing.yml"
+      - ".github/workflows/frontend-testing.yml"
 
 env:
   IMAGE_NAME_PREFIX: ghcr.io/plone/ploneconf-2024
@@ -94,7 +93,7 @@ jobs:
         with:
           platforms: linux/amd64
           context: frontend/
-          file: frontend/dockerfiles/Dockerfile
+          file: frontend/Dockerfile
           build-args: |
             VOLTO_VERSION=${{ needs.meta.outputs.VOLTO_VERSION }}
           push: ${{ github.event_name != 'pull_request' }}

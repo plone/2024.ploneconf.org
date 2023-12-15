@@ -62,7 +62,7 @@ jobs:
         with:
           platforms: linux/amd64
           context: frontend
-          file: frontend/dockerfiles/Dockerfile
+          file: frontend/Dockerfile
           build-args: |
             VOLTO_VERSION=${{ needs.meta.outputs.VOLTO_VERSION }}
           push: ${{ github.event_name != 'pull_request' }}
@@ -104,7 +104,7 @@ jobs:
         with:
           platforms: linux/amd64
           context: backend
-          file: backend/dockerfiles/Dockerfile
+          file: backend/Dockerfile
           build-args: |
             PLONE_VERSION=${{ needs.meta.outputs.PLONE_VERSION }}
           push: ${{ github.event_name != 'pull_request' }}
