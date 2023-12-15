@@ -19,7 +19,7 @@ BACKEND_FOLDER=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
 PLONE_VERSION=$$(cat version.txt)
 
-CODE_QUALITY_VERSION=2.1
+CODE_QUALITY_VERSION=2
 ifndef LOG_LEVEL
 	LOG_LEVEL=INFO
 endif

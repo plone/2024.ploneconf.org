@@ -5,10 +5,10 @@ from plone.restapi.interfaces import ISerializeToJsonSummary
 from plone.restapi.serializer.converters import json_compatible
 from plone.restapi.serializer.dxcontent import SerializeToJson
 from ploneconf.content.sponsors.sponsor import ISponsor
+from ploneconf.utils import generate_links_dict
 from zope.component import adapter
 from zope.interface import implementer
 from zope.interface import Interface
-from ploneconf.utils import generate_links_dict
 
 
 @implementer(ISerializeToJsonSummary)
