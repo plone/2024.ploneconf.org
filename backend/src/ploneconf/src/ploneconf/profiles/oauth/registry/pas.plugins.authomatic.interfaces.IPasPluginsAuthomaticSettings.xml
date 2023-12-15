@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+  <records interface="pas.plugins.authomatic.interfaces.IPasPluginsAuthomaticSettings"
+           prefix="pas.plugins.authomatic.interfaces.IPasPluginsAuthomaticSettings"
+  >
+    <value key="json_config">{
+    "github": {
+        "id": 1,
+        "display": {
+            "title": "Github",
+            "cssclasses": {
+                "button": "plone-btn plone-btn-default",
+                "icon": "glypicon glyphicon-github"
+            },
+            "as_form": false
+        },
+        "propertymap": {
+            "email": "email",
+            "link": "home_page",
+            "location": "location",
+            "name": "fullname",
+            "avatar_url": "portrait",
+            "username": "github_username"
+        },
+        "class_": "authomatic.providers.oauth2.GitHub",
+        "consumer_key": "616401676bf555cd7930",
+        "consumer_secret": "6a73399fff2139b80dc0f1ff14cb83945738d11f",
+        "access_headers": {
+            "User-Agent": "Plone (pas.plugins.authomatic)"
+        }
+    }
+}</value>
+    <value key="secret">F3CyxO60ZE</value>
+    <value key="userid_factory_name">username</value>
+  </records>
+</registry>

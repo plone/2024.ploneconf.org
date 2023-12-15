@@ -1,5 +1,11 @@
 <configure xmlns="http://namespaces.zope.org/zope">
 
+  <!-- Login Subscribers-->
+  <subscriber
+      for="Products.PluggableAuthService.interfaces.events.IUserLoggedInEvent"
+      handler=".login.login_handler"
+      />
+
   <!-- Conference SponsorsDB Subscribers -->
   <subscriber
       for="ploneconf.content.sponsors.sponsors_db.ISponsorsDB

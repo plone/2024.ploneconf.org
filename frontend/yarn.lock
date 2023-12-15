@@ -3179,6 +3179,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@plone-collective/volto-authomatic@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@plone-collective/volto-authomatic@npm:2.0.0"
+  peerDependencies:
+    "@plone/volto": ">=13.8.0"
+  checksum: 16a91f0cc930f04959b1e6b1495a3a751edae8488e94a061481975c7e3a84d496431aff75086a8a4bf7931a51ee7a72b057e63ef62019980003a8872fa537f80
+  languageName: node
+  linkType: hard
+
 "@plone/registry@npm:1.0.1":
   version: 1.0.1
   resolution: "@plone/registry@npm:1.0.1"
@@ -26343,6 +26352,7 @@ __metadata:
     "@kitconcept/volto-slider-block": "*"
     "@kitconcept/volto-social-blocks": 1.0.0-alpha.4
     "@mbarde/volto-image-crop-widget": 0.5.1
+    "@plone-collective/volto-authomatic": 2.0.0
     "@plone/scripts": ^3.0.0
     "@plonegovbr/volto-network-block": "*"
     eslint: 8.49.0

@@ -22,6 +22,14 @@
       />
 
   <genericsetup:registerProfile
+      name="oauth"
+      title="Plone Conference 2024: Production pas.plugins.authomatic"
+      description="Install Production pas.plugins.authomatic."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/oauth"
+      />
+
+  <genericsetup:registerProfile
       name="uninstall"
       title="Plone Conference 2024: Uninstall"
       description="Uninstall Plone Conference 2024 setup."

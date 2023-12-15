@@ -56,6 +56,7 @@
     "@kitconcept/volto-light-theme",
     "@kitconcept/volto-button-block",
     "@eeacms/volto-statistic-block",
+    "@plone-collective/volto-authomatic",
     "@eeacms/volto-matomo"
   ],
   "dependencies": {
@@ -68,6 +69,7 @@
     "@kitconcept/volto-slider-block": "*",
     "@kitconcept/volto-social-blocks": "1.0.0-alpha.4",
     "@mbarde/volto-image-crop-widget": "0.5.1",
+    "@plone-collective/volto-authomatic": "2.0.0",
     "@plonegovbr/volto-network-block": "*",
     "volto-form-block": "3.2.0",
     "volto-subblocks": "*"

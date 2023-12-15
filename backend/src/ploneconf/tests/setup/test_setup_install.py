@@ -24,6 +24,7 @@ class TestSetupInstall:
             "plone.volto:default",
             "plone.app.multilingual:default",
             "collective.volto.formsupport:default",
+            "pas.plugins.authomatic:default",
         ]
     )
     def test_dependency_installed(self, installer, profile):
