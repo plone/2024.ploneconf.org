@@ -27,7 +27,7 @@ services:
         - traefik.http.services.testing_ploneconf-frontend.loadbalancer.server.port=3000
         # MIDDLEWARES
         ### ClassicUI Access Authentication
-        - traefik.http.middlewares.testing_ploneconf-frontend-auth.basicauth.users=ploneconf:$$2y$$05$$SLsKIKgK.NlD.64HMV42hOUNi3pQM/T.iW4qziWs0xcKHzkaa8T8C
+        - traefik.http.middlewares.testing_ploneconf-frontend-auth.basicauth.users=ploneconf:$$apr1$$OLAFAXJo$$8SyxCdTdo00Smv0wtJnEi1
         # HOSTS: Main
         - traefik.http.routers.testing_ploneconf-frontend.rule=Host(`testing.ploneconf.org`)
         - traefik.http.routers.testing_ploneconf-frontend.entrypoints=https
@@ -60,7 +60,7 @@ services:
         - traefik.http.services.testing_ploneconf-backend.loadbalancer.server.port=8080
         # MIDDLEWARES
         ### basic_auth Authentication ClassicUI & Zope
-        - traefik.http.middlewares.testing_ploneconf-backend-auth.basicauth.users=ploneconf:$$2y$$05$$SLsKIKgK.NlD.64HMV42hOUNi3pQM/T.iW4qziWs0xcKHzkaa8T8C
+        - traefik.http.middlewares.testing_ploneconf-backend-auth.basicauth.users=ploneconf:$$apr1$$OLAFAXJo$$8SyxCdTdo00Smv0wtJnEi1
         - traefik.http.middlewares.testing_ploneconf-zope-auth.basicauth.users=zopeadmin:$$apr1$$7jQv8Qcp$$IzN7fnLaFrWJR7Ob5cljK/
         ### Backend ++api++ VHM
         - "traefik.http.middlewares.testing_ploneconf-vhm-cleanup.replacepathregex.regex=^/((\\+\\+api\\+\\+/){1,})($$|.*)"
