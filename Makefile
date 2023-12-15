@@ -102,6 +102,14 @@ lint-frontend: ## Lint frontend codebase
 	@echo "Lint frontend"
 	$(MAKE) -C "./frontend/" lint
 
+.PHONY: lint-backend
+lint-backend: ## Lint backend codebase
+	@echo "Lint backend"
+	$(MAKE) -C "./backend/" lint
+
+.PHONY: lint
+lint: lint-frontend lint-backend ## Lint codebase
+
 .PHONY: test-backend
 test-backend:  ## Test backend codebase
 	@echo "Test backend"
