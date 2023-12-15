@@ -34,4 +34,4 @@ jobs:
       - name: Test
         run: |
           make install-frontend
-          make test-frontend-ci
+          make test-frontend

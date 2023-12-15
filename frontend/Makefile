@@ -47,6 +47,21 @@ format-lint: ## Format Code with Lint
 .PHONY: format
 format: format-prettier format-lint format-stylelint ## Format the codebase according to our standards
 
+.PHONY: lint-prettier
+lint-prettier: ## Lint Code with Prettier
+	yarn run prettier
+
+.PHONY: lint-stylelint
+lint-stylelint: ## Lint Code with Stylelint
+	yarn run stylelint
+
+.PHONY: lint-lint
+lint-lint: ## Lint Code with Lint
+	yarn run lint
+
+.PHONY: lint
+lint: lint-prettier lint-stylelint lint-lint ## Lint the codebase according to our standards
+
 .PHONY: install
 install: ## Install the frontend
 	@echo "Install frontend"

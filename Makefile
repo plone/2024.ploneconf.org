@@ -97,6 +97,11 @@ i18n:  ## Update locales
 	$(MAKE) -C "./backend/" i18n
 	$(MAKE) -C "./frontend/" i18n
 
+.PHONY: lint-frontend
+lint-frontend: ## Lint frontend codebase
+	@echo "Lint frontend"
+	$(MAKE) -C "./frontend/" lint
+
 .PHONY: test-backend
 test-backend:  ## Test backend codebase
 	@echo "Test backend"
