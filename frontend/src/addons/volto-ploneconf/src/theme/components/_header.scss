@@ -58,6 +58,9 @@
       &.main {
         width: 267px;
         height: 150px;
+        @media only screen and (max-width: $largest-mobile-screen) {
+          margin-left: $spacing-small;
+        }
       }
 
       &.switch {
