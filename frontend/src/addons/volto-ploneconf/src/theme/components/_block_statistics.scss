@@ -1,19 +1,30 @@
 #main {
-  .ui.statistic {
-    .slate {
-      .value {
-        font-size: 4rem;
-        font-weight: normal;
-        line-height: 1em;
-        text-align: center;
-        text-transform: uppercase;
+  .ui.statistics {
+    &.two,
+    &.three,
+    &.four{
+      .ui.statistic {
+        @media only screen and (max-width: $largest-mobile-screen) {
+          min-width: 100%;
+        }
       }
+      }
+    .ui.statistic {
+      .slate {
+        .value {
+          font-size: 4rem;
+          font-weight: normal;
+          line-height: 1em;
+          text-align: center;
+          text-transform: uppercase;
+        }
 
-      .label {
-        font-size: 1em;
-        font-weight: 700;
-        text-align: center;
-        text-transform: uppercase;
+        .label {
+          font-size: 1em;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+        }
       }
     }
   }
