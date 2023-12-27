@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-25 17:12+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,3 +13,334 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
+
+#: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "."
+msgstr ""
+
+#: ploneconf/profiles/default/types/Keynote.xml
+msgid "A Keynote in the Conference."
+msgstr ""
+
+#: ploneconf/profiles/default/types/Person.xml
+msgid "A Person in the Conference."
+msgstr ""
+
+#: ploneconf/profiles/default/types/Slot.xml
+msgid "A Slot in the Conference."
+msgstr ""
+
+#: ploneconf/profiles/default/types/Talk.xml
+msgid "A Talk in the Conference."
+msgstr ""
+
+#: ploneconf/profiles/default/types/Training.xml
+msgid "A Training in the Conference."
+msgstr ""
+
+#: ploneconf/behaviors/session.py:45
+#: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "Audience"
+msgstr ""
+
+#: ploneconf/profiles/default/types/Sponsor.xml
+msgid "Conference Sponsor."
+msgstr ""
+
+#: ploneconf/profiles/default/types/SponsorsDB.xml
+msgid "Conference Sponsoring information."
+msgstr ""
+
+#: ploneconf/content/sponsors/sponsor_level.py:21
+msgid "Display on Frontpage"
+msgstr ""
+
+#: ploneconf/content/talk.py:12
+#: ploneconf/content/training.py:12
+msgid "Duration"
+msgstr ""
+
+#: ploneconf/content/talk.py:13
+msgid "Duration of the talk"
+msgstr ""
+
+#: ploneconf/content/training.py:13
+msgid "Duration of the training"
+msgstr ""
+
+#: ploneconf/profiles/default/types/Keynote.xml
+#: ploneconf/profiles/default/types/Person.xml
+#: ploneconf/profiles/default/types/Slot.xml
+msgid "Edit"
+msgstr ""
+
+#: ploneconf/content/person.py:21
+msgid "Email address"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:75
+msgid "Embed code for slides"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:87
+msgid "Embed code for video"
+msgstr ""
+
+#: ploneconf/behaviors/schedule.py:31
+msgid "End time"
+msgstr ""
+
+#: ploneconf/behaviors/schedule.py:39
+msgid "End time must be after start time."
+msgstr ""
+
+#: ploneconf/behaviors/links.py:41
+msgid "GitHub"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:42
+msgid "GitHub profile organization"
+msgstr ""
+
+#: ploneconf/exportimport/templates/import_all.pt:12
+msgid "Import Content Data"
+msgstr ""
+
+#: ploneconf/exportimport/templates/import_all.pt:34
+msgid "Import all"
+msgstr ""
+
+#: ploneconf/profiles.zcml:22
+msgid "Initial content for our website."
+msgstr ""
+
+#: ploneconf/behaviors/links.py:55
+msgid "Instagram"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:56
+msgid "Instagram profile url"
+msgstr ""
+
+#: ploneconf/profiles.zcml:30
+msgid "Install Production pas.plugins.authomatic."
+msgstr ""
+
+#: ploneconf/profiles/default/types/Keynote.xml
+msgid "Keynote"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:36
+#: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "Level"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:28
+msgid "Link to site"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:62
+msgid "LinkedIn"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:63
+msgid "LinkedIn profile url"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:15
+msgid "Links"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:48
+msgid "Mastodon"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:49
+msgid "Mastodon profile url"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:63
+msgid "Materials"
+msgstr ""
+
+#: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "Metadata"
+msgstr ""
+
+#: ploneconf/profiles/default/types/SponsorLevel.xml
+msgid "Package of sponsorship for the conference."
+msgstr ""
+
+#: ploneconf/profiles/default/types/Person.xml
+msgid "Person"
+msgstr ""
+
+#: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "Person Label"
+msgstr ""
+
+#: ploneconf/content/person.py:22
+msgid "Personal e-mail address"
+msgstr ""
+
+#: ploneconf/profiles.zcml:22
+msgid "Plone Conference 2024: Initial content"
+msgstr ""
+
+#: ploneconf/profiles.zcml:13
+msgid "Plone Conference 2024: Install"
+msgstr ""
+
+#: ploneconf/profiles.zcml:30
+msgid "Plone Conference 2024: Production pas.plugins.authomatic"
+msgstr ""
+
+#: ploneconf/profiles.zcml:38
+msgid "Plone Conference 2024: Uninstall"
+msgstr ""
+
+#: ploneconf/profiles.zcml:13
+msgid "Policy package to install our site"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:26
+msgid "Presenters"
+msgstr ""
+
+#: ploneconf/exportimport/templates/import_all.pt:16
+msgid "Run all imports"
+msgstr ""
+
+#: ploneconf/behaviors/schedule.py:19
+msgid "Schedule"
+msgstr ""
+
+#: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "Session Level."
+msgstr ""
+
+#: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "Session Track."
+msgstr ""
+
+#: ploneconf/content/sponsors/sponsor_level.py:22
+msgid "Should this level be displayed on the FrontPage?"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:27
+msgid "Site"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:68
+msgid "Slides"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:74
+msgid "Slides embed code"
+msgstr ""
+
+#: ploneconf/profiles/default/types/Slot.xml
+msgid "Slot"
+msgstr ""
+
+#: ploneconf/profiles/default/types/Sponsor.xml
+msgid "Sponsor"
+msgstr ""
+
+#: ploneconf/profiles/default/types/SponsorsDB.xml
+msgid "Sponsors Database"
+msgstr ""
+
+#: ploneconf/profiles/default/types/SponsorLevel.xml
+msgid "Sponsorship Level"
+msgstr ""
+
+#: ploneconf/behaviors/schedule.py:23
+msgid "Start time"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:19
+msgid "Summary"
+msgstr ""
+
+#: ploneconf/profiles/default/types/Talk.xml
+msgid "Talk"
+msgstr ""
+
+#: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "Target Audience."
+msgstr ""
+
+#: ploneconf/behaviors/session.py:37
+msgid "Target Level"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:46
+msgid "Target audience"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:16
+msgid "Title"
+msgstr ""
+
+#: ploneconf/behaviors/schedule.py:42
+#: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "Track"
+msgstr ""
+
+#: ploneconf/profiles/default/types/Training.xml
+msgid "Training"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:69
+msgid "URL of slides"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:81
+msgid "URL of video"
+msgstr ""
+
+#: ploneconf/profiles.zcml:38
+msgid "Uninstall Plone Conference 2024 setup."
+msgstr ""
+
+#: ploneconf/behaviors/session.py:80
+msgid "Video"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:86
+msgid "Video embed code"
+msgstr ""
+
+#: ploneconf/profiles/default/types/Keynote.xml
+#: ploneconf/profiles/default/types/Person.xml
+#: ploneconf/profiles/default/types/Slot.xml
+msgid "View"
+msgstr ""
+
+#: ploneconf/content/sponsors/sponsor_level.py:14
+msgid "Visibility"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:34
+msgid "X"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:35
+msgid "X profile url"
+msgstr ""
+
+#. Default: "Used in item listings and search results."
+#: ploneconf/content/sponsors/sponsor.py:18
+msgid "help_description"
+msgstr ""
+
+#. Default: "Summary"
+#: ploneconf/content/sponsors/sponsor.py:17
+msgid "label_description"
+msgstr ""
+
+#. Default: "Title"
+#: ploneconf/content/sponsors/sponsor.py:14
+msgid "label_title"
+msgstr ""

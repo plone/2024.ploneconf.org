@@ -3,7 +3,7 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       metal:use-macro="context/main_template/macros/master"
-      i18n:domain="plone.distribution"
+      i18n:domain="ploneconf"
 >
 
   <div metal:fill-slot="main">

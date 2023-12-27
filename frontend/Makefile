@@ -87,6 +87,7 @@ patches:
 
 .PHONY: i18n
 i18n: ## Sync i18n
+	$(MAKE) -C "./src/addons/volto-ploneconf" i18n
 	yarn i18n
 
 .PHONY: i18n-ci

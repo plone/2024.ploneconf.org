@@ -86,6 +86,7 @@ install: ## Install the local environment, Cypress, build acceptance containers
 .PHONY: i18n
 i18n: ## Sync i18n
 	@echo "$(YELLOW)==> Do not forget to setup the local environment (make install) $(RESET)"
+	yarn
 	yarn i18n
 
 .PHONY: format
