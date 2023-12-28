@@ -31,6 +31,7 @@
 
       &.active {
         .close {
+          background: var(--main-color);
           color: var(--reverse-color);
         }
       }
@@ -40,11 +41,25 @@
           color: var(--reverse-color);
         }
 
+        .submenu-header {
+          h2 {
+            margin-left: 0px;
+            font-weight: 700;
+          }
+        }
+
         .subitem-wrapper {
           border-left: 1px solid var(--reverse-color);
 
-          a > span {
+          li > a {
             color: var(--reverse-color);
+
+            span {
+              &:hover {
+                border-bottom: 1px solid var(--reverse-color);
+              }
+              color: var(--reverse-color);
+            }
           }
         }
       }

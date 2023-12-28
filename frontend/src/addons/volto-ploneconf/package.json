@@ -60,13 +60,13 @@
     "@eeacms/volto-matomo"
   ],
   "dependencies": {
-    "@eeacms/volto-accordion-block": "*",
+    "@eeacms/volto-accordion-block": "10.4.5",
     "@eeacms/volto-matomo": "*",
     "@eeacms/volto-statistic-block": "*",
     "@kitconcept/volto-button-block": "*",
-    "@kitconcept/volto-light-theme": "*",
+    "@kitconcept/volto-light-theme": "3.0.0-alpha.0",
     "@kitconcept/volto-separator-block": "4.0.0",
-    "@kitconcept/volto-slider-block": "*",
+    "@kitconcept/volto-slider-block": "6.1.0",
     "@kitconcept/volto-social-blocks": "1.0.0-alpha.4",
     "@mbarde/volto-image-crop-widget": "0.5.1",
     "@plone-collective/volto-authomatic": "2.0.0",

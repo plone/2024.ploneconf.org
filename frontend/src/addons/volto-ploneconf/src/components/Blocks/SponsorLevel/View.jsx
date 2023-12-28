@@ -73,25 +73,32 @@ const View = (props) => {
   return (
     <div className="block sponsorLevel">
       {!loading && (
-        <div className="sponsorList">
-          {sponsors.length === 0 ? (
-            <UniversalLink
-              href={`${urlAction}`}
-              title={intl.formatMessage(messages.sponsor)}
-            >
-              <h3>
-                <FormattedMessage
-                  id="Be the First!"
-                  defaultMessage="Be the First!"
-                />
-              </h3>
-            </UniversalLink>
-          ) : (
-            sponsors.map(function (sponsor, i) {
-              return <Sponsor content={sponsor} key={i} />;
-            })
-          )}
-        </div>
+        <>
+          <div className="sponsorLevelHeader">
+            <span className="sponsorLevelTitle">
+              <FormattedMessage id="Sponsors" defaultMessage="Sponsors" />
+            </span>
+          </div>
+          <div className="sponsorList">
+            {sponsors.length === 0 ? (
+              <UniversalLink
+                href={`${urlAction}`}
+                title={intl.formatMessage(messages.sponsor)}
+              >
+                <h3>
+                  <FormattedMessage
+                    id="Be the First!"
+                    defaultMessage="Be the First!"
+                  />
+                </h3>
+              </UniversalLink>
+            ) : (
+              sponsors.map(function (sponsor, i) {
+                return <Sponsor content={sponsor} key={i} />;
+              })
+            )}
+          </div>
+        </>
       )}
     </div>
   );

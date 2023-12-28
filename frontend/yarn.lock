@@ -1952,12 +1952,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-accordion-block@npm:*":
-  version: 10.4.4
-  resolution: "@eeacms/volto-accordion-block@npm:10.4.4"
+"@eeacms/volto-accordion-block@npm:10.4.5":
+  version: 10.4.5
+  resolution: "@eeacms/volto-accordion-block@npm:10.4.5"
   dependencies:
     "@eeacms/volto-widget-theme-picker": "*"
-  checksum: 5ed998c9ec94cc5fadd5dc20d0209e6952a4a36301d3a56a588f0eb64fbc36c41465a3b4eb9626e442ca933fd860052ed65742491b5d6401df20b95151146990
+  checksum: f2207ba87dede667e630138b0d214191624b1d68a4eafbc10ee188c457c8897aaa5a7474978f81ee4373a9a39ec90c7266e53461e561074f0e2001aa48711350
   languageName: node
   linkType: hard
 
@@ -2736,9 +2736,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-light-theme@npm:*":
-  version: 2.0.0
-  resolution: "@kitconcept/volto-light-theme@npm:2.0.0"
+"@kitconcept/volto-light-theme@npm:3.0.0-alpha.0":
+  version: 3.0.0-alpha.0
+  resolution: "@kitconcept/volto-light-theme@npm:3.0.0-alpha.0"
   peerDependencies:
     "@eeacms/volto-accordion-block": ^10.4.0
     "@kitconcept/volto-button-block": ^2.3.1
@@ -2747,9 +2747,9 @@ __metadata:
     "@kitconcept/volto-highlight-block": ^3.0.0
     "@kitconcept/volto-introduction-block": ^1.0.0
     "@kitconcept/volto-separator-block": ^4.0.0
-    "@kitconcept/volto-slider-block": 5.1.1
-    "@plone/volto": ^17.5.0
-  checksum: 17e7b80e89d3b328c606a0b9371bebbce899c078bff32c1e5b182cfbb0046b1232dae14e9792cd2c41446b1ecb339955bea9b8fe70a2051155d1e9e6b9832f9b
+    "@kitconcept/volto-slider-block": ^6.1.0
+    "@plone/volto": ^17.6.1
+  checksum: ec3e2b21e119d249d5baf16c5d512ff4a6b9c5fccade9260958c565b07522deebffc59de9a0bd0f91e7ca84575b069fef846e71ac7b7b26386de046ea6c04fea
   languageName: node
   linkType: hard
 
@@ -2762,16 +2762,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-slider-block@npm:*":
-  version: 5.2.1
-  resolution: "@kitconcept/volto-slider-block@npm:5.2.1"
+"@kitconcept/volto-slider-block@npm:6.1.0":
+  version: 6.1.0
+  resolution: "@kitconcept/volto-slider-block@npm:6.1.0"
   dependencies:
     deepmerge: 4.2.2
-    react-slick: 0.29.0
-    slick-carousel: 1.8.1
+    embla-carousel-react: ^8.0.0-rc15
   peerDependencies:
     "@plone/volto": ^17.0.0-alpha.21
-  checksum: b7cba317565d75180be3db6d3ab38b8bdab45d7a41abe8e9aca43076c3d745b18de7ea4963b4cbe13120f488c5fe90f26180c2a6d2a91741161067cd8988688f
+  checksum: 5a3fc30695653632d28d1f6f7aba6699906b4da86547312f76fc9c3db1fd319c27f9b253660f77507525ad8293fb41c74cef6f4c4051bdec11c880fa496ffd6e
   languageName: node
   linkType: hard
 
@@ -3188,9 +3187,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/registry@npm:1.0.1":
-  version: 1.0.1
-  resolution: "@plone/registry@npm:1.0.1"
+"@plone/registry@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@plone/registry@npm:1.1.0"
   dependencies:
     crypto-random-string: 3.2.0
     debug: 4.3.2
@@ -3203,7 +3202,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 0b0b777c5c8be3823d28e34adc5e6ec4d384d0034b6471ec99a71659770528b5aaa3febb0170694d26853ab1571f53cfad6b94c9d7de61acfdf97777c0f0be5f
+  checksum: 0f787724ff416c97a7033ce495f43c4c319145ffb35d44d1598a557117ffdd011bdf44478037f89e064adab50a367fd16b8f5c0843b80f55ba5d9587427da42c
   languageName: node
   linkType: hard
 
@@ -3231,26 +3230,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/volto-slate@npm:18.0.0-alpha.4":
-  version: 18.0.0-alpha.4
-  resolution: "@plone/volto-slate@npm:18.0.0-alpha.4"
+"@plone/volto-slate@npm:18.0.0-alpha.5":
+  version: 18.0.0-alpha.5
+  resolution: "@plone/volto-slate@npm:18.0.0-alpha.5"
   dependencies:
     image-extensions: 1.1.0
     is-url: 1.2.4
     jsdom: ^16.6.0
-    react-intersection-observer: ^8.32.0
+    react: 17.0.2
+    react-dom: 17.0.2
+    react-intersection-observer: 9.1.0
     slate: 0.100.0
     slate-history: 0.100.0
     slate-hyperscript: 0.100.0
     slate-react: 0.98.4
     weak-key: ^1.0.2
-  checksum: cbea50cacd9376595eb3fac24b096b65d6657d6c8ea3421a4c40826741a37dbdd60a8aba78bf4c2110480bfd5489ef7d6fb170915a33aaaa47d0ebcb837ba48d
+  checksum: 1f610563d504525a0ac8fa070b7758facaf87a8c6f6f8d9e4df4c79dbfa2707788b2c23bfb8525b00924405b6917778de9735d7604a637c9a86b1d91fa0f9702
   languageName: node
   linkType: hard
 
-"@plone/volto@npm:18.0.0-alpha.4":
-  version: 18.0.0-alpha.4
-  resolution: "@plone/volto@npm:18.0.0-alpha.4"
+"@plone/volto@npm:18.0.0-alpha.5":
+  version: 18.0.0-alpha.5
+  resolution: "@plone/volto@npm:18.0.0-alpha.5"
   dependencies:
     "@babel/core": ^7.0.0
     "@babel/eslint-parser": 7.22.15
@@ -3266,9 +3267,9 @@ __metadata:
     "@loadable/component": 5.14.1
     "@loadable/server": 5.14.0
     "@loadable/webpack-plugin": 5.15.2
-    "@plone/registry": 1.0.1
+    "@plone/registry": 1.1.0
     "@plone/scripts": 3.1.0
-    "@plone/volto-slate": 18.0.0-alpha.4
+    "@plone/volto-slate": 18.0.0-alpha.5
     autoprefixer: 10.4.8
     axe-core: 4.4.2
     babel-plugin-add-module-exports: 0.2.1
@@ -3425,7 +3426,7 @@ __metadata:
     webpack-node-externals: 3.0.0
     xmlrpc: 1.3.2
     yarnhook: 0.5.1
-  checksum: 7691b740475dfcfada54a4317d8af07c04dc041e0d14a94182627daaf8692b967a9f20df184672bf329b17d0c777cb335882e685933f73877a7b4001b4d3f5bf
+  checksum: baff701a357a2d760470f1e9e9937ae1f82dfe6e03f817450838c24f626fdf8249dbe10490292a808b361c7c29368a8d3b4313e26310496d14d424ef4a4c0db8
   languageName: node
   linkType: hard
 
@@ -11223,6 +11224,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"embla-carousel-react@npm:^8.0.0-rc15":
+  version: 8.0.0-rc17
+  resolution: "embla-carousel-react@npm:8.0.0-rc17"
+  dependencies:
+    embla-carousel: 8.0.0-rc17
+    embla-carousel-reactive-utils: 8.0.0-rc17
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.1 || ^18.0.0
+  checksum: db739232a1983ea01be80d0657b80640da14184796d12ccaf72c57154521ab96b02ff231d7e8cd437b86c7130b98ee63aaca0e8aecd366245b2310e4255d27fc
+  languageName: node
+  linkType: hard
+
+"embla-carousel-reactive-utils@npm:8.0.0-rc17":
+  version: 8.0.0-rc17
+  resolution: "embla-carousel-reactive-utils@npm:8.0.0-rc17"
+  peerDependencies:
+    embla-carousel: 8.0.0-rc17
+  checksum: b55ef56112c60947bf24fa25241c9b17ae3bee0d9a02429e366c417f0e496738c687f8d2e82a4fd620b349320949b2069bad08e7745542accb644cdb7315ab0e
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:8.0.0-rc17":
+  version: 8.0.0-rc17
+  resolution: "embla-carousel@npm:8.0.0-rc17"
+  checksum: f5140d769a796390d89116d500da9b7adcd5eb4124a4541f080ad7d14c3a15fd54b1c8038d1ba2eaebd1cb341f7632f9b802b685beb2b000f56517b062e0871f
+  languageName: node
+  linkType: hard
+
 "emittery@npm:^0.7.1":
   version: 0.7.2
   resolution: "emittery@npm:0.7.2"
@@ -11326,13 +11355,6 @@ __metadata:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
   checksum: fbd8cdc9263be71cc737aa8a7d6c57b43d6aa38f6cc75dde6fcd3598a130cc465f979d2f4d01bb3bf475acb43817749c79f8eef9be048683602ca91ab52e4f11
-  languageName: node
-  linkType: hard
-
-"enquire.js@npm:^2.1.6":
-  version: 2.1.6
-  resolution: "enquire.js@npm:2.1.6"
-  checksum: bb094054ee2768edafc3b80fb2b65b79d63160d625085162e9c9016843b6eaa13d7430201bf593c2e31e1725b3208f47f57aa27e03b19729e7590d1ca2241451
   languageName: node
   linkType: hard
 
@@ -13068,7 +13090,7 @@ __metadata:
   resolution: "frontend@workspace:."
   dependencies:
     "@plone/scripts": ^3.0.0
-    "@plone/volto": 18.0.0-alpha.4
+    "@plone/volto": 18.0.0-alpha.5
     "@storybook/addon-actions": ^6.3.0
     "@storybook/addon-controls": 6.3.0
     "@storybook/addon-essentials": ^6.3.0
@@ -16552,15 +16574,6 @@ __metadata:
   version: 5.0.1
   resolution: "json-stringify-safe@npm:5.0.1"
   checksum: 48ec0adad5280b8a96bb93f4563aa1667fd7a36334f79149abd42446d0989f2ddc58274b479f4819f1f00617957e6344c886c55d05a4e15ebb4ab931e4a6a8ee
-  languageName: node
-  linkType: hard
-
-"json2mq@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "json2mq@npm:0.2.0"
-  dependencies:
-    string-convert: ^0.2.0
-  checksum: 5672c3abdd31e21a0e2f0c2688b4948103687dab949a1c5a1cba98667e899a96c2c7e3d71763c4f5e7cd7d7c379ea5dd5e1a9b2a2107dd1dfa740719a11aa272
   languageName: node
   linkType: hard
 
@@ -21243,15 +21256,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:^8.32.0":
-  version: 8.34.0
-  resolution: "react-intersection-observer@npm:8.34.0"
-  peerDependencies:
-    react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
-  checksum: 7713fecfd1512c7f5a60f9f0bf15403b8f8bbd4110bcafaeaea6de36a0e0eb60368c3638f99e9c97b75ad8fc787ea48c241dcb5c694f821d7f2976f709082cc5
-  languageName: node
-  linkType: hard
-
 "react-intl-redux@npm:2.2.0":
   version: 2.2.0
   resolution: "react-intl-redux@npm:2.2.0"
@@ -21606,22 +21610,6 @@ __metadata:
     react: ^16.0.0
     react-dom: ^16.0.0
   checksum: 1f8670b4a0d5bd676101a3fabd4fd4e02b4b6009191adc39261095c1255744b8062bf15c7f8a622a29a2f18ec80eac9d70d20906a5546ba621d387d726f62cab
-  languageName: node
-  linkType: hard
-
-"react-slick@npm:0.29.0":
-  version: 0.29.0
-  resolution: "react-slick@npm:0.29.0"
-  dependencies:
-    classnames: ^2.2.5
-    enquire.js: ^2.1.6
-    json2mq: ^0.2.0
-    lodash.debounce: ^4.0.8
-    resize-observer-polyfill: ^1.5.0
-  peerDependencies:
-    react: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 67ce4981914da8a76c6efb4bc8ee7ab69e04c33bd4b3517419ab2165679a3c701dae781556149713fe2c542f84188b7ca101ea58883537be5c05756408f48c8b
   languageName: node
   linkType: hard
 
@@ -22499,13 +22487,6 @@ __metadata:
   version: 1.0.0
   resolution: "requires-port@npm:1.0.0"
   checksum: eee0e303adffb69be55d1a214e415cf42b7441ae858c76dfc5353148644f6fd6e698926fc4643f510d5c126d12a705e7c8ed7e38061113bdf37547ab356797ff
-  languageName: node
-  linkType: hard
-
-"resize-observer-polyfill@npm:^1.5.0":
-  version: 1.5.1
-  resolution: "resize-observer-polyfill@npm:1.5.1"
-  checksum: 57e7f79489867b00ba43c9c051524a5c8f162a61d5547e99333549afc23e15c44fd43f2f318ea0261ea98c0eb3158cca261e6f48d66e1ed1cd1f340a43977094
   languageName: node
   linkType: hard
 
@@ -23601,15 +23582,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"slick-carousel@npm:1.8.1":
-  version: 1.8.1
-  resolution: "slick-carousel@npm:1.8.1"
-  peerDependencies:
-    jquery: ">=1.8.0"
-  checksum: acaad391e4d8bc1c7fdb8d361faa1f1d60829b31d618b54bc38c0550a59b26de36537e0ab4bc0364176ec11d1a61d0cf11e99d8d5b1285d656673c9a1a719257
-  languageName: node
-  linkType: hard
-
 "smart-buffer@npm:^4.2.0":
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
@@ -24087,13 +24059,6 @@ __metadata:
   version: 0.3.1
   resolution: "string-argv@npm:0.3.1"
   checksum: efbd0289b599bee808ce80820dfe49c9635610715429c6b7cc50750f0437e3c2f697c81e5c390208c13b5d5d12d904a1546172a88579f6ee5cbaaaa4dc9ec5cf
-  languageName: node
-  linkType: hard
-
-"string-convert@npm:^0.2.0":
-  version: 0.2.1
-  resolution: "string-convert@npm:0.2.1"
-  checksum: 1098b1d8e3712c72d0a0b0b7f5c36c98af93e7660b5f0f14019e41bcefe55bfa79214d5e03e74d98a7334a0b9bf2b7f4c6889c8c24801aa2ae2f9ebe1d8a1ef9
   languageName: node
   linkType: hard
 
@@ -26343,13 +26308,13 @@ __metadata:
   resolution: "volto-ploneconf@workspace:src/addons/volto-ploneconf"
   dependencies:
     "@babel/eslint-parser": 7.22.15
-    "@eeacms/volto-accordion-block": "*"
+    "@eeacms/volto-accordion-block": 10.4.5
     "@eeacms/volto-matomo": "*"
     "@eeacms/volto-statistic-block": "*"
     "@kitconcept/volto-button-block": "*"
-    "@kitconcept/volto-light-theme": "*"
+    "@kitconcept/volto-light-theme": 3.0.0-alpha.0
     "@kitconcept/volto-separator-block": 4.0.0
-    "@kitconcept/volto-slider-block": "*"
+    "@kitconcept/volto-slider-block": 6.1.0
     "@kitconcept/volto-social-blocks": 1.0.0-alpha.4
     "@mbarde/volto-image-crop-widget": 0.5.1
     "@plone-collective/volto-authomatic": 2.0.0

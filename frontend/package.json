@@ -139,7 +139,7 @@
     "node": "^16 || ^18 || ^20"
   },
   "dependencies": {
-    "@plone/volto": "18.0.0-alpha.4"
+    "@plone/volto": "18.0.0-alpha.5"
   },
   "devDependencies": {
     "@plone/scripts": "^3.0.0",

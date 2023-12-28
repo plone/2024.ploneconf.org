@@ -3,6 +3,22 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  .sponsorLevelHeader {
+    padding: 20px 0 20px 0;
+
+    > span.sponsorLevelTitle {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: $darkGrey;
+      font-size: 30px;
+      font-weight: 700;
+      hyphens: auto;
+      line-height: 36px;
+      word-break: break-word;
+      word-wrap: break-word;
+    }
+  }
+
   .sponsorList {
     display: flex;
     flex-wrap: wrap;
