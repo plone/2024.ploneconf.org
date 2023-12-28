@@ -2,13 +2,14 @@
   .ui.statistics {
     &.two,
     &.three,
-    &.four{
+    &.four {
       .ui.statistic {
         @media only screen and (max-width: $largest-mobile-screen) {
           min-width: 100%;
         }
       }
-      }
+    }
+
     .ui.statistic {
       .slate {
         .value {
