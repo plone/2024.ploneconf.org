@@ -5,6 +5,8 @@ services:
     image: ghcr.io/plone/ploneconf-2024-frontend:${STACK_PARAM:-latest}
     environment:
       RAZZLE_INTERNAL_API_PATH: http://2024-ploneconf-org_backend:8080/Plone
+      RAZZLE_MATOMO_SITE_ID: 10
+      RAZZLE_MATOMO_URL: https://stats.ploneconf.org/
     depends_on:
       - backend
     networks:
@@ -57,7 +59,7 @@ services:
         - traefik.http.services.svc-2024-ploneconf-backend.loadbalancer.server.port=8080
         # MIDDLEWARES
         ### ClassicUI Access Authentication
-        - traefik.http.middlewares.mw-2024-ploneconf-backend-auth.basicauth.users=ploneconf:$$2y$$05$$SLsKIKgK.NlD.64HMV42hOUNi3pQM/T.iW4qziWs0xcKHzkaa8T8C
+        - traefik.http.middlewares.mw-2024-ploneconf-backend-auth.basicauth.users=ploneconf:$$apr1$$OLAFAXJo$$8SyxCdTdo00Smv0wtJnEi1
         ### Backend ++api++ VHM
         - "traefik.http.middlewares.mw-2024-ploneconf-vhm-cleanup.replacepathregex.regex=^/((\\+\\+api\\+\\+/){1,})($$|.*)"
         - "traefik.http.middlewares.mw-2024-ploneconf-vhm-cleanup.replacepathregex.replacement=/VirtualHostBase/https/2024.ploneconf.org/Plone/++api++/VirtualHostRoot/$$3"
