@@ -5,7 +5,7 @@ services:
     image: ghcr.io/plone/ploneconf-2024-frontend:${STACK_PARAM:-latest}
     environment:
       RAZZLE_INTERNAL_API_PATH: http://testing-ploneconf-org_backend:8080/Plone
-      RAZZLE_MATOMO_SITE_ID: 10
+      RAZZLE_MATOMO_SITE_ID: 12
       RAZZLE_MATOMO_URL: https://stats.ploneconf.org/
     depends_on:
       - backend
