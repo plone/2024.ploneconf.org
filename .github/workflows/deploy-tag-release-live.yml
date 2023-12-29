@@ -141,8 +141,8 @@ jobs:
           remote_port: ${{ vars.DEPLOY_PORT }}
           remote_user: ${{ vars.DEPLOY_USER }}
           remote_private_key: ${{ secrets.DEPLOY_SSH }}
-          stack_file: devops/stacks/2023.ploneconf.org.yml
-          stack_name: 2023-ploneconf-org
+          stack_file: devops/stacks/2024.ploneconf.org.yml
+          stack_name: 2024-ploneconf-org
           stack_param: ${{ needs.meta.outputs.TAG }}
           env_file: ${{ secrets.ENV_FILE }}
           deploy_timeout: 480
