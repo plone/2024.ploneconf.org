@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2023-12-27T20:42:10.497Z\n"
+"POT-Creation-Date: 2024-01-30T20:46:22.534Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -38,6 +38,7 @@ msgstr ""
 msgid "Sponsor Us"
 msgstr ""
 
+#: components/Blocks/SponsorLevel/View
 #: components/Sponsors/Sponsors
 # defaultMessage: Sponsors
 msgid "Sponsors"

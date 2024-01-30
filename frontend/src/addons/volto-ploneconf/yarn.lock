@@ -1702,12 +1702,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-accordion-block@npm:*":
-  version: 10.4.5
-  resolution: "@eeacms/volto-accordion-block@npm:10.4.5"
+"@eeacms/volto-accordion-block@npm:10.4.6":
+  version: 10.4.6
+  resolution: "@eeacms/volto-accordion-block@npm:10.4.6"
   dependencies:
     "@eeacms/volto-widget-theme-picker": "*"
-  checksum: f2207ba87dede667e630138b0d214191624b1d68a4eafbc10ee188c457c8897aaa5a7474978f81ee4373a9a39ec90c7266e53461e561074f0e2001aa48711350
+  checksum: 7435b0cddbe7f3b611207e74c2e19bd04af4d2fde1b4439ad19941d10ea29f2f9aae2a0195e63a47ce01de72db27d2f9ce4382a774a82fff7ccc9c9585930013
   languageName: node
   linkType: hard
 
@@ -1720,12 +1720,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-statistic-block@npm:*":
-  version: 4.0.2
-  resolution: "@eeacms/volto-statistic-block@npm:4.0.2"
+"@eeacms/volto-statistic-block@npm:4.1.0":
+  version: 4.1.0
+  resolution: "@eeacms/volto-statistic-block@npm:4.1.0"
   dependencies:
     "@eeacms/countup": "*"
-  checksum: f3e5e2d30f6a1c15fef607ca61635ff69f2b2a468bd9e078cf45c7ed3d5a8141f90ed6f83fcb8a45dbf1f0e1e365957fb4d675fd2abbea8b82934c7c67e5601e
+  checksum: a49082bf07775ba5054e7184bc572d1611754881111d9cf1b825feacf399f5fe10b79e32c0e0a63a76b89dee078e6e1700d02c12c0ae8babfd60c1545910fd4a
   languageName: node
   linkType: hard
 
@@ -1878,16 +1878,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-button-block@npm:*":
+"@kitconcept/volto-button-block@npm:2.3.1":
   version: 2.3.1
   resolution: "@kitconcept/volto-button-block@npm:2.3.1"
   checksum: c8b2dd02d48b3db640784116c92e585267fda6bacf6a856233720e05bbffb9c89dace536176937b38c038b6bd24a452fb880538157f58da35423d558f29c90d2
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-light-theme@npm:*":
-  version: 2.1.0
-  resolution: "@kitconcept/volto-light-theme@npm:2.1.0"
+"@kitconcept/volto-light-theme@npm:3.0.0-alpha.2":
+  version: 3.0.0-alpha.2
+  resolution: "@kitconcept/volto-light-theme@npm:3.0.0-alpha.2"
   peerDependencies:
     "@eeacms/volto-accordion-block": ^10.4.0
     "@kitconcept/volto-button-block": ^2.3.1
@@ -1896,30 +1896,30 @@ __metadata:
     "@kitconcept/volto-highlight-block": ^3.0.0
     "@kitconcept/volto-introduction-block": ^1.0.0
     "@kitconcept/volto-separator-block": ^4.0.0
-    "@kitconcept/volto-slider-block": 5.1.1
-    "@plone/volto": ^17.5.0
-  checksum: db69218abc9aacfe56a469b23fd31269320ce64b8f17eaefca2539c48e812877da7529ed33ad982b4588a2d4a4ce923b0542e1c84f6bdf89be7c06aaeff5d854
+    "@kitconcept/volto-slider-block": ^6.1.0
+    "@plone/volto": ^17.8.0
+  checksum: aa198df1c1c89737c713403f132f37a23ae24734a10b5cc238f9787146e79ba21be5843f6eadcba56a24f0209a313ff23669fc15991a344faf332ebc4d91b19c
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-separator-block@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@kitconcept/volto-separator-block@npm:4.0.0"
+"@kitconcept/volto-separator-block@npm:4.1.0":
+  version: 4.1.0
+  resolution: "@kitconcept/volto-separator-block@npm:4.1.0"
   peerDependencies:
     "@plone/volto": ">=16.0.0"
-  checksum: 36924c9c3e60eba06b62a73a10128577addf9fc645326dde137152ca78b922099715286162cd38340747ef7696b5f4dce5a2073ce5ec506181df84bafc92bce1
+  checksum: 3907a7eb7987a39907630ba0b46d1b8eb64a08008e0ad9b894d1347244d09f47c8daad398937cf5ea136697374d0c8352b825c8b2e7c4969367c8125275fdb79
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-slider-block@npm:*":
-  version: 6.1.0
-  resolution: "@kitconcept/volto-slider-block@npm:6.1.0"
+"@kitconcept/volto-slider-block@npm:6.1.1":
+  version: 6.1.1
+  resolution: "@kitconcept/volto-slider-block@npm:6.1.1"
   dependencies:
     deepmerge: 4.2.2
     embla-carousel-react: ^8.0.0-rc15
   peerDependencies:
     "@plone/volto": ^17.0.0-alpha.21
-  checksum: 5a3fc30695653632d28d1f6f7aba6699906b4da86547312f76fc9c3db1fd319c27f9b253660f77507525ad8293fb41c74cef6f4c4051bdec11c880fa496ffd6e
+  checksum: e5a81af1df855333d6bf69649f620e75bd57a6b5a5a91c4e70e89fd9c2b9996b7a4d39229f39c4c60e785bc5a1efb1c224a9e078b85da1d1bcc6b71c8812e7dc
   languageName: node
   linkType: hard
 
@@ -2157,12 +2157,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone-collective/volto-authomatic@npm:2.0.0":
-  version: 2.0.0
-  resolution: "@plone-collective/volto-authomatic@npm:2.0.0"
+"@plone-collective/volto-authomatic@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@plone-collective/volto-authomatic@npm:2.0.1"
   peerDependencies:
     "@plone/volto": ">=13.8.0"
-  checksum: 16a91f0cc930f04959b1e6b1495a3a751edae8488e94a061481975c7e3a84d496431aff75086a8a4bf7931a51ee7a72b057e63ef62019980003a8872fa537f80
+  checksum: 3ef620d30dd7c5716a327acdd8875df3b7902d2812c9d6dd1faf4dd36fd8462b32d04b20011070edfc781d5139f7eb0745702cf147e4703c0d8bb4315e8abfaa
   languageName: node
   linkType: hard
 
@@ -3772,6 +3772,15 @@ __metadata:
   version: 1.4.616
   resolution: "electron-to-chromium@npm:1.4.616"
   checksum: 9fd53bd4e5cded61ee51164a0d23ced1d7677ab176ef8e28eb4a27ceaae1deb3bb0038024db48478507204bfcd48ef66866c078721915a9c7b019697cc5680bf
+  languageName: node
+  linkType: hard
+
+"embla-carousel-autoplay@npm:8.0.0-rc21":
+  version: 8.0.0-rc21
+  resolution: "embla-carousel-autoplay@npm:8.0.0-rc21"
+  peerDependencies:
+    embla-carousel: 8.0.0-rc21
+  checksum: 782cec546d45c5e843efc8e8357d43e1f66ac9a87c96b1097a1817c523a072efd92c359ef1edf98c5fce2a16f4fc44f81849c1e5684dc4cd4fcc41e7dbcb7f50
   languageName: node
   linkType: hard
 
@@ -8575,18 +8584,19 @@ __metadata:
   resolution: "volto-ploneconf@workspace:."
   dependencies:
     "@babel/eslint-parser": 7.22.15
-    "@eeacms/volto-accordion-block": "*"
+    "@eeacms/volto-accordion-block": 10.4.6
     "@eeacms/volto-matomo": "*"
-    "@eeacms/volto-statistic-block": "*"
-    "@kitconcept/volto-button-block": "*"
-    "@kitconcept/volto-light-theme": "*"
-    "@kitconcept/volto-separator-block": 4.0.0
-    "@kitconcept/volto-slider-block": "*"
+    "@eeacms/volto-statistic-block": 4.1.0
+    "@kitconcept/volto-button-block": 2.3.1
+    "@kitconcept/volto-light-theme": 3.0.0-alpha.2
+    "@kitconcept/volto-separator-block": 4.1.0
+    "@kitconcept/volto-slider-block": 6.1.1
     "@kitconcept/volto-social-blocks": 1.0.0-alpha.4
     "@mbarde/volto-image-crop-widget": 0.5.1
-    "@plone-collective/volto-authomatic": 2.0.0
+    "@plone-collective/volto-authomatic": 2.0.1
     "@plone/scripts": ^3.0.0
     "@plonegovbr/volto-network-block": "*"
+    embla-carousel-autoplay: 8.0.0-rc21
     eslint: 8.49.0
     eslint-config-prettier: 9.0.0
     eslint-config-react-app: 7.0.1
