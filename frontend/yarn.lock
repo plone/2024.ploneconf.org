@@ -1952,12 +1952,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-accordion-block@npm:10.4.5":
-  version: 10.4.5
-  resolution: "@eeacms/volto-accordion-block@npm:10.4.5"
+"@eeacms/volto-accordion-block@npm:10.4.6":
+  version: 10.4.6
+  resolution: "@eeacms/volto-accordion-block@npm:10.4.6"
   dependencies:
     "@eeacms/volto-widget-theme-picker": "*"
-  checksum: f2207ba87dede667e630138b0d214191624b1d68a4eafbc10ee188c457c8897aaa5a7474978f81ee4373a9a39ec90c7266e53461e561074f0e2001aa48711350
+  checksum: 7435b0cddbe7f3b611207e74c2e19bd04af4d2fde1b4439ad19941d10ea29f2f9aae2a0195e63a47ce01de72db27d2f9ce4382a774a82fff7ccc9c9585930013
   languageName: node
   linkType: hard
 
@@ -1970,12 +1970,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-statistic-block@npm:*":
-  version: 4.0.2
-  resolution: "@eeacms/volto-statistic-block@npm:4.0.2"
+"@eeacms/volto-statistic-block@npm:4.1.0":
+  version: 4.1.0
+  resolution: "@eeacms/volto-statistic-block@npm:4.1.0"
   dependencies:
     "@eeacms/countup": "*"
-  checksum: f3e5e2d30f6a1c15fef607ca61635ff69f2b2a468bd9e078cf45c7ed3d5a8141f90ed6f83fcb8a45dbf1f0e1e365957fb4d675fd2abbea8b82934c7c67e5601e
+  checksum: a49082bf07775ba5054e7184bc572d1611754881111d9cf1b825feacf399f5fe10b79e32c0e0a63a76b89dee078e6e1700d02c12c0ae8babfd60c1545910fd4a
   languageName: node
   linkType: hard
 
@@ -2729,16 +2729,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-button-block@npm:*":
+"@kitconcept/volto-button-block@npm:2.3.1":
   version: 2.3.1
   resolution: "@kitconcept/volto-button-block@npm:2.3.1"
   checksum: c8b2dd02d48b3db640784116c92e585267fda6bacf6a856233720e05bbffb9c89dace536176937b38c038b6bd24a452fb880538157f58da35423d558f29c90d2
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-light-theme@npm:3.0.0-alpha.0":
-  version: 3.0.0-alpha.0
-  resolution: "@kitconcept/volto-light-theme@npm:3.0.0-alpha.0"
+"@kitconcept/volto-light-theme@npm:3.0.0-alpha.2":
+  version: 3.0.0-alpha.2
+  resolution: "@kitconcept/volto-light-theme@npm:3.0.0-alpha.2"
   peerDependencies:
     "@eeacms/volto-accordion-block": ^10.4.0
     "@kitconcept/volto-button-block": ^2.3.1
@@ -2748,29 +2748,29 @@ __metadata:
     "@kitconcept/volto-introduction-block": ^1.0.0
     "@kitconcept/volto-separator-block": ^4.0.0
     "@kitconcept/volto-slider-block": ^6.1.0
-    "@plone/volto": ^17.6.1
-  checksum: ec3e2b21e119d249d5baf16c5d512ff4a6b9c5fccade9260958c565b07522deebffc59de9a0bd0f91e7ca84575b069fef846e71ac7b7b26386de046ea6c04fea
+    "@plone/volto": ^17.8.0
+  checksum: aa198df1c1c89737c713403f132f37a23ae24734a10b5cc238f9787146e79ba21be5843f6eadcba56a24f0209a313ff23669fc15991a344faf332ebc4d91b19c
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-separator-block@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@kitconcept/volto-separator-block@npm:4.0.0"
+"@kitconcept/volto-separator-block@npm:4.1.0":
+  version: 4.1.0
+  resolution: "@kitconcept/volto-separator-block@npm:4.1.0"
   peerDependencies:
     "@plone/volto": ">=16.0.0"
-  checksum: 36924c9c3e60eba06b62a73a10128577addf9fc645326dde137152ca78b922099715286162cd38340747ef7696b5f4dce5a2073ce5ec506181df84bafc92bce1
+  checksum: 3907a7eb7987a39907630ba0b46d1b8eb64a08008e0ad9b894d1347244d09f47c8daad398937cf5ea136697374d0c8352b825c8b2e7c4969367c8125275fdb79
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-slider-block@npm:6.1.0":
-  version: 6.1.0
-  resolution: "@kitconcept/volto-slider-block@npm:6.1.0"
+"@kitconcept/volto-slider-block@npm:6.1.1":
+  version: 6.1.1
+  resolution: "@kitconcept/volto-slider-block@npm:6.1.1"
   dependencies:
     deepmerge: 4.2.2
     embla-carousel-react: ^8.0.0-rc15
   peerDependencies:
     "@plone/volto": ^17.0.0-alpha.21
-  checksum: 5a3fc30695653632d28d1f6f7aba6699906b4da86547312f76fc9c3db1fd319c27f9b253660f77507525ad8293fb41c74cef6f4c4051bdec11c880fa496ffd6e
+  checksum: e5a81af1df855333d6bf69649f620e75bd57a6b5a5a91c4e70e89fd9c2b9996b7a4d39229f39c4c60e785bc5a1efb1c224a9e078b85da1d1bcc6b71c8812e7dc
   languageName: node
   linkType: hard
 
@@ -3178,18 +3178,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone-collective/volto-authomatic@npm:2.0.0":
-  version: 2.0.0
-  resolution: "@plone-collective/volto-authomatic@npm:2.0.0"
+"@plone-collective/volto-authomatic@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@plone-collective/volto-authomatic@npm:2.0.1"
   peerDependencies:
     "@plone/volto": ">=13.8.0"
-  checksum: 16a91f0cc930f04959b1e6b1495a3a751edae8488e94a061481975c7e3a84d496431aff75086a8a4bf7931a51ee7a72b057e63ef62019980003a8872fa537f80
+  checksum: 3ef620d30dd7c5716a327acdd8875df3b7902d2812c9d6dd1faf4dd36fd8462b32d04b20011070edfc781d5139f7eb0745702cf147e4703c0d8bb4315e8abfaa
   languageName: node
   linkType: hard
 
-"@plone/registry@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@plone/registry@npm:1.1.0"
+"@plone/registry@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@plone/registry@npm:1.2.1"
   dependencies:
     crypto-random-string: 3.2.0
     debug: 4.3.2
@@ -3202,11 +3202,11 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 0f787724ff416c97a7033ce495f43c4c319145ffb35d44d1598a557117ffdd011bdf44478037f89e064adab50a367fd16b8f5c0843b80f55ba5d9587427da42c
+  checksum: d80477933b20bc38cb14075a20c4c51857993e565fbed8ec6c61c1d3c5093db0aa8ebd8180db8ff33e0e9aedfaf5cc7f72e773d36a9bc02b26af933acb22262e
   languageName: node
   linkType: hard
 
-"@plone/scripts@npm:*, @plone/scripts@npm:3.1.0, @plone/scripts@npm:^3.0.0":
+"@plone/scripts@npm:*, @plone/scripts@npm:^3.0.0":
   version: 3.1.0
   resolution: "@plone/scripts@npm:3.1.0"
   dependencies:
@@ -3230,9 +3230,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/volto-slate@npm:18.0.0-alpha.5":
-  version: 18.0.0-alpha.5
-  resolution: "@plone/volto-slate@npm:18.0.0-alpha.5"
+"@plone/scripts@npm:3.3.1":
+  version: 3.3.1
+  resolution: "@plone/scripts@npm:3.3.1"
+  dependencies:
+    "@babel/core": ^7.0.0
+    babel-plugin-react-intl: 5.1.17
+    babel-preset-razzle: 4.2.17
+    chalk: 4
+    commander: 8.2.0
+    comment-json: ^4.2.3
+    fs-extra: 10.1.0
+    git-url-parse: ^13.1.0
+    glob: 7.1.6
+    lodash: 4.17.21
+    mrs-developer: ^2.1.1
+    pofile: 1.0.10
+  bin:
+    addon: addon/index.js
+    changelogupdater: changelogupdater.cjs
+    i18n: i18n.cjs
+  checksum: ca61990664378456f3ea97f3cbd00ed9c805990edc6a3d4d452e6a858ff21297e24bede4706307136506399898fdbb8934f8af55de9848a1adb9235295cda8db
+  languageName: node
+  linkType: hard
+
+"@plone/volto-slate@npm:18.0.0-alpha.6":
+  version: 18.0.0-alpha.6
+  resolution: "@plone/volto-slate@npm:18.0.0-alpha.6"
   dependencies:
     image-extensions: 1.1.0
     is-url: 1.2.4
@@ -3245,13 +3269,13 @@ __metadata:
     slate-hyperscript: 0.100.0
     slate-react: 0.98.4
     weak-key: ^1.0.2
-  checksum: 1f610563d504525a0ac8fa070b7758facaf87a8c6f6f8d9e4df4c79dbfa2707788b2c23bfb8525b00924405b6917778de9735d7604a637c9a86b1d91fa0f9702
+  checksum: d0ad1bb8c811b7424515aa371d2c5148d0051b4755bf9723ae1d263a3b8649da33deafe73f4461c7cf6b84a6caaa12d29e050554be737019b4f8aece60ef6d16
   languageName: node
   linkType: hard
 
-"@plone/volto@npm:18.0.0-alpha.5":
-  version: 18.0.0-alpha.5
-  resolution: "@plone/volto@npm:18.0.0-alpha.5"
+"@plone/volto@npm:18.0.0-alpha.8":
+  version: 18.0.0-alpha.8
+  resolution: "@plone/volto@npm:18.0.0-alpha.8"
   dependencies:
     "@babel/core": ^7.0.0
     "@babel/eslint-parser": 7.22.15
@@ -3267,9 +3291,9 @@ __metadata:
     "@loadable/component": 5.14.1
     "@loadable/server": 5.14.0
     "@loadable/webpack-plugin": 5.15.2
-    "@plone/registry": 1.1.0
-    "@plone/scripts": 3.1.0
-    "@plone/volto-slate": 18.0.0-alpha.5
+    "@plone/registry": 1.2.1
+    "@plone/scripts": 3.3.1
+    "@plone/volto-slate": 18.0.0-alpha.6
     autoprefixer: 10.4.8
     axe-core: 4.4.2
     babel-plugin-add-module-exports: 0.2.1
@@ -3303,7 +3327,7 @@ __metadata:
     eslint-import-resolver-alias: 1.1.2
     eslint-import-resolver-babel-plugin-root-import: 1.1.1
     eslint-plugin-import: 2.28.1
-    eslint-plugin-jsx-a11y: 6.7.1
+    eslint-plugin-jsx-a11y: ^6.7.1
     eslint-plugin-prettier: 5.0.0
     eslint-plugin-react: 7.33.2
     eslint-plugin-react-hooks: 4.6.0
@@ -3426,7 +3450,7 @@ __metadata:
     webpack-node-externals: 3.0.0
     xmlrpc: 1.3.2
     yarnhook: 0.5.1
-  checksum: baff701a357a2d760470f1e9e9937ae1f82dfe6e03f817450838c24f626fdf8249dbe10490292a808b361c7c29368a8d3b4313e26310496d14d424ef4a4c0db8
+  checksum: 292631c2995e16893e30dab6ed1df89d39d69d76ece6952457b4071670d8940c3134c37586cb3ad33fd5e9ac380d2333f6967c6ec9059554c36ee1df43487562
   languageName: node
   linkType: hard
 
@@ -11224,6 +11248,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"embla-carousel-autoplay@npm:8.0.0-rc21":
+  version: 8.0.0-rc21
+  resolution: "embla-carousel-autoplay@npm:8.0.0-rc21"
+  peerDependencies:
+    embla-carousel: 8.0.0-rc21
+  checksum: 782cec546d45c5e843efc8e8357d43e1f66ac9a87c96b1097a1817c523a072efd92c359ef1edf98c5fce2a16f4fc44f81849c1e5684dc4cd4fcc41e7dbcb7f50
+  languageName: node
+  linkType: hard
+
 "embla-carousel-react@npm:^8.0.0-rc15":
   version: 8.0.0-rc17
   resolution: "embla-carousel-react@npm:8.0.0-rc17"
@@ -13090,7 +13123,7 @@ __metadata:
   resolution: "frontend@workspace:."
   dependencies:
     "@plone/scripts": ^3.0.0
-    "@plone/volto": 18.0.0-alpha.5
+    "@plone/volto": 18.0.0-alpha.8
     "@storybook/addon-actions": ^6.3.0
     "@storybook/addon-controls": 6.3.0
     "@storybook/addon-essentials": ^6.3.0
@@ -18019,7 +18052,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mrs-developer@npm:*":
+"mrs-developer@npm:*, mrs-developer@npm:^2.1.1":
   version: 2.1.1
   resolution: "mrs-developer@npm:2.1.1"
   dependencies:
@@ -26308,18 +26341,19 @@ __metadata:
   resolution: "volto-ploneconf@workspace:src/addons/volto-ploneconf"
   dependencies:
     "@babel/eslint-parser": 7.22.15
-    "@eeacms/volto-accordion-block": 10.4.5
+    "@eeacms/volto-accordion-block": 10.4.6
     "@eeacms/volto-matomo": "*"
-    "@eeacms/volto-statistic-block": "*"
-    "@kitconcept/volto-button-block": "*"
-    "@kitconcept/volto-light-theme": 3.0.0-alpha.0
-    "@kitconcept/volto-separator-block": 4.0.0
-    "@kitconcept/volto-slider-block": 6.1.0
+    "@eeacms/volto-statistic-block": 4.1.0
+    "@kitconcept/volto-button-block": 2.3.1
+    "@kitconcept/volto-light-theme": 3.0.0-alpha.2
+    "@kitconcept/volto-separator-block": 4.1.0
+    "@kitconcept/volto-slider-block": 6.1.1
     "@kitconcept/volto-social-blocks": 1.0.0-alpha.4
     "@mbarde/volto-image-crop-widget": 0.5.1
-    "@plone-collective/volto-authomatic": 2.0.0
+    "@plone-collective/volto-authomatic": 2.0.1
     "@plone/scripts": ^3.0.0
     "@plonegovbr/volto-network-block": "*"
+    embla-carousel-autoplay: 8.0.0-rc21
     eslint: 8.49.0
     eslint-config-prettier: 9.0.0
     eslint-config-react-app: 7.0.1

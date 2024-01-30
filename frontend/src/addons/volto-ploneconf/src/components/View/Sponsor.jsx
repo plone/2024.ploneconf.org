@@ -19,6 +19,7 @@ const SponsorView = ({ content }) => {
   const hasImage = content?.image ? true : false;
   const caption = content?.image_caption;
   const { title, description, links } = content;
+  const descriptionLines = description ? description.split('\n') : [];
   return (
     <Container id="page-document" className="view-wrapper sponsor-view">
       {hasImage ? (
@@ -34,7 +35,16 @@ const SponsorView = ({ content }) => {
       ) : (
         <h1 className="documentFirstHeading">{title}</h1>
       )}
-      {description && <p className="documentDescription">{description}</p>}
+      {descriptionLines && (
+        <p className="documentDescription">
+          {descriptionLines.map((line) => (
+            <>
+              <span>{line}</span>
+              <br />
+            </>
+          ))}
+        </p>
+      )}
       {links && <Links links={links} />}
     </Container>
   );
