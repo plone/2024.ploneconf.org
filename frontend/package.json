@@ -139,10 +139,10 @@
     "node": "^16 || ^18 || ^20"
   },
   "dependencies": {
-    "@plone/volto": "18.0.0-alpha.8"
+    "@plone/volto": "18.0.0-alpha.9"
   },
   "devDependencies": {
-    "@plone/scripts": "^3.0.0",
+    "@plone/scripts": "^3.3.2",
     "@storybook/addon-actions": "^6.3.0",
     "@storybook/addon-controls": "6.3.0",
     "@storybook/addon-essentials": "^6.3.0",
