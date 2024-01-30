@@ -1,4 +1,10 @@
 body.contenttype-sponsor {
+  .documentDescription {
+    max-width: var(--layout-container-width);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   #sponsorLogo {
     img {
       max-width: 400px !important;

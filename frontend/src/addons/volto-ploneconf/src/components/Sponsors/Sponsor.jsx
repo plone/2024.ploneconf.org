@@ -3,7 +3,7 @@
  * @module components/Sponsors/Sponsor
  */
 import React from 'react';
-
+import { UniversalLink } from '@plone/volto/components';
 import { flattenToAppURL } from '@plone/volto/helpers';
 
 /**
@@ -13,24 +13,16 @@ import { flattenToAppURL } from '@plone/volto/helpers';
  */
 function Sponsor({ content }) {
   const sponsorId = content.id;
-  const remoteUrl = content.remoteUrl;
-  const title = content.title;
   const level = content.level;
   return (
     <div id={sponsorId} className={`sponsor ${level}`}>
-      <a
-        href={remoteUrl}
-        className="link"
-        title={title}
-        target="_blank"
-        rel="noreferrer"
-      >
+      <UniversalLink href={flattenToAppURL(content['@id'])}>
         <img
           title={content.title}
           alt={content.title}
           src={flattenToAppURL(content.image.download)}
         />
-      </a>
+      </UniversalLink>
     </div>
   );
 }

@@ -1,32 +1,34 @@
-.block.sponsorLevel {
-  @include default-container-width;
-  margin-top: 0;
-  margin-bottom: 0;
+#page-document .blocks-group-wrapper {
+  .block.sponsorLevel {
+    @include default-container-width;
+    margin-top: 0;
+    margin-bottom: 0;
 
-  .sponsorLevelHeader {
-    padding: 20px 0 20px 0;
+    .sponsorLevelHeader {
+      padding: 20px 0 20px 0;
 
-    > span.sponsorLevelTitle {
-      margin-top: 5px;
-      margin-bottom: 5px;
-      color: $darkGrey;
-      font-size: 30px;
-      font-weight: 700;
-      hyphens: auto;
-      line-height: 36px;
-      word-break: break-word;
-      word-wrap: break-word;
+      > span.sponsorLevelTitle {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: $darkGrey;
+        font-size: 30px;
+        font-weight: 700;
+        hyphens: auto;
+        line-height: 36px;
+        word-break: break-word;
+        word-wrap: break-word;
+      }
     }
-  }
 
-  .sponsorList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    .sponsorList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
-    .sponsor {
-      max-width: 33%;
-      @include sponsor-size-04;
+      .sponsor {
+        max-width: 33%;
+        @include sponsor-size-04;
+      }
     }
   }
 }
