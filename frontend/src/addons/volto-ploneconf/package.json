@@ -60,16 +60,16 @@
     "@eeacms/volto-matomo"
   ],
   "dependencies": {
-    "@eeacms/volto-accordion-block": "10.4.5",
+    "@eeacms/volto-accordion-block": "10.4.6",
     "@eeacms/volto-matomo": "*",
-    "@eeacms/volto-statistic-block": "*",
-    "@kitconcept/volto-button-block": "*",
-    "@kitconcept/volto-light-theme": "3.0.0-alpha.0",
-    "@kitconcept/volto-separator-block": "4.0.0",
-    "@kitconcept/volto-slider-block": "6.1.0",
+    "@eeacms/volto-statistic-block": "4.1.0",
+    "@kitconcept/volto-button-block": "2.3.1",
+    "@kitconcept/volto-light-theme": "3.0.0-alpha.2",
+    "@kitconcept/volto-separator-block": "4.1.0",
+    "@kitconcept/volto-slider-block": "6.1.1",
     "@kitconcept/volto-social-blocks": "1.0.0-alpha.4",
     "@mbarde/volto-image-crop-widget": "0.5.1",
-    "@plone-collective/volto-authomatic": "2.0.0",
+    "@plone-collective/volto-authomatic": "2.0.1",
     "@plonegovbr/volto-network-block": "*",
     "volto-form-block": "3.2.0",
     "volto-subblocks": "*"
