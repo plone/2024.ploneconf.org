@@ -11248,6 +11248,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"embla-carousel-autoplay@npm:8.0.0-rc21":
+  version: 8.0.0-rc21
+  resolution: "embla-carousel-autoplay@npm:8.0.0-rc21"
+  peerDependencies:
+    embla-carousel: 8.0.0-rc21
+  checksum: 782cec546d45c5e843efc8e8357d43e1f66ac9a87c96b1097a1817c523a072efd92c359ef1edf98c5fce2a16f4fc44f81849c1e5684dc4cd4fcc41e7dbcb7f50
+  languageName: node
+  linkType: hard
+
 "embla-carousel-react@npm:^8.0.0-rc15":
   version: 8.0.0-rc17
   resolution: "embla-carousel-react@npm:8.0.0-rc17"
@@ -26344,6 +26353,7 @@ __metadata:
     "@plone-collective/volto-authomatic": 2.0.1
     "@plone/scripts": ^3.0.0
     "@plonegovbr/volto-network-block": "*"
+    embla-carousel-autoplay: 8.0.0-rc21
     eslint: 8.49.0
     eslint-config-prettier: 9.0.0
     eslint-config-react-app: 7.0.1

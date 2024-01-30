@@ -71,6 +71,7 @@
     "@mbarde/volto-image-crop-widget": "0.5.1",
     "@plone-collective/volto-authomatic": "2.0.1",
     "@plonegovbr/volto-network-block": "*",
+    "embla-carousel-autoplay": "8.0.0-rc21",
     "volto-form-block": "3.2.0",
     "volto-subblocks": "*"
   }
