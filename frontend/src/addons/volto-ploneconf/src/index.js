@@ -4,6 +4,10 @@ import SponsorsView from './components/Blocks/Sponsors/View';
 import SponsorLevelEdit from './components/Blocks/SponsorLevel/Edit';
 import SponsorLevelView from './components/Blocks/SponsorLevel/View';
 import { sponsorLevelRestrict } from './components/Blocks/SponsorLevel/utils';
+// Teaser
+import TeaserDefaultTemplate from '@plone/volto/components/manage/Blocks/Teaser/DefaultBody';
+import TeaserFeatured from './components/Blocks/Teaser/TeaserFeatured';
+
 // Views
 import SponsorView from './components/View/Sponsor';
 
@@ -40,6 +44,25 @@ const applyConfig = (config) => {
         ratio: 1,
       },
     ],
+    pictureOptions: {
+      grid: [
+        { media: '(min-width: 768px)', image: 'teaser' },
+        { media: '(max-width: 767px)', image: 'large' },
+      ],
+      mainimage: [
+        { media: '(min-width: 768px)', image: 'huge' },
+        { media: '(max-width: 767px)', image: 'large' },
+      ],
+      teaser2columns: [
+        { media: '(min-width: 768px)', image: 'larger' },
+        { media: '(max-width: 767px)', image: 'large' },
+      ],
+      newsitem: [
+        { media: '(min-width: 1200px)', image: 'larger' },
+        { media: '(min-width: 992px) and (max-width: 1199px)', image: 'large' },
+        { media: '(max-width: 991px)', image: 'teaser' },
+      ],
+    },
   };
   config.addonReducers = { ...config.addonReducers, ...reducers };
   config.views.contentTypesViews = {
@@ -106,6 +129,23 @@ const applyConfig = (config) => {
       '__button',
     ],
   };
+  // Teaser Variations
+
+  const teaserVariations = [
+    {
+      id: 'default',
+      isDefault: true,
+      title: 'Default',
+      template: TeaserDefaultTemplate,
+    },
+    {
+      id: 'featured',
+      isDefault: false,
+      title: 'Featured',
+      template: TeaserFeatured,
+    },
+  ];
+  config.blocks.blocksConfig.teaser.variations = teaserVariations;
   return config;
 };
 
