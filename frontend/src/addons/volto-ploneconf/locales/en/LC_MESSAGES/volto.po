@@ -21,6 +21,11 @@ msgstr "Be the First!"
 msgid "Front Page"
 msgstr "Front Page"
 
+#: components/Blocks/Teaser/TeaserFeatured
+# defaultMessage: Please choose an existing content as source for this element
+msgid "Please choose an existing content as source for this element"
+msgstr ""
+
 #: components/Logo/LogoPloneConf
 # defaultMessage: Plone Conference
 msgid "Plone Conference"
@@ -30,6 +35,11 @@ msgstr "Plone Conference"
 # defaultMessage: Python Cerrado
 msgid "Python Cerrado"
 msgstr "Python Cerrado"
+
+#: components/Blocks/Teaser/TeaserFeatured
+# defaultMessage: Read more
+msgid "Read more"
+msgstr ""
 
 #: components/Blocks/SponsorLevel/View
 # defaultMessage: Sponsor Us
