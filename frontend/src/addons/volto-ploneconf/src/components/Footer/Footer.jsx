@@ -43,6 +43,7 @@ const Footer = ({ intl }) => {
   const siteActions = lang ? allSiteActions[lang] : [];
   return (
     <footer id="footer">
+      <div className="footerDecoration"></div>
       <Container layout className="footer">
         <FooterLinks />
         <ul>

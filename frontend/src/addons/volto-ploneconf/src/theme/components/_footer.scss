@@ -2,6 +2,12 @@
   margin-top: 20px;
   background-color: var(--main-color) !important;
 
+  .footerDecoration {
+    @include add-decoration();
+    display: block;
+    height: 53px;
+  }
+
   .footer {
     padding: 2rem 2rem;
     background-color: var(--main-color) !important;
