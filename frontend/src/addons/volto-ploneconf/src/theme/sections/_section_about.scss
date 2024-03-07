@@ -1,3 +1,11 @@
+body.section-about {
+  --decoration-image: url(../static/bg_image_08.png);
+}
+
+body.section-sobre {
+  --decoration-image: url(../static/bg_image_08.png);
+}
+
 body.section-about.section-organizers,
 body.section-sobre.section-organizacao {
   .teaser-item .image-wrapper img {

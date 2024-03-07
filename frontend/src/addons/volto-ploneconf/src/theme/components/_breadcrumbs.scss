@@ -1,17 +1,17 @@
 #main {
   .breadcrumbs {
     padding: 10px 0;
-    background-color: var(--main-color);
+    @include add-decoration(right, true);
 
     .breadcrumb {
       max-width: var(--default-container-width);
       margin-right: 5px;
       margin-left: 5px;
-      color: var(--reverse-color) !important;
+      color: var(--breadcrumbs-text-color) !important;
       text-transform: uppercase;
 
       a {
-        color: var(--reverse-color) !important;
+        color: var(--breadcrumbs-text-color) !important;
         text-decoration: none;
 
         &:hover {
@@ -20,7 +20,7 @@
       }
 
       .divider::before {
-        color: var(--reverse-color);
+        color: var(--breadcrumbs-text-color);
         content: '▲';
         font-size: 12px;
       }

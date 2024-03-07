@@ -2,13 +2,14 @@
 
 $link-color: #000;
 $link-color-hover: #000;
-$container-background: #ecebeb;
+$container-background: #f2f4f5;
 
 body.section-en {
   --main-color: #016aad;
   --alternate-color: #001522;
   --reverse-color: #fff;
   --link-color: var(--main-color);
+  --decoration-image: url(./static/bg_image_01.png);
 }
 
 body.section-pt-br {
@@ -16,6 +17,7 @@ body.section-pt-br {
   --alternate-color: #001522;
   --reverse-color: #fff;
   --link-color: var(--main-color);
+  --decoration-image: url(./static/bg_image_02.png);
 }
 
 // Images
@@ -29,4 +31,17 @@ $teaser-images-aspect-ratio: math.div(16, 9) !default;
   transform: translateY(-2px);
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+// Animation
+@mixin add-decoration($align: 'left', $shadow: false) {
+  background-color: var(--decoration-background);
+  background-image: var(--decoration-image);
+  @if $align == 'right' {
+    background-position: $align;
+    background-repeat: no-repeat;
+  }
+  @if $shadow == true {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 }
