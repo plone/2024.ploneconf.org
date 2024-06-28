@@ -9,3 +9,13 @@
     }
   }
 }
+.block.gridBlock {
+  .block.checkoutBlock {
+    .wrapper {
+      @include vertical-space-button();
+      .eventbrite-cta {
+        min-width: 80%;
+      }
+    }
+  }
+}
