@@ -53,17 +53,17 @@ setup(
         "pas.plugins.authomatic",
         "plone.app.multilingual",
         "collective.volto.formsupport",
+        "plone.exportimport",
     ],
     extras_require={
         "test": [
-            "pytest-plone>=0.2.0",
-            "pytest-cov",
-            "pytest",
-            "gocept.pytestlayer",
             "zest.releaser[recommended]",
-            "plone.app.testing[robot]>=7.0.0a3",
+            "zestreleaser.towncrier",
+            "plone.app.testing",
             "plone.restapi[test]",
-            "collective.MockMailHost",
+            "pytest",
+            "pytest-cov",
+            "pytest-plone>=0.5.0",
         ],
     },
     entry_points="""
