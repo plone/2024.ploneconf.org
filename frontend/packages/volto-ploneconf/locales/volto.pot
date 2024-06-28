@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-03-22T12:43:34.158Z\n"
+"POT-Creation-Date: 2024-06-28T09:46:01.802Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -12,3 +12,54 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
+
+#. Default: "Be the First!"
+#: components/Blocks/SponsorLevel/View
+msgid "Be the First!"
+msgstr ""
+
+#. Default: "Front Page"
+#: components/Logo/Logo
+msgid "Front Page"
+msgstr ""
+
+#. Default: "Please choose an existing content as source for this element"
+#: components/Blocks/Teaser/TeaserFeatured
+msgid "Please choose an existing content as source for this element"
+msgstr ""
+
+#. Default: "Plone Conference"
+#: components/Logo/LogoPloneConf
+msgid "Plone Conference"
+msgstr ""
+
+#. Default: "Python Cerrado"
+#: components/Logo/LogoPythonCerrado
+msgid "Python Cerrado"
+msgstr ""
+
+#. Default: "Read more"
+#: components/Blocks/Teaser/TeaserFeatured
+msgid "Read more"
+msgstr ""
+
+#. Default: "Sponsor Us"
+#: components/Blocks/SponsorLevel/View
+msgid "Sponsor Us"
+msgstr ""
+
+#. Default: "Sponsors"
+#: components/Blocks/SponsorLevel/View
+#: components/Sponsors/Sponsors
+msgid "Sponsors"
+msgstr ""
+
+#. Default: "Switch to"
+#: components/Header/LanguageSelector
+msgid "Switch to"
+msgstr ""
+
+#. Default: "This site is built using Python and Plone"
+#: components/Footer/Footer
+msgid "This site is built using Python and Plone."
+msgstr ""

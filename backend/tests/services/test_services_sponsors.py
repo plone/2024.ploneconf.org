@@ -4,7 +4,6 @@ from plone.restapi.testing import RelativeSession
 import pytest
 
 
-
 ENDPOINT = "/en/@sponsors"
 
 

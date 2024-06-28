@@ -20,7 +20,9 @@
         <form action="@@export_all"
               enctype="multipart/form-data"
               method="post"
-              tal:attributes="action request/URL;"
+              tal:attributes="
+                action request/URL;
+              "
         >
 
           <div class="field mb-3">

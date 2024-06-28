@@ -42,7 +42,7 @@ class JSONSerializer(SerializeToJson):
     """ISerializeToJson adapter for Session contents."""
 
     def __call__(self, *args, **kwargs):
-        result = super(JSONSerializer, self).__call__(*args, **kwargs)
+        result = super().__call__(*args, **kwargs)
         result["start"] = include_timezone(self.context.start)
         result["end"] = include_timezone(self.context.end)
         return result
