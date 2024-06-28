@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: de\n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. Default: "Be the First!"
+#: components/Blocks/SponsorLevel/View
+msgid "Be the First!"
+msgstr ""
+
+#. Default: "Front Page"
+#: components/Logo/Logo
+msgid "Front Page"
+msgstr ""
+
+#. Default: "Please choose an existing content as source for this element"
+#: components/Blocks/Teaser/TeaserFeatured
+msgid "Please choose an existing content as source for this element"
+msgstr ""
+
+#. Default: "Plone Conference"
+#: components/Logo/LogoPloneConf
+msgid "Plone Conference"
+msgstr ""
+
+#. Default: "Python Cerrado"
+#: components/Logo/LogoPythonCerrado
+msgid "Python Cerrado"
+msgstr ""
+
+#. Default: "Read more"
+#: components/Blocks/Teaser/TeaserFeatured
+msgid "Read more"
+msgstr ""
+
+#. Default: "Sponsor Us"
+#: components/Blocks/SponsorLevel/View
+msgid "Sponsor Us"
+msgstr ""
+
+#. Default: "Sponsors"
+#: components/Blocks/SponsorLevel/View
+#: components/Sponsors/Sponsors
+msgid "Sponsors"
+msgstr ""
+
+#. Default: "Switch to"
+#: components/Header/LanguageSelector
+msgid "Switch to"
+msgstr ""
+
+#. Default: "This site is built using Python and Plone"
+#: components/Footer/Footer
+msgid "This site is built using Python and Plone."
+msgstr ""

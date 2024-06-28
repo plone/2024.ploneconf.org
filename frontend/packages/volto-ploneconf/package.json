@@ -1,0 +1,75 @@
+{
+  "name": "volto-ploneconf",
+  "version": "1.0.0-alpha.0",
+  "description": "A new project using Plone 6.",
+  "main": "src/index.js",
+  "license": "MIT",
+  "keywords": [
+    "volto-addon",
+    "volto",
+    "plone",
+    "react"
+  ],
+  "author": "Plone Foundation",
+  "homepage": "https://github.com/collective/volto-ploneconf#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:collective/volto-ploneconf.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon",
+    "dry-release": "release-it --dry-run",
+    "release": "release-it",
+    "release-major-alpha": "release-it major --preRelease=alpha",
+    "release-alpha": "release-it --preRelease=alpha"
+  },
+  "addons": [
+    "@eeacms/volto-accordion-block",
+    "@kitconcept/volto-slider-block",
+    "@kitconcept/volto-social-blocks",
+    "@mbarde/volto-image-crop-widget",
+    "volto-form-block",
+    "@plonegovbr/volto-network-block",
+    "@kitconcept/volto-separator-block",
+    "@kitconcept/volto-light-theme",
+    "@kitconcept/volto-button-block",
+    "@eeacms/volto-statistic-block",
+    "@plone-collective/volto-authomatic",
+    "@eeacms/volto-matomo"
+  ],
+  "dependencies": {
+    "@plone/components": "workspace:*",
+    "@eeacms/volto-accordion-block": "10.4.6",
+    "@eeacms/volto-matomo": "^5.0.0",
+    "@eeacms/volto-statistic-block": "4.1.0",
+    "@kitconcept/volto-button-block": "2.3.1",
+    "@kitconcept/volto-light-theme": "^4.0.0",
+    "@kitconcept/volto-separator-block": "^4.1.1",
+    "@kitconcept/volto-slider-block": "^6.3.1",
+    "@kitconcept/volto-social-blocks": "1.0.0-alpha.4",
+    "@mbarde/volto-image-crop-widget": "0.5.1",
+    "@plone-collective/volto-authomatic": "2.0.1",
+    "@plonegovbr/volto-network-block": "^0.2.0",
+    "classnames": "2.2.6",
+    "embla-carousel-autoplay": "8.0.0-rc21",
+    "embla-carousel-react": "^8.1.5",
+    "react-lazy-load-image-component": "^1.6.2",
+    "volto-form-block": "^3.9.1",
+    "volto-subblocks": "^2.1.0"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-intl": "3.12.1",
+    "semantic-ui-react": "2.1.5"
+  },
+  "devDependencies": {
+    "@plone/scripts": "^3.6.1",
+    "release-it": "^17.1.1",
+    "semantic-ui-react": "2.1.5",
+    "semanticui-react": "^0.2.3"
+  }
+}

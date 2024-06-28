@@ -2,6 +2,7 @@ from AccessControl.SecurityManagement import newSecurityManager
 from ploneconf.interfaces import IPloneconfLayer
 from Products.CMFPlone.factory import _DEFAULT_PROFILE
 from Products.CMFPlone.factory import addPloneSite
+from Products.GenericSetup.tool import SetupTool
 from Testing.makerequest import makerequest
 from zope.interface import directlyProvidedBy
 from zope.interface import directlyProvides
@@ -26,14 +27,15 @@ def asbool(s):
 
 
 DELETE_EXISTING = asbool(os.getenv("DELETE_EXISTING"))
+EXAMPLE_CONTENT = asbool(
+    os.getenv("EXAMPLE_CONTENT", "1")
+)  # Create example content by default
 
-app = makerequest(app)  # noQA
+app = makerequest(globals()["app"])
 
 request = app.REQUEST
 
-ifaces = [
-    IPloneconfLayer,
-] + list(directlyProvidedBy(request))
+ifaces = [IPloneconfLayer] + list(directlyProvidedBy(request))
 
 directlyProvides(request, *ifaces)
 
@@ -47,7 +49,6 @@ payload = {
     "profile_id": _DEFAULT_PROFILE,
     "extension_ids": [
         "ploneconf:default",
-        "ploneconf:initial",
     ],
     "setup_content": False,
     "default_language": "en",
@@ -62,4 +63,8 @@ if site_id in app.objectIds() and DELETE_EXISTING:
 if site_id not in app.objectIds():
     site = addPloneSite(app, site_id, **payload)
     transaction.commit()
+    if EXAMPLE_CONTENT:
+        portal_setup: SetupTool = site.portal_setup
+        portal_setup.runAllImportStepsFromProfile("ploneconf:initial")
+        transaction.commit()
     app._p_jar.sync()
