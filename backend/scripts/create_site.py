@@ -1,5 +1,5 @@
 from AccessControl.SecurityManagement import newSecurityManager
-from ploneconf.interfaces import IBrowserLayer
+from ploneconf.interfaces import IPloneconfLayer
 from Products.CMFPlone.factory import _DEFAULT_PROFILE
 from Products.CMFPlone.factory import addPloneSite
 from Products.GenericSetup.tool import SetupTool
@@ -35,7 +35,7 @@ app = makerequest(globals()["app"])
 
 request = app.REQUEST
 
-ifaces = [IBrowserLayer] + list(directlyProvidedBy(request))
+ifaces = [IPloneconfLayer] + list(directlyProvidedBy(request))
 
 directlyProvides(request, *ifaces)
 
