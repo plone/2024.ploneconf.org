@@ -15,7 +15,7 @@ GREEN=`tput setaf 2`
 RESET=`tput sgr0`
 YELLOW=`tput setaf 3`
 
-IMAGE_NAME_PREFIX=ghcr.io/collective/project-title
+IMAGE_NAME_PREFIX=ghcr.io/ghcr.io/plone/ploneconf-2024
 IMAGE_TAG=latest
 
 # Python checks

@@ -1,0 +1,21 @@
+.block.checkoutBlock {
+  .wrapper {
+    @include default-container-width();
+    .eventbrite-cta {
+      border-radius: 10px;
+      &:hover {
+        @include animate-hover();
+      }
+    }
+  }
+}
+.block.gridBlock {
+  .block.checkoutBlock {
+    .wrapper {
+      @include vertical-space-button();
+      .eventbrite-cta {
+        min-width: 80%;
+      }
+    }
+  }
+}

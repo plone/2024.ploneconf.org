@@ -15,3 +15,11 @@
     }
   }
 }
+
+.block.gridBlock {
+  .block.__button {
+    button.ui.button {
+      min-width: 80%;
+    }
+  }
+}

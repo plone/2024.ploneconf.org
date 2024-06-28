@@ -1,5 +1,4 @@
 """Installer for the ploneconf package."""
-
 from pathlib import Path
 from setuptools import find_packages
 from setuptools import setup
@@ -17,7 +16,9 @@ setup(
     version="1.0.0a1",
     description="Plone Conference 2024 configuration package.",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     classifiers=[
+        "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Plone",
         "Framework :: Plone :: Addon",
@@ -53,6 +54,7 @@ setup(
         "pas.plugins.authomatic",
         "plone.app.multilingual",
         "collective.volto.formsupport",
+        "collective.honeypot",
         "plone.exportimport",
     ],
     extras_require={

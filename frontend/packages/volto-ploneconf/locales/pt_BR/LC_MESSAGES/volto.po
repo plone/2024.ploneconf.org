@@ -19,12 +19,12 @@ msgstr ""
 #. Default: "Be the First!"
 #: components/Blocks/SponsorLevel/View
 msgid "Be the First!"
-msgstr ""
+msgstr "Seja o primeiro!"
 
 #. Default: "Front Page"
 #: components/Logo/Logo
 msgid "Front Page"
-msgstr ""
+msgstr "Capa"
 
 #. Default: "Please choose an existing content as source for this element"
 #: components/Blocks/Teaser/TeaserFeatured
@@ -34,35 +34,35 @@ msgstr ""
 #. Default: "Plone Conference"
 #: components/Logo/LogoPloneConf
 msgid "Plone Conference"
-msgstr ""
+msgstr "Plone Conference"
 
 #. Default: "Python Cerrado"
 #: components/Logo/LogoPythonCerrado
 msgid "Python Cerrado"
-msgstr ""
+msgstr "Python Cerrado"
 
 #. Default: "Read more"
 #: components/Blocks/Teaser/TeaserFeatured
 msgid "Read more"
-msgstr ""
+msgstr "Saiba mais"
 
 #. Default: "Sponsor Us"
 #: components/Blocks/SponsorLevel/View
 msgid "Sponsor Us"
-msgstr ""
+msgstr "Patrocine"
 
 #. Default: "Sponsors"
 #: components/Blocks/SponsorLevel/View
 #: components/Sponsors/Sponsors
 msgid "Sponsors"
-msgstr ""
+msgstr "Patrocinadores"
 
 #. Default: "Switch to"
 #: components/Header/LanguageSelector
 msgid "Switch to"
-msgstr ""
+msgstr "Visitar"
 
 #. Default: "This site is built using Python and Plone"
 #: components/Footer/Footer
 msgid "This site is built using Python and Plone."
-msgstr ""
+msgstr "Este site é desenvolvido com Python & Plone"

@@ -1,7 +1,9 @@
 #main {
   .breadcrumbs {
     padding: 10px 0;
-    @include add-decoration(right, true);
+    @media only screen and (min-width: $tablet-breakpoint) {
+      @include add-decoration(right, true);
+    }
 
     .breadcrumb {
       max-width: var(--default-container-width);
