@@ -48,10 +48,11 @@
           }
         }
 
-        .subitem-wrapper {
-          border-left: 1px solid var(--reverse-color);
-
-          li > a {
+        li {
+          &.subitem-wrapper {
+            border-left: 1px solid var(--reverse-color);
+          }
+          > a {
             color: var(--reverse-color);
 
             span {
@@ -71,8 +72,8 @@
   img.image {
     &.logoConf {
       &.main {
-        width: 267px;
-        height: 150px;
+        width: 178px;
+        height: 100px;
         @media only screen and (max-width: $largest-mobile-screen) {
           margin-left: $spacing-small;
         }

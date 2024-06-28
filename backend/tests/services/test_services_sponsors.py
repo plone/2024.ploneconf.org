@@ -1,4 +1,3 @@
-from plone import api
 from plone.restapi.testing import RelativeSession
 
 import pytest

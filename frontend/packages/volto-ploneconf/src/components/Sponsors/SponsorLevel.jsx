@@ -19,7 +19,7 @@ function SponsorLevel({ levelId, title, sponsors }) {
         <span className="sponsor_title">{title}</span>{' '}
       </h3>
 
-      <div className="sponsorList">
+      <div className={`sponsorList ${levelId}`}>
         {sponsors &&
           sponsors.map(function (sponsor, i) {
             return <Sponsor content={sponsor} key={i} />;

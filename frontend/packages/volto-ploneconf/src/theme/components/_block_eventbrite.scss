@@ -1,0 +1,11 @@
+.block.checkoutBlock {
+  .wrapper {
+    @include default-container-width();
+    .eventbrite-cta {
+      border-radius: 10px;
+      &:hover {
+        @include animate-hover();
+      }
+    }
+  }
+}

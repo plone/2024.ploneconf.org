@@ -1,10 +1,7 @@
 name: Frontend CI
 
 on:
-  push:
-    paths:
-      - "frontend/**"
-      - ".github/workflows/frontend.yml"
+  workflow_call:
   workflow_dispatch:
 
 env:
@@ -41,7 +38,7 @@ jobs:
       - name: Checkout codebase
         uses: actions/checkout@v4
 
-      - name: Use Node.js ${{ env.node-version }}
+      - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}

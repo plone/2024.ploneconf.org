@@ -38,6 +38,10 @@
         flex-wrap: wrap;
         justify-content: center;
 
+        &.organizer {
+          margin: 0px 50px;
+        }
+
         .sponsor {
           max-width: 25%;
 
@@ -73,12 +77,11 @@
           }
 
           &.organizer {
-            max-width: 33%;
             @include sponsor-size-04;
           }
 
           &.patronage {
-            max-width: 50%;
+            max-width: 50% !important;
             @include sponsor-size-02;
           }
         }

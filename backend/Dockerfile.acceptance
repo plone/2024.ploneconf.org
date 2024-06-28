@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 ARG PLONE_VERSION=6.0.11
-FROM plone/server-builder:${PLONE_VERSION} as builder
+FROM plone/server-builder:${PLONE_VERSION} AS builder
 
 WORKDIR /app
 
@@ -28,7 +28,7 @@ EOT
 FROM plone/server-acceptance:${PLONE_VERSION}
 
 LABEL maintainer="Plone Foundation <collective@plone.org>" \
-      org.label-schema.name="project-title-acceptance" \
+      org.label-schema.name="ghcr.io/plone/ploneconf-2024-acceptance" \
       org.label-schema.description="Project Title backend acceptance image." \
       org.label-schema.vendor="Plone Foundation"
 

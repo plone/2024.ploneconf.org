@@ -3,7 +3,7 @@ ARG VOLTO_VERSION
 # TODO: Replace with
 # FROM plone/frontend-builder:${VOLTO_VERSION}
 # when the main image is ready
-FROM ghcr.io/kitconcept/frontend-builder:${VOLTO_VERSION} as builder
+FROM ghcr.io/kitconcept/frontend-builder:${VOLTO_VERSION} AS builder
 
 COPY --chown=node packages/volto-ploneconf /app/packages/volto-ploneconf
 COPY --chown=node volto.config.js /app/
@@ -23,7 +23,7 @@ EOT
 FROM ghcr.io/kitconcept/frontend-prod-config:${VOLTO_VERSION}
 
 LABEL maintainer="Plone Foundation <collective@plone.org>" \
-      org.label-schema.name="project-title-frontend" \
+      org.label-schema.name="ghcr.io/plone/ploneconf-2024-frontend" \
       org.label-schema.description="Project Title frontend image." \
       org.label-schema.vendor="Plone Foundation"
 

@@ -10,6 +10,16 @@ body.section-en {
   --reverse-color: #fff;
   --link-color: var(--main-color);
   --decoration-image: url(./static/bg_image_01.png);
+  --eventbrite-cta-background-color: var(--main-color);
+  --eventbrite-cta-border: 1px solid var(--main-color);
+  --eventbrite-cta-font-size: 22px;
+  --eventbrite-cta-font-weight: 700;
+  --eventbrite-cta-hover-background-color: var(--main-color);
+  --eventbrite-cta-hover-border: 1px solid var(--main-color);
+  --eventbrite-cta-hover-font-size: 22px;
+  --eventbrite-cta-hover-font-weight: 700;
+  --eventbrite-cta-padding: 10px 24px;
+  --eventbrite-cta-text-color: var(--reverse-color);
 }
 
 body.section-pt-br {
@@ -18,6 +28,16 @@ body.section-pt-br {
   --reverse-color: #fff;
   --link-color: var(--main-color);
   --decoration-image: url(./static/bg_image_02.png);
+  --eventbrite-cta-background-color: var(--main-color);
+  --eventbrite-cta-border: 1px solid var(--main-color);
+  --eventbrite-cta-font-size: 22px;
+  --eventbrite-cta-font-weight: 700;
+  --eventbrite-cta-hover-background-color: var(--main-color);
+  --eventbrite-cta-hover-border: 1px solid var(--main-color);
+  --eventbrite-cta-hover-font-size: 22px;
+  --eventbrite-cta-hover-font-weight: 700;
+  --eventbrite-cta-padding: 10px 24px;
+  --eventbrite-cta-text-color: var(--reverse-color);
 }
 
 // Images

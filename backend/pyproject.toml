@@ -74,13 +74,8 @@ target-version = ["py38"]
 
 [tool.codespell]
 ignore-words-list = "discreet,vew"
-skip = "*.po,*.min.js"
-##
-# Add extra configuration options in .meta.toml:
-#  [pyproject]
-#  codespell_ignores = "foo,bar"
-#  codespell_skip = "*.po,*.map,package-lock.json"
-##
+skip = "*.po,*.min.js,*.json"
+
 
 [tool.dependencychecker]
 Zope = [
@@ -145,8 +140,10 @@ ignore = [
     "tox.ini",
 
 ]
+ignore-bad-ideas = [
+  "*.mo",
+]
 
-##
 # Add extra configuration options in .meta.toml:
 #  [pyproject]
 #  check_manifest_ignores = """

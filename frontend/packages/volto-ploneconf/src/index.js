@@ -70,6 +70,9 @@ const applyConfig = (config) => {
     Sponsor: SponsorView,
   };
 
+  // Enable autoPlay
+  config.blocks.blocksConfig.slider.enableAutoPlay = true;
+
   const blocksWithBgColor = ['accordion', 'slateTable', 'listing', 'gridBlock'];
   blocksWithBgColor.forEach((blockId) => {
     const hasColor = config.blocks.blocksConfig?.[blockId]?.colors;
