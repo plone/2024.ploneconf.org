@@ -1,6 +1,6 @@
 // SemanticUI-free pre-@plone/components
 import PropTypes from 'prop-types';
-import Container from '@kitconcept/volto-light-theme/components/Atoms/Container/Container';
+import { Container } from '@plone/components';
 import MobileNavigation from '@kitconcept/volto-light-theme/components/MobileNavigation/MobileNavigation';
 import Logo from '../Logo/Logo';
 import LanguageSelector from './LanguageSelector';

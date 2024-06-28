@@ -41,6 +41,7 @@
     "@eeacms/volto-matomo"
   ],
   "dependencies": {
+    "@plone/components": "workspace:*",
     "@eeacms/volto-accordion-block": "10.4.6",
     "@eeacms/volto-matomo": "^5.0.0",
     "@eeacms/volto-statistic-block": "4.1.0",

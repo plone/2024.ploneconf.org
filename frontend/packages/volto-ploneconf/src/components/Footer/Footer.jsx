@@ -4,7 +4,7 @@ import React from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import { useSelector, shallowEqual } from 'react-redux';
 import { UniversalLink } from '@plone/volto/components';
-import Container from '@kitconcept/volto-light-theme/components/Atoms/Container/Container';
+import { Container } from '@plone/components';
 import { flattenToAppURL } from '@plone/volto/helpers';
 import FooterLinks from '@plonegovbr/volto-network-block/components/FooterLinks/FooterLinks';
 

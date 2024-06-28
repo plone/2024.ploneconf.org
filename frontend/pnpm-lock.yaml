@@ -1458,6 +1458,9 @@ importers:
       '@plone-collective/volto-authomatic':
         specifier: 2.0.1
         version: 2.0.1(@plone/volto@18.0.0-alpha.38(@babel/runtime@7.24.7)(@popperjs/core@2.11.8)(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))
+      '@plone/components':
+        specifier: workspace:*
+        version: link:../../core/packages/components
       '@plonegovbr/volto-network-block':
         specifier: ^0.2.0
         version: 0.2.0(@plone/volto@18.0.0-alpha.38(@babel/runtime@7.24.7)(@popperjs/core@2.11.8)(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))
