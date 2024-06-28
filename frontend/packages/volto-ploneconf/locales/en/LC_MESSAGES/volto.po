@@ -60,4 +60,4 @@ msgstr ""
 #. Default: "This site is built using Python and Plone"
 #: components/Footer/Footer
 msgid "This site is built using Python and Plone."
-msgstr ""
+msgstr "This site is built using Python & Plone"
