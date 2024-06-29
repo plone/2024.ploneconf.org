@@ -4,9 +4,12 @@ import SponsorsView from './components/Blocks/Sponsors/View';
 import SponsorLevelEdit from './components/Blocks/SponsorLevel/Edit';
 import SponsorLevelView from './components/Blocks/SponsorLevel/View';
 import { sponsorLevelRestrict } from './components/Blocks/SponsorLevel/utils';
+
 // Teaser
 import TeaserDefaultTemplate from '@plone/volto/components/manage/Blocks/Teaser/DefaultBody';
 import TeaserFeatured from './components/Blocks/Teaser/TeaserFeatured';
+import TeaserColoredCTA from './components/Blocks/Teaser/TeaserColoredCTA';
+import { ColoredCTAEnhancer } from './components/Blocks/Teaser/coloredCTAschema';
 
 // Views
 import SponsorView from './components/View/Sponsor';
@@ -146,6 +149,13 @@ const applyConfig = (config) => {
       isDefault: false,
       title: 'Featured',
       template: TeaserFeatured,
+    },
+    {
+      id: 'coloredCTA',
+      isDefault: false,
+      title: 'Colored CTA',
+      template: TeaserColoredCTA,
+      schemaEnhancer: ColoredCTAEnhancer,
     },
   ];
   config.blocks.blocksConfig.teaser.variations = teaserVariations;

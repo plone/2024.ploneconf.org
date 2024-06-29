@@ -10,9 +10,9 @@
 
   h2.headline {
     margin-bottom: 50px;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
+    @include add(size, xl);
+    @include add(weight, bold);
+    @include add(height, 2xl);
     text-align: center;
     text-transform: uppercase;
   }

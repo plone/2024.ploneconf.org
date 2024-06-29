@@ -2,8 +2,7 @@
 
 [![Built with Cookiecutter Plone Starter](https://img.shields.io/badge/built%20with-Cookiecutter%20Plone%20Starter-0083be.svg?logo=cookiecutter)](https://github.com/collective/cookiecutter-plone-starter/)
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
-[![Backend Tests](https://github.com/plone/2024.ploneconf.org/actions/workflows/backend-testing.yml/badge.svg)](https://github.com/plone/2024.ploneconf.org/actions/workflows/backend-testing.yml)
-[![Frontend Tests](https://github.com/plone/2024.ploneconf.org/actions/workflows/frontend-testing.yml/badge.svg)](https://github.com/plone/2024.ploneconf.org/actions/workflows/frontend-testing.yml)
+[![Tests](https://github.com/plone/2024.ploneconf.org/actions/workflows/main.yml/badge.svg)](https://github.com/plone/2024.ploneconf.org/actions/workflows/main.yml)
 
 Site for the 2024 edition of the annual Plone Conference
 
@@ -38,19 +37,19 @@ make install
 1. Create a new Plone site on your first run:
 
 ```shell
-make create-site
+make backend-create-site
 ```
 
 2. Start the Backend at [http://localhost:8080/](http://localhost:8080/):
 
 ```shell
-make start-backend
+make backend-start
 ```
 
 3. In a new terminal, start the Frontend at [http://localhost:3000/](http://localhost:3000/):
 
 ```shell
-make start-frontend
+make frontend-start
 ```
 
 Voila! Your Plone site should be live and kicking! 🎉

@@ -1,0 +1,12 @@
+#page-add .block.listing,
+#page-edit .block.listing,
+#page-document .block.listing {
+  h2.headline {
+    margin-bottom: 50px;
+    @include add(size, xl);
+    @include add(weight, bold);
+    @include add(height, 2xl);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

@@ -73,3 +73,76 @@
     }
   }
 }
+
+/*******************************
+        Colored teaser
+*******************************/
+.card-teaser-item {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 20px;
+  color: var(--reverse-color);
+
+  h2 {
+    text-align: left;
+    text-transform: uppercase;
+    @include add(size, xl);
+    @include add(weight, semi-bold);
+  }
+
+  .card-teaser-item-subtitle {
+    padding-top: $spacing-small;
+  }
+  .card-teaser-item-description {
+    margin: $spacing-small 0;
+    @include add(size, s);
+    @include add(weight, light);
+  }
+
+  .card-teaser-item-cta {
+    @include add(size, m);
+    @include add(weight, semi-bold);
+    &::after {
+      content: ' >>';
+    }
+  }
+
+  a {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  &.primary {
+    background-color: var(--primary-color);
+  }
+
+  &.secondary {
+    background-color: var(--secondary-color);
+  }
+
+  &.tertiary {
+    background-color: var(--tertiary-color);
+  }
+
+  &:hover {
+    transform: rotate(2deg);
+    transition: transform 0.3s;
+
+    .card-teaser-item-cta {
+      @include add(size, m);
+      @include add(weight, extra-bold);
+    }
+  }
+}
+
+.stretched-link::after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  content: '';
+  pointer-events: auto;
+}

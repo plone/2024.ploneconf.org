@@ -16,12 +16,18 @@ msgstr ""
 msgid "Be the First!"
 msgstr ""
 
+#. Default: "CTA"
+#: components/Blocks/Teaser/coloredCTAschema
+msgid "CTA"
+msgstr ""
+
 #. Default: "Front Page"
 #: components/Logo/Logo
 msgid "Front Page"
 msgstr ""
 
 #. Default: "Please choose an existing content as source for this element"
+#: components/Blocks/Teaser/TeaserColoredCTA
 #: components/Blocks/Teaser/TeaserFeatured
 msgid "Please choose an existing content as source for this element"
 msgstr ""
@@ -60,4 +66,14 @@ msgstr ""
 #. Default: "This site is built using Python and Plone"
 #: components/Footer/Footer
 msgid "This site is built using Python and Plone."
+msgstr ""
+
+#. Default: "Color"
+#: components/Blocks/Teaser/coloredCTAschema
+msgid "color"
+msgstr ""
+
+#. Default: "Subtitle"
+#: components/Blocks/Teaser/coloredCTAschema
+msgid "subtitle"
 msgstr ""

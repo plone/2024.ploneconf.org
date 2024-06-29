@@ -8,6 +8,9 @@ body.section-en {
   --main-color: #016aad;
   --alternate-color: #001522;
   --reverse-color: #fff;
+  --primary-color: var(--main-color);
+  --secondary-color: rgb(175, 148, 0);
+  --tertiary-color: rgb(46, 153, 63);
   --link-color: var(--main-color);
   --decoration-image: url(./static/bg_image_01.png);
   --eventbrite-cta-background-color: var(--main-color);
@@ -27,6 +30,9 @@ body.section-pt-br {
   --alternate-color: #001522;
   --reverse-color: #fff;
   --link-color: var(--main-color);
+  --primary-color: var(--main-color);
+  --secondary-color: rgb(175, 148, 0);
+  --tertiary-color: rgb(46, 153, 63);
   --decoration-image: url(./static/bg_image_02.png);
   --eventbrite-cta-background-color: var(--main-color);
   --eventbrite-cta-border: 1px solid var(--main-color);
