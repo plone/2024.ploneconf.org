@@ -1,0 +1,180 @@
+#page-add .block.slider.full-width,
+#page-edit .block.slider.full-width {
+  position: relative;
+  left: calc(100vh - 80px);
+  .ui.message.editForm {
+    > .container.default {
+      width: 100%;
+    }
+  }
+}
+.block.slider.full-width {
+  max-width: 100% !important;
+  --slider-container-width: 100% !important;
+  .slider-button {
+    display: none;
+  }
+  .teaser-item {
+    .highlight-image-wrapper {
+      img {
+        width: 100%;
+        height: calc(100vh - 220px);
+        min-height: 600px;
+        object-fit: cover;
+      }
+      &::after {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        display: block;
+        width: 570px;
+        height: calc(100vh - 220px);
+        min-height: 600px;
+        background: linear-gradient(
+            270deg,
+            rgba(var(--base-rgb), 1) 0%,
+            rgba(var(--base-rgb), 0.75) 100%
+          )
+          0 0 no-repeat padding-box;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        content: '';
+        mix-blend-mode: multiply;
+      }
+      &.has--slider--flagAlign--left {
+        &::after {
+          left: 0;
+          background: linear-gradient(
+              90deg,
+              rgba(var(--base-rgb), 1) 0%,
+              rgba(var(--base-rgb), 0.75) 100%
+            )
+            0 0 no-repeat padding-box;
+          clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+        }
+      }
+      &.has--slider--flagAlign--right {
+        &::after {
+          right: 0;
+          clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+      }
+      @media only screen and (max-width: $tablet-breakpoint) {
+        &.has--slider--flagAlign--left,
+        &.has--slider--flagAlign--right {
+          &::after {
+            width: 100%;
+            background: rgba(var(--base-rgb), 1);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          }
+        }
+      }
+    }
+    .teaser-item-title {
+      position: absolute;
+      z-index: 10;
+      display: flex;
+      width: 570px;
+      min-height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 50px 60px 100px;
+      background: unset;
+      transform: translateY(-50%);
+      @media only screen and (max-width: $tablet-breakpoint) {
+        width: 100%;
+        > div {
+          padding-right: $spacing-large;
+          padding-left: $spacing-large;
+        }
+      }
+      @media only screen and (max-width: $largest-mobile-screen) {
+        width: 100%;
+        padding: $spacing-medium $spacing-small;
+        > div {
+          &.title {
+            .supertitle {
+              @include add(size, m);
+            }
+            .heading {
+              padding-bottom: $spacing-large;
+              @include add(size, 3xl);
+            }
+          }
+          &.description {
+            p {
+              @include add(size, m);
+            }
+          }
+          &.actions {
+            .cta {
+              @include add(size, m);
+            }
+          }
+        }
+        &.has--slider--flagAlign--left,
+        &.has--slider--flagAlign--right {
+          > div.title,
+          > div.description > p,
+          > div.actions {
+            text-align: left !important;
+          }
+        }
+      }
+      > div {
+        width: 100%;
+        &.title {
+          .supertitle {
+            display: block;
+            @include add(size, l);
+            @include add(weight, semi-bold);
+            @include add(height, l);
+          }
+          .heading {
+            display: block;
+            padding-bottom: $spacing-large;
+            @include add(size, 5xl);
+            @include add(weight, bold);
+            @include add(height, 5xl);
+          }
+        }
+        &.description {
+          p {
+            @include add(size, l);
+            @include add(weight, light);
+            @include add(height, l);
+          }
+        }
+        &.actions {
+          .cta {
+            @include add(size, l);
+            @include add(weight, semi-bold);
+            padding: $spacing-small;
+            border: solid 1px rgba(var(--base-rgb), 0.9);
+            border-radius: 2px;
+            background-color: rgba(var(--base-rgb), 0.9);
+            &:hover {
+              @include animate-hover();
+              @include add(size, l);
+              @include add(weight, bold);
+              background-color: rgba(var(--base-rgb), 1);
+            }
+          }
+        }
+      }
+      &.has--slider--flagAlign--left {
+        > .title,
+        > .description > p,
+        > .actions {
+          text-align: left;
+        }
+      }
+      &.has--slider--flagAlign--right {
+        > .title,
+        > .description > p,
+        > .actions {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

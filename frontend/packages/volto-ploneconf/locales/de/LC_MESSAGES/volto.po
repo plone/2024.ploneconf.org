@@ -21,14 +21,21 @@ msgstr ""
 msgid "CTA"
 msgstr ""
 
+#. Default: "Continue reading"
+#: components/Blocks/Slider/SliderFull
+msgid "Continue reading"
+msgstr ""
+
 #. Default: "Front Page"
 #: components/Logo/Logo
 msgid "Front Page"
 msgstr ""
 
 #. Default: "Please choose an existing content as source for this element"
+#: components/Blocks/Slider/SliderFull
 #: components/Blocks/Teaser/TeaserColoredCTA
 #: components/Blocks/Teaser/TeaserFeatured
+#: components/Blocks/Teaser/TeaserFeaturedCTA
 msgid "Please choose an existing content as source for this element"
 msgstr ""
 
@@ -45,6 +52,11 @@ msgstr ""
 #. Default: "Read more"
 #: components/Blocks/Teaser/TeaserFeatured
 msgid "Read more"
+msgstr ""
+
+#. Default: "Source"
+#: components/Blocks/Slider/SliderFull
+msgid "Source"
 msgstr ""
 
 #. Default: "Sponsor Us"
@@ -71,6 +83,11 @@ msgstr ""
 #. Default: "Color"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "color"
+msgstr ""
+
+#. Default: "More info"
+#: components/Blocks/Slider/SliderFull
+msgid "moreInfo"
 msgstr ""
 
 #. Default: "Subtitle"

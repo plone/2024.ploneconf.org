@@ -34,11 +34,11 @@
     "volto-form-block",
     "@plonegovbr/volto-network-block",
     "@kitconcept/volto-separator-block",
-    "@kitconcept/volto-light-theme",
     "@kitconcept/volto-button-block",
     "@eeacms/volto-statistic-block",
     "@plone-collective/volto-authomatic",
     "@plone-collective/volto-eventbrite-block",
+    "@kitconcept/volto-light-theme",
     "@eeacms/volto-matomo"
   ],
   "dependencies": {
@@ -56,6 +56,8 @@
     "@plone-collective/volto-eventbrite-block": "^1.0.0-alpha.2",
     "@plonegovbr/volto-network-block": "^0.2.0",
     "classnames": "2.2.6",
+    "embla-carousel-autoplay": "^8.0.0",
+    "embla-carousel-react": "^8.0.0",
     "react-lazy-load-image-component": "^1.6.2",
     "volto-form-block": "^3.9.1",
     "volto-subblocks": "^2.1.0"

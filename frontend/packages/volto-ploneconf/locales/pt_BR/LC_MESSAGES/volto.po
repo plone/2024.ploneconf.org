@@ -24,7 +24,12 @@ msgstr "Seja o primeiro!"
 #. Default: "CTA"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "CTA"
-msgstr ""
+msgstr "Ação"
+
+#. Default: "Continue reading"
+#: components/Blocks/Slider/SliderFull
+msgid "Continue reading"
+msgstr "Leia mais"
 
 #. Default: "Front Page"
 #: components/Logo/Logo
@@ -32,10 +37,12 @@ msgid "Front Page"
 msgstr "Capa"
 
 #. Default: "Please choose an existing content as source for this element"
+#: components/Blocks/Slider/SliderFull
 #: components/Blocks/Teaser/TeaserColoredCTA
 #: components/Blocks/Teaser/TeaserFeatured
+#: components/Blocks/Teaser/TeaserFeaturedCTA
 msgid "Please choose an existing content as source for this element"
-msgstr ""
+msgstr "Por favor escolha um conteúdo existente como fonte para esse elemento"
 
 #. Default: "Plone Conference"
 #: components/Logo/LogoPloneConf
@@ -51,6 +58,11 @@ msgstr "Python Cerrado"
 #: components/Blocks/Teaser/TeaserFeatured
 msgid "Read more"
 msgstr "Saiba mais"
+
+#. Default: "Source"
+#: components/Blocks/Slider/SliderFull
+msgid "Source"
+msgstr "Fonte"
 
 #. Default: "Sponsor Us"
 #: components/Blocks/SponsorLevel/View
@@ -76,9 +88,14 @@ msgstr "Este site é desenvolvido com Python & Plone"
 #. Default: "Color"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "color"
-msgstr ""
+msgstr "Cor"
+
+#. Default: "More info"
+#: components/Blocks/Slider/SliderFull
+msgid "moreInfo"
+msgstr "Saiba mais"
 
 #. Default: "Subtitle"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "subtitle"
-msgstr ""
+msgstr "Sub-título"

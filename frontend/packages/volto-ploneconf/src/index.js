@@ -11,6 +11,10 @@ import TeaserFeatured from './components/Blocks/Teaser/TeaserFeatured';
 import TeaserColoredCTA from './components/Blocks/Teaser/TeaserColoredCTA';
 import { ColoredCTAEnhancer } from './components/Blocks/Teaser/coloredCTAschema';
 
+// Slider
+import SliderBody from '@kitconcept/volto-light-theme/components/Blocks/Slider/DefaultBody.jsx';
+import SliderBodyFull from './components/Blocks/Slider/SliderFull';
+
 // Views
 import SponsorView from './components/View/Sponsor';
 
@@ -73,8 +77,50 @@ const applyConfig = (config) => {
     Sponsor: SponsorView,
   };
 
-  // Enable autoPlay
-  config.blocks.blocksConfig.slider.enableAutoPlay = true;
+  // Teaser Variations
+  const teaserVariations = [
+    {
+      id: 'default',
+      isDefault: true,
+      title: 'Default',
+      template: TeaserDefaultTemplate,
+    },
+    {
+      id: 'featured',
+      isDefault: false,
+      title: 'Featured',
+      template: TeaserFeatured,
+    },
+    {
+      id: 'coloredCTA',
+      isDefault: false,
+      title: 'Colored CTA',
+      template: TeaserColoredCTA,
+      schemaEnhancer: ColoredCTAEnhancer,
+    },
+  ];
+  config.blocks.blocksConfig.teaser = {
+    ...config.blocks.blocksConfig.teaser,
+    variations: teaserVariations,
+  };
+  config.blocks.blocksConfig.slider = {
+    ...config.blocks.blocksConfig.slider,
+    variations: [
+      {
+        id: 'default',
+        isDefault: true,
+        title: 'Default',
+        view: SliderBody,
+      },
+      {
+        id: 'full-width',
+        isDefault: false,
+        title: 'Full',
+        view: SliderBodyFull,
+      },
+    ],
+    enableAutoPlay: true,
+  };
 
   const blocksWithBgColor = ['accordion', 'slateTable', 'listing', 'gridBlock'];
   blocksWithBgColor.forEach((blockId) => {
@@ -135,30 +181,6 @@ const applyConfig = (config) => {
       '__button',
     ],
   };
-  // Teaser Variations
-
-  const teaserVariations = [
-    {
-      id: 'default',
-      isDefault: true,
-      title: 'Default',
-      template: TeaserDefaultTemplate,
-    },
-    {
-      id: 'featured',
-      isDefault: false,
-      title: 'Featured',
-      template: TeaserFeatured,
-    },
-    {
-      id: 'coloredCTA',
-      isDefault: false,
-      title: 'Colored CTA',
-      template: TeaserColoredCTA,
-      schemaEnhancer: ColoredCTAEnhancer,
-    },
-  ];
-  config.blocks.blocksConfig.teaser.variations = teaserVariations;
   return config;
 };
 

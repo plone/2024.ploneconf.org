@@ -4,8 +4,58 @@ $link-color: #000;
 $link-color-hover: #000;
 $container-background: #f2f4f5;
 
+// Spacing
+$spacing-xs: 10px !default;
+$spacing-small: 20px !default;
+$spacing-medium: 40px !default;
+$spacing-large: 60px !default;
+$spacing-xlarge: 80px !default;
+$spacing-2xlarge: 100px !default;
+$spacing-3xlarge: 120px !default;
+
+// Maps
+$font-weights: (
+  thin: var(--font-weight-thin),
+  extra-light: var(--font-weight-extra-light),
+  light: var(--font-weight-light),
+  regular: var(--font-weight-regular),
+  medium: var(--font-weight-medium),
+  semi-bold: var(--font-weight-semi-bold),
+  bold: var(--font-weight-bold),
+  extra-bold: var(--font-weight-extra-bold),
+  bolder: var(--font-weight-bolder),
+) !default;
+
+$font-sizes: (
+  2xs: var(--font-size-2xs),
+  xs: var(--font-size-xs),
+  s: var(--font-size-s),
+  m: var(--font-size-m),
+  l: var(--font-size-l),
+  xl: var(--font-size-xl),
+  2xl: var(--font-size-2xl),
+  3xl: var(--font-size-3xl),
+  4xl: var(--font-size-4xl),
+  5xl: var(--font-size-5xl),
+  6xl: var(--font-size-6xl),
+) !default;
+
+$line-heights: (
+  xs: var(--line-height-xs),
+  s: var(--line-height-s),
+  m: var(--line-height-m),
+  l: var(--line-height-l),
+  xl: var(--line-height-xl),
+  2xl: var(--line-height-2xl),
+  3xl: var(--line-height-3xl),
+  4xl: var(--line-height-4xl),
+  5xl: var(--line-height-5xl),
+  6xl: var(--line-height-6xl),
+) !default;
+
 body.section-en {
-  --main-color: #016aad;
+  --base-rgb: 1, 106, 173;
+  --main-color: rgb(var(--base-rgb));
   --alternate-color: #001522;
   --reverse-color: #fff;
   --primary-color: var(--main-color);
@@ -26,7 +76,8 @@ body.section-en {
 }
 
 body.section-pt-br {
-  --main-color: #3abdc4;
+  --base-rgb: 58, 189, 196;
+  --main-color: rgb(var(--base-rgb));
   --alternate-color: #001522;
   --reverse-color: #fff;
   --link-color: var(--main-color);
