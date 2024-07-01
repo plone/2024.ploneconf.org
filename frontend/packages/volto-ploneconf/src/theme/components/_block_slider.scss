@@ -27,13 +27,13 @@
         z-index: 1;
         top: 0;
         display: block;
-        width: 570px;
+        width: 40%;
         height: calc(100vh - 220px);
         min-height: 600px;
         background: linear-gradient(
             270deg,
-            rgba(var(--base-rgb), 1) 0%,
-            rgba(var(--base-rgb), 0.75) 100%
+            rgba(darkslategray, 1) 0%,
+            rgba(darkslategray, 0.85) 100%
           )
           0 0 no-repeat padding-box;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -45,8 +45,8 @@
           left: 0;
           background: linear-gradient(
               90deg,
-              rgba(var(--base-rgb), 1) 0%,
-              rgba(var(--base-rgb), 0.75) 100%
+              rgba(darkslategray, 1) 0%,
+              rgba(darkslategray, 0.85) 100%
             )
             0 0 no-repeat padding-box;
           clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
