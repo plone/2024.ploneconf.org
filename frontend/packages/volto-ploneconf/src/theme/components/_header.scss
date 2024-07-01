@@ -3,22 +3,42 @@
   margin-left: 0px;
 
   .logo-nav-wrapper {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: $spacing-small;
   }
 }
 
 .navigation {
-  .item {
-    text-transform: uppercase !important;
+  .conf-item {
+    &.tickets,
+    &.ingressos {
+      .item {
+        padding: $spacing-xs;
+        border: 1px solid var(--main-color);
+        border-radius: 10px;
+        margin-left: $spacing-small;
+        background-color: var(--main-color);
+        color: var(--reverse-color);
+        &.active {
+          color: var(--reverse-color);
+        }
+        &:hover {
+          color: var(--reverse-color);
+          @include animate-hover();
+        }
+      }
+    }
+    .item {
+      padding: $spacing-xs 0 $spacing-xs 0;
+      margin-top: $spacing-xs;
+      margin-left: $spacing-small;
+      text-transform: uppercase !important;
+      &.active,
+      &:hover {
+        color: var(--main-color);
 
-    &.active,
-    &:hover {
-      color: var(--main-color);
-
-      &::before {
-        bottom: -22px;
-        border-bottom: 9px solid var(--main-color);
+        &::before {
+          border-bottom: 9px solid var(--main-color);
+        }
       }
     }
   }

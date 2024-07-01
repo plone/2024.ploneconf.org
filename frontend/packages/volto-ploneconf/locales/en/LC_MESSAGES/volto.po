@@ -21,6 +21,11 @@ msgstr ""
 msgid "CTA"
 msgstr ""
 
+#. Default: "Close menu"
+#: components/Navigation/Navigation
+msgid "Close menu"
+msgstr ""
+
 #. Default: "Continue reading"
 #: components/Blocks/Slider/SliderFull
 msgid "Continue reading"
@@ -29,6 +34,11 @@ msgstr ""
 #. Default: "Front Page"
 #: components/Logo/Logo
 msgid "Front Page"
+msgstr ""
+
+#. Default: "Open menu"
+#: components/Navigation/Navigation
+msgid "Open menu"
 msgstr ""
 
 #. Default: "Please choose an existing content as source for this element"
