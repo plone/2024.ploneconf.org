@@ -13,7 +13,7 @@ env:
 
 jobs:
 
-  meta:
+  config:
     runs-on: ubuntu-latest
     outputs:
       PLONE_VERSION: ${{ steps.vars.outputs.PLONE_VERSION }}
@@ -28,12 +28,12 @@ jobs:
         run: |
           echo "PLONE_VERSION=$(cat backend/version.txt)" >> $GITHUB_OUTPUT
           echo "TAG=sha-$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-          echo "VOLTO_VERSION=$(cat frontend/version.txt)" >> $GITHUB_OUTPUT
+          python3 -c 'import json; data = json.load(open("./frontend/mrs.developer.json")); print("VOLTO_VERSION=" + data["core"].get("tag") or "latest")' >> $GITHUB_OUTPUT
 
   release-frontend:
     runs-on: ubuntu-latest
     needs:
-      - meta
+      - config
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -64,7 +64,7 @@ jobs:
           context: frontend
           file: frontend/Dockerfile
           build-args: |
-            VOLTO_VERSION=${{ needs.meta.outputs.VOLTO_VERSION }}
+            VOLTO_VERSION=${{ needs.config.outputs.VOLTO_VERSION }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
@@ -72,7 +72,7 @@ jobs:
   release-backend:
     runs-on: ubuntu-latest
     needs:
-      - meta
+      - config
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -106,7 +106,7 @@ jobs:
           context: backend
           file: backend/Dockerfile
           build-args: |
-            PLONE_VERSION=${{ needs.meta.outputs.PLONE_VERSION }}
+            PLONE_VERSION=${{ needs.config.outputs.PLONE_VERSION }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
@@ -114,7 +114,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs:
-      - meta
+      - config
       - release-backend
       - release-frontend
     environment:
@@ -143,6 +143,6 @@ jobs:
           remote_private_key: ${{ secrets.DEPLOY_SSH }}
           stack_file: devops/stacks/2024.ploneconf.org.yml
           stack_name: 2024-ploneconf-org
-          stack_param: ${{ needs.meta.outputs.TAG }}
+          stack_param: ${{ needs.config.outputs.TAG }}
           env_file: ${{ secrets.ENV_FILE }}
           deploy_timeout: 480
