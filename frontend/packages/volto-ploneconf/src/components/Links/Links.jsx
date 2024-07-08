@@ -7,6 +7,7 @@ import instagramIcon from '@plonegovbr/volto-network-block/icons/instagram.svg';
 import linkedinIcon from '@plonegovbr/volto-network-block/icons/linkedin.svg';
 import mastodonIcon from '@plonegovbr/volto-network-block/icons/mastodon.svg';
 import twitterIcon from '@plonegovbr/volto-network-block/icons/twitter.svg';
+import youTubeIcon from '@plonegovbr/volto-network-block/icons/youtube.svg';
 import siteIcon from '@plone/volto/icons/world.svg';
 
 const categories = {
@@ -44,6 +45,11 @@ const categories = {
     title: 'Facebook',
     className: 'facebook',
     icon: facebookIcon,
+  },
+  youtube: {
+    title: 'YouTube',
+    className: 'youtube',
+    icon: youTubeIcon,
   },
 };
 
