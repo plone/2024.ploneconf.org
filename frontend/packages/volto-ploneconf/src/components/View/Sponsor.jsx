@@ -18,7 +18,7 @@ import Links from '../Links/Links';
 const SponsorView = ({ content }) => {
   const hasImage = content?.image ? true : false;
   const caption = content?.image_caption;
-  const { title, description, links } = content;
+  const { title, description, text, links } = content;
   const descriptionLines = description ? description.split('\n') : [];
   return (
     <Container id="page-document" className="view-wrapper sponsor-view">
@@ -44,6 +44,13 @@ const SponsorView = ({ content }) => {
             </>
           ))}
         </p>
+      )}
+      {text && (
+        <Container
+          narrow
+          className="sponsorText"
+          dangerouslySetInnerHTML={{ __html: text.data }}
+        />
       )}
       {links && <Links links={links} />}
     </Container>

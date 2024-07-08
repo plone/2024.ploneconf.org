@@ -17,7 +17,7 @@ msgstr ""
 "Domain: volto\n"
 
 #. Default: "Be the First!"
-#: components/Blocks/SponsorLevel/View
+#: components/Blocks/SponsorLevel/DefaultView
 msgid "Be the First!"
 msgstr "Seja o primeiro!"
 
@@ -25,6 +25,11 @@ msgstr "Seja o primeiro!"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "CTA"
 msgstr "Ação"
+
+#. Default: "CTA Label"
+#: components/Blocks/SponsorLevel/schema
+msgid "CTA Label"
+msgstr ""
 
 #. Default: "Close menu"
 #: components/Navigation/Navigation
@@ -35,6 +40,11 @@ msgstr "Fechar"
 #: components/Blocks/Slider/SliderFull
 msgid "Continue reading"
 msgstr "Leia mais"
+
+#. Default: "Display CTA?"
+#: components/Blocks/SponsorLevel/schema
+msgid "Display CTA?"
+msgstr ""
 
 #. Default: "Front Page"
 #: components/Logo/Logo
@@ -74,16 +84,26 @@ msgstr "Saiba mais"
 msgid "Source"
 msgstr "Fonte"
 
+#. Default: "Sponsor Level"
+#: components/Blocks/SponsorLevel/schema
+msgid "Sponsor Level"
+msgstr ""
+
 #. Default: "Sponsor Us"
-#: components/Blocks/SponsorLevel/View
+#: components/Blocks/SponsorLevel/DefaultView
 msgid "Sponsor Us"
 msgstr "Patrocine"
 
 #. Default: "Sponsors"
-#: components/Blocks/SponsorLevel/View
+#: components/Blocks/SponsorLevel/DefaultView
 #: components/Sponsors/Sponsors
 msgid "Sponsors"
 msgstr "Patrocinadores"
+
+#. Default: "Sponsorship Form"
+#: components/Blocks/SponsorLevel/schema
+msgid "Sponsorship Form"
+msgstr ""
 
 #. Default: "Switch to"
 #: components/Header/LanguageSelector
@@ -94,6 +114,11 @@ msgstr "Visitar"
 #: components/Footer/Footer
 msgid "This site is built using Python and Plone."
 msgstr "Este site é desenvolvido com Python & Plone"
+
+#. Default: "Title"
+#: components/Blocks/SponsorLevel/schema
+msgid "Title"
+msgstr ""
 
 #. Default: "Color"
 #: components/Blocks/Teaser/coloredCTAschema

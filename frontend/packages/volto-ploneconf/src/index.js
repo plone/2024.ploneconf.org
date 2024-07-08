@@ -154,7 +154,7 @@ const applyConfig = (config) => {
     edit: SponsorLevelEdit,
     restricted: sponsorLevelRestrict,
     mostUsed: false,
-    sidebarTab: 0,
+    sidebarTab: 1,
     security: {
       addPermission: [],
       view: [],

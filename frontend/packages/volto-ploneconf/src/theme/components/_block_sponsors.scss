@@ -80,13 +80,16 @@
             @include sponsor-size-04;
           }
 
-          &.patronage {
-            max-width: 50% !important;
+          &.patron {
             @include sponsor-size-02;
           }
 
           &.travel-agency {
-            @include sponsor-size-04;
+            @include sponsor-size-05;
+          }
+
+          &.media {
+            @include sponsor-size-05;
           }
         }
       }
@@ -130,13 +133,15 @@ body.contenttype-lrf {
             }
 
             &.travel-agency {
-              max-width: 33%;
-              @include sponsor-size-04;
+              @include sponsor-size-05;
             }
 
-            &.patronage {
-              max-width: 50%;
+            &.patron {
               @include sponsor-size-03;
+            }
+
+            &.media {
+              @include sponsor-size-06;
             }
           }
         }

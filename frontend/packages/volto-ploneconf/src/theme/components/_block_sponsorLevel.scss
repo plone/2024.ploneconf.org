@@ -1,3 +1,5 @@
+#page-add,
+#page-edit,
 #page-document .blocks-group-wrapper {
   .block.sponsorLevel {
     @include default-container-width;
@@ -28,6 +30,16 @@
       .sponsor {
         max-width: 33%;
         @include sponsor-size-04;
+      }
+    }
+    .sponsorCTA {
+      width: 100%;
+      margin: $spacing-large auto;
+      text-align: center;
+      .cta {
+        @include ctaButton();
+        @include add(size, medium);
+        @include add(weight, bold);
       }
     }
   }
