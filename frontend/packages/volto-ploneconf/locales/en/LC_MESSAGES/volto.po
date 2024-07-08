@@ -12,13 +12,18 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. Default: "Be the First!"
-#: components/Blocks/SponsorLevel/View
+#: components/Blocks/SponsorLevel/DefaultView
 msgid "Be the First!"
 msgstr ""
 
 #. Default: "CTA"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "CTA"
+msgstr ""
+
+#. Default: "CTA Label"
+#: components/Blocks/SponsorLevel/schema
+msgid "CTA Label"
 msgstr ""
 
 #. Default: "Close menu"
@@ -29,6 +34,11 @@ msgstr ""
 #. Default: "Continue reading"
 #: components/Blocks/Slider/SliderFull
 msgid "Continue reading"
+msgstr ""
+
+#. Default: "Display CTA?"
+#: components/Blocks/SponsorLevel/schema
+msgid "Display CTA?"
 msgstr ""
 
 #. Default: "Front Page"
@@ -69,15 +79,25 @@ msgstr ""
 msgid "Source"
 msgstr ""
 
+#. Default: "Sponsor Level"
+#: components/Blocks/SponsorLevel/schema
+msgid "Sponsor Level"
+msgstr ""
+
 #. Default: "Sponsor Us"
-#: components/Blocks/SponsorLevel/View
+#: components/Blocks/SponsorLevel/DefaultView
 msgid "Sponsor Us"
 msgstr ""
 
 #. Default: "Sponsors"
-#: components/Blocks/SponsorLevel/View
+#: components/Blocks/SponsorLevel/DefaultView
 #: components/Sponsors/Sponsors
 msgid "Sponsors"
+msgstr ""
+
+#. Default: "Sponsorship Form"
+#: components/Blocks/SponsorLevel/schema
+msgid "Sponsorship Form"
 msgstr ""
 
 #. Default: "Switch to"
@@ -89,6 +109,11 @@ msgstr ""
 #: components/Footer/Footer
 msgid "This site is built using Python and Plone."
 msgstr "This site is built using Python & Plone"
+
+#. Default: "Title"
+#: components/Blocks/SponsorLevel/schema
+msgid "Title"
+msgstr ""
 
 #. Default: "Color"
 #: components/Blocks/Teaser/coloredCTAschema

@@ -9,7 +9,16 @@ from ploneconf.behaviors.links import ILinkInformation
 def generate_links_dict(content: ILinkInformation) -> dict:
     """Links information packaged as a dictionary."""
     content = aq_base(content)
-    keys = ["remoteUrl", "twitter", "github", "mastodon", "instagram", "linkedin"]
+    keys = [
+        "remoteUrl",
+        "twitter",
+        "github",
+        "mastodon",
+        "instagram",
+        "linkedin",
+        "youtube",
+        "facebook",
+    ]
 
     links = {}
     for key in keys:

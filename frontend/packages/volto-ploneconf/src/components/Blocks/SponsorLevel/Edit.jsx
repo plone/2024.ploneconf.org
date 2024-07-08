@@ -1,32 +1,24 @@
-/**
- * Sponsors block.
- * @module components/Blocks/SponsorsLevel/Edit
- */
-
 import React from 'react';
-import PropTypes from 'prop-types';
 import { withBlockExtensions } from '@plone/volto/helpers';
-import SponsorLevel from './View';
+import { SidebarPortal } from '@plone/volto/components';
 
-/**
- * Edit document block class.
- * @class Edit
- * @extends Component
- */
-const Edit = React.memo((props) => {
-  const { data, block } = props;
-  return <SponsorLevel key={block} {...props} data={data} block={block} />;
-});
+import SponsorLevelBlockData from './Data';
+import SponsorLevelBlockView from './View';
 
-Edit.propTypes = {
-  data: PropTypes.objectOf(PropTypes.any).isRequired,
-  index: PropTypes.number.isRequired,
-  selected: PropTypes.bool.isRequired,
-  block: PropTypes.string.isRequired,
-  onSelectBlock: PropTypes.func.isRequired,
-  items: PropTypes.arrayOf(PropTypes.any),
-  properties: PropTypes.objectOf(PropTypes.any).isRequired,
-  pathname: PropTypes.string.isRequired,
+const SponsorLevelBlockEdit = (props) => {
+  const { data, onChangeBlock, block, selected } = props;
+  return (
+    <>
+      <SponsorLevelBlockView {...props} isEditMode />
+      <SidebarPortal selected={selected}>
+        <SponsorLevelBlockData
+          data={data}
+          block={block}
+          onChangeBlock={onChangeBlock}
+        />
+      </SidebarPortal>
+    </>
+  );
 };
 
-export default withBlockExtensions(Edit);
+export default withBlockExtensions(SponsorLevelBlockEdit);
