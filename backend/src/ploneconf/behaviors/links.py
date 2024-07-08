@@ -20,6 +20,8 @@ class ILinkInformation(model.Schema):
             "mastodon",
             "instagram",
             "linkedin",
+            "youtube",
+            "facebook",
         ],
     )
 
@@ -64,3 +66,17 @@ class ILinkInformation(model.Schema):
         required=False,
     )
     directives.languageindependent("linkedin")
+
+    youtube = schema.URI(
+        title=_("YouTube"),
+        description=_("YouTube channel url"),
+        required=False,
+    )
+    directives.languageindependent("youtube")
+
+    facebook = schema.URI(
+        title=_("Facebook"),
+        description=_("Facebook page url"),
+        required=False,
+    )
+    directives.languageindependent("facebook")
