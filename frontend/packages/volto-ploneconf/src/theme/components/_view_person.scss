@@ -1,0 +1,42 @@
+body.contenttype-person {
+  .person-view {
+    margin-top: $spacing-medium;
+    .person-labels {
+      margin: $spacing-medium 0;
+    }
+    .person-name {
+      @include add(size, 3xl);
+      @include add(weight, bold);
+      @include add(height, 3xl);
+    }
+    .person-description {
+      @include add(size, m);
+      @include add(height, m);
+      color: $grey;
+    }
+    .speakers-preview-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10%;
+      aspect-ratio: 1;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+    .links.wrapper {
+      .link.item {
+        > svg {
+          height: 24px !important;
+          filter: grayscale(100%) contrast(1.1);
+        }
+        &:hover {
+          > svg {
+            filter: unset;
+          }
+        }
+      }
+    }
+    .person-info {
+      border-bottom: 3px solid var(--main-color);
+    }
+  }
+}

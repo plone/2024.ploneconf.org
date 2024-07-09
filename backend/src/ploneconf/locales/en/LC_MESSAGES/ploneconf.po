@@ -43,6 +43,10 @@ msgstr ""
 msgid "Audience"
 msgstr ""
 
+#: ploneconf/content/person.py:47
+msgid "Categories"
+msgstr ""
+
 #: ploneconf/profiles/default/types/Sponsor.xml
 msgid "Conference Sponsor."
 msgstr ""
@@ -69,12 +73,12 @@ msgid "Duration of the training"
 msgstr ""
 
 #: ploneconf/profiles/default/types/Keynote.xml
-#: ploneconf/profiles/default/types/Person.xml
 #: ploneconf/profiles/default/types/Slot.xml
+#: ploneconf/profiles/default/types/Sponsor.xml
 msgid "Edit"
 msgstr ""
 
-#: ploneconf/content/person.py:21
+#: ploneconf/content/person.py:41
 msgid "Email address"
 msgstr ""
 
@@ -94,11 +98,19 @@ msgstr ""
 msgid "End time must be after start time."
 msgstr ""
 
-#: ploneconf/behaviors/links.py:41
+#: ploneconf/behaviors/links.py:78
+msgid "Facebook"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:79
+msgid "Facebook page url"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:43
 msgid "GitHub"
 msgstr ""
 
-#: ploneconf/behaviors/links.py:42
+#: ploneconf/behaviors/links.py:44
 msgid "GitHub profile organization"
 msgstr ""
 
@@ -114,11 +126,11 @@ msgstr ""
 msgid "Initial content for our website."
 msgstr ""
 
-#: ploneconf/behaviors/links.py:55
+#: ploneconf/behaviors/links.py:57
 msgid "Instagram"
 msgstr ""
 
-#: ploneconf/behaviors/links.py:56
+#: ploneconf/behaviors/links.py:58
 msgid "Instagram profile url"
 msgstr ""
 
@@ -126,8 +138,16 @@ msgstr ""
 msgid "Install Production pas.plugins.authomatic."
 msgstr ""
 
+#: ploneconf/vocabularies/person.py:16
+msgid "Instructor"
+msgstr ""
+
 #: ploneconf/profiles/default/types/Keynote.xml
 msgid "Keynote"
+msgstr ""
+
+#: ploneconf/vocabularies/person.py:14
+msgid "Keynote Speaker"
 msgstr ""
 
 #: ploneconf/behaviors/session.py:36
@@ -135,15 +155,15 @@ msgstr ""
 msgid "Level"
 msgstr ""
 
-#: ploneconf/behaviors/links.py:28
+#: ploneconf/behaviors/links.py:30
 msgid "Link to site"
 msgstr ""
 
-#: ploneconf/behaviors/links.py:62
+#: ploneconf/behaviors/links.py:64
 msgid "LinkedIn"
 msgstr ""
 
-#: ploneconf/behaviors/links.py:63
+#: ploneconf/behaviors/links.py:65
 msgid "LinkedIn profile url"
 msgstr ""
 
@@ -151,11 +171,11 @@ msgstr ""
 msgid "Links"
 msgstr ""
 
-#: ploneconf/behaviors/links.py:48
+#: ploneconf/behaviors/links.py:50
 msgid "Mastodon"
 msgstr ""
 
-#: ploneconf/behaviors/links.py:49
+#: ploneconf/behaviors/links.py:51
 msgid "Mastodon profile url"
 msgstr ""
 
@@ -179,7 +199,7 @@ msgstr ""
 msgid "Person Label"
 msgstr ""
 
-#: ploneconf/content/person.py:22
+#: ploneconf/content/person.py:42
 msgid "Personal e-mail address"
 msgstr ""
 
@@ -197,6 +217,10 @@ msgstr ""
 
 #: ploneconf/profiles.zcml:38
 msgid "Plone Conference 2024: Uninstall"
+msgstr ""
+
+#: ploneconf/vocabularies/person.py:17
+msgid "Plone Foundation Member"
 msgstr ""
 
 #: ploneconf/profiles.zcml:13
@@ -227,7 +251,7 @@ msgstr ""
 msgid "Should this level be displayed on the FrontPage?"
 msgstr ""
 
-#: ploneconf/behaviors/links.py:27
+#: ploneconf/behaviors/links.py:29
 msgid "Site"
 msgstr ""
 
@@ -241,6 +265,10 @@ msgstr ""
 
 #: ploneconf/profiles/default/types/Slot.xml
 msgid "Slot"
+msgstr ""
+
+#: ploneconf/vocabularies/person.py:15
+msgid "Speaker"
 msgstr ""
 
 #: ploneconf/profiles/default/types/Sponsor.xml
@@ -313,8 +341,8 @@ msgid "Video embed code"
 msgstr ""
 
 #: ploneconf/profiles/default/types/Keynote.xml
-#: ploneconf/profiles/default/types/Person.xml
 #: ploneconf/profiles/default/types/Slot.xml
+#: ploneconf/profiles/default/types/Sponsor.xml
 msgid "View"
 msgstr ""
 
@@ -322,25 +350,49 @@ msgstr ""
 msgid "Visibility"
 msgstr ""
 
-#: ploneconf/behaviors/links.py:34
+#: ploneconf/behaviors/links.py:36
 msgid "X"
 msgstr ""
 
-#: ploneconf/behaviors/links.py:35
+#: ploneconf/behaviors/links.py:37
 msgid "X profile url"
 msgstr ""
 
+#: ploneconf/behaviors/links.py:71
+msgid "YouTube"
+msgstr ""
+
+#: ploneconf/behaviors/links.py:72
+msgid "YouTube channel url"
+msgstr ""
+
 #. Default: "Used in item listings and search results."
-#: ploneconf/content/sponsors/sponsor.py:18
+#: ploneconf/content/person.py:30
+#: ploneconf/content/sponsors/sponsor.py:22
 msgid "help_description"
 msgstr ""
 
+#. Default: "Short Biography"
+#: ploneconf/content/person.py:29
+msgid "label_biography"
+msgstr ""
+
 #. Default: "Summary"
-#: ploneconf/content/sponsors/sponsor.py:17
+#: ploneconf/content/sponsors/sponsor.py:21
 msgid "label_description"
 msgstr ""
 
+#. Default: "Name"
+#: ploneconf/content/person.py:26
+msgid "label_name"
+msgstr ""
+
+#. Default: "Text"
+#: ploneconf/content/sponsors/sponsor.py:32
+msgid "label_text"
+msgstr ""
+
 #. Default: "Title"
-#: ploneconf/content/sponsors/sponsor.py:14
+#: ploneconf/content/sponsors/sponsor.py:18
 msgid "label_title"
 msgstr ""
