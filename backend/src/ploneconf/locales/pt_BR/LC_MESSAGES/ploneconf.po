@@ -1,10 +1,7 @@
-#--- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-#SOME DESCRIPTIVE TITLE.
-#FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-07-09 16:55+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,12 +12,7 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: ploneconf\n"
-
-#: ploneconf/behaviors/schedule.py:43
-#: ploneconf/behaviors/session.py:27
-msgid ""
-msgstr ""
+"Domain: DOMAIN\n"
 
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "."
@@ -148,15 +140,15 @@ msgstr ""
 
 #: ploneconf/vocabularies/person.py:16
 msgid "Instructor"
-msgstr ""
+msgstr "Instrutor"
 
 #: ploneconf/profiles/default/types/Keynote.xml
 msgid "Keynote"
-msgstr ""
+msgstr "Keynote"
 
 #: ploneconf/vocabularies/person.py:14
 msgid "Keynote Speaker"
-msgstr ""
+msgstr "Keynote"
 
 #: ploneconf/behaviors/session.py:36
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
@@ -229,7 +221,7 @@ msgstr ""
 
 #: ploneconf/vocabularies/person.py:17
 msgid "Plone Foundation Member"
-msgstr ""
+msgstr "Membro Plone Foundation"
 
 #: ploneconf/profiles.zcml:13
 msgid "Policy package to install our site"
@@ -277,7 +269,7 @@ msgstr ""
 
 #: ploneconf/vocabularies/person.py:15
 msgid "Speaker"
-msgstr ""
+msgstr "Palestrante"
 
 #: ploneconf/profiles/default/types/Sponsor.xml
 msgid "Sponsor"
@@ -378,22 +370,22 @@ msgstr ""
 #: ploneconf/content/person.py:30
 #: ploneconf/content/sponsors/sponsor.py:22
 msgid "help_description"
-msgstr ""
+msgstr "Texto curto, utilizado em listagens"
 
 #. Default: "Short Biography"
 #: ploneconf/content/person.py:29
 msgid "label_biography"
-msgstr ""
+msgstr "Biografia"
 
 #. Default: "Summary"
 #: ploneconf/content/sponsors/sponsor.py:21
 msgid "label_description"
-msgstr ""
+msgstr "Sumário"
 
 #. Default: "Name"
 #: ploneconf/content/person.py:26
 msgid "label_name"
-msgstr ""
+msgstr "Nome"
 
 #. Default: "Text"
 #: ploneconf/content/sponsors/sponsor.py:32
@@ -403,4 +395,4 @@ msgstr ""
 #. Default: "Title"
 #: ploneconf/content/sponsors/sponsor.py:18
 msgid "label_title"
-msgstr ""
+msgstr "Organização"

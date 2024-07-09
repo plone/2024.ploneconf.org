@@ -3,17 +3,15 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     >
 
-  <!-- Example upgrade step
   <genericsetup:upgradeSteps
       profile="ploneconf:default"
       source="20231128001"
-      destination="20230229001"
+      destination="20240709001"
       >
     <genericsetup:upgradeDepends
-        title="Update registry value"
-        import_steps="plone.app.registry"
+        title="Update Person type"
+        import_steps="typeinfo"
         />
   </genericsetup:upgradeSteps>
-  -->
 
 </configure>

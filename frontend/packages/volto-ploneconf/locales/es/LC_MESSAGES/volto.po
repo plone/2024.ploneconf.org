@@ -120,9 +120,29 @@ msgstr ""
 msgid "color"
 msgstr ""
 
+#. Default: "Instructor"
+#: components/PersonLabel/PersonLabel
+msgid "instructor"
+msgstr ""
+
+#. Default: "Keynote Speaker"
+#: components/PersonLabel/PersonLabel
+msgid "keynote-speaker"
+msgstr ""
+
 #. Default: "More info"
 #: components/Blocks/Slider/SliderFull
 msgid "moreInfo"
+msgstr ""
+
+#. Default: "Plone Foundation Member"
+#: components/PersonLabel/PersonLabel
+msgid "pf-member"
+msgstr ""
+
+#. Default: "Speaker"
+#: components/PersonLabel/PersonLabel
+msgid "speaker"
 msgstr ""
 
 #. Default: "Subtitle"

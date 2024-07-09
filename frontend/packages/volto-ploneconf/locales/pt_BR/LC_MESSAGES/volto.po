@@ -29,7 +29,7 @@ msgstr "Ação"
 #. Default: "CTA Label"
 #: components/Blocks/SponsorLevel/schema
 msgid "CTA Label"
-msgstr ""
+msgstr "Texto da Ação"
 
 #. Default: "Close menu"
 #: components/Navigation/Navigation
@@ -44,7 +44,7 @@ msgstr "Leia mais"
 #. Default: "Display CTA?"
 #: components/Blocks/SponsorLevel/schema
 msgid "Display CTA?"
-msgstr ""
+msgstr "Exibir botão de ação?"
 
 #. Default: "Front Page"
 #: components/Logo/Logo
@@ -87,7 +87,7 @@ msgstr "Fonte"
 #. Default: "Sponsor Level"
 #: components/Blocks/SponsorLevel/schema
 msgid "Sponsor Level"
-msgstr ""
+msgstr "Pacote de Patrocínio"
 
 #. Default: "Sponsor Us"
 #: components/Blocks/SponsorLevel/DefaultView
@@ -103,7 +103,7 @@ msgstr "Patrocinadores"
 #. Default: "Sponsorship Form"
 #: components/Blocks/SponsorLevel/schema
 msgid "Sponsorship Form"
-msgstr ""
+msgstr "Formulário de patrocínio"
 
 #. Default: "Switch to"
 #: components/Header/LanguageSelector
@@ -118,17 +118,37 @@ msgstr "Este site é desenvolvido com Python & Plone"
 #. Default: "Title"
 #: components/Blocks/SponsorLevel/schema
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #. Default: "Color"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "color"
 msgstr "Cor"
 
+#. Default: "Instructor"
+#: components/PersonLabel/PersonLabel
+msgid "instructor"
+msgstr "Instrutor"
+
+#. Default: "Keynote Speaker"
+#: components/PersonLabel/PersonLabel
+msgid "keynote-speaker"
+msgstr "Keynote"
+
 #. Default: "More info"
 #: components/Blocks/Slider/SliderFull
 msgid "moreInfo"
 msgstr "Saiba mais"
+
+#. Default: "Plone Foundation Member"
+#: components/PersonLabel/PersonLabel
+msgid "pf-member"
+msgstr "Membro da Plone Foundation"
+
+#. Default: "Speaker"
+#: components/PersonLabel/PersonLabel
+msgid "speaker"
+msgstr "Palestrante"
 
 #. Default: "Subtitle"
 #: components/Blocks/Teaser/coloredCTAschema

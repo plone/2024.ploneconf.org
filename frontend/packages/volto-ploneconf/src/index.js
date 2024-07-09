@@ -4,6 +4,8 @@ import SponsorsView from './components/Blocks/Sponsors/View';
 import SponsorLevelEdit from './components/Blocks/SponsorLevel/Edit';
 import SponsorLevelView from './components/Blocks/SponsorLevel/View';
 import { sponsorLevelRestrict } from './components/Blocks/SponsorLevel/utils';
+/// Listing block variations
+import ProfilesTemplate from './components/Blocks/Listing/ProfilesGridTemplate';
 
 // Teaser
 import TeaserDefaultTemplate from '@plone/volto/components/manage/Blocks/Teaser/DefaultBody';
@@ -16,6 +18,7 @@ import SliderBody from '@kitconcept/volto-light-theme/components/Blocks/Slider/D
 import SliderBodyFull from './components/Blocks/Slider/SliderFull';
 
 // Views
+import PersonView from './components/View/Person';
 import SponsorView from './components/View/Sponsor';
 
 // Icons
@@ -74,6 +77,7 @@ const applyConfig = (config) => {
   config.addonReducers = { ...config.addonReducers, ...reducers };
   config.views.contentTypesViews = {
     ...config.views.contentTypesViews,
+    Person: PersonView,
     Sponsor: SponsorView,
   };
 
@@ -121,6 +125,16 @@ const applyConfig = (config) => {
     ],
     enableAutoPlay: true,
   };
+
+  // Listing Variations
+  config.blocks.blocksConfig.listing.variations = [
+    ...config.blocks.blocksConfig.listing.variations,
+    {
+      id: 'profiles',
+      title: 'Person Profiles',
+      template: ProfilesTemplate,
+    },
+  ];
 
   const blocksWithBgColor = ['accordion', 'slateTable', 'listing', 'gridBlock'];
   blocksWithBgColor.forEach((blockId) => {
