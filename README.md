@@ -22,7 +22,7 @@ Ensure you have the following installed:
 1. Clone the repository:
 
 ```shell
-git clone git@github.com:plone/2024.ploneconf.org.git
+git clone https://github.com/plone/2024.ploneconf.org.git
 cd 2024.ploneconf.org
 ```
 
