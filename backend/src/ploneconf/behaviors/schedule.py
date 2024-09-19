@@ -20,7 +20,7 @@ class IScheduleSlot(model.Schema):
         label=_("Schedule"),
         fields=["start", "end", "room", "track"],
     )
-    ml_directives.languageindependent(("start", "end", "room", "track"))
+    ml_directives.languageindependent(*("start", "end", "room", "track"))
 
     start = schema.Datetime(title=_("Start time"), required=False)
     directives.widget(

@@ -88,7 +88,7 @@ class IConferenceSession(model.Schema):
         required=False,
     )
     ml_directives.languageindependent(
-        (
+        *(
             "title",
             "text",
             "session_level",
