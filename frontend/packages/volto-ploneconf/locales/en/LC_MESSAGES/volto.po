@@ -5,7 +5,7 @@ msgstr ""
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
-"Language: en\n"
+"Language: \n"
 "Language-Team: \n"
 "Content-Type: \n"
 "Content-Transfer-Encoding: \n"
@@ -108,7 +108,7 @@ msgstr ""
 #. Default: "This site is built using Python and Plone"
 #: components/Footer/Footer
 msgid "This site is built using Python and Plone."
-msgstr "This site is built using Python & Plone"
+msgstr ""
 
 #. Default: "Title"
 #: components/Blocks/SponsorLevel/schema

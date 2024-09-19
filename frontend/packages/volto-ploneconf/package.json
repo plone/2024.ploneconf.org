@@ -54,7 +54,7 @@
     "@mbarde/volto-image-crop-widget": "0.5.1",
     "@plone-collective/volto-authomatic": "2.0.1",
     "@plone-collective/volto-eventbrite-block": "^1.0.0-alpha.2",
-    "@plonegovbr/volto-network-block": "^0.2.0",
+    "@plonegovbr/volto-network-block": "^1.0.0",
     "classnames": "2.2.6",
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
