@@ -4,6 +4,7 @@
   <include package="plone.volto" />
   <include package="plone.restapi" />
   <include package="collective.exportimport" />
+  <include package="collective.volto.otp" />
   <include package="collective.honeypot" />
   <include package="pas.plugins.authomatic" />
   <include package="collective.volto.formsupport" />

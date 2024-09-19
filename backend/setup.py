@@ -55,6 +55,7 @@ setup(
         "plone.app.multilingual",
         "collective.volto.formsupport",
         "collective.honeypot",
+        "collective.volto.otp",
         "plone.exportimport",
     ],
     extras_require={
