@@ -1,3 +1,4 @@
+from plone.app.multilingual.dx import directives as ml_directives
 from plone.app.textfield import RichText
 from plone.autoform import directives
 from plone.autoform.interfaces import IFormFieldProvider
@@ -56,7 +57,6 @@ class IConferenceSession(model.Schema):
         text="*",
         title="*",
     )
-
     # Materials
     model.fieldset(
         "materials",
@@ -86,4 +86,16 @@ class IConferenceSession(model.Schema):
         title=_("Video embed code"),
         description=_("Embed code for video"),
         required=False,
+    )
+    ml_directives.languageindependent(
+        *(
+            "title",
+            "text",
+            "session_level",
+            "session_audience",
+            "slides_url",
+            "slides_embed",
+            "video_url",
+            "video_embed",
+        )
     )

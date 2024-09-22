@@ -5,6 +5,10 @@
       component=".sponsorship.sponsorship_levels"
       />
   <utility
+      name="ploneconf.vocabularies.slot_rooms"
+      component=".slot.slot_rooms"
+      />
+  <utility
       name="ploneconf.vocabularies.slot_tracks"
       component=".slot.slot_tracks"
       />
