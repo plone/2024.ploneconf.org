@@ -4,15 +4,17 @@
  */
 
 import React from 'react';
+import { Container } from '@plone/components';
 import { Label } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
 const SessionInfo = (props) => {
   const audience = props.audience;
   const level = props.level;
+  const description = props.description;
   return (
-    <div className={'session-info'}>
-      {audience && (
+    <Container className={'session-info'}>
+      {audience?.length > 0 && (
         <Label.Group>
           <strong>Audience:</strong>{' '}
           {audience.map((audience) => (
@@ -25,7 +27,7 @@ const SessionInfo = (props) => {
           ))}
         </Label.Group>
       )}
-      {level && (
+      {level?.length > 0 && (
         <Label.Group>
           <strong>Level:</strong>{' '}
           {level.map((level) => (
@@ -35,7 +37,8 @@ const SessionInfo = (props) => {
           ))}
         </Label.Group>
       )}
-    </div>
+      {description && <p className="session-description">{description}</p>}
+    </Container>
   );
 };
 

@@ -4,6 +4,7 @@ import SponsorsView from './components/Blocks/Sponsors/View';
 import SponsorLevelEdit from './components/Blocks/SponsorLevel/Edit';
 import SponsorLevelView from './components/Blocks/SponsorLevel/View';
 import { sponsorLevelRestrict } from './components/Blocks/SponsorLevel/utils';
+
 /// Listing block variations
 import ProfilesTemplate from './components/Blocks/Listing/ProfilesGridTemplate';
 
@@ -20,6 +21,7 @@ import SliderBodyFull from './components/Blocks/Slider/SliderFull';
 // Views
 import PersonView from './components/View/Person';
 import SponsorView from './components/View/Sponsor';
+import SessionView from './components/View/SessionView';
 
 // Icons
 import listBulletSVG from '@plone/volto/icons/list-bullet.svg';
@@ -79,6 +81,9 @@ const applyConfig = (config) => {
     ...config.views.contentTypesViews,
     Person: PersonView,
     Sponsor: SponsorView,
+    Keynote: SessionView,
+    Talk: SessionView,
+    Training: SessionView,
   };
 
   // Teaser Variations

@@ -1,0 +1,59 @@
+.session-view {
+  &.too-many-speakers {
+    .session-wrapper {
+      .session-content,
+      .listing-presenters {
+        width: 100%;
+      }
+      .listing-presenters {
+        .listing-presenter {
+          width: 30%;
+        }
+      }
+    }
+  }
+  .session-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .session-header {
+      min-width: 100%;
+    }
+    .session-content {
+      width: 75%;
+    }
+    .listing-presenters {
+      width: 25%;
+      .listing-presenter {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: $tablet-breakpoint) {
+    &.too-many-speakers {
+      .session-wrapper {
+        .session-content,
+        .listing-presenters {
+          width: 100%;
+        }
+        .listing-presenters {
+          .listing-presenter {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .session-wrapper {
+      padding-right: $spacing-medium;
+      padding-left: $spacing-medium;
+      .session-content,
+      .listing-presenters {
+        width: 100%;
+      }
+      .listing-presenters {
+        .listing-presenter {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

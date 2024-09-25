@@ -1,6 +1,5 @@
 // This theme extends the volto-light-theme
 // it is injected
-
 @import 'root';
 @import 'layout';
 @import 'typography';
@@ -23,7 +22,10 @@
 @import 'components/block_statistics';
 @import 'components/color_picker';
 @import 'components/person_label';
+@import 'components/presenterimage';
+@import 'components/presenters_info';
 @import 'components/view_person';
+@import 'components/view_session';
 @import 'components/view_sponsor';
 @import 'sections/section_root';
 @import 'sections/section_about';

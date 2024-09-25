@@ -1,0 +1,24 @@
+.presenter-image-wrapper {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    background: var(--main-color);
+    content: '';
+    filter: contrast(0.5) brightness(0.5);
+    mix-blend-mode: hard-light;
+  }
+  img.presenter-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    aspect-ratio: 1;
+    filter: grayscale(100%) contrast(1.1);
+    mix-blend-mode: luminosity;
+    object-fit: cover;
+  }
+}

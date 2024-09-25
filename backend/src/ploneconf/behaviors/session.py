@@ -15,9 +15,10 @@ class IConferenceSession(model.Schema):
     """Plone Conference Conference Session."""
 
     title = schema.TextLine(title=_("Title"), required=True)
+    description = schema.Text(title=_("Abstract"), required=True)
 
     text = RichText(
-        title=_("Summary"),
+        title=_("Details"),
         required=False,
         missing_value="",
     )

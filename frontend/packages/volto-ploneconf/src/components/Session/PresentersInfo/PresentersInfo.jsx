@@ -4,42 +4,23 @@
  */
 
 import React from 'react';
-import { flattenToAppURL } from '@plone/volto/helpers';
-import DefaultImageSVG from '@plone/volto/components/manage/Blocks/Listing/default-image.svg';
-import { Link } from 'react-router-dom';
+import { Container } from '@plone/components';
+import PresenterInfo from '../../PresenterInfo/PresenterInfo';
 import PropTypes from 'prop-types';
-import { Popup } from 'semantic-ui-react';
 
 const PresentersInfo = (props) => {
   const content = props.content;
   const presenters = content.presenters;
   return (
-    <div className="listing-image-wrapper">
-      {presenters?.map((item) => (
-        <div className="speakers-preview" key={item['@id']}>
-          <Link to={flattenToAppURL(item['@id'])}>
-            <Popup
-              trigger={
-                <div className="speakers-preview-image">
-                  {!item?.image?.download && (
-                    <img src={DefaultImageSVG} alt="" />
-                  )}
-                  {item?.image?.download && (
-                    <img
-                      src={flattenToAppURL(item.image.download)}
-                      alt={item.title}
-                    />
-                  )}
-                </div>
-              }
-              position="top center"
-            >
-              <Popup.Content>{item.title ? item.title : item.id}</Popup.Content>
-            </Popup>
-          </Link>
-        </div>
-      ))}
-    </div>
+    <Container narrow className="listing-presenters">
+      {presenters?.map((item) => {
+        return (
+          <Container className="listing-presenter" key={item['@id']}>
+            <PresenterInfo item={item} isEditMode={false} />
+          </Container>
+        );
+      })}
+    </Container>
   );
 };
 
