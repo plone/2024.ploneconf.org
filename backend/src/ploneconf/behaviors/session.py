@@ -1,5 +1,6 @@
 from plone.app.multilingual.dx import directives as ml_directives
 from plone.app.textfield import RichText
+from plone.app.z3cform.widget import SelectFieldWidget
 from plone.autoform import directives
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.supermodel import model
@@ -51,9 +52,20 @@ class IConferenceSession(model.Schema):
         ),
         required=False,
     )
+    session_language = schema.Choice(
+        title=_("label_language", default="Language"),
+        vocabulary="plone.app.vocabularies.SupportedContentLanguages",
+        required=False,
+        missing_value="",
+    )
+    directives.widget("session_language", SelectFieldWidget)
+
+    _pretalx_id = schema.TextLine(title=_("PretalX id"), required=False)
     directives.order_before(
+        _pretalx_id="*",
         session_audience="*",
         session_level="*",
+        session_language="*",
         presenters="*",
         text="*",
         title="*",

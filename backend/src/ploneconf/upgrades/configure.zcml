@@ -23,5 +23,15 @@
         import_steps="typeinfo"
         />
   </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20240924001"
+      destination="20240925001"
+      >
+    <genericsetup:upgradeDepends
+        title="Update CfP types behaviors"
+        import_steps="typeinfo"
+        />
+  </genericsetup:upgradeSteps>
 
 </configure>

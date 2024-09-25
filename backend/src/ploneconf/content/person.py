@@ -53,6 +53,7 @@ class IPerson(Interface):
     )
     directives.read_permission(categories=PERMISSION, email=PERMISSION)
     directives.write_permission(categories=PERMISSION, email=PERMISSION)
+    _pretalx_id = schema.TextLine(title=_("PretalX id"), required=False)
 
 
 @implementer(IPerson)

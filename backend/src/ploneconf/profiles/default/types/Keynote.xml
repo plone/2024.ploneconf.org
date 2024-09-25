@@ -38,6 +38,7 @@
     <element value="plone.excludefromnavigation" />
     <element value="ploneconf.session" />
     <element value="ploneconf.schedule" />
+    <element value="volto.preview_image" />
     <element value="plone.shortname" />
   </property>
 
