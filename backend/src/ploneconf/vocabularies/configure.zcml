@@ -13,6 +13,10 @@
       component=".slot.slot_tracks"
       />
   <utility
+      name="ploneconf.vocabularies.talk_tracks"
+      component=".slot.talk_tracks"
+      />
+  <utility
       name="ploneconf.vocabularies.slot_levels"
       component=".slot.slot_levels"
       />

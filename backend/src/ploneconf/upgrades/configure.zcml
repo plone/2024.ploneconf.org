@@ -33,5 +33,15 @@
         import_steps="typeinfo"
         />
   </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20240925001"
+      destination="20241009001"
+      >
+    <genericsetup:upgradeDepends
+        title="Upgrade querystring"
+        import_steps="plone.app.registry"
+        />
+  </genericsetup:upgradeSteps>
 
 </configure>

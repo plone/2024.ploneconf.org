@@ -46,7 +46,7 @@
   </records>
 
   <records interface="plone.app.querystring.interfaces.IQueryField"
-           prefix="plone.app.querystring.field.slot_track"
+           prefix="plone.app.querystring.field.track"
   >
     <value key="title"
            i18n:translate=""
@@ -60,7 +60,7 @@
       <element>plone.app.querystring.operation.selection.any</element>
       <element>plone.app.querystring.operation.selection.all</element>
     </value>
-    <value key="vocabulary">ploneconf.vocabularies.slot_tracks</value>
+    <value key="vocabulary">ploneconf.vocabularies.talk_tracks</value>
     <value key="group"
            i18n:translate=""
     >Metadata</value>

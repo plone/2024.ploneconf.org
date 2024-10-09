@@ -50,6 +50,17 @@ def slot_tracks(context):
 
 
 @provider(IVocabularyFactory)
+def talk_tracks(context):
+    """Available Talk Tracks."""
+    terms = []
+    for token, title in TRACKS:
+        if token == "keynotes":
+            continue
+        terms.append(SimpleTerm(token, token, title))
+    return SimpleVocabulary(terms)
+
+
+@provider(IVocabularyFactory)
 def slot_levels(context):
     """Available Slot Levels."""
     return SimpleVocabulary(
