@@ -1,4 +1,5 @@
 """Update locales."""
+
 from pathlib import Path
 
 import logging
@@ -76,3 +77,7 @@ def update_locale():
             _sync(domain)
     else:
         logger.error("Not able to find i18ndude")
+
+
+if __name__ == "__main__":
+    update_locale()
