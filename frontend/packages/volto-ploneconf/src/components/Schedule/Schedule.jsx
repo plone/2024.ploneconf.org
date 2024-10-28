@@ -32,7 +32,7 @@ const Schedule = (props) => {
     daysInfo &&
     daysInfo.map((day, dayIndex) => {
       const keyDay = day['id'];
-      const date = new Date(keyDay);
+      const date = new Date(`${keyDay}T12:00:00+00:00`);
       return {
         menuItem: (
           <Menu.Item key={`${keyDay}_menu`}>
