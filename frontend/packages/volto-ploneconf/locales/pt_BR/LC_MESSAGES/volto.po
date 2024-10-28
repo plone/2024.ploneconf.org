@@ -16,10 +16,20 @@ msgstr ""
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
 
+#. Default: "All Rooms"
+#: components/Schedule/DaySchedule
+msgid "All Rooms"
+msgstr "Todas as salas"
+
 #. Default: "Be the First!"
 #: components/Blocks/SponsorLevel/DefaultView
 msgid "Be the First!"
 msgstr "Seja o primeiro!"
+
+#. Default: "Buriti Room"
+#: components/Schedule/DaySchedule
+msgid "Buriti Room"
+msgstr "Sala Buriti"
 
 #. Default: "CTA"
 #: components/Blocks/Teaser/coloredCTAschema
@@ -30,6 +40,11 @@ msgstr "Ação"
 #: components/Blocks/SponsorLevel/schema
 msgid "CTA Label"
 msgstr "Texto da Ação"
+
+#. Default: "Capibara Room"
+#: components/Schedule/DaySchedule
+msgid "Capibara Room"
+msgstr "Sala Capivara"
 
 #. Default: "Close menu"
 #: components/Navigation/Navigation
@@ -44,7 +59,7 @@ msgstr "Leia mais"
 #. Default: "Day"
 #: components/Schedule/Schedule
 msgid "Day"
-msgstr ""
+msgstr "Dia"
 
 #. Default: "Display CTA?"
 #: components/Blocks/SponsorLevel/schema
@@ -54,17 +69,37 @@ msgstr "Exibir botão de ação?"
 #. Default: "Display Headline?"
 #: components/Blocks/Schedule/schema
 msgid "Display Headline?"
-msgstr ""
+msgstr "Exibir título"
+
+#. Default: "Dorneles Treméa Auditorium"
+#: components/Schedule/DaySchedule
+msgid "Dorneles Treméa Auditorium"
+msgstr "Auditório Dorneles Treméa"
 
 #. Default: "Filter by Day"
 #: components/Blocks/Schedule/schema
 msgid "Filter by Day"
-msgstr ""
+msgstr "Filtrar por dia"
 
 #. Default: "Front Page"
 #: components/Logo/Logo
 msgid "Front Page"
 msgstr "Capa"
+
+#. Default: "Ipê Room"
+#: components/Schedule/DaySchedule
+msgid "Ipê Room"
+msgstr "Sala Ipê"
+
+#. Default: "Jaguatirica Room"
+#: components/Schedule/DaySchedule
+msgid "Jaguatirica Room"
+msgstr "Sala Jaguatirica"
+
+#. Default: "Jean Ferri Auditorium"
+#: components/Schedule/DaySchedule
+msgid "Jean Ferri Auditorium"
+msgstr "Auditório Jean Ferri"
 
 #. Default: "Open menu"
 #: components/Navigation/Navigation
@@ -97,7 +132,7 @@ msgstr "Saiba mais"
 #. Default: "Schedule Block"
 #: components/Blocks/Schedule/schema
 msgid "Schedule Block"
-msgstr ""
+msgstr "Bloco de Grade"
 
 #. Default: "Source"
 #: components/Blocks/Slider/SliderFull

@@ -11,9 +11,19 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. Default: "All Rooms"
+#: components/Schedule/DaySchedule
+msgid "All Rooms"
+msgstr ""
+
 #. Default: "Be the First!"
 #: components/Blocks/SponsorLevel/DefaultView
 msgid "Be the First!"
+msgstr ""
+
+#. Default: "Buriti Room"
+#: components/Schedule/DaySchedule
+msgid "Buriti Room"
 msgstr ""
 
 #. Default: "CTA"
@@ -24,6 +34,11 @@ msgstr ""
 #. Default: "CTA Label"
 #: components/Blocks/SponsorLevel/schema
 msgid "CTA Label"
+msgstr ""
+
+#. Default: "Capibara Room"
+#: components/Schedule/DaySchedule
+msgid "Capibara Room"
 msgstr ""
 
 #. Default: "Close menu"
@@ -51,6 +66,11 @@ msgstr ""
 msgid "Display Headline?"
 msgstr ""
 
+#. Default: "Dorneles Treméa Auditorium"
+#: components/Schedule/DaySchedule
+msgid "Dorneles Treméa Auditorium"
+msgstr ""
+
 #. Default: "Filter by Day"
 #: components/Blocks/Schedule/schema
 msgid "Filter by Day"
@@ -59,6 +79,21 @@ msgstr ""
 #. Default: "Front Page"
 #: components/Logo/Logo
 msgid "Front Page"
+msgstr ""
+
+#. Default: "Ipê Room"
+#: components/Schedule/DaySchedule
+msgid "Ipê Room"
+msgstr ""
+
+#. Default: "Jaguatirica Room"
+#: components/Schedule/DaySchedule
+msgid "Jaguatirica Room"
+msgstr ""
+
+#. Default: "Jean Ferri Auditorium"
+#: components/Schedule/DaySchedule
+msgid "Jean Ferri Auditorium"
 msgstr ""
 
 #. Default: "Open menu"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { formatHour } from '../../helpers/date';
 import { Icon } from '@plone/volto/components';
+import { defineMessages, useIntl } from 'react-intl';
 import SessionCard from './SessionCard';
 import SlotCard from './SlotCard';
 import lunchSVG from '../../icons/lunch.svg';
@@ -14,13 +15,44 @@ import registrationSVG from '@plone/volto/icons/finger-print.svg';
 import roomSVG from '@plone/volto/icons/map.svg';
 import lightingTalksSVG from '@plone/volto/icons/fast-forward.svg';
 
+const messages = defineMessages({
+  _all_: {
+    id: 'All Rooms',
+    defaultMessage: 'All Rooms',
+  },
+  'auditorio-1': {
+    id: 'Jean Ferri Auditorium',
+    defaultMessage: 'Jean Ferri Auditorium',
+  },
+  'auditorio-2': {
+    id: 'Dorneles Treméa Auditorium',
+    defaultMessage: 'Dorneles Treméa Auditorium',
+  },
+  'sala-2': {
+    id: 'Capibara Room',
+    defaultMessage: 'Capibara Room',
+  },
+  'sala-juri': {
+    id: 'Jaguatirica Room',
+    defaultMessage: 'Jaguatirica Room',
+  },
+  'sala-x401': {
+    id: 'Buriti Room',
+    defaultMessage: 'Buriti Room',
+  },
+  'sala-x402': {
+    id: 'Ipê Room',
+    defaultMessage: 'Ipê Room',
+  },
+});
+
 const ROOMS = {
-  'auditorio-1': 'Jean Ferri Auditorium',
-  'auditorio-2': 'Dorneles Treméa Auditorium',
-  'sala-2': 'Capibara Room',
-  'sala-juri': 'Jaguatirica Room',
-  'sala-x401': 'Buriti Room',
-  'sala-x402': 'Ipê Room',
+  'auditorio-1': messages['auditorio-1'],
+  'auditorio-2': messages['auditorio-2'],
+  'sala-2': messages['sala-2'],
+  'sala-juri': messages['sala-juri'],
+  'sala-x401': messages['sala-x401'],
+  'sala-x402': messages['sala-x402'],
 };
 
 const iconDict = {
@@ -37,6 +69,7 @@ const iconDict = {
 
 const DaySchedule = (props) => {
   const { day } = props;
+  const intl = useIntl();
   const keyDay = day['id'];
   const hours = day.items;
   const hasAllRoom = day.rooms.includes('_all_');
@@ -52,7 +85,7 @@ const DaySchedule = (props) => {
         </div>
         <div className="rooms">
           {dayRooms.map((roomId, roomIndex) => {
-            const roomLabel = ROOMS[roomId];
+            const roomLabel = intl.formatMessage(ROOMS[roomId]);
             return (
               <div
                 className={`room ${roomId} room-${roomIndex}`}

@@ -88,7 +88,9 @@ class Get(Service):
         return result
 
     def get_slots(self) -> List[Dict[str, Any]]:
+        portal = api.portal.get()
         results = api.content.find(
+            context=portal,
             object_provides=IScheduleSlot,
             review_state="published",
             sort_on="start",
