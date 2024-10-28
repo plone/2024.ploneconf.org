@@ -6,7 +6,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Plone Conference 2024: Install"
+      title="Plone Conference 2024"
       description="Policy package to install our site"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/default"
@@ -27,6 +27,14 @@
       description="Install Production pas.plugins.authomatic."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/oauth"
+      />
+
+  <genericsetup:registerProfile
+      name="oauth_local"
+      title="Plone Conference 2024: Development pas.plugins.authomatic"
+      description="Install Production pas.plugins.authomatic."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/oauth_local"
       />
 
   <genericsetup:registerProfile

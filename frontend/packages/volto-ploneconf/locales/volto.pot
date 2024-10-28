@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-07-09T16:43:22.695Z\n"
+"POT-Creation-Date: 2024-10-28T00:50:48.138Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -38,9 +38,24 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
+#. Default: "Day"
+#: components/Schedule/Schedule
+msgid "Day"
+msgstr ""
+
 #. Default: "Display CTA?"
 #: components/Blocks/SponsorLevel/schema
 msgid "Display CTA?"
+msgstr ""
+
+#. Default: "Display Headline?"
+#: components/Blocks/Schedule/schema
+msgid "Display Headline?"
+msgstr ""
+
+#. Default: "Filter by Day"
+#: components/Blocks/Schedule/schema
+msgid "Filter by Day"
 msgstr ""
 
 #. Default: "Front Page"
@@ -74,6 +89,11 @@ msgstr ""
 #. Default: "Read more"
 #: components/Blocks/Teaser/TeaserFeatured
 msgid "Read more"
+msgstr ""
+
+#. Default: "Schedule Block"
+#: components/Blocks/Schedule/schema
+msgid "Schedule Block"
 msgstr ""
 
 #. Default: "Source"

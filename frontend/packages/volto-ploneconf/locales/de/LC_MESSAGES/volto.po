@@ -36,9 +36,24 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
+#. Default: "Day"
+#: components/Schedule/Schedule
+msgid "Day"
+msgstr ""
+
 #. Default: "Display CTA?"
 #: components/Blocks/SponsorLevel/schema
 msgid "Display CTA?"
+msgstr ""
+
+#. Default: "Display Headline?"
+#: components/Blocks/Schedule/schema
+msgid "Display Headline?"
+msgstr ""
+
+#. Default: "Filter by Day"
+#: components/Blocks/Schedule/schema
+msgid "Filter by Day"
 msgstr ""
 
 #. Default: "Front Page"
@@ -72,6 +87,11 @@ msgstr ""
 #. Default: "Read more"
 #: components/Blocks/Teaser/TeaserFeatured
 msgid "Read more"
+msgstr ""
+
+#. Default: "Schedule Block"
+#: components/Blocks/Schedule/schema
+msgid "Schedule Block"
 msgstr ""
 
 #. Default: "Source"

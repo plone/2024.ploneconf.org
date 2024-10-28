@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-07-09 16:55+0000\n"
+"POT-Creation-Date: 2024-10-28 00:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: ploneconf\n"
 
-#: ploneconf/behaviors/schedule.py:43
-#: ploneconf/behaviors/session.py:27
+#: ploneconf/behaviors/schedule.py:45
+#: ploneconf/behaviors/session.py:30
 msgid ""
 msgstr ""
 
@@ -46,13 +46,53 @@ msgstr ""
 msgid "A Training in the Conference."
 msgstr ""
 
-#: ploneconf/behaviors/session.py:45
+#: ploneconf/profiles/default/types/Break.xml
+msgid "A schedule break in the Conference."
+msgstr ""
+
+#: ploneconf/behaviors/session.py:19
+msgid "Abstract"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:48
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "Audience"
 msgstr ""
 
+#: ploneconf/serializers/session.py:23
+msgid "Brazilian Portuguese or English"
+msgstr ""
+
+#: ploneconf/profiles/default/types/Break.xml
+msgid "Break"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:30
+msgid "Buriti Room"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:28
+msgid "Capibara Room"
+msgstr ""
+
 #: ploneconf/content/person.py:47
 msgid "Categories"
+msgstr ""
+
+#: ploneconf/content/schedule_break.py:12
+msgid "Category"
+msgstr ""
+
+#: ploneconf/content/schedule_break.py:13
+msgid "Category of the slot"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:10
+msgid "Coffee-Break"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:57
+msgid "Community / Inclusion / Diversity"
 msgstr ""
 
 #: ploneconf/profiles/default/types/Sponsor.xml
@@ -63,8 +103,20 @@ msgstr ""
 msgid "Conference Sponsoring information."
 msgstr ""
 
+#: ploneconf/vocabularies/slot.py:49
+msgid "Creative Coding with Python"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:22
+msgid "Details"
+msgstr ""
+
 #: ploneconf/content/sponsors/sponsor_level.py:21
 msgid "Display on Frontpage"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:27
+msgid "Dorneles Treméa Auditorium"
 msgstr ""
 
 #: ploneconf/content/talk.py:12
@@ -80,9 +132,9 @@ msgstr ""
 msgid "Duration of the training"
 msgstr ""
 
-#: ploneconf/profiles/default/types/Keynote.xml
 #: ploneconf/profiles/default/types/Slot.xml
 #: ploneconf/profiles/default/types/Sponsor.xml
+#: ploneconf/profiles/default/types/SponsorsDB.xml
 msgid "Edit"
 msgstr ""
 
@@ -90,19 +142,19 @@ msgstr ""
 msgid "Email address"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:75
+#: ploneconf/behaviors/session.py:88
 msgid "Embed code for slides"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:87
+#: ploneconf/behaviors/session.py:100
 msgid "Embed code for video"
 msgstr ""
 
-#: ploneconf/behaviors/schedule.py:31
+#: ploneconf/behaviors/schedule.py:33
 msgid "End time"
 msgstr ""
 
-#: ploneconf/behaviors/schedule.py:39
+#: ploneconf/behaviors/schedule.py:41
 msgid "End time must be after start time."
 msgstr ""
 
@@ -150,6 +202,18 @@ msgstr ""
 msgid "Instructor"
 msgstr ""
 
+#: ploneconf/vocabularies/slot.py:31
+msgid "Ipê Room"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:29
+msgid "Jaguatirica Room"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:26
+msgid "Jean Ferri Auditorium"
+msgstr ""
+
 #: ploneconf/profiles/default/types/Keynote.xml
 msgid "Keynote"
 msgstr ""
@@ -158,9 +222,21 @@ msgstr ""
 msgid "Keynote Speaker"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:36
+#: ploneconf/vocabularies/slot.py:60
+msgid "Keynotes"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:39
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "Level"
+msgstr ""
+
+#: ploneconf/profiles/default/types/LightningTalks.xml
+msgid "Lightning Talks slot in the Conference."
+msgstr ""
+
+#: ploneconf/profiles/default/types/LightningTalks.xml
+msgid "LightningTalks"
 msgstr ""
 
 #: ploneconf/behaviors/links.py:30
@@ -179,6 +255,10 @@ msgstr ""
 msgid "Links"
 msgstr ""
 
+#: ploneconf/vocabularies/slot.py:11
+msgid "Lunch"
+msgstr ""
+
 #: ploneconf/behaviors/links.py:50
 msgid "Mastodon"
 msgstr ""
@@ -187,12 +267,28 @@ msgstr ""
 msgid "Mastodon profile url"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:63
+#: ploneconf/behaviors/session.py:76
 msgid "Materials"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:12
+msgid "Meeting"
 msgstr ""
 
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "Metadata"
+msgstr ""
+
+#: ploneconf/profiles/default/types/OpenSpace.xml
+msgid "Open space slot in the Conference."
+msgstr ""
+
+#: ploneconf/profiles/default/types/OpenSpace.xml
+msgid "OpenSpace"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:59
+msgid "Other"
 msgstr ""
 
 #: ploneconf/profiles/default/types/SponsorLevel.xml
@@ -211,19 +307,23 @@ msgstr ""
 msgid "Personal e-mail address"
 msgstr ""
 
-#: ploneconf/profiles.zcml:22
-msgid "Plone Conference 2024: Initial content"
+#: ploneconf/profiles.zcml:13
+msgid "Plone Conference 2024"
 msgstr ""
 
-#: ploneconf/profiles.zcml:13
-msgid "Plone Conference 2024: Install"
+#: ploneconf/profiles.zcml:38
+msgid "Plone Conference 2024: Development pas.plugins.authomatic"
+msgstr ""
+
+#: ploneconf/profiles.zcml:22
+msgid "Plone Conference 2024: Initial content"
 msgstr ""
 
 #: ploneconf/profiles.zcml:30
 msgid "Plone Conference 2024: Production pas.plugins.authomatic"
 msgstr ""
 
-#: ploneconf/profiles.zcml:38
+#: ploneconf/profiles.zcml:46
 msgid "Plone Conference 2024: Uninstall"
 msgstr ""
 
@@ -231,19 +331,72 @@ msgstr ""
 msgid "Plone Foundation Member"
 msgstr ""
 
+#: ploneconf/vocabularies/slot.py:45
+msgid "Plone: Backend"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:48
+msgid "Plone: Case Study"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:47
+msgid "Plone: DevOps"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:46
+msgid "Plone: Frontend"
+msgstr ""
+
 #: ploneconf/profiles.zcml:13
 msgid "Policy package to install our site"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:26
+#: ploneconf/behaviors/session.py:29
 msgid "Presenters"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:63
+#: ploneconf/content/person.py:56
+msgid "PretalX id"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:55
+msgid "Python Core"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:51
+msgid "Python for Data Science"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:54
+msgid "Python for DevOps"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:53
+msgid "Python for Geographic Data Analysis"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:52
+msgid "Python for Machine Learning / AI"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:56
+msgid "Python in Education"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:9
+msgid "Registration"
+msgstr ""
+
+#: ploneconf/behaviors/schedule.py:44
+msgid "Room"
 msgstr ""
 
 #: ploneconf/exportimport/templates/import_all.pt:16
 msgid "Run all imports"
 msgstr ""
 
-#: ploneconf/behaviors/schedule.py:19
+#: ploneconf/behaviors/schedule.py:20
 msgid "Schedule"
 msgstr ""
 
@@ -263,11 +416,11 @@ msgstr ""
 msgid "Site"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:68
+#: ploneconf/behaviors/session.py:81
 msgid "Slides"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:74
+#: ploneconf/behaviors/session.py:87
 msgid "Slides embed code"
 msgstr ""
 
@@ -291,12 +444,8 @@ msgstr ""
 msgid "Sponsorship Level"
 msgstr ""
 
-#: ploneconf/behaviors/schedule.py:23
+#: ploneconf/behaviors/schedule.py:25
 msgid "Start time"
-msgstr ""
-
-#: ploneconf/behaviors/session.py:19
-msgid "Summary"
 msgstr ""
 
 #: ploneconf/profiles/default/types/Talk.xml
@@ -307,19 +456,23 @@ msgstr ""
 msgid "Target Audience."
 msgstr ""
 
-#: ploneconf/behaviors/session.py:37
+#: ploneconf/behaviors/session.py:40
 msgid "Target Level"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:46
+#: ploneconf/behaviors/session.py:49
 msgid "Target audience"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:16
+#: ploneconf/vocabularies/slot.py:58
+msgid "Technical Documentation"
+msgstr ""
+
+#: ploneconf/behaviors/session.py:18
 msgid "Title"
 msgstr ""
 
-#: ploneconf/behaviors/schedule.py:42
+#: ploneconf/behaviors/schedule.py:53
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "Track"
 msgstr ""
@@ -328,34 +481,38 @@ msgstr ""
 msgid "Training"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:69
+#: ploneconf/behaviors/session.py:82
 msgid "URL of slides"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:81
+#: ploneconf/behaviors/session.py:94
 msgid "URL of video"
 msgstr ""
 
-#: ploneconf/profiles.zcml:38
+#: ploneconf/profiles.zcml:46
 msgid "Uninstall Plone Conference 2024 setup."
 msgstr ""
 
-#: ploneconf/behaviors/session.py:80
+#: ploneconf/behaviors/session.py:93
 msgid "Video"
 msgstr ""
 
-#: ploneconf/behaviors/session.py:86
+#: ploneconf/behaviors/session.py:99
 msgid "Video embed code"
 msgstr ""
 
-#: ploneconf/profiles/default/types/Keynote.xml
 #: ploneconf/profiles/default/types/Slot.xml
 #: ploneconf/profiles/default/types/Sponsor.xml
+#: ploneconf/profiles/default/types/SponsorsDB.xml
 msgid "View"
 msgstr ""
 
 #: ploneconf/content/sponsors/sponsor_level.py:14
 msgid "Visibility"
+msgstr ""
+
+#: ploneconf/vocabularies/slot.py:50
+msgid "Web Development with Python"
 msgstr ""
 
 #: ploneconf/behaviors/links.py:36
@@ -388,6 +545,11 @@ msgstr ""
 #. Default: "Summary"
 #: ploneconf/content/sponsors/sponsor.py:21
 msgid "label_description"
+msgstr ""
+
+#. Default: "Language"
+#: ploneconf/behaviors/session.py:56
+msgid "label_language"
 msgstr ""
 
 #. Default: "Name"

@@ -11,6 +11,6 @@
  * };
  */
 import { listSponsors } from './sponsors/sponsors';
-import { listTalks } from './talks/talks';
+import { listSchedule } from './schedule/schedule';
 
-export { listSponsors, listTalks };
+export { listSponsors, listSchedule };

@@ -43,5 +43,19 @@
         import_steps="plone.app.registry"
         />
   </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241009001"
+      destination="20241024001"
+      >
+    <genericsetup:upgradeDepends
+        title="Add new content types"
+        import_steps="typeinfo"
+        />
+    <upgradeStep
+        title="Create schedule structure"
+        handler=".schedule.create_structure"
+        />
+  </genericsetup:upgradeSteps>
 
 </configure>

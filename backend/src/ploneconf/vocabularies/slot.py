@@ -5,19 +5,40 @@ from zope.schema.vocabulary import SimpleTerm
 from zope.schema.vocabulary import SimpleVocabulary
 
 
+CATEGORIES = (
+    ("registration", _("Registration")),
+    ("coffee-break", _("Coffee-Break")),
+    ("lunch", _("Lunch")),
+    ("meeting", _("Meeting")),
+)
+
+
+@provider(IVocabularyFactory)
+def slot_categories(context):
+    """Slot Categories."""
+    terms = []
+    for token, title in CATEGORIES:
+        terms.append(SimpleTerm(token, token, title))
+    return SimpleVocabulary(terms)
+
+
+ROOMS = (
+    ("auditorio-1", _("Jean Ferri Auditorium")),
+    ("auditorio-2", _("Dorneles Treméa Auditorium")),
+    ("sala-2", _("Capibara Room")),
+    ("sala-juri", _("Jaguatirica Room")),
+    ("sala-x401", _("Buriti Room")),
+    ("sala-x402", _("Ipê Room")),
+)
+
+
 @provider(IVocabularyFactory)
 def slot_rooms(context):
     """Available Slot Rooms."""
-    return SimpleVocabulary(
-        [
-            SimpleTerm(value="main-room-1", title="Auditorium 1"),
-            SimpleTerm(value="main-room-2", title="Auditorium 2"),
-            SimpleTerm(value="room-2", title="Room 2"),
-            SimpleTerm(value="room-jury", title="Court Room"),
-            SimpleTerm(value="room-401", title="401"),
-            SimpleTerm(value="room-402", title="402"),
-        ]
-    )
+    terms = []
+    for token, title in ROOMS:
+        terms.append(SimpleTerm(token, token, title))
+    return SimpleVocabulary(terms)
 
 
 TRACKS = (

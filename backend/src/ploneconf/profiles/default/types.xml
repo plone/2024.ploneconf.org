@@ -16,6 +16,15 @@
           name="Person"
   />
   <object meta_type="Dexterity FTI"
+          name="OpenSpace"
+  />
+  <object meta_type="Dexterity FTI"
+          name="LightningTalks"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Break"
+  />
+  <object meta_type="Dexterity FTI"
           name="Slot"
   />
   <object meta_type="Dexterity FTI"
