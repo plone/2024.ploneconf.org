@@ -1,0 +1,119 @@
+.slot-card {
+  height: 100%;
+  padding: $spacing-small;
+
+  .presenters {
+    @include add(size, xs);
+    @include add(weight, medium);
+    @include add(height, xs);
+    .presenter {
+      display: inline;
+      color: var(--main-color);
+      @include add(size, xs);
+      @include add(weight, medium);
+      @include add(height, xs);
+      &:hover {
+        @include add(weight, bold);
+      }
+    }
+  }
+
+  .session-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .session-language {
+      .language-flag {
+        width: 20px;
+        aspect-ratio: 1/1;
+      }
+    }
+    .timing {
+      display: flex;
+      @include add(size, xs);
+      @include add(weight, light);
+      @include add(height, s);
+      .icon {
+        height: 18px !important;
+        margin-right: $spacing-xs;
+      }
+    }
+  }
+
+  .session-title-wrapper {
+    display: grid;
+    min-height: 70px;
+    .session-title {
+      margin: auto 0px;
+      > a {
+        color: var(--main-color);
+        @include add(size, s);
+        @include add(weight, medium);
+        @include add(height, s);
+      }
+      &:hover {
+        > a {
+          @include add(weight, bold);
+        }
+      }
+    }
+  }
+
+  .session-body {
+    padding-top: 1rem;
+    border-top: 1px solid var(--main-color);
+    margin-top: 1rem;
+  }
+  .info {
+    margin-bottom: 0.3rem;
+
+    span {
+      font-weight: bold;
+    }
+
+    div.label {
+      margin-bottom: 0.2rem;
+    }
+  }
+
+  .presenters {
+    margin-bottom: 0.3rem;
+
+    .icon {
+      height: 22px !important;
+      margin-right: $spacing-xs;
+    }
+  }
+}
+
+.card-container.session {
+  .item {
+    height: 100%;
+    margin-top: 0px !important;
+    .slot-card {
+      display: flex;
+      flex-direction: column;
+      .session-track {
+        margin-left: -$spacing-small;
+      }
+      .session-title-wrapper {
+        display: grid;
+        min-height: 140px;
+        .session-title {
+          margin: $spacing-small 0px !important;
+          > a {
+            @include add(size, m);
+            @include add(height, m);
+          }
+        }
+        .session-description {
+          margin-bottom: $spacing-small;
+        }
+      }
+      .session-body {
+        margin-top: auto !important;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

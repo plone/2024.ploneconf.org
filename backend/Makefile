@@ -113,7 +113,7 @@ $(BIN_FOLDER)/i18ndude: $(BIN_FOLDER)/pip
 .PHONY: i18n
 i18n: $(BIN_FOLDER)/i18ndude ## Update locales
 	@echo "$(GREEN)==> Updating locales$(RESET)"
-	$(BIN_FOLDER)/update_locale
+	$(BIN_FOLDER)/update_i18n
 
 # Tests
 .PHONY: test

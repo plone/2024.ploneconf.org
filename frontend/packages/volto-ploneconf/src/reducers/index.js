@@ -4,7 +4,7 @@
  */
 
 import sponsors from './sponsors/sponsors';
-import talks from './talks/talks';
+import schedule from './schedule/schedule';
 import defaultReducers from '@plone/volto/reducers';
 
 /**
@@ -18,7 +18,7 @@ const reducers = {
   ...defaultReducers,
   // Add your reducers here
   sponsors,
-  talks,
+  schedule,
 };
 
 export default reducers;

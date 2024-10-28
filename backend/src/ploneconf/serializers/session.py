@@ -3,7 +3,9 @@ from plone.restapi.interfaces import ISerializeToJson
 from plone.restapi.interfaces import ISerializeToJsonSummary
 from plone.restapi.serializer.dxcontent import SerializeToJson
 from plone.restapi.serializer.summary import DefaultJSONSummarySerializer
+from ploneconf import _
 from ploneconf.content.keynote import IKeynote
+from ploneconf.content.slot import ISlot
 from ploneconf.content.talk import ITalk
 from ploneconf.content.training import ITraining
 from ploneconf.interfaces import IPloneconfLayer
@@ -16,8 +18,18 @@ from zope.schema.interfaces import IVocabularyFactory
 import pytz
 
 
+LANG_INDEPENDENT = {
+    "token": "un",
+    "title": _("Brazilian Portuguese or English"),
+}
+
+
 ATTRIBUTE_VOCABULARY = {
+    "room": "ploneconf.vocabularies.slot_rooms",
     "session_audience": "ploneconf.vocabularies.slot_audiences",
+    "portal_type": "plone.app.vocabularies.ReallyUserFriendlyTypes",
+    "slot_category": "ploneconf.vocabularies.slot_categories",
+    "session_language": "plone.app.vocabularies.SupportedContentLanguages",
     "session_level": "ploneconf.vocabularies.slot_levels",
     "track": "ploneconf.vocabularies.slot_tracks",
 }
@@ -49,6 +61,12 @@ class JSONSerializer(SerializeToJson):
 
 
 @implementer(ISerializeToJson)
+@adapter(ISlot, IPloneconfLayer)
+class SlotJSONSerializer(JSONSerializer):
+    """ISerializeToJson adapter for a Slot."""
+
+
+@implementer(ISerializeToJson)
 @adapter(IKeynote, IPloneconfLayer)
 class KeynoteJSONSerializer(JSONSerializer):
     """ISerializeToJson adapter for the Keynote."""
@@ -74,6 +92,10 @@ class JSONSummarySerializer(DefaultJSONSummarySerializer):
         value = value or set()
         vocabulary = get_vocabulary(attr, self.context)
         response = []
+        if isinstance(value, str):
+            value = [
+                value,
+            ]
         for item in value:
             term = vocabulary.getTerm(item)
             response.append(
@@ -87,19 +109,63 @@ class JSONSummarySerializer(DefaultJSONSummarySerializer):
     def __call__(self):
         summary = super().__call__()
         context = self.context
+        track = self.format_vocabulary_values("track", context.track)
+        room = self.format_vocabulary_values("room", context.room)
+        slot_category = getattr(context, "slot_category", context.portal_type)
+        session_language = getattr(context, "session_language", None)
+        session_language = (
+            self.format_vocabulary_values("session_language", session_language)
+            if session_language
+            else LANG_INDEPENDENT
+        )
+        summary.update(
+            {
+                "image_field": "preview_image",
+                "track": track,
+                "room": room,
+                "start": include_timezone(context.start),
+                "end": include_timezone(context.end),
+                "slot_category": slot_category,
+                "session_language": session_language,
+            }
+        )
+        return summary
+
+
+@implementer(ISerializeToJsonSummary)
+@adapter(ISlot, IPloneconfLayer)
+class SlotJSONSummarySerializer(JSONSummarySerializer):
+    """ISerializeToJsonSummary adapter for a Slot."""
+
+
+class SessionJSONSummarySerializer(JSONSummarySerializer):
+    """ISerializeToJsonSummary adapter for Session contents."""
+
+    def __call__(self):
+        summary = super().__call__()
+        context = self.context
         level = self.format_vocabulary_values("session_level", context.session_level)
         audience = self.format_vocabulary_values(
             "session_audience", context.session_audience
         )
-        track = self.format_vocabulary_values("track", context.track)
+        session_language = self.format_vocabulary_values(
+            "session_language", context.session_language
+        )
+        presenters = []
+        if bool(context.presenters):
+            presenters = [
+                {
+                    "path": presenter.to_object.absolute_url_path(),
+                    "title": presenter.to_object.title,
+                }
+                for presenter in context.presenters
+            ]
         summary.update(
             {
-                "image_field": "preview_image",
                 "level": level,
                 "audience": audience,
-                "track": track,
-                "start": include_timezone(context.start),
-                "end": include_timezone(context.end),
+                "session_language": session_language,
+                "presenters": presenters,
             }
         )
         return summary
@@ -107,17 +173,17 @@ class JSONSummarySerializer(DefaultJSONSummarySerializer):
 
 @implementer(ISerializeToJsonSummary)
 @adapter(IKeynote, IPloneconfLayer)
-class KeynoteJSONSummarySerializer(JSONSummarySerializer):
+class KeynoteJSONSummarySerializer(SessionJSONSummarySerializer):
     """ISerializeToJsonSummary adapter for the Keynote."""
 
 
 @implementer(ISerializeToJsonSummary)
 @adapter(ITalk, IPloneconfLayer)
-class TalkJSONSummarySerializer(JSONSummarySerializer):
+class TalkJSONSummarySerializer(SessionJSONSummarySerializer):
     """ISerializeToJsonSummary adapter for the Talk."""
 
 
 @implementer(ISerializeToJsonSummary)
 @adapter(ITraining, IPloneconfLayer)
-class TrainingJSONSummarySerializer(JSONSummarySerializer):
+class TrainingJSONSummarySerializer(SessionJSONSummarySerializer):
     """ISerializeToJsonSummary adapter for the Training."""

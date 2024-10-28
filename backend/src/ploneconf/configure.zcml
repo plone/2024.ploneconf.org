@@ -19,6 +19,7 @@
 
   <include file="permissions.zcml" />
 
+  <include package=".browser" />
   <include package=".exportimport" />
   <include package=".indexers" />
   <include package=".vocabularies" />

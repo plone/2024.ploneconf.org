@@ -41,10 +41,25 @@ msgstr "Fechar"
 msgid "Continue reading"
 msgstr "Leia mais"
 
+#. Default: "Day"
+#: components/Schedule/Schedule
+msgid "Day"
+msgstr ""
+
 #. Default: "Display CTA?"
 #: components/Blocks/SponsorLevel/schema
 msgid "Display CTA?"
 msgstr "Exibir botão de ação?"
+
+#. Default: "Display Headline?"
+#: components/Blocks/Schedule/schema
+msgid "Display Headline?"
+msgstr ""
+
+#. Default: "Filter by Day"
+#: components/Blocks/Schedule/schema
+msgid "Filter by Day"
+msgstr ""
 
 #. Default: "Front Page"
 #: components/Logo/Logo
@@ -78,6 +93,11 @@ msgstr "Python Cerrado"
 #: components/Blocks/Teaser/TeaserFeatured
 msgid "Read more"
 msgstr "Saiba mais"
+
+#. Default: "Schedule Block"
+#: components/Blocks/Schedule/schema
+msgid "Schedule Block"
+msgstr ""
 
 #. Default: "Source"
 #: components/Blocks/Slider/SliderFull

@@ -1,4 +1,5 @@
 """Installer for the ploneconf package."""
+
 from pathlib import Path
 from setuptools import find_packages
 from setuptools import setup
@@ -73,6 +74,6 @@ setup(
     [z3c.autoinclude.plugin]
     target = plone
     [console_scripts]
-    update_locale = ploneconf.locales.update:update_locale
+    update_i18n = ploneconf.locales.update:update_locale
     """,
 )

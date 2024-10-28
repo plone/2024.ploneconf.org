@@ -5,5 +5,5 @@
  * export const UPDATE_CONTENT = 'UPDATE_CONTENT';
  */
 
+export const LIST_SCHEDULE = 'LIST_SCHEDULE';
 export const LIST_SPONSORS = 'LIST_SPONSORS';
-export const LIST_TALKS = 'LIST_TALKS';

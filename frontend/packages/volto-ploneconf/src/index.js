@@ -3,10 +3,18 @@ import SponsorsEdit from './components/Blocks/Sponsors/Edit';
 import SponsorsView from './components/Blocks/Sponsors/View';
 import SponsorLevelEdit from './components/Blocks/SponsorLevel/Edit';
 import SponsorLevelView from './components/Blocks/SponsorLevel/View';
+
+// Schedule
+import ScheduleEdit from './components/Blocks/Schedule/Edit';
+import ScheduleView from './components/Blocks/Schedule/View';
+
 import { sponsorLevelRestrict } from './components/Blocks/SponsorLevel/utils';
 
 /// Listing block variations
 import ProfilesTemplate from './components/Blocks/Listing/ProfilesGridTemplate';
+
+/// GridItemTemplate
+import SessionGridItemTemplate from './components/Blocks/Grid/SessionGridItemTemplate';
 
 // Teaser
 import TeaserDefaultTemplate from '@plone/volto/components/manage/Blocks/Teaser/DefaultBody';
@@ -148,6 +156,39 @@ const applyConfig = (config) => {
       config.blocks.blocksConfig[blockId].colors = BG_COLORS;
     }
   });
+
+  //GridItemTemplates
+  config.registerComponent({
+    name: 'GridListingItemTemplate',
+    component: SessionGridItemTemplate,
+    dependencies: 'Training',
+  });
+  config.registerComponent({
+    name: 'GridListingItemTemplate',
+    component: SessionGridItemTemplate,
+    dependencies: 'Talk',
+  });
+  config.registerComponent({
+    name: 'GridListingItemTemplate',
+    component: SessionGridItemTemplate,
+    dependencies: 'Keynote',
+  });
+
+  config.blocks.blocksConfig.scheduleBlock = {
+    id: 'scheduleBlock',
+    title: 'Schedule',
+    icon: listBulletSVG,
+    group: 'common',
+    view: ScheduleView,
+    edit: ScheduleEdit,
+    restricted: false,
+    mostUsed: false,
+    sidebarTab: 1,
+    security: {
+      addPermission: [],
+      view: [],
+    },
+  };
 
   config.blocks.blocksConfig.sponsorsList = {
     id: 'sponsorsList',
