@@ -58,10 +58,12 @@ const ROOMS = {
 const iconDict = {
   registration: registrationSVG,
   Slot: coffeeSVG,
+  'coffee-break': coffeeSVG,
   lunch: lunchSVG,
   party: beerSVG,
   meeting: meetingSVG,
-  'lighting-talks': lightingTalksSVG,
+  OpenSpace: meetingSVG,
+  LightningTalks: lightingTalksSVG,
   Training: trainingSVG,
   Talk: microphoneSVG,
   Keynote: keynoteSVG,
