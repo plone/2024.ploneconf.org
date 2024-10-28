@@ -30,6 +30,7 @@ import SliderBodyFull from './components/Blocks/Slider/SliderFull';
 import PersonView from './components/View/Person';
 import SponsorView from './components/View/Sponsor';
 import SessionView from './components/View/SessionView';
+import SlotView from './components/View/SlotView';
 
 // Icons
 import listBulletSVG from '@plone/volto/icons/list-bullet.svg';
@@ -87,9 +88,12 @@ const applyConfig = (config) => {
   config.addonReducers = { ...config.addonReducers, ...reducers };
   config.views.contentTypesViews = {
     ...config.views.contentTypesViews,
+    Break: SlotView,
+    Keynote: SessionView,
+    LightningTalks: SlotView,
+    OpenSpace: SlotView,
     Person: PersonView,
     Sponsor: SponsorView,
-    Keynote: SessionView,
     Talk: SessionView,
     Training: SessionView,
   };

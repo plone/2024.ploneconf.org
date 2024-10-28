@@ -10,7 +10,9 @@ const FLAGS = {
 };
 
 const SessionLanguage = ({ item }) => {
-  const language = item.session_language?.[0];
+  const language = item.session_language?.[0]
+    ? item.session_language[0]
+    : item.session_language;
   const flag = language ? FLAGS[language.token] : FLAGS['un'];
   const alt = language
     ? `Content to be presented in ${language.token}`

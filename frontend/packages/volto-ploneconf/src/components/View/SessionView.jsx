@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container } from '@plone/components';
 import PresentersInfo from '../Session/PresentersInfo/PresentersInfo';
-import ScheduleInfo from '../Session/ScheduleInfo/ScheduleInfo';
 import SessionInfo from '../Session/SessionInfo/SessionInfo';
+import SessionTrack from '../Session/SessionTrack/SessionTrack';
+import SlotDate from '../Session/SlotDate/SlotDate';
+import SessionLanguage from '../Session/SessionLanguage/SessionLanguage';
+import SessionRoom from '../Session/SessionRoom/SessionRoom';
 import { Embed } from 'semantic-ui-react';
 import cx from 'classnames';
 
@@ -16,15 +19,17 @@ const SessionView = ({ content }) => {
     >
       <Container className="session-wrapper">
         <Container className="session-header">
+          <div className="session-info">
+            <div className="timing">
+              <SlotDate item={content} shortFormat={true} ical={true} />
+            </div>
+            <SessionRoom item={content} />
+            <SessionLanguage item={content} />
+          </div>
+          <SessionTrack item={content} />
           <h1 className={'documentFirstHeading'}>{content.title}</h1>
         </Container>
         <Container className="session-content">
-          <ScheduleInfo
-            start={content.start}
-            end={content.end}
-            track={content.track}
-            url={content['@id']}
-          />
           <SessionInfo
             audience={content.session_audience}
             level={content.session_level}

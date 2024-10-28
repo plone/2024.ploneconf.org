@@ -1,9 +1,11 @@
-import { Label } from 'semantic-ui-react';
 import { UniversalLink } from '@plone/volto/components';
 import { flattenToAppURL } from '@plone/volto/helpers';
 import SessionTrack from '../Session/SessionTrack/SessionTrack';
 import SlotDate from '../Session/SlotDate/SlotDate';
 import SessionLanguage from '../Session/SessionLanguage/SessionLanguage';
+import SessionRoom from '../Session/SessionRoom/SessionRoom';
+import SessionLevel from '../Session/SessionLevel/SessionLevel';
+import SessionAudience from '../Session/SessionAudience/SessionAudience';
 
 const PresentedBy = ({ item }) => {
   let presenters = [];
@@ -40,13 +42,14 @@ const PresentedBy = ({ item }) => {
   );
 };
 
-const SessionCard = ({ item, showDescription }) => {
+const SessionCard = ({ item, showDescription, showLevel, showAudience }) => {
   return (
     <div className="slot-card">
       <div className="session-info">
         <div className="timing">
           <SlotDate item={item} shortFormat={true} ical={true} />
         </div>
+        <SessionRoom item={item} />
         <SessionLanguage item={item} />
       </div>
       <SessionTrack item={item} />
@@ -59,25 +62,11 @@ const SessionCard = ({ item, showDescription }) => {
         {showDescription && (
           <div className="session-description">{item.description}</div>
         )}
+        {showAudience && <SessionAudience item={item} />}
+        {showLevel && <SessionLevel item={item} />}
       </div>
       <div className="session-body">
         {item.presenters && <PresentedBy item={item} />}
-        {item.level?.length > 0 && (
-          <div className="session level">
-            <span>Level:</span>{' '}
-            {item.level.map((levelItem, index) => {
-              return <Label key={index}>{levelItem.title}</Label>;
-            })}
-          </div>
-        )}
-        {item.audience?.length > 0 && (
-          <div className="session audience">
-            <span>Audience :</span>{' '}
-            {item.audience.map((audienceItem, index) => {
-              return <Label key={index}>{audienceItem.title}</Label>;
-            })}
-          </div>
-        )}
       </div>
     </div>
   );

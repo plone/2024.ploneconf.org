@@ -1,0 +1,28 @@
+.session-info {
+  min-height: 25px !important;
+  .timing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0;
+    color: $grey;
+    @include pillText();
+    a > .icon {
+      height: $spacing-small !important;
+    }
+  }
+  .session-room {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0;
+    color: $grey;
+    .categoryIcon {
+      height: $spacing-small !important;
+    }
+    .room {
+      width: 100% !important;
+      @include pillText();
+    }
+  }
+}

@@ -2,10 +2,8 @@ import React from 'react';
 import { Container } from '@plone/components';
 import { Tab, Grid } from 'semantic-ui-react';
 import { flattenToAppURL } from '@plone/volto/helpers';
-import { Link } from 'react-router-dom';
 import DefaultImageSVG from '@plone/volto/components/manage/Blocks/Listing/default-image.svg';
-import ScheduleInfo from '../Session/ScheduleInfo/ScheduleInfo';
-import SessionInfo from '../Session/SessionInfo/SessionInfo';
+import SessionCard from '../Schedule/SessionCard';
 import PersonLabel from '../PersonLabel/PersonLabel.jsx';
 import Links from '../Links/Links';
 
@@ -64,19 +62,12 @@ const Person = ({ content }) => {
                       <Tab.Pane key={activity['@type']}>
                         {activity?.items?.map((item, idx) => (
                           <div className="presenter-activity" key={idx}>
-                            <Link to={flattenToAppURL(item['@id'])}>
-                              <h2>{item.title}</h2>
-                              <ScheduleInfo
-                                start={item.start}
-                                end={item.end}
-                                track={item.track}
-                              />
-                              <SessionInfo
-                                audience={item.audience}
-                                level={item.level}
-                                description={item.description}
-                              />
-                            </Link>
+                            <SessionCard
+                              item={item}
+                              showDescription
+                              showLevel
+                              showAudience
+                            />
                           </div>
                         ))}
                       </Tab.Pane>

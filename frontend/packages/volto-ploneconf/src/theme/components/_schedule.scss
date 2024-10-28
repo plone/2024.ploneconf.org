@@ -203,12 +203,18 @@
       text-align: center;
     }
   }
-
-  .timing {
-    margin: 0;
-    color: $grey;
-    @include add(size, xs);
-    @include add(weight, light);
-    @include add(height, xs);
+  .slot-card {
+    .session-info {
+      @media screen and (min-width: $tablet-breakpoint) {
+        .timing {
+          margin: 0;
+          color: $grey;
+          @include pillText();
+        }
+        .session-room {
+          display: none;
+        }
+      }
+    }
   }
 }

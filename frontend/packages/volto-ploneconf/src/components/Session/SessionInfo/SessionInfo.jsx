@@ -5,56 +5,17 @@
 
 import React from 'react';
 import { Container } from '@plone/components';
-import { Label } from 'semantic-ui-react';
-import PropTypes from 'prop-types';
+import SessionAudience from '../SessionAudience/SessionAudience';
+import SessionLevel from '../SessionLevel/SessionLevel';
 
-const SessionInfo = (props) => {
-  const audience = props.audience;
-  const level = props.level;
-  const description = props.description;
+const SessionInfo = ({ audience, level, description }) => {
   return (
     <Container className={'session-info'}>
-      {audience?.length > 0 && (
-        <Label.Group>
-          <strong>Audience:</strong>{' '}
-          {audience.map((audience) => (
-            <Label
-              key={audience.token}
-              className={`audience-${audience.token}`}
-            >
-              {audience.title}
-            </Label>
-          ))}
-        </Label.Group>
-      )}
-      {level?.length > 0 && (
-        <Label.Group>
-          <strong>Level:</strong>{' '}
-          {level.map((level) => (
-            <Label key={level.token} className={`level-${level.token}`}>
-              {level.title}
-            </Label>
-          ))}
-        </Label.Group>
-      )}
+      {audience && <SessionAudience item={{ audience: audience }} />}
+      {level && <SessionLevel item={{ level: level }} />}
       {description && <p className="session-description">{description}</p>}
     </Container>
   );
-};
-
-SessionInfo.propTypes = {
-  audience: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      token: PropTypes.string,
-    }),
-  ),
-  level: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      token: PropTypes.string,
-    }),
-  ),
 };
 
 export default SessionInfo;

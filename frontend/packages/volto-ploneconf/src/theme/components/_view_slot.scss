@@ -1,17 +1,4 @@
-.session-view {
-  &.too-many-speakers {
-    .session-wrapper {
-      .session-content,
-      .listing-presenters {
-        width: 100%;
-      }
-      .listing-presenters {
-        .listing-presenter {
-          width: 30%;
-        }
-      }
-    }
-  }
+.slot-view {
   .session-wrapper {
     display: flex;
     flex-wrap: wrap;

@@ -17,7 +17,7 @@ msgstr ""
 "Domain: volto\n"
 
 #. Default: "All Rooms"
-#: components/Schedule/DaySchedule
+#: components/Room/Rooms
 msgid "All Rooms"
 msgstr "Todas as salas"
 
@@ -27,7 +27,7 @@ msgid "Be the First!"
 msgstr "Seja o primeiro!"
 
 #. Default: "Buriti Room"
-#: components/Schedule/DaySchedule
+#: components/Room/Rooms
 msgid "Buriti Room"
 msgstr "Sala Buriti"
 
@@ -42,7 +42,7 @@ msgid "CTA Label"
 msgstr "Texto da Ação"
 
 #. Default: "Capibara Room"
-#: components/Schedule/DaySchedule
+#: components/Room/Rooms
 msgid "Capibara Room"
 msgstr "Sala Capivara"
 
@@ -72,7 +72,7 @@ msgid "Display Headline?"
 msgstr "Exibir título"
 
 #. Default: "Dorneles Treméa Auditorium"
-#: components/Schedule/DaySchedule
+#: components/Room/Rooms
 msgid "Dorneles Treméa Auditorium"
 msgstr "Auditório Dorneles Treméa"
 
@@ -87,17 +87,17 @@ msgid "Front Page"
 msgstr "Capa"
 
 #. Default: "Ipê Room"
-#: components/Schedule/DaySchedule
+#: components/Room/Rooms
 msgid "Ipê Room"
 msgstr "Sala Ipê"
 
 #. Default: "Jaguatirica Room"
-#: components/Schedule/DaySchedule
+#: components/Room/Rooms
 msgid "Jaguatirica Room"
 msgstr "Sala Jaguatirica"
 
 #. Default: "Jean Ferri Auditorium"
-#: components/Schedule/DaySchedule
+#: components/Room/Rooms
 msgid "Jean Ferri Auditorium"
 msgstr "Auditório Jean Ferri"
 
