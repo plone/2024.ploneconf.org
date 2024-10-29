@@ -11,11 +11,12 @@ from typing import List
 from zope.component import getMultiAdapter
 
 
-def dict_as_sorted_list(data: dict) -> list[dict]:
+def dict_as_sorted_list(data: dict, enforceIso: bool = False) -> list[dict]:
     keys = sorted(data.keys())
     response = []
-    for key in keys:
-        response.append({"id": key, "items": data[key]})
+    for raw_key in keys:
+        key = parse(raw_key).strftime("%Y-%m-%dT%H:%M:%S%z") if enforceIso else raw_key
+        response.append({"id": key, "items": data[raw_key]})
     return response
 
 
@@ -66,7 +67,7 @@ def group_slots(slots: list[dict]) -> list[dict]:
     response = dict_as_sorted_list(days)
     for day in response:
         rooms = set()
-        day["items"] = dict_as_sorted_list(day.get("items"))
+        day["items"] = dict_as_sorted_list(day.get("items"), enforceIso=True)
         for hour in day["items"]:
             types = set()
             for room in hour["items"]:
