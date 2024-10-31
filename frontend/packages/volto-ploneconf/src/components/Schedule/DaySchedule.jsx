@@ -14,11 +14,13 @@ import keynoteSVG from '@plone/volto/icons/star.svg';
 import registrationSVG from '@plone/volto/icons/finger-print.svg';
 import roomSVG from '@plone/volto/icons/map.svg';
 import lightingTalksSVG from '@plone/volto/icons/fast-forward.svg';
+import cameraSVG from '@plone/volto/icons/camera.svg';
 import { ROOMS } from '../Room/Rooms';
 
 const iconDict = {
   registration: registrationSVG,
   Slot: coffeeSVG,
+  photo: cameraSVG,
   'coffee-break': coffeeSVG,
   lunch: lunchSVG,
   party: beerSVG,

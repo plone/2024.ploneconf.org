@@ -10,6 +10,7 @@ CATEGORIES = (
     ("coffee-break", _("Coffee-Break")),
     ("lunch", _("Lunch")),
     ("meeting", _("Meeting")),
+    ("photo", _("Conference Photo")),
 )
 
 
