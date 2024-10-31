@@ -13,10 +13,21 @@ from zope.component import getMultiAdapter
 
 def dict_as_sorted_list(data: dict, enforceIso: bool = False) -> list[dict]:
     keys = sorted(data.keys())
+    local_data = deepcopy(data)
+    if enforceIso:
+        for raw_key in keys:
+            key = parse(raw_key).strftime("%Y-%m-%dT%H:%M:%S%z")
+            if key == raw_key:
+                continue
+            values = local_data.pop(raw_key)
+            if key not in local_data:
+                local_data[key] = {}
+            local_data[key].update(values)
+        keys = [parse(raw_key).strftime("%Y-%m-%dT%H:%M:%S%z") for raw_key in keys]
     response = []
-    for raw_key in keys:
-        key = parse(raw_key).strftime("%Y-%m-%dT%H:%M:%S%z") if enforceIso else raw_key
-        response.append({"id": key, "items": data[raw_key]})
+    keys = sorted(local_data.keys())
+    for key in keys:
+        response.append({"id": key, "items": local_data[key]})
     return response
 
 
