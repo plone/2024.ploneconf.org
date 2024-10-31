@@ -6,6 +6,7 @@ const SessionGridItemTemplate = ({ item }) => {
       <div className="item">
         <SessionCard
           item={item}
+          showDate={true}
           showDescription={true}
           showLevel={true}
           showAudience={true}

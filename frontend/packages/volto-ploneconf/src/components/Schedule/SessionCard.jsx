@@ -42,12 +42,19 @@ const PresentedBy = ({ item }) => {
   );
 };
 
-const SessionCard = ({ item, showDescription, showLevel, showAudience }) => {
+const SessionCard = ({
+  item,
+  showDate,
+  showDescription,
+  showLevel,
+  showAudience,
+}) => {
+  const shortFormat = !showDate;
   return (
     <div className="slot-card">
       <div className="session-info">
         <div className="timing">
-          <SlotDate item={item} shortFormat={true} ical={true} />
+          <SlotDate item={item} shortFormat={shortFormat} ical={true} />
         </div>
         <SessionRoom item={item} />
         <SessionLanguage item={item} />
