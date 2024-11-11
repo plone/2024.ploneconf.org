@@ -1,5 +1,6 @@
 <configure xmlns="http://namespaces.zope.org/zope">
 
+  <include package=".eventbrite" />
   <include package=".registration" />
   <include package=".sponsors" />
   <include package=".schedule" />

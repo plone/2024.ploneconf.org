@@ -1,1 +1,3 @@
+.env_live
+.env_stag
 data/*.json

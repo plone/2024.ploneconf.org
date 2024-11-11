@@ -1,3 +1,14 @@
+import os
+
+
+EVENTBRITE_BASE_URL = os.environ.get(
+    "EVENTBRITE_BASE_URL", "https://www.eventbriteapi.com/v3"
+)
+EVENTBRITE_KEY = os.environ.get("EVENTBRITE_KEY", "")
+EVENTBRITE_ORG_ID = os.environ.get("EVENTBRITE_ORG_ID", "")
+EVENTBRITE_EVENT_ID = os.environ.get("EVENTBRITE_EVENT_ID", "")
+
+
 ADMIN_GROUP = "Administrators"
 EDITORS_GROUP = "Site Administrators"
 ORGANIZERS_CORE_GROUP = "organizers-core"
