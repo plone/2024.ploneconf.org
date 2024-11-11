@@ -5,6 +5,7 @@ from plone.dexterity.content import Container
 from plone.schema.email import Email
 from ploneconf import _
 from typing import List
+from z3c.relationfield.schema import RelationChoice
 from zope import schema
 from zope.interface import implementer
 from zope.interface import Interface
@@ -51,8 +52,16 @@ class IPerson(Interface):
         default=[],
         required=False,
     )
-    directives.read_permission(categories=PERMISSION, email=PERMISSION)
+    directives.read_permission(email=PERMISSION)
     directives.write_permission(categories=PERMISSION, email=PERMISSION)
+
+    attendee = RelationChoice(
+        title=_("Attendee"),
+        description=_("Connect this presenter to an attendee object"),
+        vocabulary="ploneconf.vocabularies.attendees",
+        required=False,
+    )
+
     _pretalx_id = schema.TextLine(title=_("PretalX id"), required=False)
 
 

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Button } from 'semantic-ui-react';
+import { Button, Segment, Dimmer, Loader } from 'semantic-ui-react';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import {
   addRegistration,
@@ -14,8 +14,11 @@ const Register = ({ pathname, content }) => {
   const dispatch = useDispatch();
   const uuid = content['UID'];
   const token = useSelector((state) => state.userSession.token, shallowEqual);
+  const loading = useSelector(
+    (state) => state.registrations?.subrequests?.[uuid]?.loading || false,
+  );
   const registration = useSelector(
-    (state) => state.registrations?.subrequests?.[uuid],
+    (state) => state.registrations?.subrequests?.[uuid]?.registration,
   );
   useEffect(() => {
     dispatch(getRegistration(pathname, uuid));
@@ -30,7 +33,6 @@ const Register = ({ pathname, content }) => {
     dispatch(deleteRegistration(pathname, uuid));
     dispatch(getContent(pathname));
   };
-
   return (
     token &&
     (content.allow_registration || registration?.uid) && (
@@ -39,7 +41,15 @@ const Register = ({ pathname, content }) => {
           <FormattedMessage id={'Register'} defaultMessage={'Register'} />
         </h2>
         <div className={'register-actions'}>
-          {registration?.uid ? (
+          {loading ? (
+            <Dimmer.Dimmable as={Segment} dimmed={true}>
+              <Dimmer active inverted>
+                <Loader size={'small'} inline="centered">
+                  <FormattedMessage id={'Loading'} defaultMessage={'Loading'} />
+                </Loader>
+              </Dimmer>
+            </Dimmer.Dimmable>
+          ) : registration?.uid ? (
             <Button
               basic
               className={'registration cancel'}

@@ -213,6 +213,11 @@ msgstr ""
 msgid "Link"
 msgstr ""
 
+#. Default: "Loading"
+#: components/Registrations/Register
+msgid "Loading"
+msgstr ""
+
 #. Default: "Login"
 #: components/Login/Login
 msgid "Log In"

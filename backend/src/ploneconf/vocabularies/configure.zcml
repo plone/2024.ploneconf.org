@@ -57,5 +57,9 @@
       name="ploneconf.vocabularies.attendee_categories"
       component=".attendees.attendee_categories"
       />
+  <utility
+      name="ploneconf.vocabularies.attendees"
+      component=".attendees.attendees_vocab"
+      />
 
 </configure>

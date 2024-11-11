@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-11-11T18:57:40.911Z\n"
+"POT-Creation-Date: 2024-11-11T23:22:11.819Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -213,6 +213,11 @@ msgstr ""
 #. Default: "Link"
 #: components/Toolbar/Toolbar
 msgid "Link"
+msgstr ""
+
+#. Default: "Loading"
+#: components/Registrations/Register
+msgid "Loading"
 msgstr ""
 
 #. Default: "Login"

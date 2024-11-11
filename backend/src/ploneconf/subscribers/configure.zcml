@@ -20,6 +20,11 @@
            zope.lifecycleevent.IObjectModifiedEvent"
       handler=".session.modification_handler"
       />
-
+  <!-- Conference Person Subscribers -->
+  <subscriber
+      for="ploneconf.content.person.IPerson
+           zope.lifecycleevent.IObjectModifiedEvent"
+      handler=".person.modification_handler"
+      />
 
 </configure>

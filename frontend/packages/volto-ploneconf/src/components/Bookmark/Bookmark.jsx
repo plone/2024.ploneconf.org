@@ -51,7 +51,21 @@ const Bookmark = ({ item }) => {
           bookmarked: hasBookmark,
         })}
       >
-        {displayButton && (
+        {isTraining && hasBookmark && (
+          <Button
+            icon
+            basic
+            className="bookmarkButton noAction"
+            aria-label={intl.formatMessage(messages.label_addbookmark)}
+          >
+            <Icon
+              name={hasBookmark ? bookmarkFilledSVG : bookmarkSVG}
+              size="20px"
+              title={intl.formatMessage(messages.label_addbookmark)}
+            />
+          </Button>
+        )}
+        {!isTraining && (
           <Button
             icon
             basic

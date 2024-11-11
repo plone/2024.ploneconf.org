@@ -218,6 +218,11 @@ msgstr "Auditório Jean Ferri"
 msgid "Link"
 msgstr "Link"
 
+#. Default: "Loading"
+#: components/Registrations/Register
+msgid "Loading"
+msgstr "Processando"
+
 #. Default: "Login"
 #: components/Login/Login
 msgid "Log In"

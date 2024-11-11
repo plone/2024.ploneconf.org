@@ -58,9 +58,9 @@ msgstr ""
 msgid "An online attendee in the conference."
 msgstr ""
 
+#: ploneconf/content/person.py:59
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 #: ploneconf/profiles/default/types/Attendee.xml
-#: ploneconf/vocabularies/attendees.py:9
 msgid "Attendee"
 msgstr ""
 
@@ -70,7 +70,7 @@ msgstr ""
 
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 #: ploneconf/profiles/default/types/Attendees.xml
-#: ploneconf/vocabularies/attendees.py:41
+#: ploneconf/vocabularies/attendees.py:42
 msgid "Attendees"
 msgstr ""
 
@@ -116,7 +116,7 @@ msgid "Cancel this attendee"
 msgstr ""
 
 #: ploneconf/profiles/default/workflows/attendee_workflow/definition.xml
-#: ploneconf/vocabularies/attendees.py:26
+#: ploneconf/vocabularies/attendees.py:27
 msgid "Cancelled"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Capibara Room"
 msgstr ""
 
-#: ploneconf/content/person.py:47
+#: ploneconf/content/person.py:48
 msgid "Categories"
 msgstr ""
 
@@ -146,7 +146,7 @@ msgid "Check-in the attendee"
 msgstr ""
 
 #: ploneconf/profiles/default/workflows/attendee_workflow/definition.xml
-#: ploneconf/vocabularies/attendees.py:25
+#: ploneconf/vocabularies/attendees.py:26
 msgid "Checked-In"
 msgstr ""
 
@@ -172,6 +172,10 @@ msgstr ""
 
 #: ploneconf/users/behaviors.py:92
 msgid "Confirm Password"
+msgstr ""
+
+#: ploneconf/content/person.py:60
+msgid "Connect this presenter to an attendee object"
 msgstr ""
 
 #: ploneconf/vocabularies/slot.py:50
@@ -218,7 +222,7 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: ploneconf/content/person.py:41
+#: ploneconf/content/person.py:42
 msgid "Email address"
 msgstr ""
 
@@ -376,11 +380,11 @@ msgid "Metadata"
 msgstr ""
 
 #: ploneconf/profiles/default/types/OnlineAttendee.xml
-#: ploneconf/vocabularies/attendees.py:10
+#: ploneconf/vocabularies/attendees.py:11
 msgid "Online Attendee"
 msgstr ""
 
-#: ploneconf/vocabularies/attendees.py:42
+#: ploneconf/vocabularies/attendees.py:43
 msgid "Online Attendees"
 msgstr ""
 
@@ -400,15 +404,15 @@ msgstr ""
 msgid "Order id"
 msgstr ""
 
-#: ploneconf/vocabularies/attendees.py:45
+#: ploneconf/vocabularies/attendees.py:46
 msgid "Organizers"
 msgstr ""
 
-#: ploneconf/vocabularies/attendees.py:46
+#: ploneconf/vocabularies/attendees.py:47
 msgid "Organizers (Core)"
 msgstr ""
 
-#: ploneconf/vocabularies/attendees.py:47
+#: ploneconf/vocabularies/attendees.py:48
 msgid "Organizers (Frontdesk)"
 msgstr ""
 
@@ -436,7 +440,7 @@ msgstr ""
 msgid "Person Label"
 msgstr ""
 
-#: ploneconf/content/person.py:42
+#: ploneconf/content/person.py:43
 msgid "Personal e-mail address"
 msgstr ""
 
@@ -489,12 +493,12 @@ msgid "Policy package to install our site"
 msgstr ""
 
 #: ploneconf/behaviors/session.py:29
-#: ploneconf/vocabularies/attendees.py:43
+#: ploneconf/vocabularies/attendees.py:44
 msgid "Presenters"
 msgstr ""
 
 #: ploneconf/behaviors/session.py:63
-#: ploneconf/content/person.py:56
+#: ploneconf/content/person.py:65
 msgid "PretalX id"
 msgstr ""
 
@@ -527,12 +531,12 @@ msgid "Refund this attendee"
 msgstr ""
 
 #: ploneconf/profiles/default/workflows/attendee_workflow/definition.xml
-#: ploneconf/vocabularies/attendees.py:27
+#: ploneconf/vocabularies/attendees.py:28
 msgid "Refunded"
 msgstr ""
 
 #: ploneconf/profiles/default/workflows/attendee_workflow/definition.xml
-#: ploneconf/vocabularies/attendees.py:24
+#: ploneconf/vocabularies/attendees.py:25
 msgid "Registered"
 msgstr ""
 
@@ -608,7 +612,7 @@ msgstr ""
 msgid "Sponsor"
 msgstr ""
 
-#: ploneconf/vocabularies/attendees.py:44
+#: ploneconf/vocabularies/attendees.py:45
 msgid "Sponsors"
 msgstr ""
 
@@ -736,13 +740,13 @@ msgid "YouTube channel url"
 msgstr ""
 
 #. Default: "Used in item listings and search results."
-#: ploneconf/content/person.py:30
+#: ploneconf/content/person.py:31
 #: ploneconf/content/sponsors/sponsor.py:22
 msgid "help_description"
 msgstr ""
 
 #. Default: "Short Biography"
-#: ploneconf/content/person.py:29
+#: ploneconf/content/person.py:30
 msgid "label_biography"
 msgstr ""
 
@@ -757,7 +761,7 @@ msgid "label_language"
 msgstr ""
 
 #. Default: "Name"
-#: ploneconf/content/person.py:26
+#: ploneconf/content/person.py:27
 msgid "label_name"
 msgstr ""
 

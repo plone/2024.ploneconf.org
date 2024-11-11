@@ -1,3 +1,4 @@
+from plone.app.vocabularies.catalog import StaticCatalogVocabulary
 from ploneconf import _
 from zope.interface import provider
 from zope.schema.interfaces import IVocabularyFactory
@@ -55,3 +56,14 @@ def attendee_categories(context):
     for token, title in CATEGORIES.items():
         terms.append(SimpleTerm(token, token, title))
     return SimpleVocabulary(terms)
+
+
+@provider(IVocabularyFactory)
+def attendees_vocab(context) -> StaticCatalogVocabulary:
+    """Attendees."""
+    return StaticCatalogVocabulary(
+        {
+            "portal_type": ["Attendee"],
+            "sort_on": "sortable_title",
+        }
+    )

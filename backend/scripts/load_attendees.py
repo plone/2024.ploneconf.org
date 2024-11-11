@@ -23,6 +23,7 @@ BASE_URL = os.environ.get("BASE_URL", "http://localhost:8080/Plone/++api++/")
 USER = os.environ.get("USER", "admin")
 PASSWD = os.environ.get("PASSWD", "admin")
 BASIC_AUTH = os.environ.get("BASIC_AUTH")
+SHOULD_CREATE = bool(os.environ.get("SHOULD_CREATE"))
 SHOULD_PUBLISH = bool(os.environ.get("SHOULD_PUBLISH"))
 SHOULD_UPDATE = bool(os.environ.get("SHOULD_UPDATE"))
 
@@ -126,7 +127,7 @@ def create(contents: dict):
             email = data["email"]
             password = data["password"]
             if type_ in ("Attendee", "OnlineAttendee"):
-                logger.info(f"Content exists:: {path},{type_},{email},{password}")
+                logger.info(f"Content exists: {path},{type_},{email},{password}")
         response_data = response.json()
         current_state = response_data["review_state"]
         for transition in transitions:
@@ -138,7 +139,19 @@ def create(contents: dict):
             logger.info(f"Transitioning: {path} with {transition} (Status: {status})")
 
 
+def show(contents: dict):
+    # Create content
+    for path, (data, _transitions) in contents.items():
+        type_ = data["@type"]
+        email = data["email"]
+        password = data["password"]
+        logger.info(f"Report: {path},{type_},{email},{password}")
+
+
 for name, func in (("attendees", prepare_attendees),):
     raw_data = json.loads((DATA_FOLDER / f"{name}.json").read_text())
     data = func(raw_data)
-    create(data)
+    if SHOULD_CREATE:
+        create(data)
+    else:
+        show(data)

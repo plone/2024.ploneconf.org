@@ -6,6 +6,7 @@ from plone.restapi.interfaces import ISerializeToJsonSummary
 from plone.restapi.services import Service
 from ploneconf import logger
 from ploneconf.content.training import ITraining
+from ploneconf.souper.access import SessionBookmarks
 from ploneconf.souper.access import TrainingRegistrations
 from zope.component import adapter
 from zope.component import getMultiAdapter
@@ -21,6 +22,7 @@ class BaseService(Service):
         self.context = context
         self.request = request
         self.api = TrainingRegistrations()
+        self.bookmark = SessionBookmarks()
 
     def _error(self, status, type, message):
         self.request.response.setStatus(status)
@@ -126,6 +128,7 @@ class Add(BaseService):
         result = {"@id": self.base_url}
         registration = self.get_registration()
         if not registration:
+            self.bookmark.add(self.user_id, self.training_id)
             result.update(self.api.add(self.user_id, self.training_id))
         return result
 
@@ -137,6 +140,8 @@ class Delete(BaseService):
         registration = self.get_registration()
         if registration:
             status = self.api.delete(self.user_id, self.training_id)
+            if status:
+                self.bookmark.delete(self.user_id, self.training_id)
             logger.debug(f"{self.user_id} - {self.training_id} - {status}")
         else:
             return self._error(404, "Not Found", "No registrations for this user")

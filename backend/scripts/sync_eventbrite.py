@@ -1,6 +1,3 @@
-from pathlib import Path
-
-import json
 import logging
 import os
 import requests
@@ -8,59 +5,43 @@ import requests
 
 # Setup logging
 logging.basicConfig()
-logger = logging.getLogger("ploneconf.sync_eventbrite")
+logger = logging.getLogger("ploneconf.site_sync_eventbrite")
 logger.setLevel(logging.INFO)
 
-CURRENT_FOLDER = Path(__file__).parent.resolve()
-DATA_FOLDER = CURRENT_FOLDER / "data"
-
-BASE_URL = os.environ.get("EVENTBRITE_BASE_URL", "https://www.eventbriteapi.com/v3")
-EVENTBRITE_KEY = os.environ.get("EVENTBRITE_KEY", "")
-EVENTBRITE_ORG_ID = os.environ.get("EVENTBRITE_ORG_ID", "")
-EVENTBRITE_EVENT_ID = os.environ.get("EVENTBRITE_EVENT_ID", "")
-
-if not (EVENTBRITE_KEY and EVENTBRITE_EVENT_ID and EVENTBRITE_ORG_ID):
-    raise RuntimeError(
-        "Please set EVENTBRITE_KEY, EVENTBRITE_EVENT_ID and EVENTBRITE_ORG_ID"
-    )
-
-organization_id = EVENTBRITE_ORG_ID
-event_id = EVENTBRITE_EVENT_ID
-
-headers = {"Authorization": f"Bearer {EVENTBRITE_KEY}"}
-SERVICES = [
-    ("discounts", "discounts.json", "org"),
-    ("ticket_classes", "ticket_classes.json", "event"),
-    ("attendees", "attendees.json", "event"),
-]
+BASE_URL = os.environ.get("BASE_URL", "http://localhost:8080/Plone/++api++")
+USER = os.environ.get("USER", "admin")
+PASSWD = os.environ.get("PASSWD", "admin")
+BASIC_AUTH = os.environ.get("BASIC_AUTH")
 
 
-def dump_data(endpoint, cat, fh):
-    logger.info(f"Processing {endpoint}")
-    params = ""
-    if cat == "event":
-        base_url = f"{BASE_URL}/events/{event_id}/{endpoint}/"
-    else:
-        params = "?scope=event&event_id={event_id}&page_size=300"
-        base_url = f"{BASE_URL}/organizations/{organization_id}/{endpoint}"
-    base_url = f"{base_url}{params}"
-    response = requests.get(base_url, headers=headers)
+if not BASE_URL:
+    raise RuntimeError("BASE_URL not set")
+
+headers = {"Accept": "application/json"}
+
+session = requests.Session()
+session.headers.update(headers)
+if BASIC_AUTH:
+    session.auth = tuple(BASIC_AUTH.split("|"))
+
+headers = {"Accept": "application/json"}
+
+# Authenticate user
+login_url = f"{BASE_URL}/@login"
+response = session.post(login_url, json={"login": USER, "password": PASSWD})
+data = response.json()
+token = data["token"]
+if BASIC_AUTH:
+    session.cookies.set("auth_token", token)
+else:
+    session.headers.update({"Authorization": f"Bearer {token}"})
+
+
+def do_sync():
+    url = f"{BASE_URL}/@eventbrite-sync"
+    response = session.get(url, allow_redirects=False)
     data = response.json()
-    continuation = data.get("pagination", {}).get("continuation", "")
-    items = data[endpoint]
-    while continuation:
-        print(len(items), continuation)
-        response = requests.get(
-            f"{base_url}?continuation={continuation}", headers=headers
-        )
-        data = response.json()
-        continuation = data.get("pagination", {}).get("continuation", "")
-        items.extend(data.get(endpoint, []))
-
-    fh.write_text(json.dumps(items, indent=2))
-    logger.info(f"- Wrote {len(items)} to {fh}")
+    logger.info(data)
 
 
-for endpoint, filename, cat in SERVICES:
-    fh = Path(f"{DATA_FOLDER}/{filename}")
-    dump_data(endpoint, cat, fh)
+do_sync()
