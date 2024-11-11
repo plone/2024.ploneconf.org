@@ -78,6 +78,7 @@ def prepare_attendees(raw_data: list) -> dict:
         value = {}
         id_ = item["id"]
         order_id = item["order_id"]
+        external_url = f"https://www.eventbrite.com.br/organizations/orders/{order_id}"
         passwd = generate_password(id_)
         email = item["profile"]["email"]
         site_path = f"/attendees/{id_}"
@@ -97,9 +98,7 @@ def prepare_attendees(raw_data: list) -> dict:
         value["ticket_class_name"] = item["ticket_class_name"]
         value["ticket_class_id"] = ticket_class_id
         value["barcode"] = item["barcodes"][0]["barcode"]
-        value[
-            "ticket_url"
-        ] = f"https://www.eventbrite.com.br/organizations/orders/{order_id}"
+        value["ticket_url"] = external_url
         contents[site_path] = (value, transitions)
     return contents
 
@@ -122,10 +121,11 @@ def create(contents: dict):
                         f"Conteúdo criado: {path},{data['@type']},{data['email']},{data['password']}"
                     )
         else:
-            if data["@type"] in ("Attendee", "OnlineAttendee"):
-                logger.info(
-                    f"Content exists:: {path},{data['@type']},{data['email']},{data['password']}"
-                )
+            type_ = data["@type"]
+            email = data["email"]
+            password = data["password"]
+            if type_ in ("Attendee", "OnlineAttendee"):
+                logger.info(f"Content exists:: {path},{type_},{email},{password}")
         response_data = response.json()
         current_state = response_data["review_state"]
         for transition in transitions:
@@ -133,9 +133,8 @@ def create(contents: dict):
                 continue
             endpoint = f"{url}/@workflow/{transition}"
             response = session.post(endpoint, allow_redirects=False)
-            logger.info(
-                f"Transitioning: {path} with {transition} (Status: {response.status_code})"
-            )
+            status = response.status_code
+            logger.info(f"Transitioning: {path} with {transition} (Status: {status})")
 
 
 for name, func in (("attendees", prepare_attendees),):
