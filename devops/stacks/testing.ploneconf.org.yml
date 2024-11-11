@@ -100,6 +100,7 @@ services:
         - traefik.http.routers.testing_ploneconf-zopeadmin.tls=true
         - traefik.http.routers.testing_ploneconf-zopeadmin.service=testing_ploneconf-backend
         - traefik.http.routers.testing_ploneconf-zopeadmin.middlewares=gzip,testing_ploneconf-zope-auth,testing_ploneconf-root-zopeadmin
+
 networks:
   public:
     external: true
