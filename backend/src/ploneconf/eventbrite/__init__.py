@@ -34,7 +34,7 @@ def transition_attendees(data: list[dict]) -> list[Attendee]:
         for transition in transitions:
             api.content.transition(attendee, transition)
             logger.info(
-                f"Ran trainsition {transition} on {attendee.portal_type} {attendee.absolute_url()}"
+                f"Ran {transition} on {attendee.portal_type} {attendee.absolute_url()}"
             )
         attendees.append(attendee)
     return attendees
