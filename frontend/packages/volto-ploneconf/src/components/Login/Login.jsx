@@ -14,7 +14,6 @@ import { FormattedMessage, defineMessages, useIntl } from 'react-intl';
 import qs from 'query-string';
 
 import { Helmet, usePrevious } from '@plone/volto/helpers';
-import config from '@plone/volto/registry';
 import { Icon } from '@plone/volto/components';
 import {
   login,
