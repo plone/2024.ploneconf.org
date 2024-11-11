@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-11-11T01:06:28.184Z\n"
+"POT-Creation-Date: 2024-11-11T18:57:40.911Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -54,6 +54,7 @@ msgid "Attendees Management"
 msgstr ""
 
 #. Default: "Back"
+#: components/Personal/PersonalTools
 #: components/Registrations/RegistrationsManagement
 #: components/Toolbar/Toolbar
 msgid "Back"
@@ -242,6 +243,7 @@ msgstr ""
 
 #. Default: "Logout"
 #: components/Footer/Footer
+#: components/Personal/PersonalTools
 msgid "Logout"
 msgstr ""
 
@@ -325,6 +327,16 @@ msgstr ""
 msgid "Plone Conference"
 msgstr ""
 
+#. Default: "Preferences"
+#: components/Personal/PersonalTools
+msgid "Preferences"
+msgstr ""
+
+#. Default: "Profile"
+#: components/Personal/PersonalTools
+msgid "Profile"
+msgstr ""
+
 #. Default: "Python Cerrado"
 #: components/Logo/LogoPythonCerrado
 msgid "Python Cerrado"
@@ -389,6 +401,11 @@ msgstr ""
 #. Default: "Sign in to start session"
 #: components/Login/Login
 msgid "Sign in to start session"
+msgstr ""
+
+#. Default: "Site Setup"
+#: components/Personal/PersonalTools
+msgid "Site Setup"
 msgstr ""
 
 #. Default: "Source"
@@ -501,4 +518,9 @@ msgstr ""
 #. Default: "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
 #: components/View/MySchedule
 msgid "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
+msgstr ""
+
+#. Default: "user avatar"
+#: components/Personal/PersonalTools
+msgid "user avatar"
 msgstr ""

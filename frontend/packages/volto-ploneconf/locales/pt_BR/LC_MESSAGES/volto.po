@@ -57,6 +57,7 @@ msgid "Attendees Management"
 msgstr "Gestão de participantes"
 
 #. Default: "Back"
+#: components/Personal/PersonalTools
 #: components/Registrations/RegistrationsManagement
 #: components/Toolbar/Toolbar
 msgid "Back"
@@ -245,6 +246,7 @@ msgstr "E-mail"
 
 #. Default: "Logout"
 #: components/Footer/Footer
+#: components/Personal/PersonalTools
 msgid "Logout"
 msgstr "Logout"
 
@@ -328,6 +330,16 @@ msgstr "Por favor escolha um conteúdo existente como fonte para esse elemento"
 msgid "Plone Conference"
 msgstr "Plone Conference"
 
+#. Default: "Preferences"
+#: components/Personal/PersonalTools
+msgid "Preferences"
+msgstr ""
+
+#. Default: "Profile"
+#: components/Personal/PersonalTools
+msgid "Profile"
+msgstr ""
+
 #. Default: "Python Cerrado"
 #: components/Logo/LogoPythonCerrado
 msgid "Python Cerrado"
@@ -393,6 +405,11 @@ msgstr "Reduzir barra"
 #: components/Login/Login
 msgid "Sign in to start session"
 msgstr "Autentique-se"
+
+#. Default: "Site Setup"
+#: components/Personal/PersonalTools
+msgid "Site Setup"
+msgstr ""
 
 #. Default: "Source"
 #: components/Blocks/Slider/SliderFull
@@ -505,3 +522,8 @@ msgstr "Sub-título"
 #: components/View/MySchedule
 msgid "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
 msgstr "o horário exibido aqui é relativo ao fuso-horário configurado no SEU COMPUTADOR. As atividades sempre iniciam às 9h, horário de Brasília."
+
+#. Default: "user avatar"
+#: components/Personal/PersonalTools
+msgid "user avatar"
+msgstr ""

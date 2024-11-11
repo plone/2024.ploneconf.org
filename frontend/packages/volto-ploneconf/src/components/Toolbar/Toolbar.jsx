@@ -31,7 +31,7 @@ import {
 } from '@plone/volto/helpers';
 import { Pluggable } from '@plone/volto/components/manage/Pluggable';
 
-import PersonalTools from '@plone/volto/components/manage/Toolbar/PersonalTools';
+import PersonalTools from '../Personal/PersonalTools';
 import PersonalInfo from '../Personal/PersonalInfo';
 
 import penSVG from '@plone/volto/icons/pen.svg';
