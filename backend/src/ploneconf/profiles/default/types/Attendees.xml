@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+        meta_type="Dexterity FTI"
+        name="Attendees"
+        i18n:domain="ploneconf"
+>
+
+  <!-- Basic properties -->
+  <property name="title"
+            i18n:translate=""
+  >Attendees</property>
+  <property name="description"
+            i18n:translate=""
+  >Attendees database</property>
+
+  <property name="allow_discussion">False</property>
+  <property name="factory">Attendees</property>
+  <property name="icon_expr" />
+  <property name="link_target" />
+
+  <!-- Hierarchy control -->
+  <property name="global_allow">True</property>
+  <property name="filter_content_types">True</property>
+  <property name="allowed_content_types">
+    <element value="Attendee" />
+    <element value="OnlineAttendee" />
+    <element value="File" />
+  </property>
+
+  <!-- Schema, class and security -->
+  <property name="add_permission">ploneconf.addAttendees</property>
+  <property name="klass">ploneconf.users.content.attendees.Attendees</property>
+  <property name="model_file" />
+  <property name="model_source" />
+  <property name="schema">ploneconf.users.content.attendees.IAttendees</property>
+
+  <!-- Enabled behaviors -->
+  <property name="behaviors"
+            purge="false"
+  >
+    <element value="plone.dublincore" />
+    <element value="plone.excludefromnavigation" />
+    <element value="volto.blocks" />
+    <element value="plone.constraintypes" />
+  </property>
+
+
+</object>

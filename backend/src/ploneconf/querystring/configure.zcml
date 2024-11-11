@@ -1,0 +1,19 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <utility
+      factory=".query_index_modifiers.attendee_type"
+      provides="plone.app.querystring.interfaces.IParsedQueryIndexModifier"
+      name="attendee_type"
+      />
+  <utility
+      factory=".query_index_modifiers.attendee_state"
+      provides="plone.app.querystring.interfaces.IParsedQueryIndexModifier"
+      name="attendee_state"
+      />
+  <utility
+      factory=".query_index_modifiers.attendee_category"
+      provides="plone.app.querystring.interfaces.IParsedQueryIndexModifier"
+      name="attendee_category"
+      />
+
+</configure>

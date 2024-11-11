@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dc-workflow xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+             initial_state="registered"
+             state_variable="review_state"
+             title="Attendee Workflow"
+             workflow_id="attendee_workflow"
+             i18n:attributes="title; description"
+             i18n:domain="ploneconf"
+>
+
+  <permission>View</permission>
+  <permission>Access contents information</permission>
+  <permission>Modify portal content</permission>
+
+  <state state_id="registered"
+         title="Registered"
+         i18n:attributes="title"
+  >
+    <exit-transition transition_id="checkin" />
+    <exit-transition transition_id="cancel" />
+    <exit-transition transition_id="refund" />
+    <permission-map acquired="False"
+                    name="View"
+    >
+      <permission-role>Owner</permission-role>
+      <permission-role>Reader</permission-role>
+      <permission-role>Reviewer</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map acquired="False"
+                    name="Access contents information"
+    >
+      <permission-role>Owner</permission-role>
+      <permission-role>Reader</permission-role>
+      <permission-role>Reviewer</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map acquired="False"
+                    name="Modify portal content"
+    >
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+  </state>
+
+  <state state_id="checked"
+         title="Checked-In"
+         i18n:attributes="title"
+  >
+    <exit-transition transition_id="revert" />
+    <permission-map acquired="False"
+                    name="View"
+    >
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map acquired="False"
+                    name="Access contents information"
+    >
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map acquired="False"
+                    name="Modify portal content"
+    >
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+  </state>
+
+  <state state_id="cancelled"
+         title="Cancelled"
+         i18n:attributes="title"
+  >
+    <exit-transition transition_id="revert" />
+    <exit-transition transition_id="refund" />
+    <permission-map acquired="False"
+                    name="View"
+    >
+      <permission-role>Reader</permission-role>
+      <permission-role>Reviewer</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map acquired="False"
+                    name="Access contents information"
+    >
+      <permission-role>Reader</permission-role>
+      <permission-role>Reviewer</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map acquired="False"
+                    name="Modify portal content"
+    >
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+  </state>
+
+  <state state_id="refunded"
+         title="Refunded"
+         i18n:attributes="title"
+  >
+    <exit-transition transition_id="revert" />
+    <permission-map acquired="False"
+                    name="View"
+    >
+      <permission-role>Reader</permission-role>
+      <permission-role>Reviewer</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map acquired="False"
+                    name="Access contents information"
+    >
+      <permission-role>Reader</permission-role>
+      <permission-role>Reviewer</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map acquired="False"
+                    name="Modify portal content"
+    >
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+  </state>
+
+  <transition after_script=""
+              before_script=""
+              new_state="checked"
+              title="Check-in the attendee"
+              transition_id="checkin"
+              trigger="USER"
+              i18n:attributes="title"
+  >
+    <action category="workflow"
+            url="%(content_url)s/content_status_modify?workflow_action=checkin"
+            i18n:translate=""
+    >Check-in the attendee</action>
+    <guard>
+      <guard-permission>Review portal content</guard-permission>
+    </guard>
+  </transition>
+
+  <transition after_script=""
+              before_script=""
+              new_state="registered"
+              title="Revert attendee to registered state"
+              transition_id="revert"
+              trigger="USER"
+              i18n:attributes="title"
+  >
+    <action category="workflow"
+            url="%(content_url)s/content_status_modify?workflow_action=revert"
+            i18n:translate=""
+    >Revert attendee to registered state</action>
+    <guard>
+      <guard-permission>Review portal content</guard-permission>
+    </guard>
+  </transition>
+
+  <transition after_script=""
+              before_script=""
+              new_state="cancelled"
+              title="Cancel this attendee"
+              transition_id="cancel"
+              trigger="USER"
+              i18n:attributes="title"
+  >
+    <action category="workflow"
+            url="%(content_url)s/content_status_modify?workflow_action=cancel"
+            i18n:translate=""
+    >Cancel this attendee</action>
+    <guard>
+      <guard-permission>Review portal content</guard-permission>
+    </guard>
+  </transition>
+
+  <transition after_script=""
+              before_script=""
+              new_state="refunded"
+              title="Refund this attendee"
+              transition_id="refund"
+              trigger="USER"
+              i18n:attributes="title"
+  >
+    <action category="workflow"
+            url="%(content_url)s/content_status_modify?workflow_action=refund"
+            i18n:attributes="translate"
+    >Refund this attendee</action>
+    <guard>
+      <guard-permission>Review portal content</guard-permission>
+    </guard>
+  </transition>
+
+
+  <variable for_catalog="False"
+            for_status="True"
+            update_always="True"
+            variable_id="action"
+  >
+    <default>
+      <expression>transition/getId|nothing</expression>
+    </default>
+    <guard>
+</guard>
+  </variable>
+
+  <variable for_catalog="False"
+            for_status="True"
+            update_always="True"
+            variable_id="actor"
+  >
+    <default>
+      <expression>user/getId</expression>
+    </default>
+    <guard>
+</guard>
+  </variable>
+
+  <variable for_catalog="False"
+            for_status="True"
+            update_always="True"
+            variable_id="comments"
+  >
+    <default>
+      <expression>python:state_change.kwargs.get('comment', '')</expression>
+    </default>
+    <guard>
+</guard>
+  </variable>
+
+  <variable for_catalog="False"
+            for_status="False"
+            update_always="False"
+            variable_id="review_history"
+  >
+    <default>
+      <expression>state_change/getHistory</expression>
+    </default>
+    <guard>
+      <guard-permission>Request review</guard-permission>
+      <guard-permission>Review portal content</guard-permission>
+    </guard>
+  </variable>
+
+  <variable for_catalog="False"
+            for_status="True"
+            update_always="True"
+            variable_id="time"
+  >
+    <default>
+      <expression>state_change/getDateTime</expression>
+    </default>
+    <guard>
+</guard>
+  </variable>
+</dc-workflow>

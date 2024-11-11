@@ -1,0 +1,26 @@
+.bookmark {
+  .ui.basic.button.bookmarkButton {
+    padding: 2px;
+    border-radius: 100%;
+    margin-top: -20px;
+    background-color: var(--main-color) !important;
+    svg {
+      height: 20px !important;
+      color: var(--reverse-color);
+    }
+    &:hover {
+      background-color: var(--secondary-color) !important;
+    }
+  }
+  &.bookmarked {
+    .ui.basic.button.bookmarkButton {
+      background-color: var(--secondary-color) !important;
+      svg {
+        color: var(--reverse-color);
+      }
+      &:hover {
+        background-color: var(--main-color) !important;
+      }
+    }
+  }
+}

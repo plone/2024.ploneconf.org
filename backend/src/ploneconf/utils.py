@@ -12,6 +12,7 @@ def generate_links_dict(content: ILinkInformation) -> dict:
     keys = [
         "remoteUrl",
         "twitter",
+        "bluesky",
         "github",
         "mastodon",
         "instagram",

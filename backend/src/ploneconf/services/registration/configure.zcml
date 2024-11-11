@@ -1,0 +1,45 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    >
+
+  <plone:service
+      method="GET"
+      factory=".training.GetAll"
+      for="ploneconf.content.training.ITraining"
+      permission="cmf.ReviewPortalContent"
+      name="@registrations"
+      />
+
+  <plone:service
+      method="PATCH"
+      factory=".training.Patch"
+      for="ploneconf.content.training.ITraining"
+      permission="cmf.ReviewPortalContent"
+      name="@registrations"
+      />
+
+  <plone:service
+      method="GET"
+      factory=".training.Get"
+      for="ploneconf.content.training.ITraining"
+      permission="ploneconf.registerTraining"
+      name="@registration"
+      />
+
+  <plone:service
+      method="POST"
+      factory=".training.Add"
+      for="ploneconf.content.training.ITraining"
+      permission="ploneconf.registerTraining"
+      name="@registration"
+      />
+  <plone:service
+      method="DELETE"
+      factory=".training.Delete"
+      for="ploneconf.content.training.ITraining"
+      permission="ploneconf.registerTraining"
+      name="@registration"
+      />
+
+</configure>

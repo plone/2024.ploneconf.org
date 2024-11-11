@@ -1,0 +1,17 @@
+.attendee-management {
+  .attendee-state {
+    .attendee-actions {
+      .transitionButton {
+        padding: $spacing-small;
+        &.revert {
+          background-color: var(--plone-color) !important;
+          color: var(--plone-on-color) !important;
+        }
+        &.checkin {
+          background-color: var(--tertiary-color) !important;
+          color: var(--reverse-color) !important;
+        }
+      }
+    }
+  }
+}

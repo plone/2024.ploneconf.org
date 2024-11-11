@@ -6,6 +6,7 @@ import SessionLanguage from '../Session/SessionLanguage/SessionLanguage';
 import SessionRoom from '../Session/SessionRoom/SessionRoom';
 import SessionLevel from '../Session/SessionLevel/SessionLevel';
 import SessionAudience from '../Session/SessionAudience/SessionAudience';
+import Bookmark from '../Bookmark/Bookmark';
 
 const PresentedBy = ({ item }) => {
   let presenters = [];
@@ -58,6 +59,7 @@ const SessionCard = ({
         </div>
         <SessionRoom item={item} />
         <SessionLanguage item={item} />
+        <Bookmark item={item} />
       </div>
       <SessionTrack item={item} />
       <div className="session-title-wrapper">

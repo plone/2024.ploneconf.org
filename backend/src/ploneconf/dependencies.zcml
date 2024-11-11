@@ -8,5 +8,7 @@
   <include package="collective.honeypot" />
   <include package="pas.plugins.authomatic" />
   <include package="collective.volto.formsupport" />
+  <include package="Products.membrane" />
+  <include package="souper.plone" />
 
 </configure>

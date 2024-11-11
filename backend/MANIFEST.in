@@ -14,6 +14,7 @@ exclude *-mxdev.txt
 exclude Dockerfile
 exclude mx.ini
 exclude Makefile
+exclude scripts/data/*.json
 recursive-exclude frontend *
 exclude instance.yaml
 global-exclude *.pyc

@@ -1,6 +1,10 @@
 <configure xmlns="http://namespaces.zope.org/zope">
 
   <adapter factory=".brain.JSONSummarySerializer" />
+
+  <adapter factory=".attendee.AttendeeJSONSerializer" />
+  <adapter factory=".attendee.AttendeeJSONSummarySerializer" />
+
   <adapter factory=".person.PersonJSONSerializer" />
   <adapter factory=".person.PersonJSONSummarySerializer" />
   <adapter factory=".session.KeynoteJSONSerializer" />
@@ -13,5 +17,7 @@
   <adapter factory=".session.TrainingJSONSummarySerializer" />
   <adapter factory=".sponsor.SponsorJSONSerializer" />
   <adapter factory=".sponsor.SponsorJSONSummarySerializer" />
+  <adapter factory=".user.SerializeUserToJsonSummary" />
+  <adapter factory=".user.SerializeUserToJson" />
 
 </configure>

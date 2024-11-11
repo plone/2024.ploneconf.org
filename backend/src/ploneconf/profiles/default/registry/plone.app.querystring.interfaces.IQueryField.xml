@@ -87,4 +87,69 @@
     >Metadata</value>
   </records>
 
+  <!-- Attendees -->
+  <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.attendee_type"
+  >
+    <value key="title"
+           i18n:translate=""
+    >Attendee</value>
+    <value key="description"
+           i18n:translate=""
+    >Type of Attendee.</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="operations">
+      <element>plone.app.querystring.operation.selection.any</element>
+      <element>plone.app.querystring.operation.selection.all</element>
+    </value>
+    <value key="vocabulary">ploneconf.vocabularies.attendee_types</value>
+    <value key="group"
+           i18n:translate=""
+    >Attendees</value>
+  </records>
+
+  <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.attendee_state"
+  >
+    <value key="title"
+           i18n:translate=""
+    >Review State</value>
+    <value key="description"
+           i18n:translate=""
+    >State of Attendee.</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="operations">
+      <element>plone.app.querystring.operation.selection.any</element>
+      <element>plone.app.querystring.operation.selection.all</element>
+    </value>
+    <value key="vocabulary">ploneconf.vocabularies.attendee_states</value>
+    <value key="group"
+           i18n:translate=""
+    >Attendees</value>
+  </records>
+
+
+  <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.attendee_category"
+  >
+    <value key="title"
+           i18n:translate=""
+    >Category</value>
+    <value key="description"
+           i18n:translate=""
+    >Category of Attendee.</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="operations">
+      <element>plone.app.querystring.operation.selection.any</element>
+      <element>plone.app.querystring.operation.selection.all</element>
+    </value>
+    <value key="vocabulary">ploneconf.vocabularies.attendee_categories</value>
+    <value key="group"
+           i18n:translate=""
+    >Attendees</value>
+  </records>
+
 </registry>

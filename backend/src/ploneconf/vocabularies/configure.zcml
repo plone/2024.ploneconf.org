@@ -44,5 +44,18 @@
       name="ploneconf.vocabularies.person_labels"
       component=".person.person_labels"
       />
+  <!-- Attendees -->
+  <utility
+      name="ploneconf.vocabularies.attendee_types"
+      component=".attendees.attendee_types"
+      />
+  <utility
+      name="ploneconf.vocabularies.attendee_states"
+      component=".attendees.attendee_states"
+      />
+  <utility
+      name="ploneconf.vocabularies.attendee_categories"
+      component=".attendees.attendee_categories"
+      />
 
 </configure>

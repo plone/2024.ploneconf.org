@@ -11,4 +11,34 @@
       name="@schedule"
       />
 
+  <!-- My schedule-->
+  <plone:service
+      method="GET"
+      factory=".schedule.MySchedule"
+      for="plone.base.interfaces.IPloneSiteRoot"
+      permission="ploneconf.viewMySchedule"
+      name="@my-schedule"
+      />
+  <plone:service
+      method="GET"
+      factory=".bookmark.Get"
+      for="ploneconf.behaviors.schedule.IScheduleSlot"
+      permission="ploneconf.manageSessionBookmark"
+      name="@bookmark"
+      />
+  <plone:service
+      method="POST"
+      factory=".bookmark.Add"
+      for="ploneconf.behaviors.schedule.IScheduleSlot"
+      permission="ploneconf.manageSessionBookmark"
+      name="@bookmark"
+      />
+  <plone:service
+      method="DELETE"
+      factory=".bookmark.Delete"
+      for="ploneconf.behaviors.schedule.IScheduleSlot"
+      permission="ploneconf.manageSessionBookmark"
+      name="@bookmark"
+      />
+
 </configure>

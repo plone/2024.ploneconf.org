@@ -54,6 +54,28 @@ $line-heights: (
   6xl: var(--line-height-6xl),
 ) !default;
 
+body {
+  --base-rgb: 1, 106, 173;
+  --main-color: rgb(var(--base-rgb));
+  --alternate-color: #001522;
+  --reverse-color: #fff;
+  --primary-color: var(--main-color);
+  --secondary-color: rgb(175, 148, 0);
+  --tertiary-color: rgb(46, 153, 63);
+  --link-color: var(--main-color);
+  --decoration-image: url(./static/bg_image_01.png);
+  --eventbrite-cta-background-color: var(--main-color);
+  --eventbrite-cta-border: 1px solid var(--main-color);
+  --eventbrite-cta-font-size: 22px;
+  --eventbrite-cta-font-weight: 700;
+  --eventbrite-cta-hover-background-color: var(--main-color);
+  --eventbrite-cta-hover-border: 1px solid var(--main-color);
+  --eventbrite-cta-hover-font-size: 22px;
+  --eventbrite-cta-hover-font-weight: 700;
+  --eventbrite-cta-padding: 10px 24px;
+  --eventbrite-cta-text-color: var(--reverse-color);
+}
+
 body.section-en {
   --base-rgb: 1, 106, 173;
   --main-color: rgb(var(--base-rgb));

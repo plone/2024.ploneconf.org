@@ -5,20 +5,66 @@ msgstr ""
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
-"Language: de\n"
+"Language: \n"
 "Language-Team: \n"
 "Content-Type: \n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. Default: "Access Report"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Access Report"
+msgstr ""
+
+#. Default: "Action"
+#: components/Registrations/RegistrationsManagement
+msgid "Action"
+msgstr ""
+
+#. Default: "Actions"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Actions"
+msgstr ""
+
+#. Default: "Add"
+#: components/Toolbar/Toolbar
+msgid "Add"
+msgstr ""
+
+#. Default: "Add to my schedule"
+#: components/Bookmark/Bookmark
+msgid "Add to my schedule"
+msgstr ""
 
 #. Default: "All Rooms"
 #: components/Room/Rooms
 msgid "All Rooms"
 msgstr ""
 
+#. Default: "Attendee Management"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Attendee Management"
+msgstr ""
+
+#. Default: "Attendees Management"
+#: components/Toolbar/PlugAttendeesManagement
+msgid "Attendees Management"
+msgstr ""
+
+#. Default: "Back"
+#: components/Registrations/RegistrationsManagement
+#: components/Toolbar/Toolbar
+msgid "Back"
+msgstr ""
+
 #. Default: "Be the First!"
 #: components/Blocks/SponsorLevel/DefaultView
 msgid "Be the First!"
+msgstr ""
+
+#. Default: "Both email address and password are case sensitive, check that caps lock is not enabled."
+#: components/Login/Login
+msgid "Both email address and password are case sensitive, check that caps lock is not enabled."
 msgstr ""
 
 #. Default: "Buriti Room"
@@ -36,9 +82,34 @@ msgstr ""
 msgid "CTA Label"
 msgstr ""
 
+#. Default: "Cancel"
+#: components/Login/Login
+msgid "Cancel"
+msgstr ""
+
+#. Default: "Cancel registration"
+#: components/Registrations/Register
+msgid "Cancel registration"
+msgstr ""
+
+#. Default: "Cancelled"
+#: components/AttendeeLabel/labels
+msgid "Cancelled"
+msgstr ""
+
 #. Default: "Capibara Room"
 #: components/Room/Rooms
 msgid "Capibara Room"
+msgstr ""
+
+#. Default: "Check-in"
+#: components/Registrations/RegistrationsManagement
+msgid "Check-in"
+msgstr ""
+
+#. Default: "Checked-In"
+#: components/AttendeeLabel/labels
+msgid "Checked-In"
 msgstr ""
 
 #. Default: "Close menu"
@@ -46,14 +117,34 @@ msgstr ""
 msgid "Close menu"
 msgstr ""
 
+#. Default: "Collection"
+#: components/Toolbar/Toolbar
+msgid "Collection"
+msgstr ""
+
+#. Default: "Contents"
+#: components/Toolbar/Toolbar
+msgid "Contents"
+msgstr ""
+
 #. Default: "Continue reading"
 #: components/Blocks/Slider/SliderFull
 msgid "Continue reading"
 msgstr ""
 
+#. Default: "Date"
+#: components/Registrations/RegistrationsManagement
+msgid "Date"
+msgstr ""
+
 #. Default: "Day"
 #: components/Schedule/Schedule
 msgid "Day"
+msgstr ""
+
+#. Default: "Description"
+#: components/View/TrainingView
+msgid "Description"
 msgstr ""
 
 #. Default: "Display CTA?"
@@ -69,6 +160,26 @@ msgstr ""
 #. Default: "Dorneles Treméa Auditorium"
 #: components/Room/Rooms
 msgid "Dorneles Treméa Auditorium"
+msgstr ""
+
+#. Default: "E-mail"
+#: components/Login/Login
+msgid "E-mail"
+msgstr ""
+
+#. Default: "Edit"
+#: components/Toolbar/Toolbar
+msgid "Edit"
+msgstr ""
+
+#. Default: "Error"
+#: components/Login/Login
+msgid "Error"
+msgstr ""
+
+#. Default: "File"
+#: components/Toolbar/Toolbar
+msgid "File"
 msgstr ""
 
 #. Default: "Filter by Day"
@@ -96,9 +207,107 @@ msgstr ""
 msgid "Jean Ferri Auditorium"
 msgstr ""
 
+#. Default: "Link"
+#: components/Toolbar/Toolbar
+msgid "Link"
+msgstr ""
+
+#. Default: "Login"
+#: components/Login/Login
+msgid "Log In"
+msgstr ""
+
+#. Default: "Log in"
+#: components/Login/Login
+msgid "Log in"
+msgstr ""
+
+#. Default: "Login"
+#: components/Footer/Footer
+#: components/Login/Login
+msgid "Login"
+msgstr ""
+
+#. Default: "Login Failed"
+#: components/Login/Login
+msgid "Login Failed"
+msgstr ""
+
+#. Default: "Login Name"
+#: components/Login/Login
+msgid "Login Name"
+msgstr ""
+
+#. Default: "Logout"
+#: components/Footer/Footer
+msgid "Logout"
+msgstr ""
+
+#. Default: "Manage Registrations"
+#: components/Toolbar/PlugRegistrations
+msgid "Manage Registrations"
+msgstr ""
+
+#. Default: "Manage registrations for this training."
+#: components/Registrations/RegistrationsManagement
+msgid "Manage registrations for this training."
+msgstr ""
+
+#. Default: "More"
+#: components/Toolbar/Toolbar
+msgid "More"
+msgstr ""
+
+#. Default: "My Schedule"
+#: components/Toolbar/PlugMySchedule
+#: components/View/MySchedule
+msgid "My Schedule"
+msgstr ""
+
+#. Default: "Name"
+#: components/Registrations/RegistrationsManagement
+msgid "Name"
+msgstr ""
+
+#. Default: "News Item"
+#: components/Toolbar/Toolbar
+msgid "News Item"
+msgstr ""
+
+#. Default: "No workflow"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "No workflow"
+msgstr ""
+
 #. Default: "Open menu"
 #: components/Navigation/Navigation
 msgid "Open menu"
+msgstr ""
+
+#. Default: "Page"
+#: components/Toolbar/Toolbar
+msgid "Page"
+msgstr ""
+
+#. Default: "Password"
+#: components/Login/Login
+msgid "Password"
+msgstr ""
+
+#. Default: "Personal Information"
+#: components/Toolbar/Toolbar
+msgid "Personal Information"
+msgstr ""
+
+#. Default: "Personal Preferences"
+#: components/Toolbar/Toolbar
+msgid "Personal Preferences"
+msgstr ""
+
+#. Default: "Personal tools"
+#: components/Personal/PersonalInfo
+#: components/Toolbar/Toolbar
+msgid "Personal tools"
 msgstr ""
 
 #. Default: "Please choose an existing content as source for this element"
@@ -124,9 +333,60 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
+#. Default: "Refunded"
+#: components/AttendeeLabel/labels
+msgid "Refunded"
+msgstr ""
+
+#. Default: "Register"
+#: components/Login/Login
+#: components/Registrations/Register
+msgid "Register"
+msgstr ""
+
+#. Default: "Register now"
+#: components/Registrations/Register
+msgid "Register now"
+msgstr ""
+
+#. Default: "Registered"
+#: components/AttendeeLabel/labels
+msgid "Registered"
+msgstr ""
+
+#. Default: "Registrations management for"
+#: components/Registrations/RegistrationsManagement
+msgid "Registrations management for"
+msgstr ""
+
+#. Default: "Registrations management for {title}"
+#: components/Registrations/RegistrationsManagement
+msgid "Registrations management for {title}"
+msgstr ""
+
+#. Default: "Requirements"
+#: components/View/TrainingView
+msgid "Requirements"
+msgstr ""
+
+#. Default: "Revert"
+#: components/Registrations/RegistrationsManagement
+msgid "Revert"
+msgstr ""
+
 #. Default: "Schedule Block"
 #: components/Blocks/Schedule/schema
 msgid "Schedule Block"
+msgstr ""
+
+#. Default: "Shrink toolbar"
+#: components/Toolbar/Toolbar
+msgid "Shrink toolbar"
+msgstr ""
+
+#. Default: "Sign in to start session"
+#: components/Login/Login
+msgid "Sign in to start session"
 msgstr ""
 
 #. Default: "Source"
@@ -155,6 +415,12 @@ msgstr ""
 msgid "Sponsorship Form"
 msgstr ""
 
+#. Default: "State"
+#: components/AttendeeManagement/AttendeeManagement
+#: components/Registrations/RegistrationsManagement
+msgid "State"
+msgstr ""
+
 #. Default: "Switch to"
 #: components/Header/LanguageSelector
 msgid "Switch to"
@@ -165,9 +431,34 @@ msgstr ""
 msgid "This site is built using Python and Plone."
 msgstr ""
 
+#. Default: "Ticket"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Ticket"
+msgstr ""
+
 #. Default: "Title"
 #: components/Blocks/SponsorLevel/schema
 msgid "Title"
+msgstr ""
+
+#. Default: "Unlock"
+#: components/Toolbar/Toolbar
+msgid "Unlock"
+msgstr ""
+
+#. Default: "Warning"
+#: components/View/MySchedule
+msgid "Warning"
+msgstr ""
+
+#. Default: "Workflow updated."
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Workflow updated."
+msgstr ""
+
+#. Default: "Forgot your password?"
+#: components/Login/Login
+msgid "box_forgot_password_option"
 msgstr ""
 
 #. Default: "Color"
@@ -203,4 +494,9 @@ msgstr ""
 #. Default: "Subtitle"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "subtitle"
+msgstr ""
+
+#. Default: "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
+#: components/View/MySchedule
+msgid "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
 msgstr ""

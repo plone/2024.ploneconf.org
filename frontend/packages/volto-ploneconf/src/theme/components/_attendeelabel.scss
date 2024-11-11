@@ -1,0 +1,25 @@
+.attendeeLabelWrapper {
+  width: 100%;
+  margin: $spacing-small 0;
+  .attendeeLabel {
+    display: block;
+    width: 100%;
+    padding: $spacing-xs;
+    &.registered {
+      background-color: var(--plone-color) !important;
+      color: var(--plone-on-color);
+    }
+    &.checked {
+      background-color: var(--tertiary-color) !important;
+      color: var(--reverse-color);
+    }
+    &.cancelled {
+      background-color: gray !important;
+      color: var(--reverse-color);
+    }
+    &.refunded {
+      background-color: red !important;
+      color: var(--reverse-color);
+    }
+  }
+}

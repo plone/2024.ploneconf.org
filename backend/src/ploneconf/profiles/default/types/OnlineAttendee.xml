@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+        meta_type="Dexterity FTI"
+        name="OnlineAttendee"
+        i18n:domain="ploneconf"
+>
+
+  <!-- Basic properties -->
+  <property name="title"
+            i18n:translate=""
+  >Online Attendee</property>
+  <property name="description"
+            i18n:translate=""
+  >An online attendee in the conference.</property>
+
+  <property name="allow_discussion">False</property>
+  <property name="factory">OnlineAttendee</property>
+  <property name="icon_expr" />
+  <property name="link_target" />
+
+  <!-- Hierarchy control -->
+  <property name="global_allow">False</property>
+  <property name="filter_content_types">True</property>
+  <property name="allowed_content_types">
+    <element value="File" />
+  </property>
+
+  <!-- Schema, class and security -->
+  <property name="add_permission">ploneconf.addAttendee</property>
+  <property name="klass">ploneconf.users.content.onlineattendee.OnlineAttendee</property>
+  <property name="model_file" />
+  <property name="model_source" />
+  <property name="schema">ploneconf.users.content.onlineattendee.IOnlineAttendee</property>
+
+  <!-- Enabled behaviors -->
+  <property name="behaviors"
+            purge="false"
+  >
+    <element value="ploneconf.users.eventbrite" />
+    <element value="ploneconf.users.provide_password" />
+    <element value="ploneconf.links" />
+  </property>
+
+
+</object>

@@ -41,14 +41,24 @@ const LongFormat = ({ item }) => {
 const SlotDate = ({ item, shortFormat, ical }) => {
   const icalHref =
     ical && `/++api++${flattenToAppURL(item['@id'])}/@@ical_view`;
+  const { start, end } = item;
+  const display = start && end;
   return (
     <div className={'slotDate'}>
-      {shortFormat ? <ShortFormat item={item} /> : <LongFormat item={item} />}
+      {display && (
+        <>
+          {shortFormat ? (
+            <ShortFormat item={item} />
+          ) : (
+            <LongFormat item={item} />
+          )}
 
-      {icalHref && (
-        <UniversalLink href={icalHref} className={'ical'}>
-          <Icon name={calendarSVG} size={'20px'} />
-        </UniversalLink>
+          {icalHref && (
+            <UniversalLink href={icalHref} className={'ical'}>
+              <Icon name={calendarSVG} size={'20px'} />
+            </UniversalLink>
+          )}
+        </>
       )}
     </div>
   );
