@@ -91,7 +91,7 @@ def _attendee_to_plone_type(attendee: dict) -> dict:
     payload["type"] = type_
     payload["first_name"] = attendee["profile"]["first_name"]
     payload["last_name"] = attendee["profile"]["last_name"]
-    payload["created"] = created
+    payload["creation_date"] = created
     payload["email"] = email
     payload["password"] = passwd
     payload["confirm_password"] = passwd
