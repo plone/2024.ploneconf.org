@@ -16,8 +16,8 @@
           "@id": "ce596607-a20f-439b-a519-ff8010a89c1b",
           "advanced": false,
           "field": {
-            "label": "Attendee",
-            "value": "attendee_type"
+            "label": "Category",
+            "value": "attendee_category"
           },
           "hidden": false,
           "multiple": true,
