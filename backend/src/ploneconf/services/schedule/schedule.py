@@ -5,9 +5,8 @@ from plone import api
 from plone.restapi.interfaces import ISerializeToJsonSummary
 from plone.restapi.services import Service
 from ploneconf.behaviors.schedule import IScheduleSlot
+from ploneconf.souper.access import SessionBookmarks
 from typing import Any
-from typing import Dict
-from typing import List
 from zope.component import getMultiAdapter
 
 
@@ -94,12 +93,12 @@ def group_slots(slots: list[dict]) -> list[dict]:
 
 
 class Get(Service):
-    def _serialize_brain(self, brain) -> Dict[str, Any]:
+    def _serialize_brain(self, brain) -> dict[str, Any]:
         obj = brain.getObject()
         result = getMultiAdapter((obj, self.request), ISerializeToJsonSummary)()
         return result
 
-    def get_slots(self) -> List[Dict[str, Any]]:
+    def get_slots(self) -> list[dict[str, Any]]:
         portal = api.portal.get()
         results = api.content.find(
             context=portal,
@@ -110,7 +109,35 @@ class Get(Service):
         )
         return [self._serialize_brain(brain) for brain in results]
 
-    def reply(self) -> List[Dict]:
+    def reply(self) -> list[dict]:
         raw_slots = self.get_slots()
         slots = group_slots(raw_slots)
         return {"items": slots}
+
+
+class MySchedule(Get):
+    _my_slots: list[str] = None
+
+    @property
+    def my_slots(self) -> list[str]:
+        if not self._my_slots:
+            user_id = api.user.get_current().getUserId()
+            bookmark_api = SessionBookmarks()
+            bookmarks = bookmark_api.all_by_user_id(user_id)
+            self._my_slots = [item["slot_id"] for item in bookmarks]
+        return self._my_slots
+
+    def get_slots(self) -> list[dict[str, Any]]:
+        portal = api.portal.get()
+        results = api.content.find(
+            context=portal,
+            UID=self.my_slots,
+            object_provides=IScheduleSlot,
+            review_state="published",
+            sort_on="start",
+            sort_order="ascending",
+        )
+        return [self._serialize_brain(brain) for brain in results]
+
+    def reply(self) -> list[dict]:
+        return {"items": self.get_slots()}

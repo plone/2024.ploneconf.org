@@ -58,6 +58,9 @@ setup(
         "collective.honeypot",
         "collective.volto.otp",
         "plone.exportimport",
+        "Products.Membrane",
+        "souper.plone",
+        "bcrypt",
     ],
     extras_require={
         "test": [

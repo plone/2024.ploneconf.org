@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="project.title"
+    >
+
+  <!-- Eventbrite-->
+  <plone:behavior
+      name="ploneconf.users.eventbrite"
+      title="Conference: Eventbrite data"
+      description=""
+      provides=".behaviors.IEventbrite"
+      />
+  <!-- Password-related behavior and adapters-->
+  <plone:behavior
+      name="ploneconf.users.provide_password"
+      title="Password Behavior"
+      description="Store password on this content"
+      factory=".behaviors.PasswordProvider"
+      provides=".behaviors.IProvidePasswords"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      marker=".behaviors.IPasswordCapable"
+      />
+  <adapter factory=".behaviors.MembraneUserAuthentication" />
+  <adapter factory=".behaviors.MembraneUserPasswordChanger" />
+
+  <include package=".content" />
+
+</configure>

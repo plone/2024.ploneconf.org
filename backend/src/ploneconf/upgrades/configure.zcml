@@ -58,4 +58,47 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241024001"
+      destination="20241106001"
+      >
+    <upgradeStep
+        title="Install membrane"
+        handler=".attendees.install_membrane"
+        />
+    <genericsetup:upgradeDepends
+        title="Add new content types"
+        import_steps="typeinfo"
+        />
+    <genericsetup:upgradeDepends
+        title="Additional user fields"
+        import_steps="usersschema"
+        />
+    <genericsetup:upgradeDepends
+        title="Add new types to Membrane"
+        import_steps="membranetool"
+        />
+    <genericsetup:upgradeDepends
+        title="Add attendees-related permissions"
+        import_steps="rolemap"
+        />
+    <genericsetup:upgradeDepends
+        title="Add attendees_workflow"
+        import_steps="workflow"
+        />
+    <genericsetup:upgradeDepends
+        title="Add querystring entries for attenddees management"
+        import_steps="plone.app.registry"
+        />
+    <upgradeStep
+        title="Create attendees structure"
+        handler=".attendees.create_structure"
+        />
+    <upgradeStep
+        title="Create default user groups"
+        handler=".attendees.create_user_groups"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>

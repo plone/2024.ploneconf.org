@@ -1,0 +1,18 @@
+.registrations-management {
+  margin-top: $spacing-medium;
+  .registration {
+    .state {
+      @include pill();
+    }
+    .action {
+      &.checkin {
+        background-color: var(--secondary-color) !important;
+        color: var(--reverse-color) !important;
+      }
+      &.revert {
+        background-color: var(--main-color) !important;
+        color: var(--reverse-color) !important;
+      }
+    }
+  }
+}

@@ -16,6 +16,7 @@ class ILinkInformation(model.Schema):
         fields=[
             "remoteUrl",
             "twitter",
+            "bluesky",
             "github",
             "mastodon",
             "instagram",
@@ -38,10 +39,16 @@ class ILinkInformation(model.Schema):
         required=False,
     )
     directives.languageindependent("twitter")
+    bluesky = schema.URI(
+        title=_("Bluesky"),
+        description=_("Bluesky profile url"),
+        required=False,
+    )
+    directives.languageindependent("bluesky")
 
     github = schema.URI(
         title=_("GitHub"),
-        description=_("GitHub profile organization"),
+        description=_("GitHub profile url"),
         required=False,
     )
     directives.languageindependent("github")

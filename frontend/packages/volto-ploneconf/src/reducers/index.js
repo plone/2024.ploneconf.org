@@ -3,8 +3,12 @@
  * @module reducers/root
  */
 
+import bookmark from './bookmark/bookmark';
+import registrations from './registrations/registrations';
 import sponsors from './sponsors/sponsors';
 import schedule from './schedule/schedule';
+import myschedule from './myschedule/myschedule';
+import usersReport from './usersReport/usersReport';
 import defaultReducers from '@plone/volto/reducers';
 
 /**
@@ -17,8 +21,12 @@ import defaultReducers from '@plone/volto/reducers';
 const reducers = {
   ...defaultReducers,
   // Add your reducers here
+  bookmark,
+  registrations,
   sponsors,
   schedule,
+  myschedule,
+  usersReport,
 };
 
 export default reducers;

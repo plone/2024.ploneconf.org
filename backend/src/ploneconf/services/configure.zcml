@@ -1,7 +1,9 @@
 <configure xmlns="http://namespaces.zope.org/zope">
 
+  <include package=".registration" />
   <include package=".sponsors" />
   <include package=".schedule" />
   <include package=".talks" />
+  <include package=".users" />
 
 </configure>

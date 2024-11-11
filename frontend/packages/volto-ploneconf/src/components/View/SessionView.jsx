@@ -8,6 +8,7 @@ import SessionLanguage from '../Session/SessionLanguage/SessionLanguage';
 import SessionRoom from '../Session/SessionRoom/SessionRoom';
 import { Embed } from 'semantic-ui-react';
 import cx from 'classnames';
+import Bookmark from '../Bookmark/Bookmark';
 
 const SessionView = ({ content }) => {
   return (
@@ -25,6 +26,7 @@ const SessionView = ({ content }) => {
             </div>
             <SessionRoom item={content} />
             <SessionLanguage item={content} />
+            <Bookmark item={content} />
           </div>
           <SessionTrack item={content} />
           <h1 className={'documentFirstHeading'}>{content.title}</h1>

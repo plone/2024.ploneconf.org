@@ -1,0 +1,78 @@
+.attendee-card {
+  height: 100%;
+  padding: $spacing-small;
+
+  .attendee-title-wrapper {
+    display: grid;
+    .attendee-title {
+      margin: auto 0px;
+      > a {
+        color: var(--main-color);
+        @include add(size, s);
+        @include add(weight, medium);
+        @include add(height, s);
+      }
+      &:hover {
+        > a {
+          @include add(weight, bold);
+        }
+      }
+    }
+  }
+
+  .attendee-body {
+    padding-top: 1rem;
+    border-top: 1px solid var(--main-color);
+    margin-top: 1rem;
+  }
+}
+
+.card-container.attendee {
+  .item {
+    height: 100%;
+    margin-top: 0px !important;
+    .status {
+      padding-left: $spacing-small;
+      &.registered {
+        background-color: var(--plone-color) !important;
+        color: var(--plone-on-color);
+      }
+      &.checked {
+        background-color: var(--tertiary-color) !important;
+        color: var(--reverse-color);
+      }
+      &.cancelled {
+        background-color: gray !important;
+        color: var(--reverse-color);
+      }
+      &.refunded {
+        background-color: red !important;
+        color: var(--reverse-color);
+      }
+    }
+    .attendee-card {
+      display: flex;
+      flex-direction: column;
+      .attendee-title-wrapper {
+        display: grid;
+        .attendee-title {
+          margin: $spacing-small 0px !important;
+          > a {
+            @include add(size, m);
+            @include add(height, m);
+          }
+        }
+      }
+      .attendee-body {
+        padding-top: 0px !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        .attendeeLabelWrapper,
+        .row {
+          margin-top: $spacing-small;
+          margin-bottom: $spacing-small;
+        }
+      }
+    }
+  }
+}

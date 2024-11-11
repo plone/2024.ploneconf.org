@@ -16,15 +16,61 @@ msgstr ""
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
 
+#. Default: "Access Report"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Access Report"
+msgstr "Relatório de acesso"
+
+#. Default: "Action"
+#: components/Registrations/RegistrationsManagement
+msgid "Action"
+msgstr "Ação"
+
+#. Default: "Actions"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Actions"
+msgstr "Ações"
+
+#. Default: "Add"
+#: components/Toolbar/Toolbar
+msgid "Add"
+msgstr "Adicionar"
+
+#. Default: "Add to my schedule"
+#: components/Bookmark/Bookmark
+msgid "Add to my schedule"
+msgstr "Adicionar a minha grande"
+
 #. Default: "All Rooms"
 #: components/Room/Rooms
 msgid "All Rooms"
 msgstr "Todas as salas"
 
+#. Default: "Attendee Management"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Attendee Management"
+msgstr "Gestão de participantes"
+
+#. Default: "Attendees Management"
+#: components/Toolbar/PlugAttendeesManagement
+msgid "Attendees Management"
+msgstr "Gestão de participantes"
+
+#. Default: "Back"
+#: components/Registrations/RegistrationsManagement
+#: components/Toolbar/Toolbar
+msgid "Back"
+msgstr "Voltar"
+
 #. Default: "Be the First!"
 #: components/Blocks/SponsorLevel/DefaultView
 msgid "Be the First!"
 msgstr "Seja o primeiro!"
+
+#. Default: "Both email address and password are case sensitive, check that caps lock is not enabled."
+#: components/Login/Login
+msgid "Both email address and password are case sensitive, check that caps lock is not enabled."
+msgstr "O endereço de e-mail e a senha diferenciam maiúsculas de minúsculas; verifique se o caps lock não está ativado."
 
 #. Default: "Buriti Room"
 #: components/Room/Rooms
@@ -41,25 +87,70 @@ msgstr "Ação"
 msgid "CTA Label"
 msgstr "Texto da Ação"
 
+#. Default: "Cancel"
+#: components/Login/Login
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. Default: "Cancel registration"
+#: components/Registrations/Register
+msgid "Cancel registration"
+msgstr "Cancelar inscrição"
+
+#. Default: "Cancelled"
+#: components/AttendeeLabel/labels
+msgid "Cancelled"
+msgstr "Cancelada"
+
 #. Default: "Capibara Room"
 #: components/Room/Rooms
 msgid "Capibara Room"
 msgstr "Sala Capivara"
+
+#. Default: "Check-in"
+#: components/Registrations/RegistrationsManagement
+msgid "Check-in"
+msgstr "Check-in"
+
+#. Default: "Checked-In"
+#: components/AttendeeLabel/labels
+msgid "Checked-In"
+msgstr "Checked-In"
 
 #. Default: "Close menu"
 #: components/Navigation/Navigation
 msgid "Close menu"
 msgstr "Fechar"
 
+#. Default: "Collection"
+#: components/Toolbar/Toolbar
+msgid "Collection"
+msgstr "Coleção"
+
+#. Default: "Contents"
+#: components/Toolbar/Toolbar
+msgid "Contents"
+msgstr "Conteúdo"
+
 #. Default: "Continue reading"
 #: components/Blocks/Slider/SliderFull
 msgid "Continue reading"
 msgstr "Leia mais"
 
+#. Default: "Date"
+#: components/Registrations/RegistrationsManagement
+msgid "Date"
+msgstr "Data"
+
 #. Default: "Day"
 #: components/Schedule/Schedule
 msgid "Day"
 msgstr "Dia"
+
+#. Default: "Description"
+#: components/View/TrainingView
+msgid "Description"
+msgstr "Descrição"
 
 #. Default: "Display CTA?"
 #: components/Blocks/SponsorLevel/schema
@@ -75,6 +166,26 @@ msgstr "Exibir título"
 #: components/Room/Rooms
 msgid "Dorneles Treméa Auditorium"
 msgstr "Auditório Dorneles Treméa"
+
+#. Default: "E-mail"
+#: components/Login/Login
+msgid "E-mail"
+msgstr "E-mail"
+
+#. Default: "Edit"
+#: components/Toolbar/Toolbar
+msgid "Edit"
+msgstr "Editar"
+
+#. Default: "Error"
+#: components/Login/Login
+msgid "Error"
+msgstr "Erro"
+
+#. Default: "File"
+#: components/Toolbar/Toolbar
+msgid "File"
+msgstr "Arquivo"
 
 #. Default: "Filter by Day"
 #: components/Blocks/Schedule/schema
@@ -101,10 +212,108 @@ msgstr "Sala Jaguatirica"
 msgid "Jean Ferri Auditorium"
 msgstr "Auditório Jean Ferri"
 
+#. Default: "Link"
+#: components/Toolbar/Toolbar
+msgid "Link"
+msgstr "Link"
+
+#. Default: "Login"
+#: components/Login/Login
+msgid "Log In"
+msgstr "Log In"
+
+#. Default: "Log in"
+#: components/Login/Login
+msgid "Log in"
+msgstr "Log in"
+
+#. Default: "Login"
+#: components/Footer/Footer
+#: components/Login/Login
+msgid "Login"
+msgstr "Login"
+
+#. Default: "Login Failed"
+#: components/Login/Login
+msgid "Login Failed"
+msgstr "Falha na autenticação"
+
+#. Default: "Login Name"
+#: components/Login/Login
+msgid "Login Name"
+msgstr "E-mail"
+
+#. Default: "Logout"
+#: components/Footer/Footer
+msgid "Logout"
+msgstr "Logout"
+
+#. Default: "Manage Registrations"
+#: components/Toolbar/PlugRegistrations
+msgid "Manage Registrations"
+msgstr "Gestão de inscrição"
+
+#. Default: "Manage registrations for this training."
+#: components/Registrations/RegistrationsManagement
+msgid "Manage registrations for this training."
+msgstr "Gerenciamento de inscrições para esse tutorial"
+
+#. Default: "More"
+#: components/Toolbar/Toolbar
+msgid "More"
+msgstr "Mais"
+
+#. Default: "My Schedule"
+#: components/Toolbar/PlugMySchedule
+#: components/View/MySchedule
+msgid "My Schedule"
+msgstr "Minha Grade"
+
+#. Default: "Name"
+#: components/Registrations/RegistrationsManagement
+msgid "Name"
+msgstr "Nome"
+
+#. Default: "News Item"
+#: components/Toolbar/Toolbar
+msgid "News Item"
+msgstr "Notícia"
+
+#. Default: "No workflow"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "No workflow"
+msgstr "Sem workflow"
+
 #. Default: "Open menu"
 #: components/Navigation/Navigation
 msgid "Open menu"
 msgstr "Abrir"
+
+#. Default: "Page"
+#: components/Toolbar/Toolbar
+msgid "Page"
+msgstr "Página"
+
+#. Default: "Password"
+#: components/Login/Login
+msgid "Password"
+msgstr "Senha"
+
+#. Default: "Personal Information"
+#: components/Toolbar/Toolbar
+msgid "Personal Information"
+msgstr "Informação Pessoal"
+
+#. Default: "Personal Preferences"
+#: components/Toolbar/Toolbar
+msgid "Personal Preferences"
+msgstr "Preferências"
+
+#. Default: "Personal tools"
+#: components/Personal/PersonalInfo
+#: components/Toolbar/Toolbar
+msgid "Personal tools"
+msgstr "Ferramentas de Usuário"
 
 #. Default: "Please choose an existing content as source for this element"
 #: components/Blocks/Slider/SliderFull
@@ -129,10 +338,61 @@ msgstr "Python Cerrado"
 msgid "Read more"
 msgstr "Saiba mais"
 
+#. Default: "Refunded"
+#: components/AttendeeLabel/labels
+msgid "Refunded"
+msgstr "Reembolsada"
+
+#. Default: "Register"
+#: components/Login/Login
+#: components/Registrations/Register
+msgid "Register"
+msgstr "Inscreva-se"
+
+#. Default: "Register now"
+#: components/Registrations/Register
+msgid "Register now"
+msgstr "Inscreva-se agora"
+
+#. Default: "Registered"
+#: components/AttendeeLabel/labels
+msgid "Registered"
+msgstr "Inscrição feita"
+
+#. Default: "Registrations management for"
+#: components/Registrations/RegistrationsManagement
+msgid "Registrations management for"
+msgstr "Gestão de inscrições para"
+
+#. Default: "Registrations management for {title}"
+#: components/Registrations/RegistrationsManagement
+msgid "Registrations management for {title}"
+msgstr "Gerenciamento de inscrições para {title}"
+
+#. Default: "Requirements"
+#: components/View/TrainingView
+msgid "Requirements"
+msgstr "Pré-requisitos"
+
+#. Default: "Revert"
+#: components/Registrations/RegistrationsManagement
+msgid "Revert"
+msgstr "Reverter"
+
 #. Default: "Schedule Block"
 #: components/Blocks/Schedule/schema
 msgid "Schedule Block"
 msgstr "Bloco de Grade"
+
+#. Default: "Shrink toolbar"
+#: components/Toolbar/Toolbar
+msgid "Shrink toolbar"
+msgstr "Reduzir barra"
+
+#. Default: "Sign in to start session"
+#: components/Login/Login
+msgid "Sign in to start session"
+msgstr "Autentique-se"
 
 #. Default: "Source"
 #: components/Blocks/Slider/SliderFull
@@ -160,6 +420,12 @@ msgstr "Patrocinadores"
 msgid "Sponsorship Form"
 msgstr "Formulário de patrocínio"
 
+#. Default: "State"
+#: components/AttendeeManagement/AttendeeManagement
+#: components/Registrations/RegistrationsManagement
+msgid "State"
+msgstr "Estado"
+
 #. Default: "Switch to"
 #: components/Header/LanguageSelector
 msgid "Switch to"
@@ -170,10 +436,35 @@ msgstr "Visitar"
 msgid "This site is built using Python and Plone."
 msgstr "Este site é desenvolvido com Python & Plone"
 
+#. Default: "Ticket"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Ticket"
+msgstr "Ingresso"
+
 #. Default: "Title"
 #: components/Blocks/SponsorLevel/schema
 msgid "Title"
 msgstr "Título"
+
+#. Default: "Unlock"
+#: components/Toolbar/Toolbar
+msgid "Unlock"
+msgstr "Desbloquear"
+
+#. Default: "Warning"
+#: components/View/MySchedule
+msgid "Warning"
+msgstr "Aviso"
+
+#. Default: "Workflow updated."
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Workflow updated."
+msgstr "Workflow atualizado."
+
+#. Default: "Forgot your password?"
+#: components/Login/Login
+msgid "box_forgot_password_option"
+msgstr "Esqueceu sua senha?"
 
 #. Default: "Color"
 #: components/Blocks/Teaser/coloredCTAschema
@@ -209,3 +500,8 @@ msgstr "Palestrante"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "subtitle"
 msgstr "Sub-título"
+
+#. Default: "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
+#: components/View/MySchedule
+msgid "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
+msgstr "o horário exibido aqui é relativo ao fuso-horário configurado no SEU COMPUTADOR. As atividades sempre iniciam às 9h, horário de Brasília."

@@ -1,6 +1,6 @@
 /**
  * Sponsors reducer.
- * @module reducers/sponsors/sponsors
+ * @module reducers/schedule/schedule
  */
 
 import { LIST_SCHEDULE } from '../../constants/ActionTypes';

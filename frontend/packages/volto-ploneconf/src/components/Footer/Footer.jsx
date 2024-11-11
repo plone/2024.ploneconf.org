@@ -27,12 +27,6 @@ const allSiteActions = {
   ],
 };
 
-/**
- * Component to display the footer.
- * @function Footer
- * @param {Object} intl Intl object
- * @returns {string} Markup of the component
- */
 const Footer = ({ intl }) => {
   const { lang = [] } = useSelector(
     (state) => ({
@@ -40,6 +34,7 @@ const Footer = ({ intl }) => {
     }),
     shallowEqual,
   );
+  const token = useSelector((state) => state.userSession.token, shallowEqual);
   const siteActions = lang ? allSiteActions[lang] : [];
   return (
     <footer id="footer">
@@ -47,18 +42,38 @@ const Footer = ({ intl }) => {
       <Container layout className="footer">
         <FooterLinks />
         <ul>
-          {/* wrap in div for a11y reasons: listitem role cannot be on the <a> element directly */}
+          {token ? (
+            <li className="item" key={'logout'}>
+              <UniversalLink
+                className="item"
+                href={flattenToAppURL(`/${lang}/logout`)}
+              >
+                <FormattedMessage id={'Logout'} defaultMessage={'Logout'} />
+              </UniversalLink>
+            </li>
+          ) : (
+            <li className="item" key={'login'}>
+              <UniversalLink
+                className="item"
+                href={flattenToAppURL(`/${lang}/login`)}
+              >
+                <FormattedMessage id={'Login'} defaultMessage={'Login'} />
+              </UniversalLink>
+            </li>
+          )}
           {siteActions?.length
-            ? siteActions.map((item) => (
-                <li className="item" key={item.id}>
-                  <UniversalLink
-                    className="item"
-                    href={flattenToAppURL(item.url)}
-                  >
-                    {item?.title}
-                  </UniversalLink>
-                </li>
-              ))
+            ? siteActions.map((item) => {
+                return (
+                  <li className="item" key={item.id}>
+                    <UniversalLink
+                      className="item"
+                      href={flattenToAppURL(item.url)}
+                    >
+                      {item?.title}
+                    </UniversalLink>
+                  </li>
+                );
+              })
             : null}
         </ul>
       </Container>

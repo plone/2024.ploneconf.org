@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-  <version>20241024001</version>
+  <version>20241106001</version>
   <dependencies>
     <dependency>profile-plone.app.multilingual:default</dependency>
     <dependency>profile-plone.volto:default</dependency>
     <dependency>profile-collective.volto.formsupport:default</dependency>
     <dependency>profile-pas.plugins.authomatic:default</dependency>
+    <dependency>profile-Products.membrane:default</dependency>
   </dependencies>
 </metadata>

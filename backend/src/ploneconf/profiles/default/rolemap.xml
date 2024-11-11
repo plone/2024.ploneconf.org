@@ -66,5 +66,39 @@
       <role name="Owner" />
       <role name="Contributor" />
     </permission>
+
+    <permission acquire="False"
+                name="ploneconf: Add Attendees"
+    />
+    <permission acquire="False"
+                name="ploneconf: Add Attendee"
+    >
+      <role name="Manager" />
+      <role name="Site Administrator" />
+    </permission>
+
+    <permission acquire="False"
+                name="ploneconf: View MySchedule"
+    >
+      <role name="Authenticated" />
+    </permission>
+    <permission acquire="False"
+                name="ploneconf: Manage SessionBookmark"
+    >
+      <role name="Authenticated" />
+    </permission>
+
+    <permission acquire="False"
+                name="ploneconf: View MySchedule"
+    >
+      <role name="Authenticated" />
+    </permission>
+
+    <permission acquire="False"
+                name="ploneconf: Register for a Training"
+    >
+      <role name="Authenticated" />
+    </permission>
+
   </permissions>
 </rolemap>

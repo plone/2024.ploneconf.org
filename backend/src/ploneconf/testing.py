@@ -4,9 +4,23 @@ from plone.app.testing import applyProfile
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import PloneSandboxLayer
+from plone.testing import zope as zope_testing
 from plone.testing.zope import WSGI_SERVER_FIXTURE
+from Products import membrane
 
 import ploneconf
+
+
+orig_initialize = membrane.initialize
+
+
+def initialize(context):
+    orig_initialize(context)
+
+
+# TODO We are patching the installation here, and should find a better way to
+# do this
+membrane.initialize = initialize
 
 
 class Layer(PloneSandboxLayer):
@@ -18,10 +32,13 @@ class Layer(PloneSandboxLayer):
         # layer.
         import collective.exportimport
         import plone.restapi
+        import Products.membrane
 
         self.loadZCML(package=collective.exportimport)
+        self.loadZCML(package=Products.membrane)
         self.loadZCML(package=plone.restapi)
         self.loadZCML(package=ploneconf)
+        zope_testing.installProduct(app, "Products.membrane")
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, "ploneconf:default")

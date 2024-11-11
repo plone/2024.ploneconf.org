@@ -9,6 +9,9 @@ from ploneconf.content.slot import ISlot
 from ploneconf.content.talk import ITalk
 from ploneconf.content.training import ITraining
 from ploneconf.interfaces import IPloneconfLayer
+from ploneconf.services.registration.training import GetRegistration
+from ploneconf.services.registration.training import GetRegistrations
+from ploneconf.services.schedule.bookmark import GetBookmark
 from typing import List
 from zope.component import adapter
 from zope.component import getUtility
@@ -57,6 +60,9 @@ class JSONSerializer(SerializeToJson):
         result = super().__call__(*args, **kwargs)
         result["start"] = include_timezone(self.context.start)
         result["end"] = include_timezone(self.context.end)
+        if api.user.get_current():
+            bookmark = GetBookmark(self.context, self.request)
+            result.update(bookmark(expand=True))
         return result
 
 
@@ -82,6 +88,36 @@ class TalkJSONSerializer(JSONSerializer):
 @adapter(ITraining, IPloneconfLayer)
 class TrainingJSONSerializer(JSONSerializer):
     """ISerializeToJson adapter for the Training."""
+
+    def _manage_training_permission(self, user, training) -> bool:
+        permissions = ["Review portal content", "Modify portal content"]
+        for permission in permissions:
+            if api.user.has_permission(permission, user=user, obj=training):
+                return True
+        return False
+
+    def __call__(self, *args, **kwargs):
+        training = self.context
+        result = super().__call__(*args, **kwargs)
+        is_anonymous = api.user.is_anonymous()
+        allow_registration = training.allow_registration
+        if not is_anonymous:
+            user = api.user.get_current()
+            user_groups = [g.getGroupName() for g in api.group.get_groups(user=user)]
+            is_online = "online" in user_groups
+            registration = GetRegistration(training, self.request)
+            result.update(registration(expand=True))
+            hasPermission = self._manage_training_permission(
+                user=user.getUser(), training=training
+            )
+            result["available_seats"] = training.available_seats
+            result["allow_registration"] = (
+                allow_registration and training.available_seats > 0 and not is_online
+            )
+            if hasPermission:
+                registrations = GetRegistrations(training, self.request)
+                result.update(registrations(expand=True))
+        return result
 
 
 class JSONSummarySerializer(DefaultJSONSummarySerializer):
@@ -129,6 +165,9 @@ class JSONSummarySerializer(DefaultJSONSummarySerializer):
                 "session_language": session_language,
             }
         )
+        if api.user.get_current():
+            bookmark = GetBookmark(self.context, self.request)
+            summary.update(bookmark(expand=True))
         return summary
 
 

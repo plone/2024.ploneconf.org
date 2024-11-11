@@ -1,0 +1,76 @@
+{
+  "blocks": {
+    "47d7c768-1a84-438d-a672-9fcb31e9f505": {
+      "@type": "description"
+    },
+    "aafe7886-058b-46fb-88c0-3c3ce55ff905": {
+      "@type": "title"
+    },
+    "d33527a7-e78a-4336-a1a8-43f1203ae09e": {
+      "@type": "slate"
+    },
+    "e4c5f8e1-0810-4433-a43a-63015a957491": {
+      "@type": "search",
+      "facets": [
+        {
+          "@id": "ce596607-a20f-439b-a519-ff8010a89c1b",
+          "advanced": false,
+          "field": {
+            "label": "Attendee",
+            "value": "attendee_type"
+          },
+          "hidden": false,
+          "multiple": true,
+          "title": "Tipo",
+          "type": "checkboxFacet"
+        },
+        {
+          "@id": "bffef396-5d90-4e36-8ab5-9d0dedf04eeb",
+          "advanced": false,
+          "field": {
+            "label": "Review State",
+            "value": "attendee_state"
+          },
+          "hidden": false,
+          "multiple": true,
+          "title": "State",
+          "type": "checkboxFacet"
+        }
+      ],
+      "facetsTitle": "Filtros",
+      "listingBodyTemplate": "grid",
+      "query": {
+        "b_size": "20",
+        "query": [
+          {
+            "i": "portal_type",
+            "o": "plone.app.querystring.operation.selection.any",
+            "v": [
+              "Attendee",
+              "OnlineAttendee"
+            ]
+          },
+          {
+            "i": "path",
+            "o": "plone.app.querystring.operation.string.absolutePath",
+            "v": "/attendees"
+          }
+        ],
+        "sort_on": "sortable_title",
+        "sort_order": "ascending",
+        "sort_order_boolean": false
+      },
+      "showSearchInput": true,
+      "showSortOn": true,
+      "showTotalResults": true
+    }
+  },
+  "blocks_layout": {
+    "items": [
+      "aafe7886-058b-46fb-88c0-3c3ce55ff905",
+      "47d7c768-1a84-438d-a672-9fcb31e9f505",
+      "e4c5f8e1-0810-4433-a43a-63015a957491",
+      "d33527a7-e78a-4336-a1a8-43f1203ae09e"
+    ]
+  }
+}

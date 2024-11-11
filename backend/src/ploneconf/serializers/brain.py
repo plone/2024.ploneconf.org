@@ -11,6 +11,8 @@ from zope.interface import implementer
 @adapter(ICatalogBrain, IPloneconfLayer)
 class JSONSummarySerializer(DefaultJSONSummarySerializer):
     special_portal_types = (
+        "Attendee",
+        "OnlineAttendee",
         "Keynote",
         "Person",
         "Training",
