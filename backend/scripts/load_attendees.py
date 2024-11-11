@@ -116,10 +116,11 @@ def create(contents: dict):
                 logger.error(f"Error creating '{path}': {response.status_code}")
                 continue
             else:
-                if data["@type"] in ("Attendee", "OnlineAttendee"):
-                    logger.info(
-                        f"Conteúdo criado: {path},{data['@type']},{data['email']},{data['password']}"
-                    )
+                type_ = data["@type"]
+                email = data["email"]
+                password = data["password"]
+                if type_ in ("Attendee", "OnlineAttendee"):
+                    logger.info(f"Content exists:: {path},{type_},{email},{password}")
         else:
             type_ = data["@type"]
             email = data["email"]
