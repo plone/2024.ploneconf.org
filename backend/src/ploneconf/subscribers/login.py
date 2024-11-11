@@ -37,8 +37,9 @@ def add_to_groups(user):
             except ValueError:
                 logger.warning(f"Group {groupname} does not exist")
                 continue
-            api.group.add_user(group=group, username=username)
-            logger.info(f"Added user {username} to {groupname}")
+            if group:
+                api.group.add_user(group=group, username=username)
+                logger.info(f"Added user {username} to {groupname}")
 
 
 def track(user):
