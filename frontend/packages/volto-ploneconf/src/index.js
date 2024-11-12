@@ -131,6 +131,7 @@ const applyConfig = (config) => {
     Break: SlotView,
     Keynote: SessionView,
     LightningTalks: SlotView,
+    Meeting: SlotView,
     OpenSpace: SlotView,
     Person: PersonView,
     Sponsor: SponsorView,

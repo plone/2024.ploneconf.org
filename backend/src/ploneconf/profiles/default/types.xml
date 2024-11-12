@@ -37,6 +37,9 @@
           name="Keynote"
   />
   <object meta_type="Dexterity FTI"
+          name="Meeting"
+  />
+  <object meta_type="Dexterity FTI"
           name="Attendees"
   />
   <object meta_type="Dexterity FTI"

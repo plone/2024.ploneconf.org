@@ -70,38 +70,11 @@ class IConferenceSession(model.Schema):
         text="*",
         title="*",
     )
-    # Materials
-    model.fieldset(
-        "materials",
-        label=_("Materials"),
-        fields=["slides_url", "slides_embed", "video_url"],
-    )
-
-    slides_url = schema.URI(
-        title=_("Slides"),
-        description=_("URL of slides"),
-        required=False,
-    )
-
-    slides_embed = schema.Text(
-        title=_("Slides embed code"),
-        description=_("Embed code for slides"),
-        required=False,
-    )
-
-    video_url = schema.URI(
-        title=_("Video"),
-        description=_("URL of video"),
-        required=False,
-    )
     ml_directives.languageindependent(
         *(
             "title",
             "text",
             "session_level",
             "session_audience",
-            "slides_url",
-            "slides_embed",
-            "video_url",
         )
     )

@@ -100,5 +100,18 @@
         handler=".attendees.create_user_groups"
         />
   </genericsetup:upgradeSteps>
-
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241106001"
+      destination="20241112001"
+      >
+    <genericsetup:upgradeDepends
+        title="Add Meeting content type"
+        import_steps="typeinfo"
+        />
+    <upgradeStep
+        title="Convert Plone Foundation meeting to correct type"
+        handler=".schedule.convert_meeting"
+        />
+  </genericsetup:upgradeSteps>
 </configure>
