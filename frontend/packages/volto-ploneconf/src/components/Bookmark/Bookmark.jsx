@@ -22,7 +22,6 @@ const Bookmark = ({ item }) => {
   const [hasBookmark, setHasBookmark] = useState(item.bookmark);
   const [toggle, setToggle] = useState(false);
   const isTraining = item['@type'] === 'Training';
-  const displayButton = isTraining ? (hasBookmark ? true : false) : true;
   const intl = useIntl();
   useEffect(() => {
     if (toggle) {
