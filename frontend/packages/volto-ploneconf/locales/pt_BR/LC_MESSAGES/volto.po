@@ -1,326 +1,346 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Plone\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-06T16:01:32.969Z\n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"Last-Translator: \n"
 "Language: \n"
-"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"MIME-Version: 1.0\n"
-"Language-Code: pt_BR\n"
-"Language-Name: Português do Brasil\n"
-"Preferred-Encodings: utf-8\n"
-"Domain: volto\n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. Default: "Access Report"
 #: components/AttendeeManagement/AttendeeManagement
 msgid "Access Report"
-msgstr "Relatório de acesso"
+msgstr ""
 
 #. Default: "Action"
 #: components/Registrations/RegistrationsManagement
 msgid "Action"
-msgstr "Ação"
+msgstr ""
 
 #. Default: "Actions"
 #: components/AttendeeManagement/AttendeeManagement
 msgid "Actions"
-msgstr "Ações"
+msgstr ""
 
 #. Default: "Add"
 #: components/Toolbar/Toolbar
 msgid "Add"
-msgstr "Adicionar"
+msgstr ""
 
 #. Default: "Add to my schedule"
 #: components/Bookmark/Bookmark
 msgid "Add to my schedule"
-msgstr "Adicionar a minha grande"
+msgstr ""
 
 #. Default: "All Rooms"
 #: components/Room/Rooms
 msgid "All Rooms"
-msgstr "Todas as salas"
+msgstr ""
 
 #. Default: "Attendee Management"
 #: components/AttendeeManagement/AttendeeManagement
 msgid "Attendee Management"
-msgstr "Gestão de participantes"
+msgstr ""
+
+#. Default: "Attendees"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Attendees"
+msgstr ""
 
 #. Default: "Attendees Management"
 #: components/Toolbar/PlugAttendeesManagement
 msgid "Attendees Management"
-msgstr "Gestão de participantes"
+msgstr ""
 
 #. Default: "Back"
 #: components/Personal/PersonalTools
 #: components/Registrations/RegistrationsManagement
 #: components/Toolbar/Toolbar
 msgid "Back"
-msgstr "Voltar"
+msgstr ""
 
 #. Default: "Be the First!"
 #: components/Blocks/SponsorLevel/DefaultView
 msgid "Be the First!"
-msgstr "Seja o primeiro!"
+msgstr ""
 
 #. Default: "Both email address and password are case sensitive, check that caps lock is not enabled."
 #: components/Login/Login
 msgid "Both email address and password are case sensitive, check that caps lock is not enabled."
-msgstr "O endereço de e-mail e a senha diferenciam maiúsculas de minúsculas; verifique se o caps lock não está ativado."
+msgstr ""
 
 #. Default: "Buriti Room"
 #: components/Room/Rooms
 msgid "Buriti Room"
-msgstr "Sala Buriti"
+msgstr ""
 
 #. Default: "CTA"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "CTA"
-msgstr "Ação"
+msgstr ""
 
 #. Default: "CTA Label"
 #: components/Blocks/SponsorLevel/schema
 msgid "CTA Label"
-msgstr "Texto da Ação"
+msgstr ""
 
 #. Default: "Cancel"
 #: components/Login/Login
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr ""
 
 #. Default: "Cancel registration"
 #: components/Registrations/Register
 msgid "Cancel registration"
-msgstr "Cancelar inscrição"
+msgstr ""
 
 #. Default: "Cancelled"
 #: components/AttendeeLabel/labels
 msgid "Cancelled"
-msgstr "Cancelada"
+msgstr ""
 
 #. Default: "Capibara Room"
 #: components/Room/Rooms
 msgid "Capibara Room"
-msgstr "Sala Capivara"
+msgstr ""
 
 #. Default: "Check-in"
 #: components/Registrations/RegistrationsManagement
 msgid "Check-in"
-msgstr "Check-in"
+msgstr ""
 
 #. Default: "Checked-In"
 #: components/AttendeeLabel/labels
 msgid "Checked-In"
-msgstr "Checked-In"
+msgstr ""
 
 #. Default: "Close menu"
 #: components/Navigation/Navigation
 msgid "Close menu"
-msgstr "Fechar"
+msgstr ""
 
 #. Default: "Collection"
 #: components/Toolbar/Toolbar
 msgid "Collection"
-msgstr "Coleção"
+msgstr ""
 
 #. Default: "Contents"
 #: components/Toolbar/Toolbar
 msgid "Contents"
-msgstr "Conteúdo"
+msgstr ""
 
 #. Default: "Continue reading"
 #: components/Blocks/Slider/SliderFull
 msgid "Continue reading"
-msgstr "Leia mais"
+msgstr ""
 
 #. Default: "Date"
 #: components/Registrations/RegistrationsManagement
 msgid "Date"
-msgstr "Data"
+msgstr ""
 
 #. Default: "Day"
 #: components/Schedule/Schedule
 msgid "Day"
-msgstr "Dia"
+msgstr ""
 
 #. Default: "Description"
 #: components/View/TrainingView
 msgid "Description"
-msgstr "Descrição"
+msgstr ""
 
 #. Default: "Display CTA?"
 #: components/Blocks/SponsorLevel/schema
 msgid "Display CTA?"
-msgstr "Exibir botão de ação?"
+msgstr ""
 
 #. Default: "Display Headline?"
 #: components/Blocks/Schedule/schema
 msgid "Display Headline?"
-msgstr "Exibir título"
+msgstr ""
 
 #. Default: "Dorneles Treméa Auditorium"
 #: components/Room/Rooms
 msgid "Dorneles Treméa Auditorium"
-msgstr "Auditório Dorneles Treméa"
+msgstr ""
 
 #. Default: "E-mail"
 #: components/Login/Login
 msgid "E-mail"
-msgstr "E-mail"
+msgstr ""
 
 #. Default: "Edit"
 #: components/Toolbar/Toolbar
 msgid "Edit"
-msgstr "Editar"
+msgstr ""
 
 #. Default: "Error"
 #: components/Login/Login
 msgid "Error"
-msgstr "Erro"
+msgstr ""
 
 #. Default: "File"
 #: components/Toolbar/Toolbar
 msgid "File"
-msgstr "Arquivo"
+msgstr ""
 
 #. Default: "Filter by Day"
 #: components/Blocks/Schedule/schema
 msgid "Filter by Day"
-msgstr "Filtrar por dia"
+msgstr ""
 
 #. Default: "Front Page"
 #: components/Logo/Logo
 msgid "Front Page"
-msgstr "Capa"
+msgstr ""
 
 #. Default: "Ipê Room"
 #: components/Room/Rooms
 msgid "Ipê Room"
-msgstr "Sala Ipê"
+msgstr ""
 
 #. Default: "Jaguatirica Room"
 #: components/Room/Rooms
 msgid "Jaguatirica Room"
-msgstr "Sala Jaguatirica"
+msgstr ""
 
 #. Default: "Jean Ferri Auditorium"
 #: components/Room/Rooms
 msgid "Jean Ferri Auditorium"
-msgstr "Auditório Jean Ferri"
+msgstr ""
 
 #. Default: "Link"
 #: components/Toolbar/Toolbar
 msgid "Link"
-msgstr "Link"
+msgstr ""
 
 #. Default: "Loading"
 #: components/Registrations/Register
 msgid "Loading"
-msgstr "Processando"
+msgstr ""
 
 #. Default: "Login"
 #: components/Login/Login
 msgid "Log In"
-msgstr "Log In"
+msgstr ""
 
 #. Default: "Log in"
 #: components/Login/Login
 msgid "Log in"
-msgstr "Log in"
+msgstr ""
 
 #. Default: "Login"
 #: components/Footer/Footer
 #: components/Login/Login
 msgid "Login"
-msgstr "Login"
+msgstr ""
 
 #. Default: "Login Failed"
 #: components/Login/Login
 msgid "Login Failed"
-msgstr "Falha na autenticação"
+msgstr ""
 
 #. Default: "Login Name"
 #: components/Login/Login
 msgid "Login Name"
-msgstr "E-mail"
+msgstr ""
 
 #. Default: "Logout"
 #: components/Footer/Footer
 #: components/Personal/PersonalTools
 msgid "Logout"
-msgstr "Logout"
+msgstr ""
 
 #. Default: "Manage Registrations"
 #: components/Toolbar/PlugRegistrations
 msgid "Manage Registrations"
-msgstr "Gestão de inscrição"
+msgstr ""
 
 #. Default: "Manage registrations for this training."
 #: components/Registrations/RegistrationsManagement
 msgid "Manage registrations for this training."
-msgstr "Gerenciamento de inscrições para esse tutorial"
+msgstr ""
 
 #. Default: "More"
 #: components/Toolbar/Toolbar
 msgid "More"
-msgstr "Mais"
+msgstr ""
 
 #. Default: "My Schedule"
 #: components/Toolbar/PlugMySchedule
 #: components/View/MySchedule
 msgid "My Schedule"
-msgstr "Minha Grade"
+msgstr ""
 
 #. Default: "Name"
 #: components/Registrations/RegistrationsManagement
 msgid "Name"
-msgstr "Nome"
+msgstr ""
 
 #. Default: "News Item"
 #: components/Toolbar/Toolbar
 msgid "News Item"
-msgstr "Notícia"
+msgstr ""
 
 #. Default: "No workflow"
 #: components/AttendeeManagement/AttendeeManagement
 msgid "No workflow"
-msgstr "Sem workflow"
+msgstr ""
+
+#. Default: "OnlineAttendees"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Online Attendees"
+msgstr ""
 
 #. Default: "Open menu"
 #: components/Navigation/Navigation
 msgid "Open menu"
-msgstr "Abrir"
+msgstr ""
+
+#. Default: "Organizers"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers"
+msgstr ""
+
+#. Default: "Organizers (Core)"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers (Core)"
+msgstr ""
+
+#. Default: "Organizers (Frontdesk)"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers (Frontdesk)"
+msgstr ""
 
 #. Default: "Page"
 #: components/Toolbar/Toolbar
 msgid "Page"
-msgstr "Página"
+msgstr ""
 
 #. Default: "Password"
 #: components/Login/Login
 msgid "Password"
-msgstr "Senha"
+msgstr ""
 
 #. Default: "Personal Information"
 #: components/Toolbar/Toolbar
 msgid "Personal Information"
-msgstr "Informação Pessoal"
+msgstr ""
 
 #. Default: "Personal Preferences"
 #: components/Toolbar/Toolbar
 msgid "Personal Preferences"
-msgstr "Preferências"
+msgstr ""
 
 #. Default: "Personal tools"
 #: components/Personal/PersonalInfo
 #: components/Toolbar/Toolbar
 msgid "Personal tools"
-msgstr "Ferramentas de Usuário"
+msgstr ""
 
 #. Default: "Please choose an existing content as source for this element"
 #: components/Blocks/Slider/SliderFull
@@ -328,16 +348,21 @@ msgstr "Ferramentas de Usuário"
 #: components/Blocks/Teaser/TeaserFeatured
 #: components/Blocks/Teaser/TeaserFeaturedCTA
 msgid "Please choose an existing content as source for this element"
-msgstr "Por favor escolha um conteúdo existente como fonte para esse elemento"
+msgstr ""
 
 #. Default: "Plone Conference"
 #: components/Logo/LogoPloneConf
 msgid "Plone Conference"
-msgstr "Plone Conference"
+msgstr ""
 
 #. Default: "Preferences"
 #: components/Personal/PersonalTools
 msgid "Preferences"
+msgstr ""
+
+#. Default: "Presenters"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Presenters"
 msgstr ""
 
 #. Default: "Profile"
@@ -348,68 +373,68 @@ msgstr ""
 #. Default: "Python Cerrado"
 #: components/Logo/LogoPythonCerrado
 msgid "Python Cerrado"
-msgstr "Python Cerrado"
+msgstr ""
 
 #. Default: "Read more"
 #: components/Blocks/Teaser/TeaserFeatured
 msgid "Read more"
-msgstr "Saiba mais"
+msgstr ""
 
 #. Default: "Refunded"
 #: components/AttendeeLabel/labels
 msgid "Refunded"
-msgstr "Reembolsada"
+msgstr ""
 
 #. Default: "Register"
 #: components/Login/Login
 #: components/Registrations/Register
 msgid "Register"
-msgstr "Inscreva-se"
+msgstr ""
 
 #. Default: "Register now"
 #: components/Registrations/Register
 msgid "Register now"
-msgstr "Inscreva-se agora"
+msgstr ""
 
 #. Default: "Registered"
 #: components/AttendeeLabel/labels
 msgid "Registered"
-msgstr "Inscrição feita"
+msgstr ""
 
 #. Default: "Registrations management for"
 #: components/Registrations/RegistrationsManagement
 msgid "Registrations management for"
-msgstr "Gestão de inscrições para"
+msgstr ""
 
 #. Default: "Registrations management for {title}"
 #: components/Registrations/RegistrationsManagement
 msgid "Registrations management for {title}"
-msgstr "Gerenciamento de inscrições para {title}"
+msgstr ""
 
 #. Default: "Requirements"
 #: components/View/TrainingView
 msgid "Requirements"
-msgstr "Pré-requisitos"
+msgstr ""
 
 #. Default: "Revert"
 #: components/Registrations/RegistrationsManagement
 msgid "Revert"
-msgstr "Reverter"
+msgstr ""
 
 #. Default: "Schedule Block"
 #: components/Blocks/Schedule/schema
 msgid "Schedule Block"
-msgstr "Bloco de Grade"
+msgstr ""
 
 #. Default: "Shrink toolbar"
 #: components/Toolbar/Toolbar
 msgid "Shrink toolbar"
-msgstr "Reduzir barra"
+msgstr ""
 
 #. Default: "Sign in to start session"
 #: components/Login/Login
 msgid "Sign in to start session"
-msgstr "Autentique-se"
+msgstr ""
 
 #. Default: "Site Setup"
 #: components/Personal/PersonalTools
@@ -419,114 +444,115 @@ msgstr ""
 #. Default: "Source"
 #: components/Blocks/Slider/SliderFull
 msgid "Source"
-msgstr "Fonte"
+msgstr ""
 
 #. Default: "Sponsor Level"
 #: components/Blocks/SponsorLevel/schema
 msgid "Sponsor Level"
-msgstr "Pacote de Patrocínio"
+msgstr ""
 
 #. Default: "Sponsor Us"
 #: components/Blocks/SponsorLevel/DefaultView
 msgid "Sponsor Us"
-msgstr "Patrocine"
+msgstr ""
 
 #. Default: "Sponsors"
+#: components/AttendeeCard/AttendeeCategory
 #: components/Blocks/SponsorLevel/DefaultView
 #: components/Sponsors/Sponsors
 msgid "Sponsors"
-msgstr "Patrocinadores"
+msgstr ""
 
 #. Default: "Sponsorship Form"
 #: components/Blocks/SponsorLevel/schema
 msgid "Sponsorship Form"
-msgstr "Formulário de patrocínio"
+msgstr ""
 
 #. Default: "State"
 #: components/AttendeeManagement/AttendeeManagement
 #: components/Registrations/RegistrationsManagement
 msgid "State"
-msgstr "Estado"
+msgstr ""
 
 #. Default: "Switch to"
 #: components/Header/LanguageSelector
 msgid "Switch to"
-msgstr "Visitar"
+msgstr ""
 
 #. Default: "This site is built using Python and Plone"
 #: components/Footer/Footer
 msgid "This site is built using Python and Plone."
-msgstr "Este site é desenvolvido com Python & Plone"
+msgstr ""
 
 #. Default: "Ticket"
 #: components/AttendeeManagement/AttendeeManagement
 msgid "Ticket"
-msgstr "Ingresso"
+msgstr ""
 
 #. Default: "Title"
 #: components/Blocks/SponsorLevel/schema
 msgid "Title"
-msgstr "Título"
+msgstr ""
 
 #. Default: "Unlock"
 #: components/Toolbar/Toolbar
 msgid "Unlock"
-msgstr "Desbloquear"
+msgstr ""
 
 #. Default: "Warning"
 #: components/View/MySchedule
 msgid "Warning"
-msgstr "Aviso"
+msgstr ""
 
 #. Default: "Workflow updated."
 #: components/AttendeeManagement/AttendeeManagement
 msgid "Workflow updated."
-msgstr "Workflow atualizado."
+msgstr ""
 
 #. Default: "Forgot your password?"
 #: components/Login/Login
 msgid "box_forgot_password_option"
-msgstr "Esqueceu sua senha?"
+msgstr ""
 
 #. Default: "Color"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "color"
-msgstr "Cor"
+msgstr ""
 
 #. Default: "Instructor"
 #: components/PersonLabel/PersonLabel
 msgid "instructor"
-msgstr "Instrutor"
+msgstr ""
 
 #. Default: "Keynote Speaker"
 #: components/PersonLabel/PersonLabel
 msgid "keynote-speaker"
-msgstr "Keynote"
+msgstr ""
 
 #. Default: "More info"
 #: components/Blocks/Slider/SliderFull
 msgid "moreInfo"
-msgstr "Saiba mais"
+msgstr ""
 
 #. Default: "Plone Foundation Member"
 #: components/PersonLabel/PersonLabel
 msgid "pf-member"
-msgstr "Membro da Plone Foundation"
+msgstr ""
 
 #. Default: "Speaker"
 #: components/PersonLabel/PersonLabel
 msgid "speaker"
-msgstr "Palestrante"
+msgstr ""
 
 #. Default: "Subtitle"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "subtitle"
-msgstr "Sub-título"
+msgstr ""
 
 #. Default: "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
 #: components/View/MySchedule
 msgid "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
-msgstr "o horário exibido aqui é relativo ao fuso-horário configurado no SEU COMPUTADOR. As atividades sempre iniciam às 9h, horário de Brasília."
+msgstr ""
 
 #. Default: "user avatar"
 #: components/Personal/PersonalTools

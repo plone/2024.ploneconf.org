@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-11-11T23:22:11.819Z\n"
+"POT-Creation-Date: 2024-11-13T13:43:58.581Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -46,6 +46,11 @@ msgstr ""
 #. Default: "Attendee Management"
 #: components/AttendeeManagement/AttendeeManagement
 msgid "Attendee Management"
+msgstr ""
+
+#. Default: "Attendees"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Attendees"
 msgstr ""
 
 #. Default: "Attendees Management"
@@ -288,9 +293,29 @@ msgstr ""
 msgid "No workflow"
 msgstr ""
 
+#. Default: "OnlineAttendees"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Online Attendees"
+msgstr ""
+
 #. Default: "Open menu"
 #: components/Navigation/Navigation
 msgid "Open menu"
+msgstr ""
+
+#. Default: "Organizers"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers"
+msgstr ""
+
+#. Default: "Organizers (Core)"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers (Core)"
+msgstr ""
+
+#. Default: "Organizers (Frontdesk)"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers (Frontdesk)"
 msgstr ""
 
 #. Default: "Page"
@@ -335,6 +360,11 @@ msgstr ""
 #. Default: "Preferences"
 #: components/Personal/PersonalTools
 msgid "Preferences"
+msgstr ""
+
+#. Default: "Presenters"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Presenters"
 msgstr ""
 
 #. Default: "Profile"
@@ -429,6 +459,7 @@ msgid "Sponsor Us"
 msgstr ""
 
 #. Default: "Sponsors"
+#: components/AttendeeCard/AttendeeCategory
 #: components/Blocks/SponsorLevel/DefaultView
 #: components/Sponsors/Sponsors
 msgid "Sponsors"

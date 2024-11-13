@@ -46,6 +46,11 @@ msgstr ""
 msgid "Attendee Management"
 msgstr ""
 
+#. Default: "Attendees"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Attendees"
+msgstr ""
+
 #. Default: "Attendees Management"
 #: components/Toolbar/PlugAttendeesManagement
 msgid "Attendees Management"
@@ -286,9 +291,29 @@ msgstr ""
 msgid "No workflow"
 msgstr ""
 
+#. Default: "OnlineAttendees"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Online Attendees"
+msgstr ""
+
 #. Default: "Open menu"
 #: components/Navigation/Navigation
 msgid "Open menu"
+msgstr ""
+
+#. Default: "Organizers"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers"
+msgstr ""
+
+#. Default: "Organizers (Core)"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers (Core)"
+msgstr ""
+
+#. Default: "Organizers (Frontdesk)"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers (Frontdesk)"
 msgstr ""
 
 #. Default: "Page"
@@ -333,6 +358,11 @@ msgstr ""
 #. Default: "Preferences"
 #: components/Personal/PersonalTools
 msgid "Preferences"
+msgstr ""
+
+#. Default: "Presenters"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Presenters"
 msgstr ""
 
 #. Default: "Profile"
@@ -427,6 +457,7 @@ msgid "Sponsor Us"
 msgstr ""
 
 #. Default: "Sponsors"
+#: components/AttendeeCard/AttendeeCategory
 #: components/Blocks/SponsorLevel/DefaultView
 #: components/Sponsors/Sponsors
 msgid "Sponsors"

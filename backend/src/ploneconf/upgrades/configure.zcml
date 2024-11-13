@@ -114,4 +114,19 @@
         handler=".schedule.convert_meeting"
         />
   </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241112001"
+      destination="20241112002"
+      >
+    <upgradeStep
+        title="Get answers for attendees"
+        handler=".attendees.populate_answers"
+        />
+    <upgradeStep
+        title="Reindex attendees subjects"
+        handler=".attendees.reindex_subject"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>

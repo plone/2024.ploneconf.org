@@ -1,3 +1,4 @@
+from plone import api
 from plone.app.textfield import RichText as RichTextField
 from plone.app.z3cform.widgets.richtext import RichTextFieldWidget
 from plone.autoform import directives
@@ -6,9 +7,7 @@ from plone.namedfile import field as namedfile
 from plone.schema import Email
 from plone.supermodel import model
 from ploneconf import _
-from ploneconf.settings import CORE_TEAM
-from ploneconf.settings import ORGANIZERS_CORE_GROUP
-from ploneconf.settings import USER_CATEGORIES
+from ploneconf import settings
 from ploneconf.users.utils import validate_unique_email
 from Products.membrane.interfaces import IMembraneUserObject
 from zope import schema
@@ -114,11 +113,24 @@ class BaseUser(Container):
 
     @property
     def categories(self) -> list:
-        categories = set(USER_CATEGORIES.get(self.portal_type, []))
-        email = self.email
-        if email in CORE_TEAM:
-            categories.add(ORGANIZERS_CORE_GROUP)
-        ticket_class = getattr(self, "ticket_class_id", "")
-        for item in USER_CATEGORIES.get(ticket_class, []):
-            categories.add(item)
-        return list(categories)
+        categories = []
+        # User id
+        user = self.user
+        if user:
+            groups = api.group.get_groups(user=user)
+            for group in groups:
+                groupname = group.getGroupName()
+                if groupname in (
+                    settings.ADMIN_GROUP,
+                    settings.EDITORS_GROUP,
+                    settings.AUTHENTICATED_GROUP,
+                ):
+                    continue
+                categories.append(groupname)
+        return categories
+
+    @property
+    def user(self):
+        user = api.user.get(userid=self.id)
+        if user:
+            return user

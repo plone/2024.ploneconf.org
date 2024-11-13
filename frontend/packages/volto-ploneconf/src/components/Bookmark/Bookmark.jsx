@@ -3,11 +3,13 @@ import cx from 'classnames';
 import { flattenToAppURL } from '@plone/volto/helpers';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { addBookmark, deleteBookmark } from '../../actions/bookmark/bookmark';
-import { Button } from 'semantic-ui-react';
 import { Icon } from '@plone/volto/components';
 import { defineMessages, injectIntl, useIntl } from 'react-intl';
 import bookmarkSVG from '@plone/volto/icons/star.svg';
 import bookmarkFilledSVG from '@plone/volto/icons/check.svg';
+import { Button, Tooltip } from '@plone/components';
+import { TooltipTrigger } from 'react-aria-components';
+import '@plone/components/src/styles/basic/Tooltip.css';
 
 const messages = defineMessages({
   label_addbookmark: {
@@ -37,7 +39,9 @@ const Bookmark = ({ item }) => {
     }
   }, [dispatch, item, toggle, hasBookmark]);
 
-  const doToggle = () => {
+  const doToggle = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
     if (!isTraining) {
       setToggle(true);
     }
@@ -52,8 +56,6 @@ const Bookmark = ({ item }) => {
       >
         {isTraining && hasBookmark && (
           <Button
-            icon
-            basic
             className="bookmarkButton noAction"
             aria-label={intl.formatMessage(messages.label_addbookmark)}
           >
@@ -65,19 +67,22 @@ const Bookmark = ({ item }) => {
           </Button>
         )}
         {!isTraining && (
-          <Button
-            icon
-            basic
-            className="bookmarkButton"
-            aria-label={intl.formatMessage(messages.label_addbookmark)}
-            onClick={() => doToggle()}
-          >
-            <Icon
-              name={hasBookmark ? bookmarkFilledSVG : bookmarkSVG}
-              size="20px"
-              title={intl.formatMessage(messages.label_addbookmark)}
-            />
-          </Button>
+          <TooltipTrigger delay={0} placement={'right'}>
+            <Button
+              className="bookmarkButton"
+              aria-label={intl.formatMessage(messages.label_addbookmark)}
+              onClick={(event) => doToggle(event)}
+            >
+              <Icon
+                name={hasBookmark ? bookmarkFilledSVG : bookmarkSVG}
+                size="20px"
+                title={intl.formatMessage(messages.label_addbookmark)}
+              />
+            </Button>
+            <Tooltip layout={'centered'}>
+              {intl.formatMessage(messages.label_addbookmark)}
+            </Tooltip>
+          </TooltipTrigger>
         )}
       </div>
     )

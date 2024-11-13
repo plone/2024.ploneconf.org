@@ -3,6 +3,7 @@ from plone import api
 from plone.autoform import directives
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.memoize import ram
+from plone.schema import JSONField
 from plone.supermodel import model
 from ploneconf import _
 from ploneconf.users.content import IBaseUser
@@ -216,6 +217,7 @@ class IEventbrite(model.Schema):
     ticket_class_id = schema.TextLine(title=_("Ticket Class ID"), required=False)
     barcode = schema.TextLine(title=_("Barcode"), required=False)
     ticket_url = schema.TextLine(title=_("URL"), required=False)
+    answers = JSONField(title=_("Answers"), required=False)
 
     model.fieldset(
         "eventbrite",
@@ -229,6 +231,7 @@ class IEventbrite(model.Schema):
             "ticket_class_id",
             "ticket_url",
             "barcode",
+            "answers",
         ],
     )
     directives.read_permission(
@@ -240,6 +243,7 @@ class IEventbrite(model.Schema):
         ticket_class_id="cmf.ReviewPortalContent",
         ticket_url="cmf.ReviewPortalContent",
         barcode="cmf.ReviewPortalContent",
+        answers="cmf.ReviewPortalContent",
     )
     directives.write_permission(
         event_id="cmf.ReviewPortalContent",
@@ -250,4 +254,5 @@ class IEventbrite(model.Schema):
         ticket_class_id="cmf.ReviewPortalContent",
         ticket_url="cmf.ReviewPortalContent",
         barcode="cmf.ReviewPortalContent",
+        answers="cmf.ReviewPortalContent",
     )

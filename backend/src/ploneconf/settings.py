@@ -8,7 +8,7 @@ EVENTBRITE_KEY = os.environ.get("EVENTBRITE_KEY", "")
 EVENTBRITE_ORG_ID = os.environ.get("EVENTBRITE_ORG_ID", "")
 EVENTBRITE_EVENT_ID = os.environ.get("EVENTBRITE_EVENT_ID", "")
 
-
+AUTHENTICATED_GROUP = "AuthenticatedUsers"
 ADMIN_GROUP = "Administrators"
 EDITORS_GROUP = "Site Administrators"
 ORGANIZERS_CORE_GROUP = "organizers-core"

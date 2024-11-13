@@ -3,7 +3,10 @@ import { Icon, UniversalLink } from '@plone/volto/components';
 import { useSelector } from 'react-redux';
 import calendarSVG from '@plone/volto/icons/calendar.svg';
 import { defineMessages, useIntl } from 'react-intl';
+import { Tooltip } from '@plone/components';
+import { TooltipTrigger } from 'react-aria-components';
 import { getBaseUrl } from '@plone/volto/helpers';
+import '@plone/components/src/styles/basic/Tooltip.css';
 
 const messages = defineMessages({
   mySchedule: {
@@ -16,18 +19,23 @@ const ToolbarButton = () => {
   const intl = useIntl();
   const navRoot = useSelector((state) => state.navroot?.data?.navroot?.['@id']);
   return (
-    <UniversalLink
-      aria-label={intl.formatMessage(messages.mySchedule)}
-      className="mySchedule"
-      href={`${getBaseUrl(navRoot)}/mySchedule`}
-    >
-      <Icon
-        name={calendarSVG}
-        size="30px"
-        className="circled"
-        title={intl.formatMessage(messages.mySchedule)}
-      />
-    </UniversalLink>
+    <TooltipTrigger>
+      <UniversalLink
+        aria-label={intl.formatMessage(messages.mySchedule)}
+        className="mySchedule"
+        href={`${getBaseUrl(navRoot)}/mySchedule`}
+      >
+        <Icon
+          name={calendarSVG}
+          size="30px"
+          className="circled"
+          title={intl.formatMessage(messages.mySchedule)}
+        />
+      </UniversalLink>
+      <Tooltip layout={'centered'}>
+        {intl.formatMessage(messages.mySchedule)}
+      </Tooltip>
+    </TooltipTrigger>
   );
 };
 

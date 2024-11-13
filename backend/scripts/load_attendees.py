@@ -1,9 +1,10 @@
 from pathlib import Path
+from plone.restapi.serializer.converters import datetimelike_to_iso
+from ploneconf.eventbrite import utils
 
 import json
 import logging
 import os
-import random
 import requests
 import string
 
@@ -50,82 +51,43 @@ else:
     session.headers.update({"Authorization": f"Bearer {token}"})
 
 
-def generate_password(user_id: str, chars: int = PASS_LEN) -> str:
-    random.seed(user_id)
-    return "".join([random.choice(PASS_CHARS) for _ in range(chars)])
-
-
-def guess_transitions(item: dict) -> str:
-    transitions = []
-    cancelled = item["cancelled"]
-    if cancelled:
-        transitions.append("cancel")
-    refunded = item["refunded"]
-    if refunded:
-        transitions.append("refund")
-    return transitions
-
-
 def prepare_attendees(raw_data: list) -> dict:
     contents = {}
-    for item in raw_data:
-        ticket_class_id = item["ticket_class_id"]
-        type_ = (
-            "Attendee"
-            if ticket_class_id not in ("1577135909", "1902047603")
-            else "OnlineAttendee"
-        )
-        transitions = guess_transitions(item)
-        value = {}
-        id_ = item["id"]
-        order_id = item["order_id"]
-        external_url = f"https://www.eventbrite.com.br/organizations/orders/{order_id}"
-        passwd = generate_password(id_)
-        email = item["profile"]["email"]
-        site_path = f"/attendees/{id_}"
-        value["id"] = id_
-        value["@id"] = site_path
-        value["@type"] = type_
-        value["first_name"] = item["profile"]["first_name"]
-        value["last_name"] = item["profile"]["last_name"]
-        value["order_date"] = item["created"]
-        value["email"] = email
-        value["password"] = passwd
-        value["confirm_password"] = passwd
-        # Eventbrite
-        value["event_id"] = item["event_id"]
-        value["order_id"] = item["order_id"]
-        value["participant_id"] = id_
-        value["ticket_class_name"] = item["ticket_class_name"]
-        value["ticket_class_id"] = ticket_class_id
-        value["barcode"] = item["barcodes"][0]["barcode"]
-        value["ticket_url"] = external_url
-        contents[site_path] = (value, transitions)
+    for attendee in raw_data:
+        item = utils._attendee_to_plone_type(attendee)
+        payload = item["payload"]
+        payload["@type"] = payload.pop("type")
+        for key in ("creation_date", "order_date"):
+            payload[key] = datetimelike_to_iso(payload[key])
+        site_path = f"/attendees/{item['id']}"
+        contents[site_path] = item
     return contents
 
 
 def create(contents: dict):
     # Create content
-    for path, (data, transitions) in contents.items():
+    for path, data in contents.items():
+        payload = data["payload"]
+        transitions = data["transitions"]
         url = f"{BASE_URL}{path}"
         parent_path = "/".join(path.split("/")[:-1])[1:]
         response = session.get(url, allow_redirects=False)
         if response.status_code in (302, 404):
-            response = session.post(f"{BASE_URL}/{parent_path}", json=data)
+            response = session.post(f"{BASE_URL}/{parent_path}", json=payload)
             if response.status_code > 300:
                 breakpoint()
                 logger.error(f"Error creating '{path}': {response.status_code}")
                 continue
             else:
-                type_ = data["@type"]
-                email = data["email"]
-                password = data["password"]
+                type_ = payload["@type"]
+                email = payload["email"]
+                password = payload["password"]
                 if type_ in ("Attendee", "OnlineAttendee"):
-                    logger.info(f"Content exists:: {path},{type_},{email},{password}")
+                    logger.info(f"Content created: {path},{type_},{email},{password}")
         else:
-            type_ = data["@type"]
-            email = data["email"]
-            password = data["password"]
+            type_ = payload["@type"]
+            email = payload["email"]
+            password = payload["password"]
             if type_ in ("Attendee", "OnlineAttendee"):
                 logger.info(f"Content exists: {path},{type_},{email},{password}")
         response_data = response.json()
@@ -141,10 +103,11 @@ def create(contents: dict):
 
 def show(contents: dict):
     # Create content
-    for path, (data, _transitions) in contents.items():
-        type_ = data["@type"]
-        email = data["email"]
-        password = data["password"]
+    for path, data in contents.items():
+        payload = data["payload"]
+        type_ = payload["@type"]
+        email = payload["email"]
+        password = payload["password"]
         logger.info(f"Report: {path},{type_},{email},{password}")
 
 

@@ -76,6 +76,15 @@ def _guess_transitions(attendee: dict) -> str:
     return transitions
 
 
+def _convert_answers(answers: list[dict]) -> dict:
+    result = {}
+    for item in answers:
+        question_id = item["question_id"]
+        response = item.get("answer", "")
+        result[question_id] = response
+    return result
+
+
 def _attendee_to_plone_type(attendee: dict) -> dict:
     """Convert Eventbrite attendee info to a payload to be used with plone.api."""
     ticket_class_id = attendee["ticket_class_id"]
@@ -83,6 +92,7 @@ def _attendee_to_plone_type(attendee: dict) -> dict:
     payload = {}
     id_ = attendee["id"]
     order_id = attendee["order_id"]
+    answers = _convert_answers(attendee.get("answers", []))
     external_url = f"{ORDERS_URL}/{order_id}"
     passwd = generate_password(id_)
     email = attendee["profile"]["email"]
@@ -104,6 +114,7 @@ def _attendee_to_plone_type(attendee: dict) -> dict:
     payload["ticket_class_id"] = ticket_class_id
     payload["barcode"] = attendee["barcodes"][0]["barcode"]
     payload["ticket_url"] = external_url
+    payload["answers"] = answers
 
     transitions = _guess_transitions(attendee)
     site_path = f"{ATTENDEES_DB}/{id_}"

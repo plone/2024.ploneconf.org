@@ -2,17 +2,22 @@ from pathlib import Path
 from plone import api
 from plone.app.dexterity.behaviors import constrains
 from plone.base.interfaces.constrains import ISelectableConstrainTypes
+from ploneconf import eventbrite
 from ploneconf import logger
 from ploneconf.settings import GROUPS
+from ploneconf.subscribers.user import creation_handler
 from Products.GenericSetup.tool import SetupTool
 
 import json
 
 
-ALLOWED_TYPES = [
+TYPES = [
     "Attendee",
-    "File",
     "OnlineAttendee",
+]
+
+ALLOWED_TYPES = TYPES + [
+    "File",
 ]
 
 LOCAL_PATH = Path(__file__).parent
@@ -59,3 +64,18 @@ def create_user_groups(setup_tool: SetupTool):
         logger.info(
             f"Created group {groupname} with roles {group_info['roles']} ({group})"
         )
+
+
+def populate_answers(setup_tool: SetupTool):
+    report = eventbrite.sync(update_attrs=["answers"], reindex=False)
+    logger.info(f"Ran sync {report}")
+
+
+def reindex_subject(setup_tool: SetupTool):
+    brains = api.content.find(portal_type=TYPES)
+    for brain in brains:
+        attendee = brain.getObject()
+        creation_handler(attendee, None)
+        logger.info(f"Added {attendee} groups")
+        attendee.reindexObject(idxs=["Subject"])
+        logger.info(f"Reindexed {attendee.title}")

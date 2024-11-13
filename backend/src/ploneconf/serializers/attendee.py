@@ -21,6 +21,7 @@ EVENTBRITE_FIELDS = [
     "ticket_class_name",
     "ticket_class_id",
     "ticket_url",
+    "answers",
     "barcode",
 ]
 

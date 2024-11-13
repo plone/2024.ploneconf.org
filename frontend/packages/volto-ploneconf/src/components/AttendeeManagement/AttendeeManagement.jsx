@@ -22,6 +22,7 @@ import {
 } from '@plone/volto/actions';
 import { flattenToAppURL, getCurrentStateMapping } from '@plone/volto/helpers';
 import { getUserReports } from '../../actions/usersReport/usersReport';
+import AttendeeCategory from '../AttendeeCard/AttendeeCategory';
 
 const messages = defineMessages({
   messageUpdated: {
@@ -103,14 +104,31 @@ const StateManagement = ({ pathname, intl }) => {
   );
 };
 
-const Eventbrite = ({ email, eventbrite }) => {
+const Eventbrite = ({ email, categories, eventbrite }) => {
+  const { answers } = eventbrite;
+  const tshirt = answers?.['222410739'] ? answers['222410739'] : '-';
+  const location = answers?.['222410619'] ? answers['222410619'] : '-';
   return (
     <div className={'attendee-eventbrite'}>
       <Table>
         <TableBody>
           <TableRow>
+            <TableHeaderCell>Categories</TableHeaderCell>
+            <TableCell colSpan={'3'} className={'categories'}>
+              {categories.map((category, idx) => {
+                return <AttendeeCategory category={category} key={idx} />;
+              })}
+            </TableCell>
+          </TableRow>
+          <TableRow>
             <TableHeaderCell>Created</TableHeaderCell>
-            <TableCell>{eventbrite.order_date}</TableCell>
+            <TableCell>
+              <FormattedDate
+                date={eventbrite.order_date}
+                includeTime
+                locale={'pt'}
+              />
+            </TableCell>
             <TableHeaderCell>Email</TableHeaderCell>
             <TableCell>{email}</TableCell>
           </TableRow>
@@ -133,6 +151,12 @@ const Eventbrite = ({ email, eventbrite }) => {
             <TableCell>{eventbrite.ticket_class_name}</TableCell>
             <TableHeaderCell>Ticket ID</TableHeaderCell>
             <TableCell>{eventbrite.ticket_class_id}</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeaderCell>T-Shirt</TableHeaderCell>
+            <TableCell>{tshirt}</TableCell>
+            <TableHeaderCell>Location</TableHeaderCell>
+            <TableCell>{location}</TableCell>
           </TableRow>
         </TableBody>
       </Table>
@@ -160,7 +184,11 @@ const TrackingReport = ({ content }) => {
           {history.map((record) => (
             <TableRow key={record.uid} className={`tracking ${record.action}`}>
               <TableCell>
-                <FormattedDate date={record.created} includeTime />
+                <FormattedDate
+                  date={record.created}
+                  includeTime
+                  locale={'fr'}
+                />
               </TableCell>
               <TableCell>{record.action}</TableCell>
             </TableRow>
@@ -185,7 +213,11 @@ const AttendeeManagement = ({ pathname, content }) => {
       render: () => {
         return (
           <Tab.Pane className="tab-container" key={'eventbrite_container'}>
-            <Eventbrite eventbrite={content.eventbrite} email={content.email} />
+            <Eventbrite
+              categories={content.Subject}
+              eventbrite={content.eventbrite}
+              email={content.email}
+            />
           </Tab.Pane>
         );
       },

@@ -1,9 +1,15 @@
 <configure xmlns="http://namespaces.zope.org/zope">
 
+  <subscriber
+      for="ploneconf.users.content.attendee.IAttendee
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".user.creation_handler"
+      />
+
   <!-- Login Subscribers-->
   <subscriber
       for="Products.PluggableAuthService.interfaces.events.IUserLoggedInEvent"
-      handler=".login.login_handler"
+      handler=".user.login_handler"
       />
 
   <!-- Conference SponsorsDB Subscribers -->

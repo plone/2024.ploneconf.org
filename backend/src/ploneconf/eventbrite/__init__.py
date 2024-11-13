@@ -22,7 +22,25 @@ def create_attendees(container: Attendees, data: list[dict]) -> list[Attendee]:
     return attendees
 
 
-def transition_attendees(data: list[dict]) -> list[Attendee]:
+def update_attendees(data: list[dict], reindex: bool = False) -> list[Attendee]:
+    attendees = []
+    data = {i[0]: i[1] for i in data}
+    brains = api.content.find(
+        portal_type=ATTENDEE_TYPES, getId=[id_ for id_ in data], unrestricted=True
+    )
+    for brain in brains:
+        payload = data[brain.getId]
+        attendee = brain.getObject()
+        for attr, value in payload.items():
+            setattr(attendee, attr, value)
+        if reindex:
+            attendee.reindexObject()
+        logger.info(f"Updated {attendee.absolute_url()}")
+        attendees.append(attendee)
+    return attendees
+
+
+def transition_attendees(data: list[tuple]) -> list[Attendee]:
     attendees = []
     data = {i[0]: i[1] for i in data}
     brains = api.content.find(
@@ -40,13 +58,14 @@ def transition_attendees(data: list[dict]) -> list[Attendee]:
     return attendees
 
 
-def sync() -> dict:
+def sync(update_attrs: list | None = None, reindex: bool = False) -> dict:
     portal = api.portal.get()
     container = portal["attendees"]
     current = _existing_attendees()
     attendees = utils.get_attendees()
     actions = {
         "create": [],
+        "update": [],
         "transition": [],
     }
     for info in attendees:
@@ -59,13 +78,23 @@ def sync() -> dict:
         elif local_state is None:
             actions["create"].append(payload)
         else:
-            logger.debug(f"Attendee with id {id_} has no changes")
-    report = {"created": 0, "transitioned": 0}
+            if update_attrs:
+                payload = {k: v for k, v in payload.items() if k in update_attrs}
+                actions["update"].append((id_, payload))
+            else:
+                logger.debug(f"Attendee with id {id_} has no changes")
+    report = {"created": 0, "transitioned": 0, "updated": 0}
     with api.env.adopt_roles(["Manager", "Reviewer"]):
         # Create users
         attendees = create_attendees(container, actions["create"])
         report["created"] = len(attendees)
         logger.info(f"Created {len(attendees)} attendees")
+        if update_attrs:
+            # Create users
+            attendees = update_attendees(actions["update"], reindex)
+            report["updated"] = len(attendees)
+            logger.info(f"Updated {len(attendees)} attendees")
+
         # Transition users
         attendees = transition_attendees(actions["transition"])
         report["transitioned"] = len(attendees)

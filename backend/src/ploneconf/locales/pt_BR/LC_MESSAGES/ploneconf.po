@@ -44,6 +44,10 @@ msgstr "Um treinamento na conferência."
 msgid "A attendee in the conference."
 msgstr "Participante na conferência"
 
+#: ploneconf/profiles/default/types/Meeting.xml
+msgid "A meeting in the Conference."
+msgstr ""
+
 #: ploneconf/profiles/default/types/Break.xml
 msgid "A schedule break in the Conference."
 msgstr "Um espaço na grade."
@@ -59,6 +63,10 @@ msgstr "Habilitar inscrições"
 #: ploneconf/profiles/default/types/OnlineAttendee.xml
 msgid "An online attendee in the conference."
 msgstr "Participante online na conferência"
+
+#: ploneconf/users/behaviors.py:220
+msgid "Answers"
+msgstr ""
 
 #: ploneconf/content/person.py:59
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
@@ -85,11 +93,11 @@ msgstr "Base de Participantes"
 msgid "Audience"
 msgstr "Público-alvo"
 
-#: ploneconf/users/behaviors.py:217
+#: ploneconf/users/behaviors.py:218
 msgid "Barcode"
 msgstr "Código de barras"
 
-#: ploneconf/users/content/__init__.py:35
+#: ploneconf/users/content/__init__.py:34
 msgid "Bio"
 msgstr "Bio"
 
@@ -130,6 +138,7 @@ msgstr "Sala Capivara"
 msgid "Categories"
 msgstr "Categorias"
 
+#: ploneconf/content/meeting.py:13
 #: ploneconf/content/schedule_break.py:12
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "Category"
@@ -139,6 +148,7 @@ msgstr "Categoria"
 msgid "Category of Attendee."
 msgstr "Categoria da inscrição"
 
+#: ploneconf/content/meeting.py:14
 #: ploneconf/content/schedule_break.py:13
 msgid "Category of the slot"
 msgstr "Categoria do espaço"
@@ -172,7 +182,7 @@ msgstr "Patrocinador da conferência."
 msgid "Conference Sponsoring information."
 msgstr "Informações sobre o patrocínio da conferência."
 
-#: ploneconf/users/behaviors.py:92
+#: ploneconf/users/behaviors.py:93
 msgid "Confirm Password"
 msgstr "Confirmar senha"
 
@@ -184,8 +194,8 @@ msgstr ""
 msgid "Creative Coding with Python"
 msgstr "Programação criativa com Python"
 
-#: ploneconf/users/behaviors.py:118
-#: ploneconf/users/content/__init__.py:57
+#: ploneconf/users/behaviors.py:119
+#: ploneconf/users/content/__init__.py:56
 msgid "Credentials"
 msgstr "Credenciais"
 
@@ -214,7 +224,7 @@ msgstr "Duração da palestra"
 msgid "Duration of the training"
 msgstr "Duração do treinamento"
 
-#: ploneconf/users/content/__init__.py:54
+#: ploneconf/users/content/__init__.py:53
 msgid "E-mail Address"
 msgstr "Endereço de e-mail"
 
@@ -228,7 +238,7 @@ msgstr "Editar"
 msgid "Email address"
 msgstr "E-mail"
 
-#: ploneconf/behaviors/session.py:88
+#: ploneconf/behaviors/materials.py:28
 msgid "Embed code for slides"
 msgstr "Código de incorporação para slides"
 
@@ -240,11 +250,11 @@ msgstr "Hora de Término"
 msgid "End time must be after start time."
 msgstr "O horário de término deve ser posterior ao horário de início."
 
-#: ploneconf/users/behaviors.py:211
+#: ploneconf/users/behaviors.py:212
 msgid "Event id"
 msgstr "ID do evento"
 
-#: ploneconf/users/behaviors.py:222
+#: ploneconf/users/behaviors.py:224
 msgid "Eventbrite"
 msgstr "Eventbrite"
 
@@ -256,7 +266,7 @@ msgstr "Facebook"
 msgid "Facebook page url"
 msgstr "Endereço da página do Facebook"
 
-#: ploneconf/users/content/__init__.py:26
+#: ploneconf/users/content/__init__.py:25
 msgid "First Name"
 msgstr "Nome"
 
@@ -320,7 +330,7 @@ msgstr "Keynote"
 msgid "Keynotes"
 msgstr "Palestras Principais"
 
-#: ploneconf/users/content/__init__.py:30
+#: ploneconf/users/content/__init__.py:29
 msgid "Last Name"
 msgstr "Sobrenome"
 
@@ -353,7 +363,7 @@ msgstr "URL do perfil do LinkedIn"
 msgid "Links"
 msgstr "Links"
 
-#: ploneconf/users/content/__init__.py:43
+#: ploneconf/users/content/__init__.py:42
 msgid "Location"
 msgstr "Local"
 
@@ -369,10 +379,11 @@ msgstr "Mastodon"
 msgid "Mastodon profile url"
 msgstr "URL do perfil do Mastodon"
 
-#: ploneconf/behaviors/session.py:76
+#: ploneconf/behaviors/materials.py:16
 msgid "Materials"
 msgstr "Materiais"
 
+#: ploneconf/profiles/default/types/Meeting.xml
 #: ploneconf/vocabularies/slot.py:12
 msgid "Meeting"
 msgstr "Reunião"
@@ -398,11 +409,11 @@ msgstr "Espaço para Open space"
 msgid "OpenSpace"
 msgstr "Open Space"
 
-#: ploneconf/users/behaviors.py:213
+#: ploneconf/users/behaviors.py:214
 msgid "Order datetime"
 msgstr "Data do pedido"
 
-#: ploneconf/users/behaviors.py:212
+#: ploneconf/users/behaviors.py:213
 msgid "Order id"
 msgstr "Número do pedido"
 
@@ -426,11 +437,11 @@ msgstr "Outro"
 msgid "Package of sponsorship for the conference."
 msgstr "Cota de patrocínio para a conferência."
 
-#: ploneconf/users/behaviors.py:214
+#: ploneconf/users/behaviors.py:215
 msgid "Participant id"
 msgstr "Número do Participante"
 
-#: ploneconf/users/behaviors.py:87
+#: ploneconf/users/behaviors.py:88
 msgid "Password"
 msgstr "Senha"
 
@@ -446,7 +457,7 @@ msgstr "Categorização da pessoa"
 msgid "Personal e-mail address"
 msgstr "Endereço de e-mail pessoal"
 
-#: ploneconf/users/content/__init__.py:48
+#: ploneconf/users/content/__init__.py:47
 msgid "Picture"
 msgstr "Foto"
 
@@ -594,11 +605,11 @@ msgstr "Esse nível deve ser exibido no FrontPage?"
 msgid "Site"
 msgstr "Site"
 
-#: ploneconf/behaviors/session.py:81
+#: ploneconf/behaviors/materials.py:21
 msgid "Slides"
 msgstr "Slides"
 
-#: ploneconf/behaviors/session.py:87
+#: ploneconf/behaviors/materials.py:27
 msgid "Slides embed code"
 msgstr "Código de incorporação de slides"
 
@@ -654,15 +665,15 @@ msgstr "Público-alvo"
 msgid "Technical Documentation"
 msgstr "Documentação técnica"
 
-#: ploneconf/users/behaviors.py:104
+#: ploneconf/users/behaviors.py:105
 msgid "The password and confirmation do not match."
 msgstr "A senha e a confirmação da senha não são iguais."
 
-#: ploneconf/users/behaviors.py:215
+#: ploneconf/users/behaviors.py:216
 msgid "Ticket Class"
 msgstr "Tipo do ingresso"
 
-#: ploneconf/users/behaviors.py:216
+#: ploneconf/users/behaviors.py:217
 msgid "Ticket Class ID"
 msgstr "Tipo do ingresso (id)"
 
@@ -687,15 +698,15 @@ msgstr "Tutorial"
 msgid "Type of Attendee."
 msgstr "Tipo de participação"
 
-#: ploneconf/users/behaviors.py:218
+#: ploneconf/users/behaviors.py:219
 msgid "URL"
 msgstr "URL"
 
-#: ploneconf/behaviors/session.py:82
+#: ploneconf/behaviors/materials.py:22
 msgid "URL of slides"
 msgstr "URL dos slides"
 
-#: ploneconf/behaviors/session.py:94
+#: ploneconf/behaviors/materials.py:34
 msgid "URL of video"
 msgstr "URL do vídeo"
 
@@ -703,11 +714,11 @@ msgstr "URL do vídeo"
 msgid "Uninstall Plone Conference 2024 setup."
 msgstr ""
 
-#: ploneconf/users/content/__init__.py:21
+#: ploneconf/users/content/__init__.py:20
 msgid "User ID"
 msgstr "Id do usuário"
 
-#: ploneconf/behaviors/session.py:93
+#: ploneconf/behaviors/materials.py:33
 msgid "Video"
 msgstr "Vídeo"
 

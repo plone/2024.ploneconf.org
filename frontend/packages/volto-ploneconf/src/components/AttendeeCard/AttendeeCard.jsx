@@ -2,6 +2,7 @@ import { UniversalLink } from '@plone/volto/components';
 import { flattenToAppURL } from '@plone/volto/helpers';
 import { useIntl } from 'react-intl';
 import { messages } from '../AttendeeLabel/labels';
+import AttendeeCategory from './AttendeeCategory';
 
 const AttendeeCard = ({ item }) => {
   const { eventbrite } = item;
@@ -24,8 +25,20 @@ const AttendeeCard = ({ item }) => {
         <div className="attendee-body">
           {eventbrite?.email && (
             <>
-              <div className={'row'}>{eventbrite.email}</div>
-              <div className={'row'}>{eventbrite.ticket_class_name}</div>
+              <div className={'row'}>
+                <span class={'rowIcon'}>📧</span>{' '}
+                <span class={'rowValue'}>{eventbrite.email}</span>
+              </div>
+              <div className={'row'}>
+                <span class={'rowIcon'}>🎫</span>{' '}
+                <span class={'rowValue'}>{eventbrite.ticket_class_name}</span>
+              </div>
+              <div className={'row'}>
+                {item.Subject?.length > 0 &&
+                  item.Subject.map((category, idx) => (
+                    <AttendeeCategory category={category} key={idx} />
+                  ))}
+              </div>
             </>
           )}
         </div>
