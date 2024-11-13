@@ -90,11 +90,12 @@ const StateManagement = ({ pathname, intl }) => {
   return (
     <div key={'actions_container'} className={'attendee-state'}>
       <div className={'attendee-actions'}>
-        {safeTransitions.map((transition) => (
+        {safeTransitions.map((transition, idx) => (
           <Button
             basic
             className={`transitionButton ${transition.id}`}
             onClick={() => doTransition(transition['@id'])}
+            key={idx}
           >
             {transition.title}
           </Button>
