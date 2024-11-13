@@ -3,11 +3,8 @@ import cx from 'classnames';
 import { flattenToAppURL } from '@plone/volto/helpers';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { addBookmark, deleteBookmark } from '../../actions/bookmark/bookmark';
-import { Icon } from '@plone/volto/components';
 import { defineMessages, injectIntl, useIntl } from 'react-intl';
-import bookmarkSVG from '@plone/volto/icons/star.svg';
-import bookmarkFilledSVG from '@plone/volto/icons/check.svg';
-import { Button, Tooltip } from '@plone/components';
+import { Button, Tooltip, CheckboxIcon, TitleIcon } from '@plone/components';
 import { TooltipTrigger } from 'react-aria-components';
 import '@plone/components/src/styles/basic/Tooltip.css';
 
@@ -16,9 +13,18 @@ const messages = defineMessages({
     id: 'Add to my schedule',
     defaultMessage: 'Add to my schedule',
   },
+  label_removebookmark: {
+    id: 'Remove from my schedule',
+    defaultMessage: 'Remove from my schedule',
+  },
+  labelRegistered: {
+    id: 'Registered to this training',
+    defaultMessage: 'Registered to this training',
+  },
 });
 
-const Bookmark = ({ item }) => {
+const Bookmark = ({ item, className }) => {
+  const additionalClassNames = className ? className : '';
   const dispatch = useDispatch();
   const token = useSelector((state) => state.userSession.token, shallowEqual);
   const [hasBookmark, setHasBookmark] = useState(item.bookmark);
@@ -46,42 +52,40 @@ const Bookmark = ({ item }) => {
       setToggle(true);
     }
   };
-
+  const buttonMessage = hasBookmark
+    ? intl.formatMessage(messages.label_removebookmark)
+    : intl.formatMessage(messages.label_addbookmark);
   return (
     token && (
       <div
-        className={cx('bookmark', {
+        className={cx('bookmark', additionalClassNames, {
           bookmarked: hasBookmark,
         })}
       >
         {isTraining && hasBookmark && (
-          <Button
-            className="bookmarkButton noAction"
-            aria-label={intl.formatMessage(messages.label_addbookmark)}
-          >
-            <Icon
-              name={hasBookmark ? bookmarkFilledSVG : bookmarkSVG}
-              size="20px"
-              title={intl.formatMessage(messages.label_addbookmark)}
-            />
-          </Button>
-        )}
-        {!isTraining && (
-          <TooltipTrigger delay={0} placement={'right'}>
+          <TooltipTrigger>
             <Button
               className="bookmarkButton"
               aria-label={intl.formatMessage(messages.label_addbookmark)}
               onClick={(event) => doToggle(event)}
             >
-              <Icon
-                name={hasBookmark ? bookmarkFilledSVG : bookmarkSVG}
-                size="20px"
-                title={intl.formatMessage(messages.label_addbookmark)}
-              />
+              <CheckboxIcon />
             </Button>
             <Tooltip layout={'centered'}>
               {intl.formatMessage(messages.label_addbookmark)}
             </Tooltip>
+          </TooltipTrigger>
+        )}
+        {!isTraining && (
+          <TooltipTrigger>
+            <Button
+              className="bookmarkButton"
+              aria-label={buttonMessage}
+              onClick={(event) => doToggle(event)}
+            >
+              {hasBookmark ? <CheckboxIcon /> : <TitleIcon />}
+            </Button>
+            <Tooltip layout={'centered'}>{buttonMessage}</Tooltip>
           </TooltipTrigger>
         )}
       </div>

@@ -1,0 +1,10 @@
+.slot-actions {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  padding: $spacing-xs 0;
+  margin-top: -$spacing-small;
+  .actionItem {
+    margin-left: $spacing-xs;
+  }
+}

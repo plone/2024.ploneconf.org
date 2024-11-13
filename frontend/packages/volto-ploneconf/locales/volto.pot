@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-11-13T13:43:58.581Z\n"
+"POT-Creation-Date: 2024-11-13T19:22:01.606Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -31,6 +31,12 @@ msgstr ""
 #. Default: "Add"
 #: components/Toolbar/Toolbar
 msgid "Add"
+msgstr ""
+
+#. Default: "Add to my personal calendar"
+#: components/Schedule/MyScheduleIcal
+#: components/Session/SlotIcal/SlotIcal
+msgid "Add to my personal calendar"
 msgstr ""
 
 #. Default: "Add to my schedule"
@@ -168,6 +174,11 @@ msgstr ""
 #. Default: "Dorneles Treméa Auditorium"
 #: components/Room/Rooms
 msgid "Dorneles Treméa Auditorium"
+msgstr ""
+
+#. Default: "Download your schedule and add it to your personal calendar"
+#: components/View/MySchedule
+msgid "Download your schedule and add it to your personal calendar"
 msgstr ""
 
 #. Default: "E-mail"
@@ -403,6 +414,11 @@ msgstr ""
 msgid "Registered"
 msgstr ""
 
+#. Default: "Registered to this training"
+#: components/Bookmark/Bookmark
+msgid "Registered to this training"
+msgstr ""
+
 #. Default: "Registrations management for"
 #: components/Registrations/RegistrationsManagement
 msgid "Registrations management for"
@@ -411,6 +427,11 @@ msgstr ""
 #. Default: "Registrations management for {title}"
 #: components/Registrations/RegistrationsManagement
 msgid "Registrations management for {title}"
+msgstr ""
+
+#. Default: "Remove from my schedule"
+#: components/Bookmark/Bookmark
+msgid "Remove from my schedule"
 msgstr ""
 
 #. Default: "Requirements"

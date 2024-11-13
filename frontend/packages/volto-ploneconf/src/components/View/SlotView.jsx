@@ -10,7 +10,7 @@ const SlotView = ({ content }) => {
         <Container className="session-header">
           <div className="session-info">
             <div className="timing">
-              <SlotDate item={content} shortFormat={true} ical={true} />
+              <SlotDate item={content} shortFormat={true} />
             </div>
           </div>
           <h1 className={'documentFirstHeading'}>{content.title}</h1>

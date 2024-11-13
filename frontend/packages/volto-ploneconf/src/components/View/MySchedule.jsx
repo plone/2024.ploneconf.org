@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
-import { defineMessages, useIntl } from 'react-intl';
+import { defineMessages, injectIntl, useIntl } from 'react-intl';
 import { Container } from '@plone/components';
 import { BodyClass, Helmet } from '@plone/volto/helpers';
 import { Redirect } from 'react-router-dom';
 import { createPortal } from 'react-dom';
 import { Toolbar } from '@plone/volto/components';
 import { listMySchedule } from '../../actions/schedule/schedule';
+import { getContent } from '@plone/volto/actions';
 import SessionCard from '../Schedule/SessionCard';
+import MyScheduleIcal from '../Schedule/MyScheduleIcal';
 
 const messages = defineMessages({
   myschedule: {
@@ -23,6 +25,11 @@ const messages = defineMessages({
     defaultMessage:
       "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)",
   },
+  downloadIcal: {
+    id: 'Download your schedule and add it to your personal calendar',
+    defaultMessage:
+      'Download your schedule and add it to your personal calendar',
+  },
 });
 
 const MySchedule = (props) => {
@@ -30,13 +37,16 @@ const MySchedule = (props) => {
   const dispatch = useDispatch();
   const { location } = props;
   const [isClient, setIsClient] = useState(false);
-  const { pathname } = location;
+  let { pathname } = location;
+  pathname = pathname.replace('/mySchedule', '');
+  const navRoot = useSelector((state) => state.navroot?.data?.navroot?.['@id']);
   const token = useSelector((state) => state.userSession.token, shallowEqual);
   const items = useSelector((state) => state.myschedule?.data?.items || []);
 
   useEffect(() => {
     setIsClient(true);
-  }, []);
+    dispatch(getContent(pathname));
+  }, [dispatch, pathname]);
 
   useEffect(() => {
     if (token) {
@@ -60,6 +70,12 @@ const MySchedule = (props) => {
           <strong>{intl.formatMessage(messages.warning)}</strong>:{' '}
           {intl.formatMessage(messages.scheduleWarning)}
         </p>
+        {navRoot && (
+          <p>
+            <span>{intl.formatMessage(messages.downloadIcal)}</span>{' '}
+            <MyScheduleIcal />
+          </p>
+        )}
         <div
           className={
             'block search grid next--is--slate is--first--of--block-type is--last--of--block-type previous--has--same--backgroundColor next--has--same--backgroundColor'
@@ -100,4 +116,4 @@ const MySchedule = (props) => {
   );
 };
 
-export default MySchedule;
+export default injectIntl(MySchedule);

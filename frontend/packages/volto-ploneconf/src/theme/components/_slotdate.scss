@@ -1,6 +1,9 @@
 .slotDate {
   display: flex;
-  .ical {
-    margin-left: 5px;
+  flex-direction: row;
+  align-items: center;
+  .wrapper {
+    @include pillText();
+    color: $grey;
   }
 }

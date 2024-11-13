@@ -3,12 +3,11 @@
     padding: 2px;
     border-color: var(--main-color) !important;
     border-radius: 20%;
-    margin-top: -20px;
     background-color: var(--main-color) !important;
     color: var(--main-color) !important;
     svg {
       height: 20px !important;
-      color: var(--reverse-color);
+      fill: var(--reverse-color);
     }
     &:hover {
       border-color: var(--secondary-color) !important;
@@ -22,7 +21,7 @@
       background-color: var(--secondary-color) !important;
       color: var(--secondary-color) !important;
       svg {
-        color: var(--reverse-color);
+        fill: var(--reverse-color);
       }
       &:hover {
         border-color: var(--main-color) !important;

@@ -1,12 +1,10 @@
 import { UniversalLink } from '@plone/volto/components';
 import { flattenToAppURL } from '@plone/volto/helpers';
 import SessionTrack from '../Session/SessionTrack/SessionTrack';
-import SlotDate from '../Session/SlotDate/SlotDate';
-import SessionLanguage from '../Session/SessionLanguage/SessionLanguage';
-import SessionRoom from '../Session/SessionRoom/SessionRoom';
 import SessionLevel from '../Session/SessionLevel/SessionLevel';
 import SessionAudience from '../Session/SessionAudience/SessionAudience';
-import Bookmark from '../Bookmark/Bookmark';
+import SlotActions from '../Session/SlotActions/SlotActions';
+import SlotInfo from './SlotInfo';
 
 const PresentedBy = ({ item }) => {
   let presenters = [];
@@ -50,18 +48,12 @@ const SessionCard = ({
   showLevel,
   showAudience,
 }) => {
-  const shortFormat = !showDate;
+  const shortDate = !showDate;
   return (
     <div className="slot-card">
-      <div className="session-info">
-        <div className="timing">
-          <SlotDate item={item} shortFormat={shortFormat} ical={true} />
-        </div>
-        <SessionRoom item={item} />
-        <SessionLanguage item={item} />
-        <Bookmark item={item} />
-      </div>
+      <SlotActions item={item} />
       <SessionTrack item={item} />
+      <SlotInfo item={item} shortDate={shortDate} />
       <div className="session-title-wrapper">
         <div className="session-title">
           <UniversalLink href={flattenToAppURL(item['@id'])}>

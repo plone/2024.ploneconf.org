@@ -1,7 +1,5 @@
 import { Icon, UniversalLink } from '@plone/volto/components';
-import { flattenToAppURL } from '@plone/volto/helpers';
 import { formatHour } from '../../../helpers/date';
-import calendarSVG from '@plone/volto/icons/calendar.svg';
 import { formatDate } from '@plone/volto/helpers/Utils/Date';
 
 const ShortFormat = ({ item }) => {
@@ -38,27 +36,20 @@ const LongFormat = ({ item }) => {
   );
 };
 
-const SlotDate = ({ item, shortFormat, ical }) => {
-  const icalHref =
-    ical && `/++api++${flattenToAppURL(item['@id'])}/@@ical_view`;
+const SlotDate = ({ item, shortFormat, className }) => {
+  const additionalClassNames = className ? className : '';
   const { start, end } = item;
   const display = start && end;
   return (
-    <div className={'slotDate'}>
+    <div className={`slotDate ${additionalClassNames}`}>
       {display && (
-        <>
+        <div className={'wrapper'}>
           {shortFormat ? (
             <ShortFormat item={item} />
           ) : (
             <LongFormat item={item} />
           )}
-
-          {icalHref && (
-            <UniversalLink href={icalHref} className={'ical'}>
-              <Icon name={calendarSVG} size={'20px'} />
-            </UniversalLink>
-          )}
-        </>
+        </div>
       )}
     </div>
   );

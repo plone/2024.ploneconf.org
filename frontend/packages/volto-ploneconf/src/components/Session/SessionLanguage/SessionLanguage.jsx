@@ -9,7 +9,8 @@ const FLAGS = {
   un: flagUN,
 };
 
-const SessionLanguage = ({ item }) => {
+const SessionLanguage = ({ item, className }) => {
+  const additionalClassNames = className ? className : '';
   const language = item.session_language?.[0]
     ? item.session_language[0]
     : item.session_language;
@@ -18,7 +19,7 @@ const SessionLanguage = ({ item }) => {
     ? `Content to be presented in ${language.token}`
     : `Content is language independent`;
   return (
-    <div className="session-language">
+    <div className={`session-language ${additionalClassNames}`}>
       <Image src={flag} alt={alt} className={'language-flag'} />
     </div>
   );

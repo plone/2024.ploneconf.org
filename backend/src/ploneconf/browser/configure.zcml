@@ -19,5 +19,17 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      name="ical_view"
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      class=".ical.MyScheduleICal"
+      permission="zope2.View"
+      />
+  <browser:page
+      name="ical_view"
+      for="plone.base.interfaces.INavigationRoot"
+      class=".ical.MyScheduleICal"
+      permission="zope2.View"
+      />
 
 </configure>

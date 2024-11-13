@@ -1,14 +1,11 @@
 import React from 'react';
 import { Container } from '@plone/components';
 import PresentersInfo from '../Session/PresentersInfo/PresentersInfo';
+import SlotInfo from '../Schedule/SlotInfo';
 import SessionInfo from '../Session/SessionInfo/SessionInfo';
 import SessionTrack from '../Session/SessionTrack/SessionTrack';
-import SlotDate from '../Session/SlotDate/SlotDate';
-import SessionLanguage from '../Session/SessionLanguage/SessionLanguage';
-import SessionRoom from '../Session/SessionRoom/SessionRoom';
-import { Embed } from 'semantic-ui-react';
+import SlotActions from '../Session/SlotActions/SlotActions';
 import cx from 'classnames';
-import Bookmark from '../Bookmark/Bookmark';
 
 const SessionView = ({ content }) => {
   return (
@@ -20,15 +17,9 @@ const SessionView = ({ content }) => {
     >
       <Container className="session-wrapper">
         <Container className="session-header">
-          <div className="session-info">
-            <div className="timing">
-              <SlotDate item={content} shortFormat={false} ical={true} />
-            </div>
-            <SessionRoom item={content} />
-            <SessionLanguage item={content} />
-            <Bookmark item={content} />
-          </div>
+          <SlotActions item={content} />
           <SessionTrack item={content} />
+          <SlotInfo item={content} shortDate={false} />
           <h1 className={'documentFirstHeading'}>{content.title}</h1>
         </Container>
         <Container className="session-content">

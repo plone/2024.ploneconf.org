@@ -17,30 +17,12 @@
     flex-wrap: wrap;
     .session-header {
       min-width: 100%;
-      .session-info {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        margin: $spacing-medium 0 $spacing-xs 0;
-        .session-language {
-          .language-flag {
-            width: 20px;
-            aspect-ratio: 1/1;
-          }
-        }
-        .timing {
-          display: flex;
-          @include add(size, xs);
-          @include add(weight, light);
-          @include add(height, s);
-          .icon {
-            height: 18px !important;
-            margin-right: $spacing-xs;
-          }
-        }
-      }
       .session-track {
         margin: $spacing-xs 0 $spacing-medium -$spacing-medium;
+      }
+      .slot-actions {
+        padding: $spacing-small 0 0 0;
+        margin-top: $spacing-xs;
       }
       h1.documentFirstHeading {
         margin: $spacing-xs 0 $spacing-small;

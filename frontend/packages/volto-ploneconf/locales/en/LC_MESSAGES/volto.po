@@ -31,6 +31,12 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
+#. Default: "Add to my personal calendar"
+#: components/Schedule/MyScheduleIcal
+#: components/Session/SlotIcal/SlotIcal
+msgid "Add to my personal calendar"
+msgstr ""
+
 #. Default: "Add to my schedule"
 #: components/Bookmark/Bookmark
 msgid "Add to my schedule"
@@ -166,6 +172,11 @@ msgstr ""
 #. Default: "Dorneles Treméa Auditorium"
 #: components/Room/Rooms
 msgid "Dorneles Treméa Auditorium"
+msgstr ""
+
+#. Default: "Download your schedule and add it to your personal calendar"
+#: components/View/MySchedule
+msgid "Download your schedule and add it to your personal calendar"
 msgstr ""
 
 #. Default: "E-mail"
@@ -401,6 +412,11 @@ msgstr ""
 msgid "Registered"
 msgstr ""
 
+#. Default: "Registered to this training"
+#: components/Bookmark/Bookmark
+msgid "Registered to this training"
+msgstr ""
+
 #. Default: "Registrations management for"
 #: components/Registrations/RegistrationsManagement
 msgid "Registrations management for"
@@ -409,6 +425,11 @@ msgstr ""
 #. Default: "Registrations management for {title}"
 #: components/Registrations/RegistrationsManagement
 msgid "Registrations management for {title}"
+msgstr ""
+
+#. Default: "Remove from my schedule"
+#: components/Bookmark/Bookmark
+msgid "Remove from my schedule"
 msgstr ""
 
 #. Default: "Requirements"

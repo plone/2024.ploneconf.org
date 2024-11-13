@@ -103,8 +103,8 @@ const applyConfig = (config) => {
     },
     nonContentRoutes: [
       ...config.settings.nonContentRoutes,
-      '/myschedule',
       '/registrations',
+      '/mySchedule',
     ],
     appExtras: [
       ...config.settings.appExtras,
@@ -119,6 +119,19 @@ const applyConfig = (config) => {
       {
         match: '/',
         component: PlugMySchedule,
+      },
+    ],
+    externalRoutes: [
+      ...config.settings.nonContentRoutes,
+      {
+        match: {
+          path: '**/@@ical_view',
+          exact: false,
+          strict: false,
+        },
+        url(payload) {
+          return payload.location.pathname;
+        },
       },
     ],
   };
