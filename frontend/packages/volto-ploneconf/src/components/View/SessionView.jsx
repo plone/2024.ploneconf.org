@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from '@plone/components';
+import { Embed } from 'semantic-ui-react';
 import PresentersInfo from '../Session/PresentersInfo/PresentersInfo';
 import SlotInfo from '../Schedule/SlotInfo';
 import SessionInfo from '../Session/SessionInfo/SessionInfo';

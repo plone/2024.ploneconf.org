@@ -1,4 +1,3 @@
-import { Icon, UniversalLink } from '@plone/volto/components';
 import { formatHour } from '../../../helpers/date';
 import { formatDate } from '@plone/volto/helpers/Utils/Date';
 
