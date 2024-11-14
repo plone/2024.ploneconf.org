@@ -64,6 +64,7 @@ setup(
     ],
     extras_require={
         "test": [
+            "Products.PrintingMailHost",
             "zest.releaser[recommended]",
             "zestreleaser.towncrier",
             "plone.app.testing",

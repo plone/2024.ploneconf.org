@@ -83,15 +83,15 @@ clean: ## Clean environment
 
 .PHONY: start
 start: ## Start a Plone instance on localhost:8080
-	PYTHONWARNINGS=ignore $(BIN_FOLDER)/runwsgi instance/etc/zope.ini
+	ENABLE_PRINTING_MAILHOST=True PYTHONWARNINGS=ignore $(BIN_FOLDER)/runwsgi instance/etc/zope.ini
 
 .PHONY: console
 console: instance/etc/zope.ini ## Start a console into a Plone instance
-	PYTHONWARNINGS=ignore $(BIN_FOLDER)/zconsole debug instance/etc/zope.conf
+	ENABLE_PRINTING_MAILHOST=True PYTHONWARNINGS=ignore $(BIN_FOLDER)/zconsole debug instance/etc/zope.conf
 
 .PHONY: create-site
 create-site: instance/etc/zope.ini ## Create a new site from scratch
-	PYTHONWARNINGS=ignore $(BIN_FOLDER)/zconsole run instance/etc/zope.conf ./scripts/create_site.py
+	ENABLE_PRINTING_MAILHOST=True PYTHONWARNINGS=ignore $(BIN_FOLDER)/zconsole run instance/etc/zope.conf ./scripts/create_site.py
 
 # Example Content
 .PHONY: update-example-content
