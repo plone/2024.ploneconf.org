@@ -52,6 +52,7 @@ import RegistrationsManagement from './components/Registrations/RegistrationsMan
 
 // Pluggables
 import PlugAttendeesManagement from './components/Toolbar/PlugAttendeesManagement';
+import PlugChangePassword from './components/Toolbar/PlugChangePassword';
 import PlugMySchedule from './components/Toolbar/PlugMySchedule';
 import PlugRegistrations from './components/Toolbar/PlugRegistrations';
 
@@ -108,6 +109,10 @@ const applyConfig = (config) => {
     ],
     appExtras: [
       ...config.settings.appExtras,
+      {
+        match: '/',
+        component: PlugChangePassword,
+      },
       {
         match: '/',
         component: PlugAttendeesManagement,

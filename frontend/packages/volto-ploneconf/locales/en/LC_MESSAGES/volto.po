@@ -114,6 +114,11 @@ msgstr ""
 msgid "Capibara Room"
 msgstr ""
 
+#. Default: "Change Password"
+#: components/Toolbar/PlugChangePassword
+msgid "Change Password"
+msgstr ""
+
 #. Default: "Check-in"
 #: components/Registrations/RegistrationsManagement
 msgid "Check-in"

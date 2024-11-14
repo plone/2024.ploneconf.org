@@ -116,6 +116,11 @@ msgstr "Cancelada"
 msgid "Capibara Room"
 msgstr "Sala Capivara"
 
+#. Default: "Change Password"
+#: components/Toolbar/PlugChangePassword
+msgid "Change Password"
+msgstr "Alterar a senha"
+
 #. Default: "Check-in"
 #: components/Registrations/RegistrationsManagement
 msgid "Check-in"

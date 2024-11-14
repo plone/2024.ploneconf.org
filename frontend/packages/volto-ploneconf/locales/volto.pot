@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-11-13T19:22:01.606Z\n"
+"POT-Creation-Date: 2024-11-14T04:28:47.034Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -114,6 +114,11 @@ msgstr ""
 #. Default: "Capibara Room"
 #: components/Room/Rooms
 msgid "Capibara Room"
+msgstr ""
+
+#. Default: "Change Password"
+#: components/Toolbar/PlugChangePassword
+msgid "Change Password"
 msgstr ""
 
 #. Default: "Check-in"
