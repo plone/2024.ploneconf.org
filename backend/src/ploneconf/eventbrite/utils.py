@@ -127,10 +127,13 @@ def _attendee_to_plone_type(attendee: dict) -> dict:
     return response
 
 
-def get_attendees() -> list[dict]:
+def get_attendees(changed_since: str = "") -> list[dict]:
     service = "attendees"
     endpoint = get_endpoint("event", service)
-    raw_attendees = _get_data(service, endpoint)
+    base_params = {}
+    if changed_since:
+        base_params["changed_since"] = changed_since
+    raw_attendees = _get_data(service, endpoint, base_params)
     attendees = []
     for raw_attendee in raw_attendees:
         attendees.append(_attendee_to_plone_type(raw_attendee))

@@ -58,11 +58,13 @@ def transition_attendees(data: list[tuple]) -> list[Attendee]:
     return attendees
 
 
-def sync(update_attrs: list | None = None, reindex: bool = False) -> dict:
+def sync(
+    changed_since: str = "", update_attrs: list | None = None, reindex: bool = False
+) -> dict:
     portal = api.portal.get()
     container = portal["attendees"]
     current = _existing_attendees()
-    attendees = utils.get_attendees()
+    attendees = utils.get_attendees(changed_since)
     actions = {
         "create": [],
         "update": [],

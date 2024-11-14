@@ -1,3 +1,7 @@
+from datetime import datetime
+from datetime import timedelta
+from datetime import timezone
+
 import logging
 import os
 import requests
@@ -12,7 +16,7 @@ BASE_URL = os.environ.get("BASE_URL", "http://localhost:8080/Plone/++api++")
 USER = os.environ.get("USER", "admin")
 PASSWD = os.environ.get("PASSWD", "admin")
 BASIC_AUTH = os.environ.get("BASIC_AUTH")
-
+CHANGED_SINCE = int(os.environ.get("CHANGED_SINCE", 1))
 
 if not BASE_URL:
     raise RuntimeError("BASE_URL not set")
@@ -37,9 +41,20 @@ else:
     session.headers.update({"Authorization": f"Bearer {token}"})
 
 
+def get_params() -> dict:
+    params = {}
+    if CHANGED_SINCE:
+        now = datetime.now(timezone.utc)
+        date = now - timedelta(days=CHANGED_SINCE)
+        date = date.isoformat(sep="T")[:19]
+        params["changed_since"] = f"{date}Z"
+    return params
+
+
 def do_sync():
     url = f"{BASE_URL}/@eventbrite-sync"
-    response = session.get(url, allow_redirects=False)
+    params = get_params()
+    response = session.get(url, allow_redirects=False, params=params)
     data = response.json()
     logger.info(data)
 
