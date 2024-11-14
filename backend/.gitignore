@@ -49,3 +49,5 @@ var/
 #  _your own configuration lines_
 #  """
 ##
+scripts/send_emails.py
+scripts/data/*.txt
