@@ -1,5 +1,5 @@
 import { Plug } from '@plone/volto/components/manage/Pluggable';
-import { Icon, UniversalLink } from '@plone/volto/components';
+import { Icon } from '@plone/volto/components';
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import cx from 'classnames';
@@ -9,7 +9,6 @@ import { Button, Tooltip } from '@plone/components';
 import { TooltipTrigger } from 'react-aria-components';
 import { flattenToAppURL } from '@plone/volto/helpers';
 import '@plone/components/src/styles/basic/Tooltip.css';
-import { load } from '@plone/volto/actions';
 
 const messages = defineMessages({
   mySchedule: {
