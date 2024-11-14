@@ -63,11 +63,11 @@ const Bookmark = ({ item, className }) => {
         })}
       >
         {isTraining && hasBookmark && (
-          <TooltipTrigger>
+          <TooltipTrigger delay={0}>
             <Button
               className="bookmarkButton"
               aria-label={intl.formatMessage(messages.label_addbookmark)}
-              onClick={(event) => doToggle(event)}
+              onPress={(event) => doToggle(event)}
             >
               <CheckboxIcon />
             </Button>
@@ -77,11 +77,11 @@ const Bookmark = ({ item, className }) => {
           </TooltipTrigger>
         )}
         {!isTraining && (
-          <TooltipTrigger>
+          <TooltipTrigger delay={0}>
             <Button
               className="bookmarkButton"
               aria-label={buttonMessage}
-              onClick={(event) => doToggle(event)}
+              onPress={(event) => doToggle(event)}
             >
               {hasBookmark ? <CheckboxIcon /> : <TitleIcon />}
             </Button>

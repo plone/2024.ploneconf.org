@@ -18,7 +18,7 @@
     .session-header {
       min-width: 100%;
       .session-track {
-        margin: $spacing-xs 0 $spacing-medium -$spacing-medium;
+        margin: $spacing-xs 0 $spacing-medium (-$spacing-medium);
       }
       .slot-actions {
         padding: $spacing-small 0 0 0;
@@ -59,6 +59,15 @@
       .session-content,
       .listing-presenters {
         width: 100%;
+      }
+      .session-header {
+        h1.documentFirstHeading {
+          font-size: var(--font-size-2xl);
+          line-height: var(--line-height-2xl);
+        }
+        .session-track {
+          margin: $spacing-xs 0 $spacing-xs (-$spacing-xs);
+        }
       }
       .listing-presenters {
         .listing-presenter {

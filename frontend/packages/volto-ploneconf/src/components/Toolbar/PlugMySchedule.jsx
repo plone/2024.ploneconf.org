@@ -1,12 +1,15 @@
 import { Plug } from '@plone/volto/components/manage/Pluggable';
 import { Icon, UniversalLink } from '@plone/volto/components';
 import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import cx from 'classnames';
 import calendarSVG from '@plone/volto/icons/calendar.svg';
 import { defineMessages, useIntl } from 'react-intl';
-import { Tooltip } from '@plone/components';
+import { Button, Tooltip } from '@plone/components';
 import { TooltipTrigger } from 'react-aria-components';
-import { getBaseUrl } from '@plone/volto/helpers';
+import { flattenToAppURL } from '@plone/volto/helpers';
 import '@plone/components/src/styles/basic/Tooltip.css';
+import { load } from '@plone/volto/actions';
 
 const messages = defineMessages({
   mySchedule: {
@@ -18,21 +21,29 @@ const messages = defineMessages({
 const ToolbarButton = () => {
   const intl = useIntl();
   const navRoot = useSelector((state) => state.navroot?.data?.navroot?.['@id']);
+  const loading = useSelector((state) => state.registrations?.loading || false);
+  const history = useHistory();
+  const message = intl.formatMessage(messages.mySchedule);
+  const navigate = () => {
+    history.push(`${flattenToAppURL(navRoot)}/mySchedule`);
+  };
   return (
-    <TooltipTrigger>
-      <UniversalLink
-        aria-label={intl.formatMessage(messages.mySchedule)}
-        className="mySchedule"
-        href={`${getBaseUrl(navRoot)}/mySchedule`}
+    <TooltipTrigger delay={0}>
+      <Button
+        className={cx('myScheduleButton', {
+          loading: loading,
+        })}
+        aria-label={message}
+        onPress={() => navigate()}
       >
         <Icon
           name={calendarSVG}
           size="30px"
           className="circled"
-          title={intl.formatMessage(messages.mySchedule)}
+          title={message}
         />
-      </UniversalLink>
-      <Tooltip layout={'centered'}>
+      </Button>
+      <Tooltip layout={'left'}>
         {intl.formatMessage(messages.mySchedule)}
       </Tooltip>
     </TooltipTrigger>

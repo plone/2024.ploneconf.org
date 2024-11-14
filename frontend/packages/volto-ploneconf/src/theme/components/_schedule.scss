@@ -28,7 +28,7 @@
     display: flex;
     gap: 2rem;
     @media screen and (max-width: $tablet-breakpoint) {
-      gap: 1.8rem;
+      gap: 1rem;
     }
   }
 
@@ -49,6 +49,25 @@
       }
       .slot-card {
         min-height: 270px;
+      }
+      @media screen and (max-width: $tablet-breakpoint) {
+        border-right: unset;
+        margin-bottom: $spacing-xs;
+        .slot-card {
+          padding: $spacing-small 0;
+          border-bottom: 1px #ecebeb solid;
+          margin-bottom: $spacing-small;
+          &.empty {
+            display: none;
+          }
+        }
+      }
+      @media screen and (min-width: $tablet-breakpoint) {
+        .slot-info {
+          .session-room.slotInfoItem {
+            display: none;
+          }
+        }
       }
     }
     .room-all {
@@ -93,7 +112,7 @@
         color: var(--main-color);
         @media screen and (max-width: $tablet-breakpoint) {
           width: 20%;
-          padding: $spacing-small $spacing-xs;
+          padding: $spacing-small 0;
           text-align: center;
         }
         &.active {

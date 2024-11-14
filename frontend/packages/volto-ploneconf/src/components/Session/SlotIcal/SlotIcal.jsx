@@ -4,8 +4,8 @@ import ICalDownload from '../../ICalDownload/ICalDownload';
 
 const messages = defineMessages({
   addToMyCalendar: {
-    id: 'Add to my personal calendar',
-    defaultMessage: 'Add to my personal calendar',
+    id: 'Download to my personal calendar',
+    defaultMessage: 'Download to my personal calendar',
   },
 });
 

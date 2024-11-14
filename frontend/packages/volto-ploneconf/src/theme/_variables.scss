@@ -133,6 +133,13 @@ $teaser-images-aspect-ratio: math.div(16, 9) !default;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+@mixin animate-loading() {
+  box-shadow: 0 10px 15px 0 var(--main-color);
+  transform: translateY(-2px);
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 // Animation
 @mixin add-decoration($align: 'left', $shadow: false) {
   background-color: var(--decoration-background);
@@ -153,6 +160,37 @@ $teaser-images-aspect-ratio: math.div(16, 9) !default;
   margin-left: $spacing-small;
   background-color: var(--main-color);
   color: var(--reverse-color);
+  &.active {
+    color: var(--reverse-color);
+  }
+  &:hover {
+    color: var(--reverse-color);
+    @include animate-hover();
+  }
+}
+
+@mixin ctaIconButton() {
+  display: flex;
+  align-items: center;
+  padding: $spacing-xs;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--main-color);
+  color: var(--reverse-color);
+  .text {
+    width: 100%;
+    padding: 0 $spacing-small;
+    text-align: center;
+  }
+  .circle {
+    display: flex;
+    align-items: center;
+    .icon {
+      fill: var(--reverse-color);
+    }
+  }
   &.active {
     color: var(--reverse-color);
   }

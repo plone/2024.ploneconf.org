@@ -4,7 +4,7 @@ import { TooltipTrigger } from 'react-aria-components';
 
 const ICalDownload = ({ icalHref, message }) => {
   return (
-    <TooltipTrigger>
+    <TooltipTrigger delay={0}>
       <UniversalLink href={icalHref} className={'ical'}>
         <Button className="icalButton" aria-label={message}>
           <CalendarIcon />

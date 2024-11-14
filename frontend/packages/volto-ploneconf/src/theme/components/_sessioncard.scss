@@ -72,7 +72,7 @@
       display: flex;
       flex-direction: column;
       .session-track {
-        margin-left: -$spacing-small;
+        margin-left: (-$spacing-small);
       }
       .session-title-wrapper {
         display: grid;

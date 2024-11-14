@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Button, Segment, Dimmer, Loader } from 'semantic-ui-react';
+import { Segment, Dimmer, Loader } from 'semantic-ui-react';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import {
   addRegistration,
@@ -8,7 +8,7 @@ import {
   deleteRegistration,
 } from '../../actions/registrations/registrations';
 import { getContent } from '@plone/volto/actions';
-import { Container } from '@plone/components';
+import { Button, Container, CheckboxIcon, CloseIcon } from '@plone/components';
 
 const Register = ({ pathname, content }) => {
   const dispatch = useDispatch();
@@ -51,25 +51,33 @@ const Register = ({ pathname, content }) => {
             </Dimmer.Dimmable>
           ) : registration?.uid ? (
             <Button
-              basic
               className={'registration cancel'}
-              onClick={() => cancelRegistration()}
+              onPress={() => cancelRegistration()}
             >
-              <FormattedMessage
-                id={'Cancel registration'}
-                defaultMessage={'Cancel registration'}
-              />
+              <span className={'circle'}>
+                <CloseIcon />
+              </span>
+              <span className={'text'}>
+                <FormattedMessage
+                  id={'Cancel registration'}
+                  defaultMessage={'Cancel registration'}
+                />
+              </span>
             </Button>
           ) : (
             <Button
-              basic
               className={'registration register'}
-              onClick={() => doRegistration()}
+              onPress={() => doRegistration()}
             >
-              <FormattedMessage
-                id={'Register now'}
-                defaultMessage={'Register now'}
-              />
+              <span className={'circle'}>
+                <CheckboxIcon />
+              </span>
+              <span className={'text'}>
+                <FormattedMessage
+                  id={'Register now'}
+                  defaultMessage={'Register now'}
+                />
+              </span>
             </Button>
           )}
         </div>

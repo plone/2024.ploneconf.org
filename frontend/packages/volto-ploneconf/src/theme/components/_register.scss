@@ -6,16 +6,10 @@
     width: 100%;
     margin: $spacing-large auto;
     text-align: center;
-    button.ui.button.basic.registration {
-      @include ctaButton();
-      &.register {
-        background-color: var(--main-color) !important;
-        color: var(--reverse-color) !important;
-      }
+    button.registration {
+      @include ctaIconButton();
       &.cancel {
         --main-color: red;
-        background-color: var(--main-color) !important;
-        color: var(--reverse-color) !important;
       }
     }
   }

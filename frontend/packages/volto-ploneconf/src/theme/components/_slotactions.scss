@@ -3,8 +3,18 @@
   width: 100%;
   flex-direction: row-reverse;
   padding: $spacing-xs 0;
-  margin-top: -$spacing-small;
+  margin-top: (-$spacing-small);
   .actionItem {
+    min-height: 32px !important;
     margin-left: $spacing-xs;
+    &.hideItem {
+      display: none;
+    }
+  }
+  @media screen and (max-width: $tablet-breakpoint) {
+    padding: $spacing-xs 0 0 0;
+    .actionItem {
+      padding-bottom: (-$spacing-small);
+    }
   }
 }

@@ -35,7 +35,6 @@ msgstr "Adicionar"
 
 #. Default: "Add to my personal calendar"
 #: components/Schedule/MyScheduleIcal
-#: components/Session/SlotIcal/SlotIcal
 msgid "Add to my personal calendar"
 msgstr "Adicionar ao meu calendário pessoal"
 
@@ -180,6 +179,11 @@ msgstr "Exibir manchete?"
 #: components/Room/Rooms
 msgid "Dorneles Treméa Auditorium"
 msgstr "Auditório Dorneles Treméa"
+
+#. Default: "Download to my personal calendar"
+#: components/Session/SlotIcal/SlotIcal
+msgid "Download to my personal calendar"
+msgstr ""
 
 #. Default: "Download your schedule and add it to your personal calendar"
 #: components/View/MySchedule

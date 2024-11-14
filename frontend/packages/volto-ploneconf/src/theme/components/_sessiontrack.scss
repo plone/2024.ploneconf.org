@@ -3,7 +3,7 @@
   .track {
     width: 100%;
     padding: $spacing-xs;
-    margin-left: -$spacing-xs;
+    margin-left: (-$spacing-xs);
     text-transform: uppercase;
     @include add(size, xs);
     @include add(weight, light);
@@ -38,6 +38,9 @@
     &.keynote {
       background-color: var(--main-color);
       color: var(--reverse-color);
+    }
+    @media screen and (max-width: $tablet-breakpoint) {
+      margin-left: 0;
     }
   }
 }
