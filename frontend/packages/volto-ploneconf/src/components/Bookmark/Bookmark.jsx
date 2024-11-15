@@ -18,8 +18,8 @@ const messages = defineMessages({
     defaultMessage: 'Remove from my schedule',
   },
   labelRegistered: {
-    id: 'Registered to this training',
-    defaultMessage: 'Registered to this training',
+    id: 'Registered for this training',
+    defaultMessage: 'Registered for this training',
   },
 });
 
@@ -45,9 +45,7 @@ const Bookmark = ({ item, className }) => {
     }
   }, [dispatch, item, toggle, hasBookmark]);
 
-  const doToggle = (event) => {
-    event.preventDefault();
-    event.stopPropagation();
+  const doToggle = () => {
     if (!isTraining) {
       setToggle(true);
     }
@@ -66,13 +64,12 @@ const Bookmark = ({ item, className }) => {
           <TooltipTrigger delay={0}>
             <Button
               className="bookmarkButton"
-              aria-label={intl.formatMessage(messages.label_addbookmark)}
-              onPress={(event) => doToggle(event)}
+              aria-label={intl.formatMessage(messages.labelRegistered)}
             >
               <CheckboxIcon />
             </Button>
             <Tooltip layout={'centered'}>
-              {intl.formatMessage(messages.label_addbookmark)}
+              {intl.formatMessage(messages.labelRegistered)}
             </Tooltip>
           </TooltipTrigger>
         )}
@@ -81,7 +78,7 @@ const Bookmark = ({ item, className }) => {
             <Button
               className="bookmarkButton"
               aria-label={buttonMessage}
-              onPress={(event) => doToggle(event)}
+              onPress={() => doToggle()}
             >
               {hasBookmark ? <CheckboxIcon /> : <TitleIcon />}
             </Button>

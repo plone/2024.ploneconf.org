@@ -11,6 +11,7 @@ import ScheduleView from './components/Blocks/Schedule/View';
 
 /// Listing block variations
 import ProfilesTemplate from './components/Blocks/Listing/ProfilesGridTemplate';
+import SimpleGridTemplate from './components/Blocks/Listing/SimpleGridTemplate';
 
 /// GridItemTemplate
 import AttendeeGridItemTemplate from './components/Blocks/Grid/AttendeeGridItemTemplate';
@@ -205,6 +206,11 @@ const applyConfig = (config) => {
   // Listing Variations
   config.blocks.blocksConfig.listing.variations = [
     ...config.blocks.blocksConfig.listing.variations,
+    {
+      id: 'simple grid',
+      title: 'Simple Grid',
+      template: SimpleGridTemplate,
+    },
     {
       id: 'profiles',
       title: 'Person Profiles',

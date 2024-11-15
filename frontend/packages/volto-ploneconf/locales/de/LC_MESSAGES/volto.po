@@ -421,9 +421,9 @@ msgstr ""
 msgid "Registered"
 msgstr ""
 
-#. Default: "Registered to this training"
+#. Default: "Registered for this training"
 #: components/Bookmark/Bookmark
-msgid "Registered to this training"
+msgid "Registered for this training"
 msgstr ""
 
 #. Default: "Registrations management for"

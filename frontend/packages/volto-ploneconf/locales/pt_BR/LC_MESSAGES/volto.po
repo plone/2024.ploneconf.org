@@ -423,10 +423,10 @@ msgstr "Inscreva-se agora"
 msgid "Registered"
 msgstr "Inscrito"
 
-#. Default: "Registered to this training"
+#. Default: "Registered for this training"
 #: components/Bookmark/Bookmark
-msgid "Registered to this training"
-msgstr "Inscrito para este treinamento"
+msgid "Registered for this training"
+msgstr "Inscrito neste tutorial"
 
 #. Default: "Registrations management for"
 #: components/Registrations/RegistrationsManagement
