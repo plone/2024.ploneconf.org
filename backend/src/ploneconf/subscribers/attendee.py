@@ -14,13 +14,15 @@ TEMPLATES = {
     "created": {
         "pt-br": {
             "subject": (
-                "Boas vindas à PythonCerrado|Plone Conference 2024! 🌟 Acesse Sua Conta e Comece Agora"
+                "Boas vindas à PythonCerrado|Plone Conference 2024! 🌟 "
+                "Acesse Sua Conta e Comece Agora"
             ),
             "body": (TEMPLATES_FOLDER / "new_attendee_pt-br.txt").read_text(),
         },
         "en": {
             "subject": (
-                "Welcome to Plone Conference|PythonCerrado 2024! 🌟 Access Your Account and Get Started."
+                "Welcome to Plone Conference|PythonCerrado 2024! 🌟 "
+                "Access Your Account and Get Started."
             ),
             "body": (TEMPLATES_FOLDER / "new_attendee_en.txt").read_text(),
         },
