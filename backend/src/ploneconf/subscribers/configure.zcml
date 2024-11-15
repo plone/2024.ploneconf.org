@@ -12,6 +12,13 @@
       handler=".user.login_handler"
       />
 
+  <!-- Attendee Subscribers -->
+  <subscriber
+      for="ploneconf.users.content.attendee.IAttendee
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".attendee.attendee_added"
+      />
+
   <!-- Conference SponsorsDB Subscribers -->
   <subscriber
       for="ploneconf.content.sponsors.sponsors_db.ISponsorsDB

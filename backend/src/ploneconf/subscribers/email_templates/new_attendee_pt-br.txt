@@ -1,0 +1,28 @@
+Olá, {fullname}!
+
+Boas vindas à PythonCerrado|Plone Conference 2024! Estamos muito felizes em ter você conosco para uma semana incrível de aprendizado, networking e colaboração.
+
+Para começar, faça login em sua conta no site da conferência em https://2024.ploneconf.org/pt-br/login e reivindique sua conta de usuário.
+
+Após o login, você poderá:
+
+	•	Se inscrever em cada sessão de treinamento (Observação: válido apenas para participantes presenciais).
+	•	Personalizar sua programação, selecionando as palestras e sessões de seu interesse.
+	•	Assistir às transmissões ao vivo de cada sessão durante os três dias de palestras, diretamente pelo site.
+
+Por favor, utilize as seguintes credenciais para acessar sua conta:
+
+	•	Login/E-mail: {email}
+	•	Senha: {password}
+
+Caso tenha alguma dúvida ou precise de ajuda, entre em contato. Estamos aqui para garantir que você tenha uma experiência incrível na conferência.
+
+Nos vemos em breve!
+
+Atenciosamente,
+Equipe Organizadora da PythonCerrado|Plone Conference 2024
+Site: https://2024.ploneconf.org/pt-br
+Telegram: https://t.me/ploneconf2024
+Mastodon: https://pynews.com.br/@pythoncerrado
+Instagram: https://instagram.com/pythoncerrado/
+BlueSky: https://bsky.app/profile/pythoncerrado.org
