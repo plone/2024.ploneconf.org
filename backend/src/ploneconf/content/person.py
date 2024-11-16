@@ -75,8 +75,15 @@ class Person(Container):
 
         :returns: List of activities connected to this person.
         """
-        relations = api.relation.get(target=self, unrestricted=True)
-        return [i.from_object for i in relations]
+        activities = [
+            rel.from_object for rel in api.relation.get(target=self, unrestricted=True)
+        ]
+        # Only show approved activities
+        return [
+            activity
+            for activity in activities
+            if api.content.get_state(activity) == "published"
+        ]
 
     @property
     def labels(self) -> List[dict]:
