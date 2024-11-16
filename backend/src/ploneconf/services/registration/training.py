@@ -8,6 +8,7 @@ from ploneconf import logger
 from ploneconf.content.training import ITraining
 from ploneconf.souper.access import SessionBookmarks
 from ploneconf.souper.access import TrainingRegistrations
+from Products.CMFCore.interfaces import ISiteRoot
 from zope.component import adapter
 from zope.component import getMultiAdapter
 from zope.interface import alsoProvides
@@ -57,13 +58,27 @@ class BaseService(Service):
                 portal_type=["Attendee"], id=user_ids, unrestricted=True
             )
         }
+        training_ids = [item["training_id"] for item in registrations]
+        trainings = {
+            brain.UID: self._serialize_brain(brain)
+            for brain in api.content.find(
+                portal_type=["Training"], UID=training_ids, unrestricted=True
+            )
+        }
         for item in registrations:
             item["user"] = users.get(item["user_id"])
+            item["training"] = trainings.get(item["training_id"])
             result.append(item)
         return result
 
     def get_all_registrations(self) -> list[dict]:
-        return [item for item in self.api.users_by_training(self.training_id)]
+        if self.context.portal_type == "Plone Site":
+            state = self.request.form.get("state", "")
+            user_id = self.request.form.get("user_id", "")
+            registrations = self.api.all_training_registrations(state, user_id)
+        else:
+            registrations = self.api.users_by_training(self.training_id)
+        return [item for item in registrations]
 
     def get_registration(self, user_id: str | None = None) -> dict:
         user_id = user_id if user_id else self.user_id
@@ -100,12 +115,30 @@ class GetRegistrations(BaseService):
         return {"registrations": result}
 
 
+@implementer(IExpandableElement)
+@adapter(ISiteRoot, Interface)
+class GetAllRegistrations(GetRegistrations):
+    @property
+    def base_url(self) -> str:
+        base_url = f"{self.context.absolute_url()}/{self.endpoint}"
+        return base_url
+
+
 class GetAll(BaseService):
     endpoint: str = "@registrations"
 
     def reply(self):
-        """Return the list of registrations"""
+        """Return the list of registrations for a training."""
         registrations = GetRegistrations(self.context, self.request)
+        return registrations(expand=True)
+
+
+class GetAllTrainings(BaseService):
+    endpoint: str = "@registrations"
+
+    def reply(self):
+        """Return the list of registrations for all trainings."""
+        registrations = GetAllRegistrations(self.context, self.request)
         return registrations(expand=True)
 
 

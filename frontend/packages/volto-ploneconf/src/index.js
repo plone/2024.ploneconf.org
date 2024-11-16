@@ -56,6 +56,7 @@ import PlugAttendeesManagement from './components/Toolbar/PlugAttendeesManagemen
 import PlugChangePassword from './components/Toolbar/PlugChangePassword';
 import PlugMySchedule from './components/Toolbar/PlugMySchedule';
 import PlugRegistrations from './components/Toolbar/PlugRegistrations';
+import PlugRegistrationsManagement from './components/Toolbar/PlugRegistrationsManagement';
 
 const BG_COLORS = [
   { name: 'transparent', label: 'Transparent' },
@@ -117,6 +118,10 @@ const applyConfig = (config) => {
       {
         match: '/',
         component: PlugAttendeesManagement,
+      },
+      {
+        match: '/',
+        component: PlugRegistrationsManagement,
       },
       {
         match: '/',
@@ -332,6 +337,7 @@ const applyConfig = (config) => {
     { path: '/en/myschedule', component: MySchedule },
     { path: '/pt-br/myschedule', component: MySchedule },
     { path: '/**/login', component: Login },
+    { path: '/registrations', component: RegistrationsManagement },
     { path: '/**/registrations', component: RegistrationsManagement },
   );
   config.addonRoutes = addonRoutes;

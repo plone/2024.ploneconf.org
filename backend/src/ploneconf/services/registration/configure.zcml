@@ -5,6 +5,13 @@
 
   <plone:service
       method="GET"
+      factory=".training.GetAllTrainings"
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      permission="cmf.ReviewPortalContent"
+      name="@registrations"
+      />
+  <plone:service
+      method="GET"
       factory=".training.GetAll"
       for="ploneconf.content.training.ITraining"
       permission="cmf.ReviewPortalContent"

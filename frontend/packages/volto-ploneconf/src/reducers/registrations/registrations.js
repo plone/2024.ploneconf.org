@@ -5,6 +5,8 @@ import {
   UPDATE_REGISTRATION,
   GET_REGISTRATIONS,
   UPDATE_REGISTRATIONS,
+  GET_ALL_REGISTRATIONS,
+  UPDATE_ALL_REGISTRATIONS,
 } from '../../constants/ActionTypes.js';
 
 const initialState = {
@@ -39,6 +41,8 @@ export default function registrations(state = initialState, action = {}) {
       };
     case `${GET_REGISTRATIONS}_PENDING`:
     case `${UPDATE_REGISTRATIONS}_PENDING`:
+    case `${GET_ALL_REGISTRATIONS}_PENDING`:
+    case `${UPDATE_ALL_REGISTRATIONS}_PENDING`:
       return {
         ...state,
         subrequests: {
@@ -69,6 +73,8 @@ export default function registrations(state = initialState, action = {}) {
       };
     case `${GET_REGISTRATIONS}_SUCCESS`:
     case `${UPDATE_REGISTRATIONS}_SUCCESS`:
+    case `${GET_ALL_REGISTRATIONS}_SUCCESS`:
+    case `${UPDATE_ALL_REGISTRATIONS}_SUCCESS`:
       return {
         ...state,
         subrequests: {
@@ -89,6 +95,8 @@ export default function registrations(state = initialState, action = {}) {
     case `${UPDATE_REGISTRATION}_FAIL`:
     case `${GET_REGISTRATIONS}_FAIL`:
     case `${UPDATE_REGISTRATIONS}_FAIL`:
+    case `${GET_ALL_REGISTRATIONS}_FAIL`:
+    case `${UPDATE_ALL_REGISTRATIONS}_FAIL`:
       return {
         ...state,
         subrequests: {

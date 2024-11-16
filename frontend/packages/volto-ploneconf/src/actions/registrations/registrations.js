@@ -5,6 +5,8 @@ import {
   UPDATE_REGISTRATION,
   GET_REGISTRATIONS,
   UPDATE_REGISTRATIONS,
+  GET_ALL_REGISTRATIONS,
+  UPDATE_ALL_REGISTRATIONS,
 } from '../../constants/ActionTypes.js';
 
 export function getRegistration(path, subrequest) {
@@ -71,6 +73,29 @@ export function updateRegistrations(path, subrequest, payload) {
     request: {
       op: 'patch',
       path: `${path}/@registrations`,
+      data: payload,
+    },
+  };
+}
+
+export function getAllRegistrations(path, subrequest) {
+  return {
+    type: GET_ALL_REGISTRATIONS,
+    subrequest,
+    request: {
+      op: 'get',
+      path: `/@registrations`,
+    },
+  };
+}
+
+export function updateAllRegistrations(path, subrequest, payload) {
+  return {
+    type: UPDATE_ALL_REGISTRATIONS,
+    subrequest,
+    request: {
+      op: 'patch',
+      path: `/@registrations`,
       data: payload,
     },
   };

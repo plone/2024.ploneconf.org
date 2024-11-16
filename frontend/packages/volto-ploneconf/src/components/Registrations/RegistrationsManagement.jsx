@@ -1,32 +1,28 @@
-import { useEffect, useState } from 'react';
+import _ from 'lodash';
+import React, { useEffect, useState } from 'react';
 import { Container } from '@plone/components';
 import { defineMessages, useIntl, FormattedMessage } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import {
-  Button,
   Table,
   TableBody,
   TableHeader,
   TableRow,
   TableHeaderCell,
-  TableCell,
   Segment,
 } from 'semantic-ui-react';
 import { createPortal } from 'react-dom';
 import { Helmet } from '@plone/volto/helpers';
 import backSVG from '@plone/volto/icons/back.svg';
-import {
-  FormattedDate,
-  Icon,
-  Toolbar,
-  UniversalLink,
-} from '@plone/volto/components';
+import { Icon, Toolbar, UniversalLink } from '@plone/volto/components';
 
 import {
+  getAllRegistrations,
   getRegistrations,
-  updateRegistrations,
 } from '../../actions/registrations/registrations';
+
+import RegistrationItem from './RegistrationItem';
 
 const messages = defineMessages({
   back: {
@@ -37,68 +33,58 @@ const messages = defineMessages({
     id: 'Registrations management for',
     defaultMessage: 'Registrations management for',
   },
+  registrationCheckin: {
+    id: 'Check-in',
+    defaultMessage: 'Check-in',
+  },
+  registrationRevert: {
+    id: 'Revert',
+    defaultMessage: 'Revert',
+  },
 });
 
-const RegistrationsList = ({ registrations, pathname, uuid }) => {
-  const dispatch = useDispatch();
-  const userCheckin = (user_id) => {
-    dispatch(
-      updateRegistrations(pathname, uuid, {
-        user_ids: [user_id],
-        state: 'checked',
-      }),
-    );
-  };
-  const cancelUserCheckin = (user_id) => {
-    dispatch(
-      updateRegistrations(pathname, uuid, {
-        user_ids: [user_id],
-        state: 'registered',
-      }),
-    );
-  };
+const RegistrationsList = ({
+  intl,
+  registrations,
+  pathname,
+  uuid,
+  showTrainingInfo,
+}) => {
   return (
-    registrations.items &&
-    registrations.items.map((registration) => (
-      <TableRow
-        key={registration.uid}
-        className={`registration ${registration.state}`}
-      >
-        <TableCell>
-          {registration.user ? (
-            <UniversalLink item={registration.user}>
-              {registration.user.title}
-            </UniversalLink>
-          ) : (
-            <span>{registration.user_id}</span>
-          )}
-        </TableCell>
-        <TableCell>
-          <FormattedDate date={registration.created} includeTime />
-        </TableCell>
-        <TableCell>
-          <span className={'state'}>{registration.state}</span>
-        </TableCell>
-        <TableCell>
-          {registration.state === 'checked' ? (
-            <Button
-              className={'action revert'}
-              onClick={() => cancelUserCheckin(registration.user_id)}
-            >
-              <FormattedMessage id={'Revert'} defaultMessage={'Revert'} />
-            </Button>
-          ) : (
-            <Button
-              className={'action checkin'}
-              onClick={() => userCheckin(registration.user_id)}
-            >
-              <FormattedMessage id={'Check-in'} defaultMessage={'Check-in'} />
-            </Button>
-          )}
-        </TableCell>
-      </TableRow>
+    registrations &&
+    registrations.map((registration, idx) => (
+      <RegistrationItem
+        registration={registration}
+        uuid={uuid}
+        pathname={pathname}
+        intl={intl}
+        showTrainingInfo={showTrainingInfo}
+        key={idx}
+      />
     ))
   );
+};
+
+const sortReducer = (state, action) => {
+  switch (action.type) {
+    case 'CHANGE_SORT':
+      if (state.column === action.column) {
+        return {
+          ...state,
+          data: state.data.slice().reverse(),
+          direction:
+            state.direction === 'ascending' ? 'descending' : 'ascending',
+        };
+      }
+
+      return {
+        column: action.column,
+        data: _.sortBy(state.data, [action.column]),
+        direction: 'ascending',
+      };
+    default:
+      throw new Error();
+  }
 };
 
 const RegistrationsManagement = () => {
@@ -107,24 +93,37 @@ const RegistrationsManagement = () => {
   const dispatch = useDispatch();
   const [isClient, setIsClient] = useState(false);
   const content = useSelector((state) => state.content?.data);
+  const portal_type = useSelector((state) => state.content?.data?.portal_type);
   const uuid = useSelector((state) => state.content?.data?.UID);
   const registrations = useSelector(
     (state) => state.registrations?.subrequests?.[uuid]?.items || [],
   );
-
+  const [state, sortDispatch] = React.useReducer(sortReducer, {
+    column: null,
+    data: registrations?.items || [],
+    direction: null,
+  });
+  const { column, data, direction } = state;
+  const showTrainingInfo = portal_type === 'Training' ? false : true;
   useEffect(() => {
     setIsClient(true);
   }, []);
 
   useEffect(() => {
-    dispatch(getRegistrations(pathname, uuid));
-  }, [dispatch, uuid, pathname]);
+    sortDispatch({ type: 'CHANGE_SORT', column: 'name' });
+  }, [registrations]);
+
+  useEffect(() => {
+    const func =
+      portal_type === 'Training' ? getRegistrations : getAllRegistrations;
+    dispatch(func(pathname, uuid));
+  }, [dispatch, uuid, pathname, portal_type]);
 
   return (
     <>
       <Helmet title={intl.formatMessage(messages.registrationManagement)} />
       <Container
-        narrow
+        layout
         id={'page-document'}
         className={'registrations-management'}
       >
@@ -144,13 +143,36 @@ const RegistrationsManagement = () => {
               defaultMessage="Manage registrations for this training."
             />
           </Segment>
-          <Table>
+          <Table className={'sortable'}>
             <TableHeader>
               <TableRow>
-                <TableHeaderCell>
+                {showTrainingInfo && (
+                  <TableHeaderCell
+                    sorted={column === 'training' ? direction : null}
+                    onClick={() =>
+                      sortDispatch({ type: 'CHANGE_SORT', column: 'training' })
+                    }
+                  >
+                    <FormattedMessage
+                      id={'Training'}
+                      defaultMessage={'Training'}
+                    />
+                  </TableHeaderCell>
+                )}
+                <TableHeaderCell
+                  sorted={column === 'name' ? direction : null}
+                  onClick={() =>
+                    sortDispatch({ type: 'CHANGE_SORT', column: 'name' })
+                  }
+                >
                   <FormattedMessage id={'Name'} defaultMessage={'Name'} />
                 </TableHeaderCell>
-                <TableHeaderCell>
+                <TableHeaderCell
+                  sorted={column === 'date' ? direction : null}
+                  onClick={() =>
+                    sortDispatch({ type: 'CHANGE_SORT', column: 'date' })
+                  }
+                >
                   <FormattedMessage id={'Date'} defaultMessage={'Date'} />
                 </TableHeaderCell>
                 <TableHeaderCell>
@@ -164,9 +186,11 @@ const RegistrationsManagement = () => {
             <TableBody>
               {isClient && (
                 <RegistrationsList
-                  registrations={registrations}
+                  intl={intl}
+                  registrations={data}
                   pathname={pathname}
                   uuid={uuid}
+                  showTrainingInfo={showTrainingInfo}
                 />
               )}
             </TableBody>

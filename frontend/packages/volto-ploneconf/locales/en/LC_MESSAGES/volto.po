@@ -63,6 +63,7 @@ msgstr ""
 
 #. Default: "Back"
 #: components/Personal/PersonalTools
+#: components/Registrations/RegistrationItem
 #: components/Registrations/RegistrationsManagement
 #: components/Toolbar/Toolbar
 msgid "Back"
@@ -119,6 +120,7 @@ msgid "Change Password"
 msgstr ""
 
 #. Default: "Check-in"
+#: components/Registrations/RegistrationItem
 #: components/Registrations/RegistrationsManagement
 msgid "Check-in"
 msgstr ""
@@ -426,7 +428,13 @@ msgstr ""
 msgid "Registered for this training"
 msgstr ""
 
+#. Default: "Registrations Management"
+#: components/Toolbar/PlugRegistrationsManagement
+msgid "Registrations Management"
+msgstr ""
+
 #. Default: "Registrations management for"
+#: components/Registrations/RegistrationItem
 #: components/Registrations/RegistrationsManagement
 msgid "Registrations management for"
 msgstr ""
@@ -447,6 +455,7 @@ msgid "Requirements"
 msgstr ""
 
 #. Default: "Revert"
+#: components/Registrations/RegistrationItem
 #: components/Registrations/RegistrationsManagement
 msgid "Revert"
 msgstr ""
@@ -522,6 +531,11 @@ msgstr ""
 #. Default: "Title"
 #: components/Blocks/SponsorLevel/schema
 msgid "Title"
+msgstr ""
+
+#. Default: "Training"
+#: components/Registrations/RegistrationsManagement
+msgid "Training"
 msgstr ""
 
 #. Default: "Unlock"

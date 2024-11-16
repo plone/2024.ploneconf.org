@@ -2,6 +2,7 @@ from datetime import datetime
 from plone import api
 from plone.restapi.serializer.converters import json_compatible
 from repoze.catalog.query import Eq
+from repoze.catalog.query import NotEq
 from repoze.catalog.query import Query
 from souper.soup import get_soup
 from souper.soup import Record
@@ -281,3 +282,18 @@ class TrainingRegistrations(BaseAPI):
             query = query & Eq("state", state)
         for lazy_record in self._soup.lazy(query):
             yield self._dictify(lazy_record())
+
+    def all_training_registrations(
+        self, state: str = "", user_id: str = ""
+    ) -> typing.Iterator[dict]:
+        """get all bookmarks of a training
+
+        return dictified data
+        """
+        query = NotEq("training_id", "")
+        if state:
+            query = query & Eq("state", state)
+        if user_id:
+            query = query & Eq("user_id", user_id)
+        for record in self._soup.query(query, sort_index="created", reverse=True):
+            yield self._dictify(record)

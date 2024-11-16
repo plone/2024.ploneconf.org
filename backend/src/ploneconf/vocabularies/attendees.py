@@ -65,5 +65,6 @@ def attendees_vocab(context) -> StaticCatalogVocabulary:
         {
             "portal_type": ["Attendee"],
             "sort_on": "sortable_title",
+            "review_state": ["registered", "checked"],
         }
     )
