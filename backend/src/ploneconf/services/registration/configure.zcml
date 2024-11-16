@@ -10,6 +10,15 @@
       permission="cmf.ReviewPortalContent"
       name="@registrations"
       />
+
+  <plone:service
+      method="PATCH"
+      factory=".training.PatchMany"
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      permission="cmf.ReviewPortalContent"
+      name="@registrations"
+      />
+
   <plone:service
       method="GET"
       factory=".training.GetAll"

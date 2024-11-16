@@ -81,7 +81,7 @@ export default function registrations(state = initialState, action = {}) {
           ...state.subrequests,
           [action.subrequest]: {
             registration: {},
-            items: action.result.registrations,
+            items: action.result.registrations.items,
             loading: false,
             error: null,
           },

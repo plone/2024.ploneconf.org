@@ -33,13 +33,9 @@ const messages = defineMessages({
     id: 'Registrations management for',
     defaultMessage: 'Registrations management for',
   },
-  registrationCheckin: {
-    id: 'Check-in',
-    defaultMessage: 'Check-in',
-  },
-  registrationRevert: {
-    id: 'Revert',
-    defaultMessage: 'Revert',
+  registrationManagementAll: {
+    id: 'Registrations management for all trainings',
+    defaultMessage: 'Registrations management for all trainings',
   },
 });
 
@@ -48,7 +44,7 @@ const RegistrationsList = ({
   registrations,
   pathname,
   uuid,
-  showTrainingInfo,
+  allTrainings,
 }) => {
   return (
     registrations &&
@@ -58,7 +54,7 @@ const RegistrationsList = ({
         uuid={uuid}
         pathname={pathname}
         intl={intl}
-        showTrainingInfo={showTrainingInfo}
+        allTrainings={allTrainings}
         key={idx}
       />
     ))
@@ -67,6 +63,11 @@ const RegistrationsList = ({
 
 const sortReducer = (state, action) => {
   switch (action.type) {
+    case 'UPDATE_DATA':
+      return {
+        ...state,
+        data: action.data,
+      };
     case 'CHANGE_SORT':
       if (state.column === action.column) {
         return {
@@ -100,18 +101,23 @@ const RegistrationsManagement = () => {
   );
   const [state, sortDispatch] = React.useReducer(sortReducer, {
     column: null,
-    data: registrations?.items || [],
+    data: registrations,
     direction: null,
   });
+
   const { column, data, direction } = state;
-  const showTrainingInfo = portal_type === 'Training' ? false : true;
+  const total = data.length;
+  const allTrainings = portal_type === 'Training' ? false : true;
   useEffect(() => {
     setIsClient(true);
   }, []);
 
   useEffect(() => {
+    if (registrations.length > 0 && total === 0) {
+      sortDispatch({ type: 'UPDATE_DATA', data: registrations });
+    }
     sortDispatch({ type: 'CHANGE_SORT', column: 'name' });
-  }, [registrations]);
+  }, [registrations, total]);
 
   useEffect(() => {
     const func =
@@ -119,9 +125,13 @@ const RegistrationsManagement = () => {
     dispatch(func(pathname, uuid));
   }, [dispatch, uuid, pathname, portal_type]);
 
+  const pageTitle = allTrainings
+    ? intl.formatMessage(messages.registrationManagementAll)
+    : intl.formatMessage(messages.registrationManagement);
+
   return (
     <>
-      <Helmet title={intl.formatMessage(messages.registrationManagement)} />
+      <Helmet title={pageTitle} />
       <Container
         layout
         id={'page-document'}
@@ -137,16 +147,11 @@ const RegistrationsManagement = () => {
               }}
             />
           </Segment>
-          <Segment secondary>
-            <FormattedMessage
-              id="Manage registrations for this training."
-              defaultMessage="Manage registrations for this training."
-            />
-          </Segment>
+          <Segment secondary>{pageTitle}</Segment>
           <Table className={'sortable'}>
             <TableHeader>
               <TableRow>
-                {showTrainingInfo && (
+                {allTrainings && (
                   <TableHeaderCell
                     sorted={column === 'training' ? direction : null}
                     onClick={() =>
@@ -178,9 +183,11 @@ const RegistrationsManagement = () => {
                 <TableHeaderCell>
                   <FormattedMessage id={'State'} defaultMessage={'State'} />
                 </TableHeaderCell>
-                <TableHeaderCell>
-                  <FormattedMessage id={'Action'} defaultMessage={'Action'} />
-                </TableHeaderCell>
+                {!allTrainings && (
+                  <TableHeaderCell>
+                    <FormattedMessage id={'Action'} defaultMessage={'Action'} />
+                  </TableHeaderCell>
+                )}
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -190,7 +197,7 @@ const RegistrationsManagement = () => {
                   registrations={data}
                   pathname={pathname}
                   uuid={uuid}
-                  showTrainingInfo={showTrainingInfo}
+                  allTrainings={allTrainings}
                 />
               )}
             </TableBody>

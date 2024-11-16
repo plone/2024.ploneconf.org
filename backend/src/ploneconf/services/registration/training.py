@@ -181,6 +181,23 @@ class Delete(BaseService):
         return
 
 
+class PatchMany(BaseService):
+    def reply(self):
+        """Update registration"""
+        alsoProvides(self.request, IDisableCSRFProtection)
+        data = json_body(self.request)
+        result = {"@id": self.base_url}
+        training_id = data.get("training_ids", [])[0]
+        users = data.get("user_ids", [])
+        state = data.get("state")
+        if users and state:
+            items = self.api.transition_training_users(
+                training_id, users=users, state=state
+            )
+            result["items"] = self.enrich_registrations(items)
+        return {"registrations": result}
+
+
 class Patch(BaseService):
     def reply(self):
         """Update registration"""

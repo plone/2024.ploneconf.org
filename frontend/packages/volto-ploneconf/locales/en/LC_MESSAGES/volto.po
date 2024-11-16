@@ -63,7 +63,6 @@ msgstr ""
 
 #. Default: "Back"
 #: components/Personal/PersonalTools
-#: components/Registrations/RegistrationItem
 #: components/Registrations/RegistrationsManagement
 #: components/Toolbar/Toolbar
 msgid "Back"
@@ -121,7 +120,6 @@ msgstr ""
 
 #. Default: "Check-in"
 #: components/Registrations/RegistrationItem
-#: components/Registrations/RegistrationsManagement
 msgid "Check-in"
 msgstr ""
 
@@ -282,11 +280,6 @@ msgstr ""
 msgid "Manage Registrations"
 msgstr ""
 
-#. Default: "Manage registrations for this training."
-#: components/Registrations/RegistrationsManagement
-msgid "Manage registrations for this training."
-msgstr ""
-
 #. Default: "More"
 #: components/Toolbar/Toolbar
 msgid "More"
@@ -434,9 +427,13 @@ msgid "Registrations Management"
 msgstr ""
 
 #. Default: "Registrations management for"
-#: components/Registrations/RegistrationItem
 #: components/Registrations/RegistrationsManagement
 msgid "Registrations management for"
+msgstr ""
+
+#. Default: "Registrations management for all trainings"
+#: components/Registrations/RegistrationsManagement
+msgid "Registrations management for all trainings"
 msgstr ""
 
 #. Default: "Registrations management for {title}"
@@ -456,7 +453,6 @@ msgstr ""
 
 #. Default: "Revert"
 #: components/Registrations/RegistrationItem
-#: components/Registrations/RegistrationsManagement
 msgid "Revert"
 msgstr ""
 
