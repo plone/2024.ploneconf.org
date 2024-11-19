@@ -109,7 +109,7 @@ msgstr "Bluesky"
 msgid "Bluesky profile url"
 msgstr "URL do seu perfil no Bluesky"
 
-#: ploneconf/serializers/session.py:26
+#: ploneconf/serializers/session.py:30
 msgid "Brazilian Portuguese or English"
 msgstr "Português ou Inglês"
 
@@ -238,7 +238,7 @@ msgstr "Editar"
 msgid "Email address"
 msgstr "E-mail"
 
-#: ploneconf/behaviors/materials.py:28
+#: ploneconf/behaviors/materials.py:32
 msgid "Embed code for slides"
 msgstr "Código de incorporação para slides"
 
@@ -379,7 +379,7 @@ msgstr "Mastodon"
 msgid "Mastodon profile url"
 msgstr "URL do perfil do Mastodon"
 
-#: ploneconf/behaviors/materials.py:16
+#: ploneconf/behaviors/materials.py:20
 msgid "Materials"
 msgstr "Materiais"
 
@@ -605,11 +605,11 @@ msgstr "Esse nível deve ser exibido no FrontPage?"
 msgid "Site"
 msgstr "Site"
 
-#: ploneconf/behaviors/materials.py:21
+#: ploneconf/behaviors/materials.py:25
 msgid "Slides"
 msgstr "Slides"
 
-#: ploneconf/behaviors/materials.py:27
+#: ploneconf/behaviors/materials.py:31
 msgid "Slides embed code"
 msgstr "Código de incorporação de slides"
 
@@ -644,6 +644,22 @@ msgstr "Hora de início"
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "State of Attendee."
 msgstr "Estado da Inscrição."
+
+#: ploneconf/behaviors/materials.py:52
+msgid "Streaming"
+msgstr ""
+
+#: ploneconf/behaviors/materials.py:63
+msgid "Streaming url"
+msgstr ""
+
+#: ploneconf/behaviors/materials.py:58
+msgid "Streamyard url"
+msgstr ""
+
+#: ploneconf/behaviors/materials.py:57
+msgid "Studio URL"
+msgstr ""
 
 #: ploneconf/profiles/default/types/Talk.xml
 msgid "Talk"
@@ -702,13 +718,17 @@ msgstr "Tipo de participação"
 msgid "URL"
 msgstr "URL"
 
-#: ploneconf/behaviors/materials.py:22
+#: ploneconf/behaviors/materials.py:26
 msgid "URL of slides"
 msgstr "URL dos slides"
 
-#: ploneconf/behaviors/materials.py:34
+#: ploneconf/behaviors/materials.py:38
 msgid "URL of video"
 msgstr "URL do vídeo"
+
+#: ploneconf/behaviors/materials.py:64
+msgid "URL used for streaming"
+msgstr ""
 
 #: ploneconf/profiles.zcml:46
 msgid "Uninstall Plone Conference 2024 setup."
@@ -718,7 +738,7 @@ msgstr ""
 msgid "User ID"
 msgstr "Id do usuário"
 
-#: ploneconf/behaviors/materials.py:33
+#: ploneconf/behaviors/materials.py:37
 msgid "Video"
 msgstr "Vídeo"
 

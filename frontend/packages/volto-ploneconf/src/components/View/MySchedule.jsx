@@ -8,8 +8,9 @@ import { createPortal } from 'react-dom';
 import { Toolbar } from '@plone/volto/components';
 import { listMySchedule } from '../../actions/schedule/schedule';
 import { getContent } from '@plone/volto/actions';
-import SessionCard from '../Schedule/SessionCard';
 import MyScheduleIcal from '../Schedule/MyScheduleIcal';
+import MyScheduleComponent from '../MyScheduleComponent/MyScheduleComponent';
+import LiveStreamModal from '../LiveStream/LiveStreamModal';
 
 const messages = defineMessages({
   myschedule: {
@@ -37,11 +38,24 @@ const MySchedule = (props) => {
   const dispatch = useDispatch();
   const { location } = props;
   const [isClient, setIsClient] = useState(false);
+  const [streamModal, setStreamModal] = useState(false);
+  const [streamInfo, setStreamInfo] = useState({});
+  const [timer, setTimer] = useState(0);
   let { pathname } = location;
   pathname = pathname.replace('/mySchedule', '');
   const navRoot = useSelector((state) => state.navroot?.data?.navroot?.['@id']);
   const token = useSelector((state) => state.userSession.token, shallowEqual);
   const items = useSelector((state) => state.myschedule?.data?.items || []);
+  const loading = useSelector((state) => state.myschedule?.loading || false);
+
+  useEffect(() => {
+    // Run every 3 minutes 60 * 1000 * 3
+    const interval = setInterval(() => {
+      setTimer((timer) => timer + 1);
+    }, 180000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     setIsClient(true);
@@ -52,7 +66,12 @@ const MySchedule = (props) => {
     if (token) {
       dispatch(listMySchedule());
     }
-  }, [dispatch, token]);
+  }, [dispatch, token, timer]);
+
+  const streamAction = (info) => {
+    setStreamInfo(info);
+    setStreamModal(true);
+  };
 
   if (__SERVER__ && !token) {
     return <Redirect to={'/login'} />;
@@ -76,36 +95,16 @@ const MySchedule = (props) => {
             <MyScheduleIcal />
           </p>
         )}
-        <div
-          className={
-            'block search grid next--is--slate is--first--of--block-type is--last--of--block-type previous--has--same--backgroundColor next--has--same--backgroundColor'
-          }
-        >
-          <div className={'ui stackable grid'}>
-            <div className={'row'}>
-              <div className={'column'}>
-                <div className={'items'}>
-                  {items &&
-                    items.map((item, idx) => (
-                      <div className={'listing-item'} key={idx}>
-                        <div className={'card-container session'}>
-                          <div className={'item'}>
-                            <SessionCard
-                              item={item}
-                              showDate
-                              showAudience
-                              showDescription
-                              showLevel
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <MyScheduleComponent
+          items={items}
+          loading={loading}
+          streamAction={streamAction}
+        />
+        <LiveStreamModal
+          streamInfo={streamInfo}
+          streamModal={streamModal}
+          setStreamModal={setStreamModal}
+        />
         {isClient &&
           createPortal(
             <Toolbar pathname={pathname} hideDefaultViewButtons />,

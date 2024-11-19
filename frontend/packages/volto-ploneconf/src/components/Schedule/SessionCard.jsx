@@ -47,11 +47,12 @@ const SessionCard = ({
   showDescription,
   showLevel,
   showAudience,
+  streamAction,
 }) => {
   const shortDate = !showDate;
   return (
     <div className="slot-card">
-      <SlotActions item={item} />
+      <SlotActions item={item} streamAction={streamAction} />
       <SessionTrack item={item} />
       <SlotInfo item={item} shortDate={shortDate} />
       <div className="session-title-wrapper">

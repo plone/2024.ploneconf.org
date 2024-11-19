@@ -150,6 +150,11 @@ msgstr "Conteúdos"
 msgid "Continue reading"
 msgstr "Continue lendo"
 
+#. Default: "Current Sessions"
+#: components/MyScheduleComponent/MyScheduleComponent
+msgid "Current Sessions"
+msgstr "Agora"
+
 #. Default: "Date"
 #: components/Registrations/RegistrationsManagement
 msgid "Date"
@@ -183,7 +188,7 @@ msgstr "Auditório Dorneles Treméa"
 #. Default: "Download to my personal calendar"
 #: components/Session/SlotIcal/SlotIcal
 msgid "Download to my personal calendar"
-msgstr ""
+msgstr "Baixe para o meu calendário"
 
 #. Default: "Download your schedule and add it to your personal calendar"
 #: components/View/MySchedule
@@ -343,6 +348,11 @@ msgstr "Página"
 msgid "Password"
 msgstr "Senha"
 
+#. Default: "Past Sessions"
+#: components/MyScheduleComponent/MyScheduleComponent
+msgid "Past Sessions"
+msgstr "Sessões já finalizadas"
+
 #. Default: "Personal Information"
 #: components/Toolbar/Toolbar
 msgid "Personal Information"
@@ -426,7 +436,7 @@ msgstr "Inscrito neste tutorial"
 #. Default: "Registrations Management"
 #: components/Toolbar/PlugRegistrationsManagement
 msgid "Registrations Management"
-msgstr ""
+msgstr "Gestão de Inscrições"
 
 #. Default: "Registrations management for"
 #: components/Registrations/RegistrationsManagement
@@ -436,7 +446,7 @@ msgstr "Gerenciamento de inscrições para"
 #. Default: "Registrations management for all trainings"
 #: components/Registrations/RegistrationsManagement
 msgid "Registrations management for all trainings"
-msgstr ""
+msgstr "Gestão de inscrições para todos os tutoriais"
 
 #. Default: "Registrations management for {title}"
 #: components/Registrations/RegistrationsManagement
@@ -534,17 +544,28 @@ msgstr "Título"
 #. Default: "Training"
 #: components/Registrations/RegistrationsManagement
 msgid "Training"
-msgstr ""
+msgstr "Tutorial"
 
 #. Default: "Unlock"
 #: components/Toolbar/Toolbar
 msgid "Unlock"
 msgstr "Destravar"
 
+#. Default: "Upcoming Sessions"
+#: components/MyScheduleComponent/MyScheduleComponent
+msgid "Upcoming Sessions"
+msgstr "Próximas sessões"
+
 #. Default: "Warning"
 #: components/View/MySchedule
 msgid "Warning"
 msgstr "Atenção"
+
+#. Default: "Watch Stream"
+#: components/LiveStream/SlotLiveStream
+#: components/View/SessionView
+msgid "Watch Stream"
+msgstr "Assistir streaming"
 
 #. Default: "Workflow updated."
 #: components/AttendeeManagement/AttendeeManagement

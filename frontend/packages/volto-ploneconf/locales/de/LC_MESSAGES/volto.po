@@ -148,6 +148,11 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
+#. Default: "Current Sessions"
+#: components/MyScheduleComponent/MyScheduleComponent
+msgid "Current Sessions"
+msgstr ""
+
 #. Default: "Date"
 #: components/Registrations/RegistrationsManagement
 msgid "Date"
@@ -339,6 +344,11 @@ msgstr ""
 #. Default: "Password"
 #: components/Login/Login
 msgid "Password"
+msgstr ""
+
+#. Default: "Past Sessions"
+#: components/MyScheduleComponent/MyScheduleComponent
+msgid "Past Sessions"
 msgstr ""
 
 #. Default: "Personal Information"
@@ -539,9 +549,20 @@ msgstr ""
 msgid "Unlock"
 msgstr ""
 
+#. Default: "Upcoming Sessions"
+#: components/MyScheduleComponent/MyScheduleComponent
+msgid "Upcoming Sessions"
+msgstr ""
+
 #. Default: "Warning"
 #: components/View/MySchedule
 msgid "Warning"
+msgstr ""
+
+#. Default: "Watch Stream"
+#: components/LiveStream/SlotLiveStream
+#: components/View/SessionView
+msgid "Watch Stream"
 msgstr ""
 
 #. Default: "Workflow updated."

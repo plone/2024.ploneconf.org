@@ -76,4 +76,31 @@
       }
     }
   }
+  .liveStreamContainer {
+    display: flex;
+    justify-items: center;
+    button.liveStreamButton {
+      display: flex;
+      align-items: center;
+      padding: $spacing-small;
+      border-color: var(--stream-color) !important;
+      border-radius: $spacing-xs;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: var(--stream-color) !important;
+      color: var(--reverse-color) !important;
+      span {
+        padding-left: 10px;
+      }
+      svg {
+        height: 20px !important;
+        fill: var(--reverse-color);
+      }
+      &:hover {
+        border-color: var(--stream-color-alternate) !important;
+        background-color: var(--stream-color-alternate) !important;
+        color: var(--reverse-alternate) !important;
+      }
+    }
+  }
 }

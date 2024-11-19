@@ -1,9 +1,11 @@
+from datetime import datetime
 from plone import api
 from plone.restapi.interfaces import ISerializeToJson
 from plone.restapi.interfaces import ISerializeToJsonSummary
 from plone.restapi.serializer.dxcontent import SerializeToJson
 from plone.restapi.serializer.summary import DefaultJSONSummarySerializer
 from ploneconf import _
+from ploneconf import logger
 from ploneconf.content.keynote import IKeynote
 from ploneconf.content.slot import ISlot
 from ploneconf.content.talk import ITalk
@@ -12,7 +14,9 @@ from ploneconf.interfaces import IPloneconfLayer
 from ploneconf.services.registration.training import GetRegistration
 from ploneconf.services.registration.training import GetRegistrations
 from ploneconf.services.schedule.bookmark import GetBookmark
+from ploneconf.settings import STREAMING_SERIALIZATION_LIMIT
 from typing import List
+from urllib.parse import urlparse
 from zope.component import adapter
 from zope.component import getUtility
 from zope.interface import implementer
@@ -53,6 +57,25 @@ def include_timezone(date):
     return utc_tz.localize(date).astimezone(tz).isoformat()
 
 
+def serialize_stream_info(context, stream_url: str, user) -> dict:
+    if api.user.is_anonymous():
+        result_url = ""
+    elif api.user.has_permission(
+        "cmf.ReviewPortalContent", user=user.getUser(), obj=context
+    ):
+        result_url = stream_url
+    else:
+        now: datetime = datetime.now()
+        start: datetime = context.start
+        diff = (start - now).seconds
+        logger.info(f"{context.absolute_url()} - {diff}")
+        result_url = stream_url if diff <= STREAMING_SERIALIZATION_LIMIT else ""
+    return {
+        "stream_url": result_url,
+        "stream_domain": urlparse(context.absolute_url()).hostname,
+    }
+
+
 class JSONSerializer(SerializeToJson):
     """ISerializeToJson adapter for Session contents."""
 
@@ -60,9 +83,14 @@ class JSONSerializer(SerializeToJson):
         result = super().__call__(*args, **kwargs)
         result["start"] = include_timezone(self.context.start)
         result["end"] = include_timezone(self.context.end)
-        if api.user.get_current():
+        if api.user.is_anonymous():
+            result.pop("stream_url", "")
+        else:
+            user = api.user.get_current()
             bookmark = GetBookmark(self.context, self.request)
             result.update(bookmark(expand=True))
+            if stream_url := result.get("stream_url"):
+                result.update(serialize_stream_info(self.context, stream_url, user))
         return result
 
 
@@ -145,6 +173,7 @@ class JSONSummarySerializer(DefaultJSONSummarySerializer):
     def __call__(self):
         summary = super().__call__()
         context = self.context
+        stream_url = getattr(context, "stream_url", None)
         track = self.format_vocabulary_values("track", context.track)
         room = self.format_vocabulary_values("room", context.room)
         slot_category = getattr(context, "slot_category", context.portal_type)
@@ -165,9 +194,12 @@ class JSONSummarySerializer(DefaultJSONSummarySerializer):
                 "session_language": session_language,
             }
         )
-        if api.user.get_current():
+        if not api.user.is_anonymous():
+            user = api.user.get_current()
             bookmark = GetBookmark(self.context, self.request)
             summary.update(bookmark(expand=True))
+            if stream_url:
+                summary.update(serialize_stream_info(self.context, stream_url, user))
         return summary
 
 

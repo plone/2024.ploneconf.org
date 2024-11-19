@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-11-14 04:28+0000\n"
+"POT-Creation-Date: 2024-11-19 21:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,7 +115,7 @@ msgstr ""
 msgid "Bluesky profile url"
 msgstr ""
 
-#: ploneconf/serializers/session.py:26
+#: ploneconf/serializers/session.py:30
 msgid "Brazilian Portuguese or English"
 msgstr ""
 
@@ -244,7 +244,7 @@ msgstr ""
 msgid "Email address"
 msgstr ""
 
-#: ploneconf/behaviors/materials.py:28
+#: ploneconf/behaviors/materials.py:32
 msgid "Embed code for slides"
 msgstr ""
 
@@ -385,7 +385,7 @@ msgstr ""
 msgid "Mastodon profile url"
 msgstr ""
 
-#: ploneconf/behaviors/materials.py:16
+#: ploneconf/behaviors/materials.py:20
 msgid "Materials"
 msgstr ""
 
@@ -611,11 +611,11 @@ msgstr ""
 msgid "Site"
 msgstr ""
 
-#: ploneconf/behaviors/materials.py:21
+#: ploneconf/behaviors/materials.py:25
 msgid "Slides"
 msgstr ""
 
-#: ploneconf/behaviors/materials.py:27
+#: ploneconf/behaviors/materials.py:31
 msgid "Slides embed code"
 msgstr ""
 
@@ -649,6 +649,22 @@ msgstr ""
 
 #: ploneconf/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "State of Attendee."
+msgstr ""
+
+#: ploneconf/behaviors/materials.py:52
+msgid "Streaming"
+msgstr ""
+
+#: ploneconf/behaviors/materials.py:63
+msgid "Streaming url"
+msgstr ""
+
+#: ploneconf/behaviors/materials.py:58
+msgid "Streamyard url"
+msgstr ""
+
+#: ploneconf/behaviors/materials.py:57
+msgid "Studio URL"
 msgstr ""
 
 #: ploneconf/profiles/default/types/Talk.xml
@@ -708,12 +724,16 @@ msgstr ""
 msgid "URL"
 msgstr ""
 
-#: ploneconf/behaviors/materials.py:22
+#: ploneconf/behaviors/materials.py:26
 msgid "URL of slides"
 msgstr ""
 
-#: ploneconf/behaviors/materials.py:34
+#: ploneconf/behaviors/materials.py:38
 msgid "URL of video"
+msgstr ""
+
+#: ploneconf/behaviors/materials.py:64
+msgid "URL used for streaming"
 msgstr ""
 
 #: ploneconf/profiles.zcml:46
@@ -724,7 +744,7 @@ msgstr ""
 msgid "User ID"
 msgstr ""
 
-#: ploneconf/behaviors/materials.py:33
+#: ploneconf/behaviors/materials.py:37
 msgid "Video"
 msgstr ""
 

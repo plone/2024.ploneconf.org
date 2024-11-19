@@ -7,6 +7,9 @@ EVENTBRITE_BASE_URL = os.environ.get(
 EVENTBRITE_KEY = os.environ.get("EVENTBRITE_KEY", "")
 EVENTBRITE_ORG_ID = os.environ.get("EVENTBRITE_ORG_ID", "")
 EVENTBRITE_EVENT_ID = os.environ.get("EVENTBRITE_EVENT_ID", "")
+STREAMING_SERIALIZATION_LIMIT = int(
+    os.environ.get("STREAMING_SERIALIZATION_LIMIT", "600")
+)  # 10 minutes = 600 seconds
 
 AUTHENTICATED_GROUP = "AuthenticatedUsers"
 ADMIN_GROUP = "Administrators"
