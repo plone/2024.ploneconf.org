@@ -37,7 +37,7 @@ def send_email(event: str, attendee: Attendee):
     id_ = attendee.id
     answers = attendee.answers
     location = WRONG_LOCATIONS.get(id_, answers.get("222410619", ""))
-    lang = "pt-br" if len(location) <= 2 else "en"
+    lang = "pt-br" if len(location) <= 2 or location.startswith("BR-") else "en"
     email_data = {
         "fullname": attendee.title,
         "password": generate_password(attendee.id),
