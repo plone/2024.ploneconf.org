@@ -178,6 +178,11 @@ msgstr ""
 msgid "Display Headline?"
 msgstr ""
 
+#. Default: "Django Girls"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Django Girls"
+msgstr ""
+
 #. Default: "Dorneles Treméa Auditorium"
 #: components/Room/Rooms
 msgid "Dorneles Treméa Auditorium"

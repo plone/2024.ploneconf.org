@@ -46,6 +46,7 @@ CATEGORIES = {
     "organizers": _("Organizers"),
     "organizers-core": _("Organizers (Core)"),
     "organizers-frontdesk": _("Organizers (Frontdesk)"),
+    "djangogirls": _("Django Girls"),
 }
 
 

@@ -129,4 +129,21 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241112002"
+      destination="20241113001"
+      />
+
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241113001"
+      destination="20241119001"
+      >
+    <upgradeStep
+        title="Create default user groups"
+        handler=".attendees.create_user_groups"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>

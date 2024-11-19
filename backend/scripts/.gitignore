@@ -1,4 +1,5 @@
 .env_live
 .env_stag
 .env_local
+update_streamyard.py
 data/*.json

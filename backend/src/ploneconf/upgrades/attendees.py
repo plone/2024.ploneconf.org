@@ -60,6 +60,10 @@ def create_structure(setup_tool: SetupTool):
 def create_user_groups(setup_tool: SetupTool):
     """Create user groups for the Conference."""
     for groupname, group_info in GROUPS.items():
+        group = api.group.get(groupname=groupname)
+        if group:
+            logger.info(f"Group {groupname} exists")
+            continue
         group = api.group.create(**group_info)
         logger.info(
             f"Created group {groupname} with roles {group_info['roles']} ({group})"

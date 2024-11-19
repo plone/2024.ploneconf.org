@@ -9,6 +9,10 @@ export const messages = defineMessages({
     id: 'Organizers (Core)',
     defaultMessage: 'Organizers (Core)',
   },
+  djangogirls: {
+    id: 'Django Girls',
+    defaultMessage: 'Django Girls',
+  },
   'organizers-frontdesk': {
     id: 'Organizers (Frontdesk)',
     defaultMessage: 'Organizers (Frontdesk)',

@@ -43,6 +43,12 @@ GROUPS = {
         "roles": [],
         "groups": [],
     },
+    "djangogirls": {
+        "groupname": "djangogirls",
+        "title": "Django Girls",
+        "description": "Django Girls",
+        "roles": [],
+    },
     "organizers": {
         "groupname": "organizers",
         "title": "Organizers",
@@ -75,6 +81,7 @@ USER_CATEGORIES = {
     "1714513069": ["attendees"],  # Sul Global / Global South
     "1851194313": ["attendees"],  # Empenho
     "1902047603": ["onlineattendees", "sponsors"],  # Sponsors Online
+    "1928336783": ["attendees", "djangogirls"],  # Django Girls
     "Attendee": ["attendees"],
     "OnlineAttendee": ["onlineattendees"],
 }
