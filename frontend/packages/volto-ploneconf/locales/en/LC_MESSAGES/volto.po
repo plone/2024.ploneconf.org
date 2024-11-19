@@ -108,9 +108,9 @@ msgstr ""
 msgid "Cancelled"
 msgstr ""
 
-#. Default: "Capibara Room"
+#. Default: "Capybara Room"
 #: components/Room/Rooms
-msgid "Capibara Room"
+msgid "Capybara Room"
 msgstr ""
 
 #. Default: "Change Password"

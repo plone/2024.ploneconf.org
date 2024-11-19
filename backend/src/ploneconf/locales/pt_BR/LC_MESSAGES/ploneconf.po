@@ -131,7 +131,7 @@ msgid "Cancelled"
 msgstr "Cancelada"
 
 #: ploneconf/vocabularies/slot.py:29
-msgid "Capibara Room"
+msgid "Capybara Room"
 msgstr "Sala Capivara"
 
 #: ploneconf/content/person.py:48

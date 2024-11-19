@@ -14,8 +14,8 @@ export const messages = defineMessages({
     defaultMessage: 'Dorneles Treméa Auditorium',
   },
   'sala-2': {
-    id: 'Capibara Room',
-    defaultMessage: 'Capibara Room',
+    id: 'Capybara Room',
+    defaultMessage: 'Capybara Room',
   },
   'sala-juri': {
     id: 'Jaguatirica Room',

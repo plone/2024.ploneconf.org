@@ -110,9 +110,9 @@ msgstr "Cancelar inscrição"
 msgid "Cancelled"
 msgstr "Cancelada"
 
-#. Default: "Capibara Room"
+#. Default: "Capybara Room"
 #: components/Room/Rooms
-msgid "Capibara Room"
+msgid "Capybara Room"
 msgstr "Sala Capivara"
 
 #. Default: "Change Password"

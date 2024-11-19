@@ -26,7 +26,7 @@ def slot_categories(context):
 ROOMS = (
     ("auditorio-1", _("Jean Ferri Auditorium")),
     ("auditorio-2", _("Dorneles Treméa Auditorium")),
-    ("sala-2", _("Capibara Room")),
+    ("sala-2", _("Capybara Room")),
     ("sala-juri", _("Jaguatirica Room")),
     ("sala-x401", _("Buriti Room")),
     ("sala-x402", _("Ipê Room")),
