@@ -61,7 +61,7 @@ def serialize_stream_info(context, stream_url: str, user) -> dict:
     if api.user.is_anonymous():
         result_url = ""
     elif api.user.has_permission(
-        "cmf.ReviewPortalContent", user=user.getUser(), obj=context
+        "Review portal content", user=user.getUser(), obj=context
     ):
         result_url = stream_url
     else:
