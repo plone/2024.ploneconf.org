@@ -42,7 +42,6 @@
     "@eeacms/volto-matomo"
   ],
   "dependencies": {
-    "@plone/components": "workspace:*",
     "@eeacms/volto-accordion-block": "11.0.0",
     "@eeacms/volto-matomo": "^5.0.0",
     "@eeacms/volto-statistic-block": "4.1.0",
@@ -54,19 +53,21 @@
     "@mbarde/volto-image-crop-widget": "0.5.1",
     "@plone-collective/volto-authomatic": "2.0.1",
     "@plone-collective/volto-eventbrite-block": "^1.0.0-alpha.2",
+    "@plone/components": "workspace:*",
     "@plonegovbr/volto-network-block": "^1.0.0",
     "classnames": "2.2.6",
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
     "react-lazy-load-image-component": "^1.6.2",
+    "react-stately": "^3.33.0",
     "volto-form-block": "^3.9.1",
     "volto-subblocks": "^2.1.0"
   },
   "peerDependencies": {
     "react": "18.2.0",
+    "react-aria-components": "^1.4.1",
     "react-dom": "18.2.0",
     "react-intl": "^3.12.1",
-    "react-aria-components": "^1.4.1",
     "semantic-ui-react": "^2.1.5"
   },
   "devDependencies": {
