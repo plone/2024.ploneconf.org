@@ -105,13 +105,15 @@ const ManageStream = (props) => {
   if (__SERVER__ && !token) {
     return <Redirect to={'/login'} />;
   }
-
+  const title = intl.formatMessage(messages.streamManagement);
   return (
     token && (
       <Container narrow id="streamManagement">
-        <Helmet title={intl.formatMessage(messages.streamManagement)} />
+        <Helmet title={title} />
         <BodyClass className={'section-streamManagement'} />
-        <h1 className={'documentFirstHeading'}>{content.title}</h1>
+        <h1 className={'documentFirstHeading'}>
+          {content ? content.title : title}
+        </h1>
         <Container>
           {items &&
             items.map((day, idx) => <StreamsByDay data={day} key={idx} />)}

@@ -94,7 +94,7 @@ const RegistrationsManagement = () => {
   const dispatch = useDispatch();
   const [isClient, setIsClient] = useState(false);
   const content = useSelector((state) => state.content?.data);
-  const portal_type = useSelector((state) => state.content?.data?.portal_type);
+  const portal_type = useSelector((state) => state.content?.data?.['@type']);
   const uuid = useSelector((state) => state.content?.data?.UID);
   const registrations = useSelector(
     (state) => state.registrations?.subrequests?.[uuid]?.items || [],
@@ -132,11 +132,7 @@ const RegistrationsManagement = () => {
   return (
     <>
       <Helmet title={pageTitle} />
-      <Container
-        layout
-        id={'page-document'}
-        className={'registrations-management'}
-      >
+      <Container layout id={'page-document'}>
         <Segment.Group raised>
           <Segment className="primary">
             <FormattedMessage
