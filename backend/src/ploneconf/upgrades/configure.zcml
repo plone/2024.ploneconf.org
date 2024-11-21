@@ -146,4 +146,43 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241119001"
+      destination="20241121001"
+      >
+    <genericsetup:upgradeDepends
+        title="Update LightiningTalks type"
+        import_steps="typeinfo"
+        />
+    <genericsetup:upgradeDepends
+        title="Add ploneconf: Manage Streaming permission"
+        import_steps="rolemap"
+        />
+    <upgradeStep
+        title="Add stream group"
+        handler=".stream.create_user_groups"
+        />
+    <upgradeStep
+        title="Add stream user"
+        handler=".stream.create_user"
+        />
+    <upgradeStep
+        title="Create stream structure"
+        handler=".stream.create_structure"
+        />
+    <genericsetup:upgradeDepends
+        title="Add room and has_stream index"
+        import_steps="catalog"
+        />
+    <upgradeStep
+        title="Reindex slot information"
+        handler=".catalog.reindex_slots"
+        />
+    <upgradeStep
+        title="Reindex attendees subjects"
+        handler=".attendees.reindex_subject"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>

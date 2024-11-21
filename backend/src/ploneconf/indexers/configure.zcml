@@ -17,4 +17,12 @@
       factory=".attendee.subject_indexer"
       name="Subject"
       />
+  <adapter
+      factory=".slot.slot_room"
+      name="room"
+      />
+  <adapter
+      factory=".slot.has_stream"
+      name="has_stream"
+      />
 </configure>

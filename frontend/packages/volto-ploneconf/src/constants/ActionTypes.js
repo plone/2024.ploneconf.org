@@ -1,6 +1,7 @@
 export const ADD_BOOKMARK = 'ADD_BOOKMARK';
 export const GET_BOOKMARK = 'GET_BOOKMARK';
 export const DELETE_BOOKMARK = 'DELETE_BOOKMARK';
+export const LIST_STREAM = 'LIST_STREAM';
 export const LIST_SCHEDULE = 'LIST_SCHEDULE';
 export const LIST_MYSCHEDULE = 'LIST_MYSCHEDULE';
 export const LIST_SPONSORS = 'LIST_SPONSORS';

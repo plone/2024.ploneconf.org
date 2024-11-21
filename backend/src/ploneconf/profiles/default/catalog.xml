@@ -21,6 +21,16 @@
   >
     <indexed_attr value="labels" />
   </index>
+  <index meta_type="KeywordIndex"
+         name="room"
+  >
+    <indexed_attr value="room" />
+  </index>
+  <index meta_type="BooleanIndex"
+         name="has_stream"
+  >
+    <indexed_attr value="has_stream" />
+  </index>
 
   <column value="level" />
   <column value="session_level" />

@@ -29,10 +29,10 @@ def _groups_for_user(portal_type, email, ticket_class_id) -> list[str]:
     return groups
 
 
-def get_new_groups_for_user(user) -> list:
+def get_new_groups_for_user(user, content=None) -> list:
     current_groups = {group.getGroupName() for group in api.group.get_groups(user=user)}
     email = user.getUserName()
-    content = _get_content_for_user(user)
+    content = content if content else _get_content_for_user(user)
     ticket_class_id = content.ticket_class_id if content else ""
     portal_type = content.portal_type if content else ""
     group_names = _groups_for_user(portal_type, email, ticket_class_id)

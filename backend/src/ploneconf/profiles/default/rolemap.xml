@@ -100,5 +100,13 @@
       <role name="Authenticated" />
     </permission>
 
+    <permission acquire="False"
+                name="ploneconf: Manage Streaming"
+    >
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Editor" />
+    </permission>
+
   </permissions>
 </rolemap>

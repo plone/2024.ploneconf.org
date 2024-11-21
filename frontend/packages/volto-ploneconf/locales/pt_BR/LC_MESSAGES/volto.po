@@ -526,6 +526,11 @@ msgstr "Formulário de patrocínio"
 msgid "State"
 msgstr "Estado"
 
+#. Default: "Stream Management"
+#: components/View/ManageStream
+msgid "Stream Management"
+msgstr ""
+
 #. Default: "Switch to"
 #: components/Header/LanguageSelector
 msgid "Switch to"

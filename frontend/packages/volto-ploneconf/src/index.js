@@ -57,6 +57,7 @@ import PlugChangePassword from './components/Toolbar/PlugChangePassword';
 import PlugMySchedule from './components/Toolbar/PlugMySchedule';
 import PlugRegistrations from './components/Toolbar/PlugRegistrations';
 import PlugRegistrationsManagement from './components/Toolbar/PlugRegistrationsManagement';
+import ManageStream from './components/View/ManageStream';
 
 const BG_COLORS = [
   { name: 'transparent', label: 'Transparent' },
@@ -336,6 +337,11 @@ const applyConfig = (config) => {
     { path: '/myschedule', component: MySchedule },
     { path: '/en/myschedule', component: MySchedule },
     { path: '/pt-br/myschedule', component: MySchedule },
+    { path: '/stream/auditorio-1', component: ManageStream },
+    { path: '/stream/auditorio-2', component: ManageStream },
+    { path: '/stream/sala-2', component: ManageStream },
+    { path: '/stream/sala-juri', component: ManageStream },
+    { path: '/stream/**/manageStream', component: ManageStream },
     { path: '/**/login', component: Login },
     { path: '/registrations', component: RegistrationsManagement },
     { path: '/**/registrations', component: RegistrationsManagement },

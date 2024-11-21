@@ -16,7 +16,7 @@ class TestSetupInstall:
 
     def test_latest_version(self, profile_last_version):
         """Test latest version of default profile."""
-        assert profile_last_version(f"{PACKAGE_NAME}:default") == "20241119001"
+        assert profile_last_version(f"{PACKAGE_NAME}:default") == "20241121001"
 
     @pytest.mark.parametrize(
         "profile",

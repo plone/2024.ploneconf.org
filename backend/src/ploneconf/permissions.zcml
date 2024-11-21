@@ -61,6 +61,12 @@
         title="ploneconf: Register for a Training"
         />
 
+    <!-- Streaming -->
+    <permission
+        id="ploneconf.manageStreaming"
+        title="ploneconf: Manage Streaming"
+        />
+
   </configure>
 
 </configure>

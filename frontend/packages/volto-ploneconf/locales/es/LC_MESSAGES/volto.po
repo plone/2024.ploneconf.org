@@ -524,6 +524,11 @@ msgstr ""
 msgid "State"
 msgstr ""
 
+#. Default: "Stream Management"
+#: components/View/ManageStream
+msgid "Stream Management"
+msgstr ""
+
 #. Default: "Switch to"
 #: components/Header/LanguageSelector
 msgid "Switch to"

@@ -1,6 +1,8 @@
 from pathlib import Path
 from plone import api
 from ploneconf import logger
+from ploneconf.subscribers.user import add_to_groups
+from ploneconf.subscribers.user import get_new_groups_for_user
 from ploneconf.users.content.attendee import Attendee
 from ploneconf.utils import generate_password
 from zope.lifecycleevent import ObjectAddedEvent
@@ -59,6 +61,17 @@ def send_email(event: str, attendee: Attendee):
     logger.info(f"Sent welcome email in {lang} to {recipient}")
 
 
+def add_attendee_to_groups(attendee: Attendee):
+    user = api.user.get(userid=attendee.id)
+    group_names = get_new_groups_for_user(user=user, content=attendee)
+    add_to_groups(user, group_names=group_names)
+    logger.info(f"Added {user} to {group_names}")
+
+
 def attendee_added(attendee: Attendee, event: ObjectAddedEvent):
     """Handler for the object added event."""
     send_email(event="created", attendee=attendee)
+    try:
+        add_attendee_to_groups(attendee)
+    except Exception as exc:
+        logger.error(f"Error adding {attendee.id} to groups", exc_info=exc)

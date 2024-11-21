@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-11-19T22:20:54.650Z\n"
+"POT-Creation-Date: 2024-11-21T19:17:49.573Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -524,6 +524,11 @@ msgstr ""
 #: components/AttendeeManagement/AttendeeManagement
 #: components/Registrations/RegistrationsManagement
 msgid "State"
+msgstr ""
+
+#. Default: "Stream Management"
+#: components/View/ManageStream
+msgid "Stream Management"
 msgstr ""
 
 #. Default: "Switch to"

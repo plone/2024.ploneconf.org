@@ -1,4 +1,5 @@
 from datetime import datetime
+from datetime import timedelta
 from plone import api
 from plone.restapi.interfaces import ISerializeToJson
 from plone.restapi.interfaces import ISerializeToJsonSummary
@@ -67,9 +68,9 @@ def serialize_stream_info(context, stream_url: str, user) -> dict:
     else:
         now: datetime = datetime.now()
         start: datetime = context.start
-        diff = (start - now).seconds
-        logger.info(f"{context.absolute_url()} - {diff}")
-        result_url = stream_url if diff <= STREAMING_SERIALIZATION_LIMIT else ""
+        diff = start - timedelta(seconds=STREAMING_SERIALIZATION_LIMIT)
+        logger.info(f"{context.absolute_url()} - {start} - {now} - {diff}")
+        result_url = stream_url if now >= diff else ""
     return {
         "stream_url": result_url,
         "stream_domain": urlparse(context.absolute_url()).hostname,
