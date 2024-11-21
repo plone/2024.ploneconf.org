@@ -1,13 +1,14 @@
-import _ from 'lodash';
+import sortBy from 'lodash/sortBy';
+import cloneDeep from 'lodash/cloneDeep';
 import React, { useEffect, useState } from 'react';
 import { Container } from '@plone/components';
 import { defineMessages, useIntl, FormattedMessage } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import {
-  Table,
-  TableBody,
-  TableHeader,
+  Table as SemanticTable,
+  TableBody as SemanticTableBody,
+  TableHeader as SemanticTableHeader,
   TableRow,
   TableHeaderCell,
   Segment,
@@ -18,11 +19,25 @@ import backSVG from '@plone/volto/icons/back.svg';
 import { Icon, Toolbar, UniversalLink } from '@plone/volto/components';
 
 import {
+  Cell,
+  Column,
+  ColumnResizer,
+  ResizableTableContainer,
+  Row,
+  Table,
+  TableBody,
+  TableHeader,
+} from 'react-aria-components';
+
+import {
   getAllRegistrations,
   getRegistrations,
 } from '../../actions/registrations/registrations';
 
 import RegistrationItem from './RegistrationItem';
+import { useListData, useAsyncList } from 'react-stately';
+
+import '@plone/components/src/styles/basic/Table.css';
 
 const messages = defineMessages({
   back: {
@@ -80,7 +95,7 @@ const sortReducer = (state, action) => {
 
       return {
         column: action.column,
-        data: _.sortBy(state.data, [action.column]),
+        data: sortBy(state.data, [action.column]),
         direction: 'ascending',
       };
     default:
@@ -129,6 +144,46 @@ const RegistrationsManagement = () => {
     ? intl.formatMessage(messages.registrationManagementAll)
     : intl.formatMessage(messages.registrationManagement);
 
+  let list = useAsyncList({
+    async load({ signal }) {
+      // let res = await fetch(`https://swapi.py4e.com/api/people/?search`, {
+      //   signal,
+      // });
+      // let json = await res.json();
+      const func =
+        portal_type === 'Training' ? getRegistrations : getAllRegistrations;
+
+      let registrations = await dispatch(func(pathname, uuid));
+      const result = cloneDeep(registrations.registrations.items);
+      result.forEach((registration) => {
+        registration.training = registration.training.title;
+      });
+      return {
+        items: result,
+      };
+    },
+    // async getKey(item) {
+    //   debugger;
+    //   return item.uid;
+    // },
+    async sort({ items, sortDescriptor }) {
+      console.log(items);
+      console.log(sortDescriptor.column);
+      return {
+        items: items.sort((a, b) => {
+          let first = a[sortDescriptor.column];
+          let second = b[sortDescriptor.column];
+          let cmp =
+            (parseInt(first) || first) < (parseInt(second) || second) ? -1 : 1;
+          if (sortDescriptor.direction === 'descending') {
+            cmp *= -1;
+          }
+          return cmp;
+        }),
+      };
+    },
+  });
+
   return (
     <>
       <Helmet title={pageTitle} />
@@ -148,8 +203,38 @@ const RegistrationsManagement = () => {
             />
           </Segment>
           <Segment secondary>{pageTitle}</Segment>
-          <Table className={'sortable'}>
+          <Table
+            aria-label="Example table with client side sorting"
+            sortDescriptor={list.sortDescriptor}
+            onSortChange={list.sort}
+          >
             <TableHeader>
+              <Column id="training" isRowHeader allowsSorting>
+                Training
+              </Column>
+              <Column id="user_id" allowsSorting>
+                Name
+              </Column>
+              <Column id="created" allowsSorting>
+                Date
+              </Column>
+              <Column id="state" allowsSorting>
+                State
+              </Column>
+            </TableHeader>
+            <TableBody items={list.items}>
+              {(item) => (
+                <Row id={item.uid}>
+                  <Cell>{item.training}</Cell>
+                  <Cell>{item.user_id}</Cell>
+                  <Cell>{item.created}</Cell>
+                  <Cell>{item.state}</Cell>
+                </Row>
+              )}
+            </TableBody>
+          </Table>
+          <SemanticTable className={'sortable'}>
+            <SemanticTableHeader>
               <TableRow>
                 {allTrainings && (
                   <TableHeaderCell
@@ -189,8 +274,8 @@ const RegistrationsManagement = () => {
                   </TableHeaderCell>
                 )}
               </TableRow>
-            </TableHeader>
-            <TableBody>
+            </SemanticTableHeader>
+            <SemanticTableBody>
               {isClient && (
                 <RegistrationsList
                   intl={intl}
@@ -200,8 +285,8 @@ const RegistrationsManagement = () => {
                   allTrainings={allTrainings}
                 />
               )}
-            </TableBody>
-          </Table>
+            </SemanticTableBody>
+          </SemanticTable>
         </Segment.Group>
         {isClient &&
           createPortal(
