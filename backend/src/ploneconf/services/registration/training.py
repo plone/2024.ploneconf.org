@@ -1,3 +1,4 @@
+from collections import Counter
 from plone import api
 from plone.protect.interfaces import IDisableCSRFProtection
 from plone.restapi.deserializer import json_body
@@ -14,6 +15,20 @@ from zope.component import getMultiAdapter
 from zope.interface import alsoProvides
 from zope.interface import implementer
 from zope.interface import Interface
+
+
+def count_by_training(items: list[dict]) -> list[dict]:
+    """Count registrations by training."""
+    counter = Counter(
+        [
+            f"{i['training_id']}|{i['training']['title']}|{i['training']['@id']}"
+            for i in items
+        ]
+    )
+    counted = sorted([(v, k.split("|")) for k, v in counter.items()], reverse=True)
+    return [
+        {"id": k[0], "@id": k[2], "title": k[1], "registrations": v} for v, k in counted
+    ]
 
 
 class BaseService(Service):
@@ -72,9 +87,14 @@ class BaseService(Service):
         return result
 
     def get_all_registrations(self) -> list[dict]:
-        if self.context.portal_type == "Plone Site":
+        portal_type = self.context.portal_type
+        if portal_type == "Plone Site":
             state = self.request.form.get("state", "")
             user_id = self.request.form.get("user_id", "")
+            registrations = self.api.all_training_registrations(state, user_id)
+        elif portal_type == "Attendee":
+            state = self.request.form.get("state", "")
+            user_id = self.context.id
             registrations = self.api.all_training_registrations(state, user_id)
         else:
             registrations = self.api.users_by_training(self.training_id)
@@ -107,11 +127,12 @@ class GetRegistrations(BaseService):
     endpoint: str = "@registrations"
 
     def __call__(self, expand=False):
-        result = {"@id": self.base_url, "items": []}
+        result = {"@id": self.base_url, "items": [], "total": 0}
         if not expand:
-            return {"registration": result}
+            return {"registrations": result}
         items = self.get_all_registrations()
         result["items"] = self.enrich_registrations(items)
+        result["total"] = len(items)
         return {"registrations": result}
 
 
@@ -123,12 +144,35 @@ class GetAllRegistrations(GetRegistrations):
         base_url = f"{self.context.absolute_url()}/{self.endpoint}"
         return base_url
 
+    def __call__(self, expand=False):
+        result = super().__call__(expand=expand)
+        if not expand:
+            return result
+        result["registrations"]["trainings"] = count_by_training(
+            result["registrations"]["items"]
+        )
+        return result
+
 
 class GetAll(BaseService):
     endpoint: str = "@registrations"
 
     def reply(self):
         """Return the list of registrations for a training."""
+        registrations = GetRegistrations(self.context, self.request)
+        return registrations(expand=True)
+
+
+class GetByUser(BaseService):
+    endpoint: str = "@registrations"
+
+    @property
+    def base_url(self) -> str:
+        base_url = f"{self.context.absolute_url()}/{self.endpoint}"
+        return base_url
+
+    def reply(self):
+        """Return the list of registrations for an attendee."""
         registrations = GetRegistrations(self.context, self.request)
         return registrations(expand=True)
 

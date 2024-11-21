@@ -1,5 +1,9 @@
 .registrations-management {
   margin-top: $spacing-medium;
+  .trainingsList,
+  .registrationsList {
+    margin: $spacing-xs $spacing-small;
+  }
   .registration {
     .state {
       @include pill();

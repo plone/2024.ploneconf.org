@@ -23,6 +23,7 @@ import {
 import { flattenToAppURL, getCurrentStateMapping } from '@plone/volto/helpers';
 import { getUserReports } from '../../actions/usersReport/usersReport';
 import AttendeeCategory from '../AttendeeCard/AttendeeCategory';
+import AttendeeRegistrations from './AttendeeRegistrations';
 
 const messages = defineMessages({
   messageUpdated: {
@@ -235,6 +236,22 @@ const AttendeeManagement = ({ pathname, content }) => {
         return (
           <Tab.Pane className="tab-container" key={'actions_container'}>
             <StateManagement pathname={pathname} intl={intl} />
+          </Tab.Pane>
+        );
+      },
+    },
+    {
+      menuItem: (
+        <Menu.Item key={'registrations_menu'}>
+          <h3>
+            <FormattedMessage id="Trainings" defaultMessage="Trainings" />
+          </h3>
+        </Menu.Item>
+      ),
+      render: () => {
+        return (
+          <Tab.Pane className="tab-container" key={'registrations_container'}>
+            <AttendeeRegistrations content={content} />
           </Tab.Pane>
         );
       },

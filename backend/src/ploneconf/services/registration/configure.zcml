@@ -28,6 +28,14 @@
       />
 
   <plone:service
+      method="GET"
+      factory=".training.GetByUser"
+      for="ploneconf.users.content.attendee.IAttendee"
+      permission="cmf.ReviewPortalContent"
+      name="@registrations"
+      />
+
+  <plone:service
       method="PATCH"
       factory=".training.Patch"
       for="ploneconf.content.training.ITraining"

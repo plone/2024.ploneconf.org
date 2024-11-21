@@ -17,6 +17,7 @@ const initialState = {
 
 const trainingInitialState = {
   items: [],
+  trainings: [],
   registration: {},
 };
 
@@ -82,6 +83,7 @@ export default function registrations(state = initialState, action = {}) {
           [action.subrequest]: {
             registration: {},
             items: action.result.registrations.items,
+            trainings: action.result.registrations.trainings,
             loading: false,
             error: null,
           },

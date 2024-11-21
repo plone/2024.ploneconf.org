@@ -549,9 +549,19 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
+#. Default: "Total"
+#: components/Registrations/RegistrationsManagement
+msgid "Total"
+msgstr ""
+
 #. Default: "Training"
 #: components/Registrations/RegistrationsManagement
 msgid "Training"
+msgstr ""
+
+#. Default: "Trainings"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Trainings"
 msgstr ""
 
 #. Default: "Unlock"

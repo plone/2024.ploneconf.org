@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-11-21T19:17:49.573Z\n"
+"POT-Creation-Date: 2024-11-21T23:05:14.319Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -551,9 +551,19 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
+#. Default: "Total"
+#: components/Registrations/RegistrationsManagement
+msgid "Total"
+msgstr ""
+
 #. Default: "Training"
 #: components/Registrations/RegistrationsManagement
 msgid "Training"
+msgstr ""
+
+#. Default: "Trainings"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Trainings"
 msgstr ""
 
 #. Default: "Unlock"

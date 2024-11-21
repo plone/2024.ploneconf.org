@@ -11,6 +11,7 @@ import {
   TableRow,
   TableHeaderCell,
   Segment,
+  TableCell,
 } from 'semantic-ui-react';
 import { createPortal } from 'react-dom';
 import { Helmet } from '@plone/volto/helpers';
@@ -61,6 +62,39 @@ const RegistrationsList = ({
   );
 };
 
+const TrainingsList = ({ isClient, trainings }) => {
+  return (
+    isClient &&
+    trainings &&
+    trainings.length > 0 && (
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHeaderCell>
+              <FormattedMessage id={'Training'} defaultMessage={'Training'} />
+            </TableHeaderCell>
+            <TableHeaderCell>
+              <FormattedMessage id={'Total'} defaultMessage={'Total'} />
+            </TableHeaderCell>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {trainings.map((training) => (
+            <TableRow key={training.id} className={`training`}>
+              <TableCell>
+                <UniversalLink href={training['@id']}>
+                  {training.title}
+                </UniversalLink>
+              </TableCell>
+              <TableCell>{training.registrations}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    )
+  );
+};
+
 const sortReducer = (state, action) => {
   switch (action.type) {
     case 'UPDATE_DATA':
@@ -99,6 +133,9 @@ const RegistrationsManagement = () => {
   const registrations = useSelector(
     (state) => state.registrations?.subrequests?.[uuid]?.items || [],
   );
+  const trainings = useSelector(
+    (state) => state.registrations?.subrequests?.[uuid]?.trainings || [],
+  );
   const [state, sortDispatch] = React.useReducer(sortReducer, {
     column: null,
     data: registrations,
@@ -128,11 +165,14 @@ const RegistrationsManagement = () => {
   const pageTitle = allTrainings
     ? intl.formatMessage(messages.registrationManagementAll)
     : intl.formatMessage(messages.registrationManagement);
-
   return (
     <>
       <Helmet title={pageTitle} />
-      <Container layout id={'page-document'}>
+      <Container
+        layout
+        id={'page-document'}
+        className="registrations-management"
+      >
         <Segment.Group raised>
           <Segment className="primary">
             <FormattedMessage
@@ -144,60 +184,75 @@ const RegistrationsManagement = () => {
             />
           </Segment>
           <Segment secondary>{pageTitle}</Segment>
-          <Table className={'sortable'}>
-            <TableHeader>
-              <TableRow>
-                {allTrainings && (
-                  <TableHeaderCell
-                    sorted={column === 'training' ? direction : null}
-                    onClick={() =>
-                      sortDispatch({ type: 'CHANGE_SORT', column: 'training' })
-                    }
-                  >
-                    <FormattedMessage
-                      id={'Training'}
-                      defaultMessage={'Training'}
+          {trainings && (
+            <Container className={'trainingsList'}>
+              <TrainingsList trainings={trainings} isClient={isClient} />
+            </Container>
+          )}
+          {registrations && (
+            <Container className={'registrationsList'}>
+              <Table className={'sortable'}>
+                <TableHeader>
+                  <TableRow>
+                    {allTrainings && (
+                      <TableHeaderCell
+                        sorted={column === 'training' ? direction : null}
+                        onClick={() =>
+                          sortDispatch({
+                            type: 'CHANGE_SORT',
+                            column: 'training',
+                          })
+                        }
+                      >
+                        <FormattedMessage
+                          id={'Training'}
+                          defaultMessage={'Training'}
+                        />
+                      </TableHeaderCell>
+                    )}
+                    <TableHeaderCell
+                      sorted={column === 'name' ? direction : null}
+                      onClick={() =>
+                        sortDispatch({ type: 'CHANGE_SORT', column: 'name' })
+                      }
+                    >
+                      <FormattedMessage id={'Name'} defaultMessage={'Name'} />
+                    </TableHeaderCell>
+                    <TableHeaderCell
+                      sorted={column === 'date' ? direction : null}
+                      onClick={() =>
+                        sortDispatch({ type: 'CHANGE_SORT', column: 'date' })
+                      }
+                    >
+                      <FormattedMessage id={'Date'} defaultMessage={'Date'} />
+                    </TableHeaderCell>
+                    <TableHeaderCell>
+                      <FormattedMessage id={'State'} defaultMessage={'State'} />
+                    </TableHeaderCell>
+                    {!allTrainings && (
+                      <TableHeaderCell>
+                        <FormattedMessage
+                          id={'Action'}
+                          defaultMessage={'Action'}
+                        />
+                      </TableHeaderCell>
+                    )}
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {isClient && (
+                    <RegistrationsList
+                      intl={intl}
+                      registrations={data}
+                      pathname={pathname}
+                      uuid={uuid}
+                      allTrainings={allTrainings}
                     />
-                  </TableHeaderCell>
-                )}
-                <TableHeaderCell
-                  sorted={column === 'name' ? direction : null}
-                  onClick={() =>
-                    sortDispatch({ type: 'CHANGE_SORT', column: 'name' })
-                  }
-                >
-                  <FormattedMessage id={'Name'} defaultMessage={'Name'} />
-                </TableHeaderCell>
-                <TableHeaderCell
-                  sorted={column === 'date' ? direction : null}
-                  onClick={() =>
-                    sortDispatch({ type: 'CHANGE_SORT', column: 'date' })
-                  }
-                >
-                  <FormattedMessage id={'Date'} defaultMessage={'Date'} />
-                </TableHeaderCell>
-                <TableHeaderCell>
-                  <FormattedMessage id={'State'} defaultMessage={'State'} />
-                </TableHeaderCell>
-                {!allTrainings && (
-                  <TableHeaderCell>
-                    <FormattedMessage id={'Action'} defaultMessage={'Action'} />
-                  </TableHeaderCell>
-                )}
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {isClient && (
-                <RegistrationsList
-                  intl={intl}
-                  registrations={data}
-                  pathname={pathname}
-                  uuid={uuid}
-                  allTrainings={allTrainings}
-                />
-              )}
-            </TableBody>
-          </Table>
+                  )}
+                </TableBody>
+              </Table>
+            </Container>
+          )}
         </Segment.Group>
         {isClient &&
           createPortal(
