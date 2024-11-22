@@ -140,9 +140,7 @@ class TrainingJSONSerializer(JSONSerializer):
                 user=user.getUser(), training=training
             )
             result["available_seats"] = training.available_seats
-            result["allow_registration"] = (
-                allow_registration and training.available_seats > 0 and not is_online
-            )
+            result["allow_registration"] = allow_registration and not is_online
             if hasPermission:
                 registrations = GetRegistrations(training, self.request)
                 result.update(registrations(expand=True))

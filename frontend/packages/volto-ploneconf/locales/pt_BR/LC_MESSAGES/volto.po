@@ -63,6 +63,11 @@ msgstr "Participantes"
 msgid "Attendees Management"
 msgstr "Gestão de participantes"
 
+#. Default: "Available Seats"
+#: components/Registrations/Register
+msgid "Available Seats"
+msgstr "Vagas disponíveis"
+
 #. Default: "Back"
 #: components/Personal/PersonalTools
 #: components/Registrations/RegistrationsManagement
@@ -313,6 +318,11 @@ msgstr "Nome"
 msgid "News Item"
 msgstr "Notícia"
 
+#. Default: "No seats available"
+#: components/Registrations/Register
+msgid "No seats available"
+msgstr "Sem vagas"
+
 #. Default: "No workflow"
 #: components/AttendeeManagement/AttendeeManagement
 msgid "No workflow"
@@ -529,7 +539,7 @@ msgstr "Estado"
 #. Default: "Stream Management"
 #: components/View/ManageStream
 msgid "Stream Management"
-msgstr ""
+msgstr "Gestão Streaming"
 
 #. Default: "Switch to"
 #: components/Header/LanguageSelector
@@ -554,7 +564,12 @@ msgstr "Título"
 #. Default: "Total"
 #: components/Registrations/RegistrationsManagement
 msgid "Total"
-msgstr ""
+msgstr "Total"
+
+#. Default: "Total Seats"
+#: components/Registrations/Register
+msgid "Total Seats"
+msgstr "Vagas"
 
 #. Default: "Training"
 #: components/Registrations/RegistrationsManagement
@@ -564,7 +579,7 @@ msgstr "Tutorial"
 #. Default: "Trainings"
 #: components/AttendeeManagement/AttendeeManagement
 msgid "Trainings"
-msgstr ""
+msgstr "Treinamentos"
 
 #. Default: "Unlock"
 #: components/Toolbar/Toolbar

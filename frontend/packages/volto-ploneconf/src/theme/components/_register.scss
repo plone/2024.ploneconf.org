@@ -1,6 +1,44 @@
 .register {
   h2 {
     padding-top: $spacing-small;
+    margin-bottom: 0;
+  }
+  .trainingSeats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(242, 244, 245);
+    .stats {
+      min-width: 25%;
+      padding: $spacing-xs;
+      border-radius: 10%;
+      margin: $spacing-small;
+      background-color: var(--main-color);
+      color: var(--reverse-color);
+      .label {
+        padding: $spacing-small $spacing-xs;
+        text-align: center;
+        @include add(size, s);
+        @include add(weight, light);
+        @include add(height, s);
+      }
+      .value {
+        padding: $spacing-xs;
+        text-align: center;
+        @include add(size, 2xl);
+        @include add(weight, bold);
+        @include add(height, 2xl);
+      }
+    }
+  }
+  .warning {
+    width: 100%;
+    padding: $spacing-small;
+    text-align: center;
+    @include add(size, xl);
+    @include add(weight, semi-bold);
+    @include add(height, xl);
   }
   .register-actions {
     width: 100%;

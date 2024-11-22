@@ -61,6 +61,11 @@ msgstr ""
 msgid "Attendees Management"
 msgstr ""
 
+#. Default: "Available Seats"
+#: components/Registrations/Register
+msgid "Available Seats"
+msgstr ""
+
 #. Default: "Back"
 #: components/Personal/PersonalTools
 #: components/Registrations/RegistrationsManagement
@@ -311,6 +316,11 @@ msgstr ""
 msgid "News Item"
 msgstr ""
 
+#. Default: "No seats available"
+#: components/Registrations/Register
+msgid "No seats available"
+msgstr ""
+
 #. Default: "No workflow"
 #: components/AttendeeManagement/AttendeeManagement
 msgid "No workflow"
@@ -552,6 +562,11 @@ msgstr ""
 #. Default: "Total"
 #: components/Registrations/RegistrationsManagement
 msgid "Total"
+msgstr ""
+
+#. Default: "Total Seats"
+#: components/Registrations/Register
+msgid "Total Seats"
 msgstr ""
 
 #. Default: "Training"
