@@ -1,17 +1,17 @@
-import _ from 'lodash';
+import sortBy from 'lodash/sortBy';
 import React, { useEffect, useState } from 'react';
 import { Container } from '@plone/components';
 import { defineMessages, useIntl, FormattedMessage } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import {
-  Table,
-  TableBody,
-  TableHeader,
+  Table as SemanticTable,
+  TableBody as SemanticTableBody,
+  TableHeader as SemanticTableHeader,
+  TableCell,
   TableRow,
   TableHeaderCell,
   Segment,
-  TableCell,
 } from 'semantic-ui-react';
 import { createPortal } from 'react-dom';
 import { Helmet } from '@plone/volto/helpers';
@@ -24,6 +24,8 @@ import {
 } from '../../actions/registrations/registrations';
 
 import RegistrationItem from './RegistrationItem';
+
+import '@plone/components/src/styles/basic/Table.css';
 
 const messages = defineMessages({
   back: {
@@ -39,6 +41,39 @@ const messages = defineMessages({
     defaultMessage: 'Registrations management for all trainings',
   },
 });
+
+const TrainingsList = ({ isClient, trainings }) => {
+  return (
+    isClient &&
+    trainings &&
+    trainings.length > 0 && (
+      <SemanticTable>
+        <SemanticTableHeader>
+          <TableRow>
+            <TableHeaderCell>
+              <FormattedMessage id={'Training'} defaultMessage={'Training'} />
+            </TableHeaderCell>
+            <TableHeaderCell>
+              <FormattedMessage id={'Total'} defaultMessage={'Total'} />
+            </TableHeaderCell>
+          </TableRow>
+        </SemanticTableHeader>
+        <SemanticTableBody>
+          {trainings.map((training) => (
+            <TableRow key={training.id} className={`training`}>
+              <TableCell>
+                <UniversalLink href={training['@id']}>
+                  {training.title}
+                </UniversalLink>
+              </TableCell>
+              <TableCell>{training.registrations}</TableCell>
+            </TableRow>
+          ))}
+        </SemanticTableBody>
+      </SemanticTable>
+    )
+  );
+};
 
 const RegistrationsList = ({
   intl,
@@ -62,39 +97,6 @@ const RegistrationsList = ({
   );
 };
 
-const TrainingsList = ({ isClient, trainings }) => {
-  return (
-    isClient &&
-    trainings &&
-    trainings.length > 0 && (
-      <Table>
-        <TableHeader>
-          <TableRow>
-            <TableHeaderCell>
-              <FormattedMessage id={'Training'} defaultMessage={'Training'} />
-            </TableHeaderCell>
-            <TableHeaderCell>
-              <FormattedMessage id={'Total'} defaultMessage={'Total'} />
-            </TableHeaderCell>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {trainings.map((training) => (
-            <TableRow key={training.id} className={`training`}>
-              <TableCell>
-                <UniversalLink href={training['@id']}>
-                  {training.title}
-                </UniversalLink>
-              </TableCell>
-              <TableCell>{training.registrations}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    )
-  );
-};
-
 const sortReducer = (state, action) => {
   switch (action.type) {
     case 'UPDATE_DATA':
@@ -111,10 +113,9 @@ const sortReducer = (state, action) => {
             state.direction === 'ascending' ? 'descending' : 'ascending',
         };
       }
-
       return {
         column: action.column,
-        data: _.sortBy(state.data, [action.column]),
+        data: sortBy(state.data, [action.column]),
         direction: 'ascending',
       };
     default:
@@ -144,7 +145,6 @@ const RegistrationsManagement = () => {
 
   const { column, data, direction } = state;
   const total = data.length;
-  const allTrainings = portal_type === 'Training' ? false : true;
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -162,6 +162,7 @@ const RegistrationsManagement = () => {
     dispatch(func(pathname, uuid));
   }, [dispatch, uuid, pathname, portal_type]);
 
+  const allTrainings = portal_type === 'Training' ? false : true;
   const pageTitle = allTrainings
     ? intl.formatMessage(messages.registrationManagementAll)
     : intl.formatMessage(messages.registrationManagement);
@@ -171,7 +172,7 @@ const RegistrationsManagement = () => {
       <Container
         layout
         id={'page-document'}
-        className="registrations-management"
+        className={'registrations-management'}
       >
         <Segment.Group raised>
           <Segment className="primary">
@@ -191,8 +192,8 @@ const RegistrationsManagement = () => {
           )}
           {registrations && (
             <Container className={'registrationsList'}>
-              <Table className={'sortable'}>
-                <TableHeader>
+              <SemanticTable className={'sortable'}>
+                <SemanticTableHeader>
                   <TableRow>
                     {allTrainings && (
                       <TableHeaderCell
@@ -200,7 +201,7 @@ const RegistrationsManagement = () => {
                         onClick={() =>
                           sortDispatch({
                             type: 'CHANGE_SORT',
-                            column: 'training',
+                            column: 'training.id',
                           })
                         }
                       >
@@ -213,7 +214,7 @@ const RegistrationsManagement = () => {
                     <TableHeaderCell
                       sorted={column === 'name' ? direction : null}
                       onClick={() =>
-                        sortDispatch({ type: 'CHANGE_SORT', column: 'name' })
+                        sortDispatch({ type: 'CHANGE_SORT', column: 'user.id' })
                       }
                     >
                       <FormattedMessage id={'Name'} defaultMessage={'Name'} />
@@ -226,7 +227,15 @@ const RegistrationsManagement = () => {
                     >
                       <FormattedMessage id={'Date'} defaultMessage={'Date'} />
                     </TableHeaderCell>
-                    <TableHeaderCell>
+                    <TableHeaderCell
+                      sorted={column === 'review_state' ? direction : null}
+                      onClick={() =>
+                        sortDispatch({
+                          type: 'CHANGE_SORT',
+                          column: 'review_state',
+                        })
+                      }
+                    >
                       <FormattedMessage id={'State'} defaultMessage={'State'} />
                     </TableHeaderCell>
                     {!allTrainings && (
@@ -238,8 +247,8 @@ const RegistrationsManagement = () => {
                       </TableHeaderCell>
                     )}
                   </TableRow>
-                </TableHeader>
-                <TableBody>
+                </SemanticTableHeader>
+                <SemanticTableBody>
                   {isClient && (
                     <RegistrationsList
                       intl={intl}
@@ -249,8 +258,8 @@ const RegistrationsManagement = () => {
                       allTrainings={allTrainings}
                     />
                   )}
-                </TableBody>
-              </Table>
+                </SemanticTableBody>
+              </SemanticTable>
             </Container>
           )}
         </Segment.Group>
