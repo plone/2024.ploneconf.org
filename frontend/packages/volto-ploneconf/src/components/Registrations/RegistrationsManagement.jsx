@@ -92,8 +92,6 @@ const sortReducer = (state, action) => {
             state.direction === 'ascending' ? 'descending' : 'ascending',
         };
       }
-      console.log(state.data);
-      console.log(action.column);
       return {
         column: action.column,
         data: sortBy(state.data, [action.column]),
