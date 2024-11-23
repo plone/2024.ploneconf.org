@@ -92,7 +92,8 @@ const sortReducer = (state, action) => {
             state.direction === 'ascending' ? 'descending' : 'ascending',
         };
       }
-
+      console.log(state.data);
+      console.log(action.column);
       return {
         column: action.column,
         data: sortBy(state.data, [action.column]),
@@ -167,8 +168,6 @@ const RegistrationsManagement = () => {
     //   return item.uid;
     // },
     async sort({ items, sortDescriptor }) {
-      console.log(items);
-      console.log(sortDescriptor.column);
       return {
         items: items.sort((a, b) => {
           let first = a[sortDescriptor.column];
@@ -203,7 +202,8 @@ const RegistrationsManagement = () => {
             />
           </Segment>
           <Segment secondary>{pageTitle}</Segment>
-          <Table
+          {/* @sneridagh: Commenting the RAC alternative for now */}
+          {/* <Table
             aria-label="Example table with client side sorting"
             sortDescriptor={list.sortDescriptor}
             onSortChange={list.sort}
@@ -232,7 +232,7 @@ const RegistrationsManagement = () => {
                 </Row>
               )}
             </TableBody>
-          </Table>
+          </Table> */}
           <SemanticTable className={'sortable'}>
             <SemanticTableHeader>
               <TableRow>
@@ -240,7 +240,10 @@ const RegistrationsManagement = () => {
                   <TableHeaderCell
                     sorted={column === 'training' ? direction : null}
                     onClick={() =>
-                      sortDispatch({ type: 'CHANGE_SORT', column: 'training' })
+                      sortDispatch({
+                        type: 'CHANGE_SORT',
+                        column: 'training.title',
+                      })
                     }
                   >
                     <FormattedMessage
@@ -252,7 +255,7 @@ const RegistrationsManagement = () => {
                 <TableHeaderCell
                   sorted={column === 'name' ? direction : null}
                   onClick={() =>
-                    sortDispatch({ type: 'CHANGE_SORT', column: 'name' })
+                    sortDispatch({ type: 'CHANGE_SORT', column: 'user_id' })
                   }
                 >
                   <FormattedMessage id={'Name'} defaultMessage={'Name'} />
