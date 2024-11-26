@@ -7,6 +7,7 @@ from ploneconf.settings import CORE_TEAM
 from ploneconf.settings import ORGANIZERS_CORE_GROUP
 from ploneconf.settings import USER_CATEGORIES
 from ploneconf.souper.access import Tracking
+from ploneconf.users.content.onlineattendee import OnlineAttendee
 
 
 def _get_content_for_user(user):
@@ -40,9 +41,13 @@ def get_new_groups_for_user(user, content=None) -> list:
     return list(group_names)
 
 
-def add_to_groups(user, group_names=None):
+def add_to_groups(user, group_names=None, attendee=None):
     with api.env.adopt_roles(["Manager"]):
-        group_names = group_names if group_names else get_new_groups_for_user(user)
+        group_names = (
+            group_names
+            if group_names
+            else get_new_groups_for_user(user, content=attendee)
+        )
         username = user.getUserName()
         for groupname in group_names:
             try:
@@ -77,10 +82,23 @@ def creation_handler(attendee, _event):
     logger.info(f"Reindexed Subject for user {attendee.email}")
 
 
+def online_attendee_handler(attendee: OnlineAttendee):
+    """Transition Online Attendee to checked in on login."""
+    with api.env.adopt_roles(["Manager"]):
+        review_state = api.content.get_state(attendee)
+        if review_state == "registered":
+            api.content.transition(obj=attendee, transition="checkin")
+            logger.info(f"Checked-in online attendee {attendee.email}")
+
+
 def login_handler(event):
     """Add user to correct Group."""
     user = event.object
+    # Get attendee content
+    attendee = _get_content_for_user(user)
     # Track login
     track(user)
     # Add to groups
     add_to_groups(user)
+    if attendee and attendee.portal_type == "OnlineAttendee":
+        online_attendee_handler(attendee=attendee)
