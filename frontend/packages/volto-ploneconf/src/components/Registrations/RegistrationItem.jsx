@@ -43,7 +43,7 @@ const RegistrationItem = ({
           updateAllRegistrations(pathname, uuid, {
             training_ids: [training_id],
             user_ids: [user_id],
-            state: state,
+            state: newState,
           }),
         );
       } else {
@@ -51,7 +51,7 @@ const RegistrationItem = ({
         dispatch(
           updateRegistrations(pathname, uuid, {
             user_ids: [user_id],
-            state: state,
+            state: newState,
           }),
         );
       }
