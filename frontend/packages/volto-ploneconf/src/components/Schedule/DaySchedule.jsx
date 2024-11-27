@@ -33,7 +33,7 @@ const iconDict = {
 };
 
 const DaySchedule = (props) => {
-  const { day } = props;
+  const { day, streamAction } = props;
   const intl = useIntl();
   const keyDay = day['id'];
   const hours = day.items;
@@ -78,7 +78,7 @@ const DaySchedule = (props) => {
             <div className="rooms">
               {hasAllRoom && rooms['_all_'] ? (
                 <div className={'room-all'}>
-                  <SlotCard item={rooms['_all_']} />
+                  <SlotCard item={rooms['_all_']} streamAction={streamAction} />
                 </div>
               ) : (
                 dayRooms.map((roomId, roomIndex) => {
@@ -91,7 +91,7 @@ const DaySchedule = (props) => {
                       key={roomIndex}
                     >
                       {slot ? (
-                        <Card item={slot} />
+                        <Card item={slot} streamAction={streamAction} />
                       ) : (
                         <div className="slot-card empty">{''}</div>
                       )}

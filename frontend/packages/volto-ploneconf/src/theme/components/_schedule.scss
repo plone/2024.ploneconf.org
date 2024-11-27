@@ -223,7 +223,16 @@
     }
   }
   .slot-card {
+    &.LightningTalks {
+      .slot-actions {
+        padding: 5px 0;
+        margin-top: -20px;
+      }
+    }
     .session-info {
+      .timing .icon {
+        display: none;
+      }
       @media screen and (min-width: $tablet-breakpoint) {
         .timing {
           margin: 0;

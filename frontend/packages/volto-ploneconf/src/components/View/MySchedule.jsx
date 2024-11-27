@@ -95,11 +95,13 @@ const MySchedule = (props) => {
             <MyScheduleIcal />
           </p>
         )}
-        <MyScheduleComponent
-          items={items}
-          loading={loading}
-          streamAction={streamAction}
-        />
+        {!__SERVER__ && (
+          <MyScheduleComponent
+            items={items}
+            loading={loading}
+            streamAction={streamAction}
+          />
+        )}
         <LiveStreamModal
           streamInfo={streamInfo}
           streamModal={streamModal}

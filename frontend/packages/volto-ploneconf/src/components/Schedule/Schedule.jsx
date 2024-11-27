@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Tab, Menu } from 'semantic-ui-react';
 import { listSchedule } from '../../actions';
 import { FormattedMessage } from 'react-intl';
 import { FormattedDate } from '@plone/volto/components';
+import LiveStreamModal from '../LiveStream/LiveStreamModal';
 import DaySchedule from './DaySchedule';
 
 const Schedule = (props) => {
   const { isEditMode, filterByDay, displayDayIndex } = props;
   const dispatch = useDispatch();
+  const [streamModal, setStreamModal] = useState(false);
+  const [streamInfo, setStreamInfo] = useState({});
+  const streamAction = (info) => {
+    setStreamInfo(info);
+    setStreamModal(true);
+  };
   const schedule = useSelector((state) => state.schedule?.data) || [];
   const daysInfo =
     schedule?.items &&
@@ -48,7 +55,7 @@ const Schedule = (props) => {
                   date={date}
                   includeTime={false}
                   format={{
-                    month: 'long',
+                    month: 'short',
                     day: 'numeric',
                   }}
                 />
@@ -59,7 +66,7 @@ const Schedule = (props) => {
         render: () => {
           return (
             <Tab.Pane className="tab-container" key={`${keyDay}_container`}>
-              <DaySchedule day={day} />
+              <DaySchedule day={day} streamAction={streamAction} />
             </Tab.Pane>
           );
         },
@@ -70,6 +77,11 @@ const Schedule = (props) => {
     <div className="schedule">
       {isEditMode && 'Schedule Edit Mode'}
       <Tab panes={panes} className="tab" />
+      <LiveStreamModal
+        streamInfo={streamInfo}
+        streamModal={streamModal}
+        setStreamModal={setStreamModal}
+      />
     </div>
   );
 };
