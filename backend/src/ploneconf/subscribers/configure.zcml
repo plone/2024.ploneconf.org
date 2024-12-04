@@ -19,6 +19,18 @@
       handler=".attendee.attendee_added"
       />
 
+  <!-- File Subscribers -->
+  <subscriber
+      for="plone.app.contenttypes.interfaces.IFile
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".file.check_certificate_permission"
+      />
+  <subscriber
+      for="plone.app.contenttypes.interfaces.IFile
+           zope.lifecycleevent.IObjectModifiedEvent"
+      handler=".file.check_certificate_permission"
+      />
+
   <!-- Conference SponsorsDB Subscribers -->
   <subscriber
       for="ploneconf.content.sponsors.sponsors_db.ISponsorsDB

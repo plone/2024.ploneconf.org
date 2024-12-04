@@ -19,6 +19,7 @@ exclude scripts/.env_live
 exclude scripts/.env_stag
 exclude scripts/update_streamyard.py
 exclude scripts/send_emails.py
+exclude scripts/send_emails*.py
 exclude scripts/data/*.txt
 exclude scripts/data/*.json
 recursive-exclude frontend *

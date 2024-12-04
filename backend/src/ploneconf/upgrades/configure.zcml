@@ -184,5 +184,15 @@
         handler=".attendees.reindex_subject"
         />
   </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241121001"
+      destination="20241204001"
+      >
+    <upgradeStep
+        title="Change permission allowing anonymous to download certificate"
+        handler=".attendees.allow_certificate_download"
+        />
+  </genericsetup:upgradeSteps>
 
 </configure>

@@ -50,4 +50,5 @@ var/
 #  """
 ##
 scripts/send_emails.py
+scripts/send_emails*.py
 scripts/data/*.txt

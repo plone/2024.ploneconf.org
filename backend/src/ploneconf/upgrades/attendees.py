@@ -83,3 +83,13 @@ def reindex_subject(setup_tool: SetupTool):
         logger.info(f"Added {attendee} groups")
         attendee.reindexObject(idxs=["Subject"])
         logger.info(f"Reindexed {attendee.title}")
+
+
+def allow_certificate_download(setup_tool: SetupTool):
+    portal = api.portal.get()
+    attendees = portal.attendees
+    brains = api.content.find(context=attendees, portal_type="File")
+    for brain in brains:
+        certificate = brain.getObject()
+        certificate.manage_permission("View", roles=["Anonymous"], acquire=False)
+        logger.info(f"Changed permission for {certificate.absolute_url}")
