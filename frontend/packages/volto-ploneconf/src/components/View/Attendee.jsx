@@ -1,9 +1,11 @@
 import React from 'react';
-import { Container } from '@plone/components';
+import { Container, Button, ArrowdownIcon } from '@plone/components';
+import { UniversalLink } from '@plone/volto/components';
 import { Grid } from 'semantic-ui-react';
 import { flattenToAppURL } from '@plone/volto/helpers';
 import DefaultImageSVG from '@plone/volto/components/manage/Blocks/Listing/default-image.svg';
 import Links from '../Links/Links';
+import { FormattedMessage } from 'react-intl';
 import AttendeeLabel from '../AttendeeLabel/AttendeeLabel';
 import AttendeeManagement from '../AttendeeManagement/AttendeeManagement';
 
@@ -41,6 +43,26 @@ const Attendee = ({ location, content }) => {
           )}
         </Grid.Column>
       </Grid>
+      {content.certificates && content.certificates.length > 0 && (
+        <Container narrow className="certificates">
+          <h2>
+            <FormattedMessage id="Certificates" defaultMessage="Certificates" />
+          </h2>
+          {content.certificates.map((certificate, idx) => (
+            <Container key={idx}>
+              <UniversalLink
+                href={certificate.file['download']}
+                className={'certificateDownload'}
+              >
+                <Button>
+                  {certificate.title}
+                  <ArrowdownIcon />
+                </Button>
+              </UniversalLink>
+            </Container>
+          ))}
+        </Container>
+      )}
       {content.eventbrite?.event_id && (
         <AttendeeManagement content={content} pathname={pathname} />
       )}

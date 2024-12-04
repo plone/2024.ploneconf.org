@@ -120,6 +120,11 @@ msgstr "Cancelada"
 msgid "Capybara Room"
 msgstr "Sala Capivara"
 
+#. Default: "Certificates"
+#: components/View/Attendee
+msgid "Certificates"
+msgstr ""
+
 #. Default: "Change Password"
 #: components/Toolbar/PlugChangePassword
 msgid "Change Password"

@@ -2,6 +2,20 @@ body.contenttype-attendee,
 body.contenttype-onlineattendee {
   .attendee-view {
     margin-top: $spacing-medium;
+    .certificates {
+      .certificateDownload {
+        .react-aria-Button {
+          padding: $spacing-small $spacing-xs;
+          border-color: var(--main-color);
+          background-color: var(--main-color);
+          color: var(--reverse-color);
+          svg {
+            margin-left: $spacing-xs;
+            fill: var(--reverse-color);
+          }
+        }
+      }
+    }
     .attendee-labels {
       margin: $spacing-xs 0;
     }

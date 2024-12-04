@@ -118,6 +118,11 @@ msgstr ""
 msgid "Capybara Room"
 msgstr ""
 
+#. Default: "Certificates"
+#: components/View/Attendee
+msgid "Certificates"
+msgstr ""
+
 #. Default: "Change Password"
 #: components/Toolbar/PlugChangePassword
 msgid "Change Password"

@@ -9,6 +9,7 @@ from plone.restapi.serializer.summary import DefaultJSONSummarySerializer
 from ploneconf.users.content.attendee import IAttendee
 from ploneconf.utils import generate_links_dict
 from zope.component import adapter
+from zope.component import getMultiAdapter
 from zope.interface import implementer
 from zope.interface import Interface
 
@@ -63,6 +64,17 @@ class AttendeeJSONSummarySerializer(DefaultJSONSummarySerializer):
 @implementer(ISerializeToJson)
 @adapter(IAttendee, Interface)
 class AttendeeJSONSerializer(SerializeToJson):
+    def certificates(self) -> list[dict]:
+        certificates = []
+        contents = self.context.objectValues()
+        if contents:
+            filtered = [item for item in contents if item.portal_type == "File"]
+            certificates = [
+                getMultiAdapter((item, self.request), ISerializeToJson)()
+                for item in filtered
+            ]
+        return certificates
+
     def __call__(self, version=None, include_items=True):
         result = super().__call__(version, include_items)
         links = generate_links_dict(self.context)
@@ -71,6 +83,7 @@ class AttendeeJSONSerializer(SerializeToJson):
                 {
                     "links": links,
                     "Subject": self.context.categories,
+                    "certificates": self.certificates(),
                     "eventbrite": eventbrite_data(self.context),
                 },
             )
