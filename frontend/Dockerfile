@@ -23,3 +23,10 @@ LABEL maintainer="Plone Foundation <collective@plone.org>" \
       org.label-schema.vendor="Plone Foundation"
 
 COPY --from=builder /app/ /app/
+
+RUN <<EOT
+    set -e
+    corepack enable pnpm
+    corepack use pnpm@9.1.1
+    corepack prepare pnpm@9.1.1 --activate
+EOT
