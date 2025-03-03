@@ -16,6 +16,7 @@ Ensure you have the following installed:
 - Node 18 🟩
 - yarn 🧶
 - Docker 🐳
+- pipx
 
 ### Installation 🔧
 
