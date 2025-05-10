@@ -1,5 +1,5 @@
 # Changes
-## 1.0.1 (unreleased)
+## 1.0.1 (2025-05-10)
 
 
 - Add DB_PORT to stack definition.  @fredvd
