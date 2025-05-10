@@ -1,5 +1,5 @@
 # Changes
-## 1.0.2 (unreleased)
+## 1.0.2 (2025-05-10)
 
 
 - Add extra stack variables for site setup. @fredvd
