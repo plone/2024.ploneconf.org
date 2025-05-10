@@ -2,14 +2,14 @@ name: Main
 
 on:
   workflow_dispatch:
-    
-  #  paths:
-  #    - "backend/**"
-  #    - "frontend/**"
-  #    - ".github/workflows/backend.yml"
-  #    - ".github/workflows/frontend.yml"
-  #    - ".github/workflows/main.yml"
-  #    - "devops/**"
+  push:  
+    paths:
+      - "backend/**"
+      - "frontend/**"
+      - ".github/workflows/backend.yml"
+      - ".github/workflows/frontend.yml"
+      - ".github/workflows/main.yml"
+      - "devops/**"
 
 jobs:
   config:
@@ -47,47 +47,3 @@ jobs:
     permissions:
       contents: read
       packages: write
-
-  deploy:
-    if: ${{ always() && github.ref == 'refs/heads/main' && !contains(needs.*.result, 'failure') }}
-    needs:
-      - config
-      - backend
-      - frontend
-    runs-on: ubuntu-latest
-    environment:
-      name: testing.ploneconf.org
-      url: https://testing.ploneconf.org
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Deploy to cluster
-        uses: kitconcept/docker-stack-deploy@v1.2.0
-        with:
-          registry: "ghcr.io"
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          remote_host: ${{ vars.DEPLOY_HOST }}
-          remote_port: ${{ vars.DEPLOY_PORT }}
-          remote_user: ${{ vars.DEPLOY_USER }}
-          remote_private_key: ${{ secrets.DEPLOY_SSH }}
-          stack_file: devops/stacks/testing.ploneconf.org.yml
-          stack_name: testing-ploneconf-org
-          stack_param: ${{ github.ref_name }}
-          env_file: |
-            STACK_NAME=${{ env.STACK_NAME }}
-            STACK_PREFIX=${{ env.STACK_PREFIX }}
-            PUBLIC_URL=${{ env.PUBLIC_URL }}
-            CERTRESOLVER=${{ env.CERTRESOLVER }}
-            BACKEND_IMAGE=${{ env.IMAGE_NAME_PREFIX }}-backend
-            FRONTEND_IMAGE=${{ env.IMAGE_NAME_PREFIX }}-frontend
-            DB_HOST=${{ vars.DB_HOST }}
-            DB_PORT=${{ vars.DB_PORT }}
-            DB_NAME=${{ vars.DB_NAME }}
-            DB_USER=${{ vars.DB_USER }}
-            DB_PASSWORD=${{ secrets.DB_PASSWORD }}
-            BASIC_AUTH_USER=${{ vars.BASIC_AUTH_USER }}
-            BASIC_AUTH_PASSWORD_FRONTEND=${{ vars.BASIC_AUTH_PASSWORD_FRONTEND }}
-            BASIC_AUTH_PASSWORD_CLASSICUI=${{ vars.BASIC_AUTH_PASSWORD_CLASSICUI }}
-          deploy_timeout: 480
