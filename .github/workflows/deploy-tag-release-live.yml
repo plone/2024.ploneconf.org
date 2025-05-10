@@ -154,4 +154,10 @@ jobs:
             DB_NAME=${{ vars.DB_NAME }}
             DB_USER=${{ vars.DB_USER }}
             DB_PASSWORD=${{ secrets.DB_PASSWORD }}
+            EVENTBRITE_BASE_URL=${{ secrets.EVENTBRITE_BASE_URL }}
+            EVENTBRITE_EVENT_ID=${{ secrets.EVENTBRITE_EVENT_ID }}
+            EVENTBRITE_KEY=${{ secrets.EVENTBRITE_KEY }}
+            EVENTBRITE_ORG_ID=${{ secrets.EVENTBRITE_ORG_ID }}
+            HONEYPOT_FIELD=your_mail
+            ZOPE_FORM_MEMORY_LIMIT=250MB
           deploy_timeout: 480
