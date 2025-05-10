@@ -2,8 +2,9 @@
 ## 1.0.2 (unreleased)
 
 
-- Nothing changed yet.
-
+- Add extra stack variables for site setup. @fredvd
+- Update to Plone 6.0.15 to fix setuptools/autoinclude naming issues.
+  @fredvd
 
 ## 1.0.1 (2025-05-10)
 
