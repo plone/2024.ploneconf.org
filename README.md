@@ -6,6 +6,11 @@
 
 Site for the 2024 edition of the annual Plone Conference
 
+NOTE: 
+
+This repository is now in maintenance/archive. CI/CD Deploy to testing environment has been removed to not
+overwrite the 2025 Ploneconf testing website. 
+
 ## Quick Start 🏁
 
 ### Prerequisites ✅
