@@ -49,9 +49,9 @@ services:
       - nw-2024-ploneconf
       - public
     deploy:
-      replicas: 4
+      replicas: 2
       update_config:
-        parallelism: 2
+        parallelism: 1
         delay: 5s
         order: start-first
       placement:

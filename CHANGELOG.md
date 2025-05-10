@@ -1,19 +1,17 @@
 # Changes
 ## 1.0.3 (unreleased)
 
-
-- Nothing changed yet.
+- Scale backend containers back from 4 to 2 for a previous conf site. @fredvd
 
 
 ## 1.0.2 (2025-05-10)
-
 
 - Add extra stack variables for site setup. @fredvd
 - Update to Plone 6.0.15 to fix setuptools/autoinclude naming issues.
   @fredvd
 
-## 1.0.1 (2025-05-10)
 
+## 1.0.1 (2025-05-10)
 
 - Add DB_PORT to stack definition.  @fredvd
 - Refactor env_file passing in GHA workflow for tag release. @fredvd
@@ -23,4 +21,4 @@
 
 ## 1.0.0 (2023-11-28)
 
-- Initial version [plone]
+- Initial version [plone community]
