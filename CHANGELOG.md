@@ -1,5 +1,5 @@
 # Changes
-## 1.0.4 (unreleased)
+## 1.0.4 (2025-10-31)
 
 
 - Redeploy for updated database. @fredvd
