@@ -2,7 +2,7 @@
 ## 1.0.4 (unreleased)
 
 
-- Nothing changed yet.
+- Redeploy for updated database. @fredvd
 
 
 ## 1.0.3 (2025-05-10)
