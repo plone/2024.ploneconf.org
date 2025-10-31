@@ -1,4 +1,10 @@
 # Changes
+## 1.0.5 (unreleased)
+
+
+- Nothing changed yet.
+
+
 ## 1.0.4 (2025-10-31)
 
 
