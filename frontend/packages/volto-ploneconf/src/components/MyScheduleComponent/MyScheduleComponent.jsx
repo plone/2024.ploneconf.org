@@ -61,17 +61,21 @@ const ScheduleBlock = ({ id, title, items, streamAction }) => {
 
 const groupByPeriod = (items) => {
   const now = Date.now();
-  const periods = Object.groupBy(items, (item) => {
+  const periods = { past: [], current: [], upcoming: [] };
+  
+  items.forEach((item) => {
     const start = item.start ? new Date(item.start) : null;
     const end = item.end ? new Date(item.end) : null;
+    
     if (end < now) {
-      return 'past';
+      periods.past.push(item);
     } else if (start <= now && now <= end) {
-      return 'current';
+      periods.current.push(item);
     } else {
-      return 'upcoming';
+      periods.upcoming.push(item);
     }
   });
+  
   return periods;
 };
 
