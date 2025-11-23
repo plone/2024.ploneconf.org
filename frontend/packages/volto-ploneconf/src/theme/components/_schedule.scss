@@ -1,0 +1,248 @@
+#main .schedule {
+  .day-header {
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: $tablet-breakpoint) {
+      display: none;
+    }
+    .aside-indication {
+      z-index: -10;
+      .icon-type {
+        background-color: var(--reverse-color);
+        box-shadow: unset;
+      }
+    }
+    .rooms {
+      .room {
+        padding: $spacing-small;
+        .room-label {
+          @include add(size, s);
+          @include add(weight, bold);
+          @include add(height, s);
+        }
+      }
+    }
+  }
+
+  .timeslot {
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: $tablet-breakpoint) {
+      gap: 1rem;
+    }
+  }
+
+  .rooms {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    .room {
+      width: 25%;
+      @media screen and (max-width: $tablet-breakpoint) {
+        width: 100%;
+      }
+      border-right: 1px solid #e3e3e3;
+      &:last-child {
+        border-right: unset;
+      }
+      .slot-card {
+        min-height: 270px;
+      }
+      @media screen and (max-width: $tablet-breakpoint) {
+        border-right: unset;
+        margin-bottom: $spacing-xs;
+        .slot-card {
+          padding: $spacing-small 0;
+          border-bottom: 1px #ecebeb solid;
+          margin-bottom: $spacing-small;
+          &.empty {
+            display: none;
+          }
+        }
+      }
+      @media screen and (min-width: $tablet-breakpoint) {
+        .slot-info {
+          .session-room.slotInfoItem {
+            display: none;
+          }
+        }
+      }
+    }
+    .room-all {
+      width: 100%;
+      .slot-card {
+        min-height: 100px;
+        background-color: var(--main-color);
+        box-shadow:
+          0 2px 0 0 var(--main-color),
+          0 6px 0 0 var(--main-color),
+          0 8px 0 0 var(--reverse-color),
+          0 10px 0 0 var(--secondary-color),
+          0 -2px 0 0 var(--main-color),
+          0 -6px 0 0 var(--main-color),
+          0 -8px 0 0 var(--reverse-color),
+          0 -10px 0 0 var(--secondary-color);
+        color: var(--reverse-color);
+        .timing {
+          color: var(--reverse-color);
+        }
+        .session-title {
+          @include add(weight, bold);
+        }
+        .session-body {
+          padding-top: 0.1rem;
+          border: unset;
+          margin-top: 0.1rem;
+        }
+      }
+    }
+  }
+
+  .tab {
+    .tabular.menu {
+      display: flex;
+      justify-content: center;
+      border-bottom-width: 2px;
+      border-bottom-color: var(--main-color);
+      .item {
+        padding: $spacing-small $spacing-small;
+        background-color: var(--reverse-color);
+        color: var(--main-color);
+        @media screen and (max-width: $tablet-breakpoint) {
+          width: 20%;
+          padding: $spacing-small 0;
+          text-align: center;
+        }
+        &.active {
+          background-color: var(--main-color);
+          color: var(--reverse-color);
+        }
+        &:hover {
+          .day.day-label {
+            .heading {
+              @include add(weight, bold);
+            }
+            .description {
+              @include add(weight, medium);
+            }
+          }
+        }
+        .day.day-label {
+          .heading {
+            @include add(size, l);
+            @include add(height, l);
+            padding: $spacing-xs 0;
+          }
+          .description {
+            @include add(size, m);
+            @include add(weight, light);
+            @include add(height, m);
+          }
+          @media screen and (max-width: $tablet-breakpoint) {
+            .heading {
+              @include add(size, s);
+            }
+            .description {
+              @include add(size, xs);
+            }
+          }
+        }
+      }
+    }
+    &.tab-container {
+      padding: 0 !important;
+    }
+  }
+
+  .tab-content {
+    position: relative !important;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    padding-top: 1rem;
+    gap: 2rem;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 41px;
+      height: 100%;
+      border-left: 1px solid var(--main-color);
+      content: '';
+      opacity: 0.4;
+      @media screen and (max-width: $tablet-breakpoint) {
+        left: 30px;
+      }
+    }
+  }
+
+  .aside-indication {
+    transform: translateY(20px);
+
+    .icon-type {
+      display: grid;
+      height: 50px;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      background-color: var(--main-color);
+      box-shadow:
+        0px 0px 0px 2px var(--main-color),
+        0px 0px 0px 6px var(--main-color),
+        0px 0px 0px 8px var(--reverse-color),
+        0px 0px 0px 10px var(--secondary-color),
+        0px 0px 0px 14px var(--reverse-color);
+      color: var(--reverse-color) !important;
+      place-content: center;
+
+      .icon {
+        height: 30px !important;
+        color: var(--reverse-color);
+      }
+
+      @media screen and (max-width: $tablet-breakpoint) {
+        height: 30px;
+
+        .icon {
+          height: 15px !important;
+        }
+      }
+    }
+
+    .time-indication {
+      flex-shrink: 0;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      margin-top: 1.3rem;
+      background: var(--reverse-color);
+      @include add(size, xs);
+      @include add(weight, bold);
+      @include add(height, xs);
+      text-align: center;
+    }
+  }
+  .slot-card {
+    &.LightningTalks {
+      .slot-actions {
+        padding: 5px 0;
+        margin-top: -20px;
+      }
+    }
+    .session-info {
+      .timing .icon {
+        display: none;
+      }
+      @media screen and (min-width: $tablet-breakpoint) {
+        .timing {
+          margin: 0;
+          color: $grey;
+          @include pillText();
+        }
+        .session-room {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -6,6 +6,11 @@
 
 Site for the 2024 edition of the annual Plone Conference
 
+NOTE: 
+
+This repository is now in maintenance/archive. CI/CD Deploy to testing environment has been removed to not
+overwrite the 2025 Ploneconf testing website. 
+
 ## Quick Start 🏁
 
 ### Prerequisites ✅
@@ -20,13 +25,14 @@ Ensure you have the following installed:
 - libjpeg-dev
 - python3-dev
 - pnpm
+- pipx
 
 ### Installation 🔧
 
 1. Clone the repository:
 
 ```shell
-git clone git@github.com:plone/2024.ploneconf.org.git
+git clone https://github.com/plone/2024.ploneconf.org.git
 cd 2024.ploneconf.org
 ```
 

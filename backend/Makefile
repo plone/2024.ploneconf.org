@@ -8,7 +8,7 @@ SHELL:=bash
 MAKEFLAGS+=--warn-undefined-variables
 MAKEFLAGS+=--no-builtin-rules
 
-# We like colors
+# We like colors.
 # From: https://coderwall.com/p/izxssa/colored-makefile-for-golang-projects
 RED=`tput setaf 1`
 GREEN=`tput setaf 2`
@@ -83,15 +83,15 @@ clean: ## Clean environment
 
 .PHONY: start
 start: ## Start a Plone instance on localhost:8080
-	PYTHONWARNINGS=ignore $(BIN_FOLDER)/runwsgi instance/etc/zope.ini
+	ENABLE_PRINTING_MAILHOST=True PYTHONWARNINGS=ignore $(BIN_FOLDER)/runwsgi instance/etc/zope.ini
 
 .PHONY: console
 console: instance/etc/zope.ini ## Start a console into a Plone instance
-	PYTHONWARNINGS=ignore $(BIN_FOLDER)/zconsole debug instance/etc/zope.conf
+	ENABLE_PRINTING_MAILHOST=True PYTHONWARNINGS=ignore $(BIN_FOLDER)/zconsole debug instance/etc/zope.conf
 
 .PHONY: create-site
 create-site: instance/etc/zope.ini ## Create a new site from scratch
-	PYTHONWARNINGS=ignore $(BIN_FOLDER)/zconsole run instance/etc/zope.conf ./scripts/create_site.py
+	ENABLE_PRINTING_MAILHOST=True PYTHONWARNINGS=ignore $(BIN_FOLDER)/zconsole run instance/etc/zope.conf ./scripts/create_site.py
 
 # Example Content
 .PHONY: update-example-content
@@ -113,7 +113,7 @@ $(BIN_FOLDER)/i18ndude: $(BIN_FOLDER)/pip
 .PHONY: i18n
 i18n: $(BIN_FOLDER)/i18ndude ## Update locales
 	@echo "$(GREEN)==> Updating locales$(RESET)"
-	$(BIN_FOLDER)/update_locale
+	$(BIN_FOLDER)/update_i18n
 
 # Tests
 .PHONY: test

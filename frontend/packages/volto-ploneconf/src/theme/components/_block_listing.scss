@@ -18,71 +18,10 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      .listing-person {
-        width: 33%;
-        padding: $spacing-xs $spacing-small;
-        border-radius: 10%;
-        margin-bottom: $spacing-small;
-        &:hover {
-          .person-image-wrapper {
-            &::before {
-              background-color: transparent;
-            }
-            img.person-image {
-              filter: unset;
-              mix-blend-mode: unset;
-            }
-          }
-          .person-social {
-            svg {
-              filter: unset !important;
-            }
-          }
-        }
-        .person-image-wrapper {
-          position: relative;
-
-          &::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 10%;
-            background: var(--main-color);
-            content: '';
-            filter: contrast(0.5) brightness(0.5);
-            mix-blend-mode: hard-light;
-          }
-          img.person-image {
-            width: 100%;
-            height: 100%;
-            border-radius: 10%;
-            aspect-ratio: 1;
-            filter: grayscale(100%) contrast(1.1);
-            mix-blend-mode: luminosity;
-            object-fit: cover;
-          }
-        }
-        .item {
-          .person-name {
-            @include add(size, m);
-            @include add(height, l);
-            @include add(weight, bold);
-            margin-bottom: $spacing-xs;
-            text-align: center;
-          }
-          .person-social {
-            .links .links.wrapper .link {
-              padding: 5px;
-              > svg {
-                height: 22px !important;
-                filter: grayscale(100%) contrast(1.1);
-              }
-            }
-          }
-        }
-      }
     }
+  }
+  .listing-item:last-child {
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
   }
 }

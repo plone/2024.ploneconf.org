@@ -1,4 +1,5 @@
 """Installer for the ploneconf package."""
+
 from pathlib import Path
 from setuptools import find_packages
 from setuptools import setup
@@ -55,10 +56,15 @@ setup(
         "plone.app.multilingual",
         "collective.volto.formsupport",
         "collective.honeypot",
+        "collective.volto.otp",
         "plone.exportimport",
+        "Products.Membrane",
+        "souper.plone",
+        "bcrypt",
     ],
     extras_require={
         "test": [
+            "Products.PrintingMailHost",
             "zest.releaser[recommended]",
             "zestreleaser.towncrier",
             "plone.app.testing",
@@ -72,6 +78,6 @@ setup(
     [z3c.autoinclude.plugin]
     target = plone
     [console_scripts]
-    update_locale = ploneconf.locales.update:update_locale
+    update_i18n = ploneconf.locales.update:update_locale
     """,
 )

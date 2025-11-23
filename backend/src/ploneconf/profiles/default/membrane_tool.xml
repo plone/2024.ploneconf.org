@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object meta_type="MembraneTool"
+        name="membrane_tool"
+>
+  <membrane-type name="Attendee" />
+  <membrane-type name="OnlineAttendee" />
+</object>

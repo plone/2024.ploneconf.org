@@ -1,0 +1,14 @@
+.session-audience {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: $spacing-xs;
+  .categoryIcon {
+    height: $spacing-small !important;
+  }
+  .audience {
+    @include pill();
+  }
+}

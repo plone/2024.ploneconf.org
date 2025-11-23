@@ -34,6 +34,7 @@
             purge="false"
   >
     <element value="plone.namefromtitle" />
+    <element value="plone.categorization" />
     <element value="plone.excludefromnavigation" />
     <element value="ploneconf.links" />
     <element value="plone.leadimage" />

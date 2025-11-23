@@ -4,7 +4,21 @@
     @media only screen and (min-width: $tablet-breakpoint) {
       @include add-decoration(right, true);
     }
+    @media only screen and (max-width: $tablet-breakpoint) {
+      .breadcrumb {
+        .divider::before {
+          &:last-child {
+            display: none;
+          }
+        }
 
+        .section {
+          &.active {
+            display: none;
+          }
+        }
+      }
+    }
     .breadcrumb {
       max-width: var(--default-container-width);
       margin-right: 5px;

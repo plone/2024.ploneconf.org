@@ -19,6 +19,7 @@
 
   <include file="permissions.zcml" />
 
+  <include package=".browser" />
   <include package=".exportimport" />
   <include package=".indexers" />
   <include package=".vocabularies" />
@@ -26,6 +27,9 @@
   <include package=".serializers" />
   <include package=".services" />
   <include package=".subscribers" />
+  <include package=".querystring" />
+  <include package=".souper" />
+  <include package=".users" />
 
   <include file="profiles.zcml" />
 

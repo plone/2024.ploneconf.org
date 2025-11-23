@@ -1,0 +1,28 @@
+Hello {fullname},
+
+Welcome to Plone Conference and PythonCerrado 2024! We’re thrilled to have you join us for an exciting week of learning, networking, and collaboration.
+
+To get started, please log in to your account on the conference website at https://2024.ploneconf.org/en/login and claim your user account.
+
+Once logged in, you’ll be able to:
+
+	•	Register for each training session (Note: This applies only to in-person attendees).
+	•	Customize your schedule by selecting the talks and sessions you’re interested in.
+	•	Watch live streams of each session during the three days of talks, directly from the website.
+
+Please use the following credentials to access your account:
+
+	•	Login/Email: {email}
+	•	Password: {password}
+
+If you have any questions or need assistance, feel free to reach out. We’re here to ensure you have an amazing experience at the conference.
+
+See you soon!
+
+Best regards,
+The 2024 Plone Conference|PythonCerrado Organizing Team
+Site: https://2024.ploneconf.org/en
+Telegram: https://t.me/ploneconf2024
+Mastodon: https://plone.social/@ploneconf
+Instagram: https://instagram.com/ploneconf/
+BlueSky: https://bsky.app/profile/ploneconf.org

@@ -4,8 +4,18 @@ import SponsorsView from './components/Blocks/Sponsors/View';
 import SponsorLevelEdit from './components/Blocks/SponsorLevel/Edit';
 import SponsorLevelView from './components/Blocks/SponsorLevel/View';
 import { sponsorLevelRestrict } from './components/Blocks/SponsorLevel/utils';
+
+// Schedule
+import ScheduleEdit from './components/Blocks/Schedule/Edit';
+import ScheduleView from './components/Blocks/Schedule/View';
+
 /// Listing block variations
 import ProfilesTemplate from './components/Blocks/Listing/ProfilesGridTemplate';
+import SimpleGridTemplate from './components/Blocks/Listing/SimpleGridTemplate';
+
+/// GridItemTemplate
+import AttendeeGridItemTemplate from './components/Blocks/Grid/AttendeeGridItemTemplate';
+import SessionGridItemTemplate from './components/Blocks/Grid/SessionGridItemTemplate';
 
 // Teaser
 import TeaserDefaultTemplate from '@plone/volto/components/manage/Blocks/Teaser/DefaultBody';
@@ -18,14 +28,36 @@ import SliderBody from '@kitconcept/volto-light-theme/components/Blocks/Slider/D
 import SliderBodyFull from './components/Blocks/Slider/SliderFull';
 
 // Views
+import AttendeeView from './components/View/Attendee';
+import AttendeesView from './components/View/Attendees';
 import PersonView from './components/View/Person';
 import SponsorView from './components/View/Sponsor';
+import SessionView from './components/View/SessionView';
+import SlotView from './components/View/SlotView';
+import TrainingView from './components/View/TrainingView';
+
+import MySchedule from './components/View/MySchedule';
 
 // Icons
 import listBulletSVG from '@plone/volto/icons/list-bullet.svg';
 
 // Reducers
 import reducers from './reducers';
+
+// Login
+import Login from '@plone/volto/components/theme/Login/Login';
+import AuthomaticLogin from '@plone-collective/volto-authomatic/components/Login/Login';
+
+// Registrations
+import RegistrationsManagement from './components/Registrations/RegistrationsManagement';
+
+// Pluggables
+import PlugAttendeesManagement from './components/Toolbar/PlugAttendeesManagement';
+import PlugChangePassword from './components/Toolbar/PlugChangePassword';
+import PlugMySchedule from './components/Toolbar/PlugMySchedule';
+import PlugRegistrations from './components/Toolbar/PlugRegistrations';
+import PlugRegistrationsManagement from './components/Toolbar/PlugRegistrationsManagement';
+import ManageStream from './components/View/ManageStream';
 
 const BG_COLORS = [
   { name: 'transparent', label: 'Transparent' },
@@ -73,12 +105,63 @@ const applyConfig = (config) => {
         { media: '(max-width: 991px)', image: 'teaser' },
       ],
     },
+    nonContentRoutes: [
+      ...config.settings.nonContentRoutes,
+      '/registrations',
+      '/mySchedule',
+    ],
+    appExtras: [
+      ...config.settings.appExtras,
+      {
+        match: '/',
+        component: PlugChangePassword,
+      },
+      {
+        match: '/',
+        component: PlugAttendeesManagement,
+      },
+      {
+        match: '/',
+        component: PlugRegistrationsManagement,
+      },
+      {
+        match: '/',
+        component: PlugRegistrations,
+      },
+      {
+        match: '/',
+        component: PlugMySchedule,
+      },
+    ],
+    externalRoutes: [
+      ...config.settings.nonContentRoutes,
+      {
+        match: {
+          path: '**/@@ical_view',
+          exact: false,
+          strict: false,
+        },
+        url(payload) {
+          return payload.location.pathname;
+        },
+      },
+    ],
   };
   config.addonReducers = { ...config.addonReducers, ...reducers };
   config.views.contentTypesViews = {
     ...config.views.contentTypesViews,
+    Attendee: AttendeeView,
+    OnlineAttendee: AttendeeView,
+    Attendees: AttendeesView,
+    Break: SlotView,
+    Keynote: SessionView,
+    LightningTalks: SlotView,
+    Meeting: SlotView,
+    OpenSpace: SlotView,
     Person: PersonView,
     Sponsor: SponsorView,
+    Talk: SessionView,
+    Training: TrainingView,
   };
 
   // Teaser Variations
@@ -130,6 +213,11 @@ const applyConfig = (config) => {
   config.blocks.blocksConfig.listing.variations = [
     ...config.blocks.blocksConfig.listing.variations,
     {
+      id: 'simple grid',
+      title: 'Simple Grid',
+      template: SimpleGridTemplate,
+    },
+    {
       id: 'profiles',
       title: 'Person Profiles',
       template: ProfilesTemplate,
@@ -143,6 +231,49 @@ const applyConfig = (config) => {
       config.blocks.blocksConfig[blockId].colors = BG_COLORS;
     }
   });
+
+  //GridItemTemplates
+  config.registerComponent({
+    name: 'GridListingItemTemplate',
+    component: SessionGridItemTemplate,
+    dependencies: 'Training',
+  });
+  config.registerComponent({
+    name: 'GridListingItemTemplate',
+    component: SessionGridItemTemplate,
+    dependencies: 'Talk',
+  });
+  config.registerComponent({
+    name: 'GridListingItemTemplate',
+    component: SessionGridItemTemplate,
+    dependencies: 'Keynote',
+  });
+  config.registerComponent({
+    name: 'GridListingItemTemplate',
+    component: AttendeeGridItemTemplate,
+    dependencies: 'Attendee',
+  });
+  config.registerComponent({
+    name: 'GridListingItemTemplate',
+    component: AttendeeGridItemTemplate,
+    dependencies: 'OnlineAttendee',
+  });
+
+  config.blocks.blocksConfig.scheduleBlock = {
+    id: 'scheduleBlock',
+    title: 'Schedule',
+    icon: listBulletSVG,
+    group: 'common',
+    view: ScheduleView,
+    edit: ScheduleEdit,
+    restricted: false,
+    mostUsed: false,
+    sidebarTab: 1,
+    security: {
+      addPermission: [],
+      view: [],
+    },
+  };
 
   config.blocks.blocksConfig.sponsorsList = {
     id: 'sponsorsList',
@@ -195,6 +326,27 @@ const applyConfig = (config) => {
       '__button',
     ],
   };
+
+  const addonRoutes = config.addonRoutes.filter(
+    (route) => route.path !== '/login' && route.path !== '/**/login',
+  );
+  addonRoutes.push(
+    { path: '/**/login-admin', component: AuthomaticLogin },
+    { path: '/login-admin', component: AuthomaticLogin },
+    { path: '/login', component: Login },
+    { path: '/myschedule', component: MySchedule },
+    { path: '/en/myschedule', component: MySchedule },
+    { path: '/pt-br/myschedule', component: MySchedule },
+    { path: '/stream/auditorio-1', component: ManageStream },
+    { path: '/stream/auditorio-2', component: ManageStream },
+    { path: '/stream/sala-2', component: ManageStream },
+    { path: '/stream/sala-juri', component: ManageStream },
+    { path: '/stream/**/manageStream', component: ManageStream },
+    { path: '/**/login', component: Login },
+    { path: '/registrations', component: RegistrationsManagement },
+    { path: '/**/registrations', component: RegistrationsManagement },
+  );
+  config.addonRoutes = addonRoutes;
   return config;
 };
 

@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    >
+
+  <plone:service
+      method="GET"
+      factory=".get.StreamGet"
+      for="*"
+      permission="ploneconf.manageStreaming"
+      name="@stream"
+      />
+
+</configure>

@@ -1,0 +1,18 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <adapter
+      factory=".adapters.MembraneRoleProvider"
+      name="ploneconf.users.MembraneRoleProvider"
+      />
+
+  <adapter
+      factory=".adapters.MembraneUserProperties"
+      provides="Products.membrane.interfaces.IMembraneUserProperties"
+      />
+
+  <adapter
+      factory="plone.app.dexterity.behaviors.exclfromnav.default_exclude_true"
+      for=".adapters.IBaseUser"
+      />
+
+</configure>

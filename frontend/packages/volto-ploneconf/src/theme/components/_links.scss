@@ -8,7 +8,7 @@ div.links {
     max-width: var(--narrow-container-width);
     flex-direction: row;
     align-self: center;
-    justify-content: center;
+    justify-content: left;
 
     > .link.item {
       padding: 10px;

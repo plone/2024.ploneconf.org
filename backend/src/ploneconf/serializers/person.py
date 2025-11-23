@@ -1,9 +1,9 @@
 from collections import defaultdict
-from plone.restapi.imaging import get_original_image_url
 from plone.restapi.interfaces import ISerializeToJson
 from plone.restapi.interfaces import ISerializeToJsonSummary
 from plone.restapi.serializer.converters import json_compatible
 from plone.restapi.serializer.dxcontent import SerializeToJson
+from plone.restapi.serializer.summary import DefaultJSONSummarySerializer
 from ploneconf.content.person import IPerson
 from ploneconf.utils import generate_links_dict
 from zope.component import adapter
@@ -18,42 +18,13 @@ from zope.schema.vocabulary import SimpleVocabulary
 
 @implementer(ISerializeToJsonSummary)
 @adapter(IPerson, Interface)
-class PersonJSONSummarySerializer:
+class PersonJSONSummarySerializer(DefaultJSONSummarySerializer):
     """ISerializeToJsonSummary adapter for the Person."""
 
-    def __init__(self, context, request):
-        self.context = context
-        self.request = request
-
-    def image_serialization(self):
-        image = self.context.image
-        if not image:
-            return None
-
-        width, height = image.getImageSize()
-
-        url = get_original_image_url(self.context, "image", width, height)
-
-        return {
-            "filename": image.filename,
-            "content-type": image.contentType,
-            "size": image.getSize(),
-            "download": url,
-            "width": width,
-            "height": height,
-        }
-
     def __call__(self):
-        summary = json_compatible(
-            {
-                "@id": self.context.absolute_url(),
-                "@type": self.context.portal_type,
-                "title": self.context.title,
-                "description": self.context.description,
-                "labels": self.context.labels,
-                "image": self.image_serialization(),
-            }
-        )
+        summary = super().__call__()
+        summary["links"] = generate_links_dict(self.context)
+        summary["labels"] = self.context.labels
         return summary
 
 

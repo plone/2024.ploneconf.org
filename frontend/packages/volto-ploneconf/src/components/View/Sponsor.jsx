@@ -37,11 +37,11 @@ const SponsorView = ({ content }) => {
       )}
       {descriptionLines && (
         <p className="documentDescription">
-          {descriptionLines.map((line) => (
-            <>
+          {descriptionLines.map((line, idx) => (
+            <React.Fragment key={idx}>
               <span>{line}</span>
               <br />
-            </>
+            </React.Fragment>
           ))}
         </p>
       )}

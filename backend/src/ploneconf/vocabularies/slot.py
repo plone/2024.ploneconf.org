@@ -1,19 +1,85 @@
+from ploneconf import _
 from zope.interface import provider
 from zope.schema.interfaces import IVocabularyFactory
 from zope.schema.vocabulary import SimpleTerm
 from zope.schema.vocabulary import SimpleVocabulary
 
 
+CATEGORIES = (
+    ("registration", _("Registration")),
+    ("coffee-break", _("Coffee-Break")),
+    ("lunch", _("Lunch")),
+    ("meeting", _("Meeting")),
+    ("photo", _("Conference Photo")),
+)
+
+
+@provider(IVocabularyFactory)
+def slot_categories(context):
+    """Slot Categories."""
+    terms = []
+    for token, title in CATEGORIES:
+        terms.append(SimpleTerm(token, token, title))
+    return SimpleVocabulary(terms)
+
+
+ROOMS = (
+    ("auditorio-1", _("Jean Ferri Auditorium")),
+    ("auditorio-2", _("Dorneles Treméa Auditorium")),
+    ("sala-2", _("Capybara Room")),
+    ("sala-juri", _("Jaguatirica Room")),
+    ("sala-x401", _("Buriti Room")),
+    ("sala-x402", _("Ipê Room")),
+)
+
+
+@provider(IVocabularyFactory)
+def slot_rooms(context):
+    """Available Slot Rooms."""
+    terms = []
+    for token, title in ROOMS:
+        terms.append(SimpleTerm(token, token, title))
+    return SimpleVocabulary(terms)
+
+
+TRACKS = (
+    ("plone-backend", _("Plone: Backend")),
+    ("plone-frontend", _("Plone: Frontend")),
+    ("plone-devops", _("Plone: DevOps")),
+    ("plone-case-study", _("Plone: Case Study")),
+    ("python-creative-coding", _("Creative Coding with Python")),
+    ("python-web-development", _("Web Development with Python")),
+    ("python-for-data-science", _("Python for Data Science")),
+    ("python-for-machine-learning-ai", _("Python for Machine Learning / AI")),
+    ("python-for-geographic-data-analysis", _("Python for Geographic Data Analysis")),
+    ("python-for-devops", _("Python for DevOps")),
+    ("python-core", _("Python Core")),
+    ("python-in-education", _("Python in Education")),
+    ("community-inclusion-diversity", _("Community / Inclusion / Diversity")),
+    ("technical-documentation", _("Technical Documentation")),
+    ("other", _("Other")),
+    ("keynotes", _("Keynotes")),
+)
+
+
 @provider(IVocabularyFactory)
 def slot_tracks(context):
     """Available Slot Tracks."""
-    return SimpleVocabulary(
-        [
-            SimpleTerm(value="track-1", title="Track 1"),
-            SimpleTerm(value="track-2", title="Track 2"),
-            SimpleTerm(value="track-3", title="Track 3"),
-        ]
-    )
+    terms = []
+    for token, title in TRACKS:
+        terms.append(SimpleTerm(token, token, title))
+    return SimpleVocabulary(terms)
+
+
+@provider(IVocabularyFactory)
+def talk_tracks(context):
+    """Available Talk Tracks."""
+    terms = []
+    for token, title in TRACKS:
+        if token == "keynotes":
+            continue
+        terms.append(SimpleTerm(token, token, title))
+    return SimpleVocabulary(terms)
 
 
 @provider(IVocabularyFactory)

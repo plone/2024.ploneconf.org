@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="portal_workflow">
+  <object meta_type="Workflow"
+          name="attendee_workflow"
+  />
+  <bindings>
+    <type type_id="Attendee">
+      <bound-workflow workflow_id="attendee_workflow" />
+    </type>
+    <type type_id="OnlineAttendee">
+      <bound-workflow workflow_id="attendee_workflow" />
+    </type>
+  </bindings>
+</object>

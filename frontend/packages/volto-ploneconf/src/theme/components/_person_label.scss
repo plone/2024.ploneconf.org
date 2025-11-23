@@ -1,26 +1,24 @@
-.personLabel {
-  align-self: center;
-  padding: $spacing-xs $spacing-small;
-  border-radius: $spacing-xs;
-  margin-top: $spacing-medium;
-  margin-right: $spacing-small;
-  margin-bottom: $spacing-medium;
-  @include add(size, xs);
-  @include add(weight, semi-bold);
-  &.pf-member {
-    background-color: var(--plone-color);
-    color: var(--plone-on-color);
-  }
-  &.keynote-speaker {
-    background-color: var(--primary-color);
-    color: var(--reverse-color);
-  }
-  &.speaker {
-    background-color: var(--secondary-color);
-    color: var(--reverse-color);
-  }
-  &.instructor {
-    background-color: var(--tertiary-color);
-    color: var(--reverse-color);
+.personLabelWrapper {
+  margin-right: $spacing-xs;
+  .personLabel {
+    align-self: center;
+    padding: $spacing-xs;
+    border-radius: 100%;
+    &.pf-member {
+      background-color: var(--plone-color);
+      color: var(--plone-on-color);
+    }
+    &.keynote-speaker {
+      background-color: var(--primary-color);
+      color: var(--reverse-color);
+    }
+    &.speaker {
+      background-color: var(--secondary-color);
+      color: var(--reverse-color);
+    }
+    &.instructor {
+      background-color: var(--tertiary-color);
+      color: var(--reverse-color);
+    }
   }
 }

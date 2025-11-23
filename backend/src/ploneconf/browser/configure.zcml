@@ -1,0 +1,35 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="ploneconf"
+    >
+
+  <!-- ICal view -->
+
+  <adapter
+      factory=".ical.ICalendarSlotComponent"
+      for="ploneconf.behaviors.schedule.IScheduleSlot"
+      />
+
+  <browser:page
+      name="ical_view"
+      for="ploneconf.behaviors.schedule.IScheduleSlot"
+      class=".ical.SessionICal"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="ical_view"
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      class=".ical.MyScheduleICal"
+      permission="zope2.View"
+      />
+  <browser:page
+      name="ical_view"
+      for="plone.base.interfaces.INavigationRoot"
+      class=".ical.MyScheduleICal"
+      permission="zope2.View"
+      />
+
+</configure>

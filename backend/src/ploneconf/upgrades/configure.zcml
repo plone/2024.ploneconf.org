@@ -13,5 +13,186 @@
         import_steps="typeinfo"
         />
   </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20240709001"
+      destination="20240924001"
+      >
+    <genericsetup:upgradeDepends
+        title="Update CfP types behaviors"
+        import_steps="typeinfo"
+        />
+  </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20240924001"
+      destination="20240925001"
+      >
+    <genericsetup:upgradeDepends
+        title="Update CfP types behaviors"
+        import_steps="typeinfo"
+        />
+  </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20240925001"
+      destination="20241009001"
+      >
+    <genericsetup:upgradeDepends
+        title="Upgrade querystring"
+        import_steps="plone.app.registry"
+        />
+  </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241009001"
+      destination="20241024001"
+      >
+    <genericsetup:upgradeDepends
+        title="Add new content types"
+        import_steps="typeinfo"
+        />
+    <upgradeStep
+        title="Create schedule structure"
+        handler=".schedule.create_structure"
+        />
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241024001"
+      destination="20241106001"
+      >
+    <upgradeStep
+        title="Install membrane"
+        handler=".attendees.install_membrane"
+        />
+    <genericsetup:upgradeDepends
+        title="Add new content types"
+        import_steps="typeinfo"
+        />
+    <genericsetup:upgradeDepends
+        title="Additional user fields"
+        import_steps="usersschema"
+        />
+    <genericsetup:upgradeDepends
+        title="Add new types to Membrane"
+        import_steps="membranetool"
+        />
+    <genericsetup:upgradeDepends
+        title="Add attendees-related permissions"
+        import_steps="rolemap"
+        />
+    <genericsetup:upgradeDepends
+        title="Add attendees_workflow"
+        import_steps="workflow"
+        />
+    <genericsetup:upgradeDepends
+        title="Add querystring entries for attenddees management"
+        import_steps="plone.app.registry"
+        />
+    <upgradeStep
+        title="Create attendees structure"
+        handler=".attendees.create_structure"
+        />
+    <upgradeStep
+        title="Create default user groups"
+        handler=".attendees.create_user_groups"
+        />
+  </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241106001"
+      destination="20241112001"
+      >
+    <genericsetup:upgradeDepends
+        title="Add Meeting content type"
+        import_steps="typeinfo"
+        />
+    <upgradeStep
+        title="Convert Plone Foundation meeting to correct type"
+        handler=".schedule.convert_meeting"
+        />
+  </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241112001"
+      destination="20241112002"
+      >
+    <upgradeStep
+        title="Get answers for attendees"
+        handler=".attendees.populate_answers"
+        />
+    <upgradeStep
+        title="Reindex attendees subjects"
+        handler=".attendees.reindex_subject"
+        />
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241112002"
+      destination="20241113001"
+      />
+
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241113001"
+      destination="20241119001"
+      >
+    <upgradeStep
+        title="Create default user groups"
+        handler=".attendees.create_user_groups"
+        />
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241119001"
+      destination="20241121001"
+      >
+    <genericsetup:upgradeDepends
+        title="Update LightiningTalks type"
+        import_steps="typeinfo"
+        />
+    <genericsetup:upgradeDepends
+        title="Add ploneconf: Manage Streaming permission"
+        import_steps="rolemap"
+        />
+    <upgradeStep
+        title="Add stream group"
+        handler=".stream.create_user_groups"
+        />
+    <upgradeStep
+        title="Add stream user"
+        handler=".stream.create_user"
+        />
+    <upgradeStep
+        title="Create stream structure"
+        handler=".stream.create_structure"
+        />
+    <genericsetup:upgradeDepends
+        title="Add room and has_stream index"
+        import_steps="catalog"
+        />
+    <upgradeStep
+        title="Reindex slot information"
+        handler=".catalog.reindex_slots"
+        />
+    <upgradeStep
+        title="Reindex attendees subjects"
+        handler=".attendees.reindex_subject"
+        />
+  </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps
+      profile="ploneconf:default"
+      source="20241121001"
+      destination="20241204001"
+      >
+    <upgradeStep
+        title="Change permission allowing anonymous to download certificate"
+        handler=".attendees.allow_certificate_download"
+        />
+  </genericsetup:upgradeSteps>
 
 </configure>

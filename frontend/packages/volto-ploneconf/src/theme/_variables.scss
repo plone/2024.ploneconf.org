@@ -5,6 +5,7 @@ $link-color-hover: #000;
 $container-background: #f2f4f5;
 
 // Spacing
+$spacing-2xs: 5px !default;
 $spacing-xs: 10px !default;
 $spacing-small: 20px !default;
 $spacing-medium: 40px !default;
@@ -52,6 +53,30 @@ $line-heights: (
   5xl: var(--line-height-5xl),
   6xl: var(--line-height-6xl),
 ) !default;
+
+body {
+  --base-rgb: 1, 106, 173;
+  --main-color: rgb(var(--base-rgb));
+  --alternate-color: #001522;
+  --reverse-color: #fff;
+  --primary-color: var(--main-color);
+  --secondary-color: rgb(175, 148, 0);
+  --tertiary-color: rgb(46, 153, 63);
+  --link-color: var(--main-color);
+  --stream-color: rgb(251, 71, 71);
+  --stream-color-alternate: rgb(255, 0, 0);
+  --decoration-image: url(./static/bg_image_01.png);
+  --eventbrite-cta-background-color: var(--main-color);
+  --eventbrite-cta-border: 1px solid var(--main-color);
+  --eventbrite-cta-font-size: 22px;
+  --eventbrite-cta-font-weight: 700;
+  --eventbrite-cta-hover-background-color: var(--main-color);
+  --eventbrite-cta-hover-border: 1px solid var(--main-color);
+  --eventbrite-cta-hover-font-size: 22px;
+  --eventbrite-cta-hover-font-weight: 700;
+  --eventbrite-cta-padding: 10px 24px;
+  --eventbrite-cta-text-color: var(--reverse-color);
+}
 
 body.section-en {
   --base-rgb: 1, 106, 173;
@@ -110,6 +135,13 @@ $teaser-images-aspect-ratio: math.div(16, 9) !default;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+@mixin animate-loading() {
+  box-shadow: 0 10px 15px 0 var(--main-color);
+  transform: translateY(-2px);
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 // Animation
 @mixin add-decoration($align: 'left', $shadow: false) {
   background-color: var(--decoration-background);
@@ -137,4 +169,52 @@ $teaser-images-aspect-ratio: math.div(16, 9) !default;
     color: var(--reverse-color);
     @include animate-hover();
   }
+}
+
+@mixin ctaIconButton() {
+  display: flex;
+  align-items: center;
+  padding: $spacing-xs;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--main-color);
+  color: var(--reverse-color);
+  .text {
+    width: 100%;
+    padding: 0 $spacing-small;
+    text-align: center;
+  }
+  .circle {
+    display: flex;
+    align-items: center;
+    .icon {
+      fill: var(--reverse-color);
+    }
+  }
+  &.active {
+    color: var(--reverse-color);
+  }
+  &:hover {
+    color: var(--reverse-color);
+    @include animate-hover();
+  }
+}
+
+// Pill
+@mixin pillText() {
+  display: inline;
+  @include add(size, xs);
+  @include add(weight, light);
+  @include add(height, s);
+}
+
+@mixin pill() {
+  @include pillText();
+  padding: $spacing-2xs;
+  border-radius: $spacing-2xs;
+  margin-right: $spacing-2xs;
+  background-color: var(--tertiary-color);
+  color: var(--reverse-color);
 }

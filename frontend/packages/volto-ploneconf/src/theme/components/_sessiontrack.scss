@@ -1,0 +1,46 @@
+.session-track {
+  padding: $spacing-xs 0;
+  .track {
+    width: 100%;
+    padding: $spacing-xs;
+    margin-left: (-$spacing-xs);
+    text-transform: uppercase;
+    @include add(size, xs);
+    @include add(weight, light);
+    @include add(height, s);
+    &.plone-backend,
+    &.plone-frontend,
+    &.plone-devops,
+    &.plone-case-study {
+      background-color: var(--plone-color);
+      color: var(--plone-on-color);
+    }
+
+    &.python-creative-coding,
+    &.python-web-development,
+    &.python-for-data-science,
+    &.python-for-machine-learning-ai,
+    &.python-for-geographic-data-analysis,
+    &.python-for-devops,
+    &.python-core,
+    &.python-in-education {
+      background-color: var(--python-color);
+      color: var(--python-on-color);
+    }
+
+    &.community-inclusion-diversity,
+    &.technical-documentation,
+    &.other {
+      background-color: var(--secondary-color);
+      color: var(--reverse-color);
+    }
+
+    &.keynote {
+      background-color: var(--main-color);
+      color: var(--reverse-color);
+    }
+    @media screen and (max-width: $tablet-breakpoint) {
+      margin-left: 0;
+    }
+  }
+}

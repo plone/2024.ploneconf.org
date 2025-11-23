@@ -54,7 +54,7 @@
     "@mbarde/volto-image-crop-widget": "0.5.1",
     "@plone-collective/volto-authomatic": "2.0.1",
     "@plone-collective/volto-eventbrite-block": "^1.0.0-alpha.2",
-    "@plonegovbr/volto-network-block": "^0.2.0",
+    "@plonegovbr/volto-network-block": "^1.0.0",
     "classnames": "2.2.6",
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
@@ -65,13 +65,12 @@
   "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-intl": "3.12.1",
-    "semantic-ui-react": "2.1.5"
+    "react-intl": "^3.12.1",
+    "react-aria-components": "^1.4.1",
+    "semantic-ui-react": "^2.1.5"
   },
   "devDependencies": {
     "@plone/scripts": "^3.6.1",
-    "release-it": "^17.1.1",
-    "semantic-ui-react": "2.1.5",
-    "semanticui-react": "^0.2.3"
+    "release-it": "^17.1.1"
   }
 }

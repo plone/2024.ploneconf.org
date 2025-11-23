@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2024-07-09T16:43:22.695Z\n"
+"POT-Creation-Date: 2024-12-04T15:57:45.908Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -13,9 +13,81 @@ msgstr ""
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
 
+#. Default: "Access Report"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Access Report"
+msgstr ""
+
+#. Default: "Action"
+#: components/Registrations/RegistrationsManagement
+msgid "Action"
+msgstr ""
+
+#. Default: "Actions"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Actions"
+msgstr ""
+
+#. Default: "Add"
+#: components/Toolbar/Toolbar
+msgid "Add"
+msgstr ""
+
+#. Default: "Add to my personal calendar"
+#: components/Schedule/MyScheduleIcal
+msgid "Add to my personal calendar"
+msgstr ""
+
+#. Default: "Add to my schedule"
+#: components/Bookmark/Bookmark
+msgid "Add to my schedule"
+msgstr ""
+
+#. Default: "All Rooms"
+#: components/Room/Rooms
+msgid "All Rooms"
+msgstr ""
+
+#. Default: "Attendee Management"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Attendee Management"
+msgstr ""
+
+#. Default: "Attendees"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Attendees"
+msgstr ""
+
+#. Default: "Attendees Management"
+#: components/Toolbar/PlugAttendeesManagement
+msgid "Attendees Management"
+msgstr ""
+
+#. Default: "Available Seats"
+#: components/Registrations/Register
+msgid "Available Seats"
+msgstr ""
+
+#. Default: "Back"
+#: components/Personal/PersonalTools
+#: components/Registrations/RegistrationsManagement
+#: components/Toolbar/Toolbar
+msgid "Back"
+msgstr ""
+
 #. Default: "Be the First!"
 #: components/Blocks/SponsorLevel/DefaultView
 msgid "Be the First!"
+msgstr ""
+
+#. Default: "Both email address and password are case sensitive, check that caps lock is not enabled."
+#: components/Login/Login
+msgid "Both email address and password are case sensitive, check that caps lock is not enabled."
+msgstr ""
+
+#. Default: "Buriti Room"
+#: components/Room/Rooms
+msgid "Buriti Room"
 msgstr ""
 
 #. Default: "CTA"
@@ -28,9 +100,59 @@ msgstr ""
 msgid "CTA Label"
 msgstr ""
 
+#. Default: "Cancel"
+#: components/Login/Login
+msgid "Cancel"
+msgstr ""
+
+#. Default: "Cancel registration"
+#: components/Registrations/Register
+msgid "Cancel registration"
+msgstr ""
+
+#. Default: "Cancelled"
+#: components/AttendeeLabel/labels
+msgid "Cancelled"
+msgstr ""
+
+#. Default: "Capybara Room"
+#: components/Room/Rooms
+msgid "Capybara Room"
+msgstr ""
+
+#. Default: "Certificates"
+#: components/View/Attendee
+msgid "Certificates"
+msgstr ""
+
+#. Default: "Change Password"
+#: components/Toolbar/PlugChangePassword
+msgid "Change Password"
+msgstr ""
+
+#. Default: "Check-in"
+#: components/Registrations/RegistrationItem
+msgid "Check-in"
+msgstr ""
+
+#. Default: "Checked-In"
+#: components/AttendeeLabel/labels
+msgid "Checked-In"
+msgstr ""
+
 #. Default: "Close menu"
 #: components/Navigation/Navigation
 msgid "Close menu"
+msgstr ""
+
+#. Default: "Collection"
+#: components/Toolbar/Toolbar
+msgid "Collection"
+msgstr ""
+
+#. Default: "Contents"
+#: components/Toolbar/Toolbar
+msgid "Contents"
 msgstr ""
 
 #. Default: "Continue reading"
@@ -38,9 +160,79 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
+#. Default: "Current Sessions"
+#: components/MyScheduleComponent/MyScheduleComponent
+msgid "Current Sessions"
+msgstr ""
+
+#. Default: "Date"
+#: components/Registrations/RegistrationsManagement
+msgid "Date"
+msgstr ""
+
+#. Default: "Day"
+#: components/Schedule/Schedule
+msgid "Day"
+msgstr ""
+
+#. Default: "Description"
+#: components/View/TrainingView
+msgid "Description"
+msgstr ""
+
 #. Default: "Display CTA?"
 #: components/Blocks/SponsorLevel/schema
 msgid "Display CTA?"
+msgstr ""
+
+#. Default: "Display Headline?"
+#: components/Blocks/Schedule/schema
+msgid "Display Headline?"
+msgstr ""
+
+#. Default: "Django Girls"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Django Girls"
+msgstr ""
+
+#. Default: "Dorneles Treméa Auditorium"
+#: components/Room/Rooms
+msgid "Dorneles Treméa Auditorium"
+msgstr ""
+
+#. Default: "Download to my personal calendar"
+#: components/Session/SlotIcal/SlotIcal
+msgid "Download to my personal calendar"
+msgstr ""
+
+#. Default: "Download your schedule and add it to your personal calendar"
+#: components/View/MySchedule
+msgid "Download your schedule and add it to your personal calendar"
+msgstr ""
+
+#. Default: "E-mail"
+#: components/Login/Login
+msgid "E-mail"
+msgstr ""
+
+#. Default: "Edit"
+#: components/Toolbar/Toolbar
+msgid "Edit"
+msgstr ""
+
+#. Default: "Error"
+#: components/Login/Login
+msgid "Error"
+msgstr ""
+
+#. Default: "File"
+#: components/Toolbar/Toolbar
+msgid "File"
+msgstr ""
+
+#. Default: "Filter by Day"
+#: components/Blocks/Schedule/schema
+msgid "Filter by Day"
 msgstr ""
 
 #. Default: "Front Page"
@@ -48,9 +240,153 @@ msgstr ""
 msgid "Front Page"
 msgstr ""
 
+#. Default: "Ipê Room"
+#: components/Room/Rooms
+msgid "Ipê Room"
+msgstr ""
+
+#. Default: "Jaguatirica Room"
+#: components/Room/Rooms
+msgid "Jaguatirica Room"
+msgstr ""
+
+#. Default: "Jean Ferri Auditorium"
+#: components/Room/Rooms
+msgid "Jean Ferri Auditorium"
+msgstr ""
+
+#. Default: "Link"
+#: components/Toolbar/Toolbar
+msgid "Link"
+msgstr ""
+
+#. Default: "Loading"
+#: components/Registrations/Register
+msgid "Loading"
+msgstr ""
+
+#. Default: "Login"
+#: components/Login/Login
+msgid "Log In"
+msgstr ""
+
+#. Default: "Log in"
+#: components/Login/Login
+msgid "Log in"
+msgstr ""
+
+#. Default: "Login"
+#: components/Footer/Footer
+#: components/Login/Login
+msgid "Login"
+msgstr ""
+
+#. Default: "Login Failed"
+#: components/Login/Login
+msgid "Login Failed"
+msgstr ""
+
+#. Default: "Login Name"
+#: components/Login/Login
+msgid "Login Name"
+msgstr ""
+
+#. Default: "Logout"
+#: components/Footer/Footer
+#: components/Personal/PersonalTools
+msgid "Logout"
+msgstr ""
+
+#. Default: "Manage Registrations"
+#: components/Toolbar/PlugRegistrations
+msgid "Manage Registrations"
+msgstr ""
+
+#. Default: "More"
+#: components/Toolbar/Toolbar
+msgid "More"
+msgstr ""
+
+#. Default: "My Schedule"
+#: components/Toolbar/PlugMySchedule
+#: components/View/MySchedule
+msgid "My Schedule"
+msgstr ""
+
+#. Default: "Name"
+#: components/Registrations/RegistrationsManagement
+msgid "Name"
+msgstr ""
+
+#. Default: "News Item"
+#: components/Toolbar/Toolbar
+msgid "News Item"
+msgstr ""
+
+#. Default: "No seats available"
+#: components/Registrations/Register
+msgid "No seats available"
+msgstr ""
+
+#. Default: "No workflow"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "No workflow"
+msgstr ""
+
+#. Default: "OnlineAttendees"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Online Attendees"
+msgstr ""
+
 #. Default: "Open menu"
 #: components/Navigation/Navigation
 msgid "Open menu"
+msgstr ""
+
+#. Default: "Organizers"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers"
+msgstr ""
+
+#. Default: "Organizers (Core)"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers (Core)"
+msgstr ""
+
+#. Default: "Organizers (Frontdesk)"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Organizers (Frontdesk)"
+msgstr ""
+
+#. Default: "Page"
+#: components/Toolbar/Toolbar
+msgid "Page"
+msgstr ""
+
+#. Default: "Password"
+#: components/Login/Login
+msgid "Password"
+msgstr ""
+
+#. Default: "Past Sessions"
+#: components/MyScheduleComponent/MyScheduleComponent
+msgid "Past Sessions"
+msgstr ""
+
+#. Default: "Personal Information"
+#: components/Toolbar/Toolbar
+msgid "Personal Information"
+msgstr ""
+
+#. Default: "Personal Preferences"
+#: components/Toolbar/Toolbar
+msgid "Personal Preferences"
+msgstr ""
+
+#. Default: "Personal tools"
+#: components/Personal/PersonalInfo
+#: components/Toolbar/Toolbar
+msgid "Personal tools"
 msgstr ""
 
 #. Default: "Please choose an existing content as source for this element"
@@ -66,6 +402,21 @@ msgstr ""
 msgid "Plone Conference"
 msgstr ""
 
+#. Default: "Preferences"
+#: components/Personal/PersonalTools
+msgid "Preferences"
+msgstr ""
+
+#. Default: "Presenters"
+#: components/AttendeeCard/AttendeeCategory
+msgid "Presenters"
+msgstr ""
+
+#. Default: "Profile"
+#: components/Personal/PersonalTools
+msgid "Profile"
+msgstr ""
+
 #. Default: "Python Cerrado"
 #: components/Logo/LogoPythonCerrado
 msgid "Python Cerrado"
@@ -74,6 +425,87 @@ msgstr ""
 #. Default: "Read more"
 #: components/Blocks/Teaser/TeaserFeatured
 msgid "Read more"
+msgstr ""
+
+#. Default: "Refunded"
+#: components/AttendeeLabel/labels
+msgid "Refunded"
+msgstr ""
+
+#. Default: "Register"
+#: components/Login/Login
+#: components/Registrations/Register
+msgid "Register"
+msgstr ""
+
+#. Default: "Register now"
+#: components/Registrations/Register
+msgid "Register now"
+msgstr ""
+
+#. Default: "Registered"
+#: components/AttendeeLabel/labels
+msgid "Registered"
+msgstr ""
+
+#. Default: "Registered for this training"
+#: components/Bookmark/Bookmark
+msgid "Registered for this training"
+msgstr ""
+
+#. Default: "Registrations Management"
+#: components/Toolbar/PlugRegistrationsManagement
+msgid "Registrations Management"
+msgstr ""
+
+#. Default: "Registrations management for"
+#: components/Registrations/RegistrationsManagement
+msgid "Registrations management for"
+msgstr ""
+
+#. Default: "Registrations management for all trainings"
+#: components/Registrations/RegistrationsManagement
+msgid "Registrations management for all trainings"
+msgstr ""
+
+#. Default: "Registrations management for {title}"
+#: components/Registrations/RegistrationsManagement
+msgid "Registrations management for {title}"
+msgstr ""
+
+#. Default: "Remove from my schedule"
+#: components/Bookmark/Bookmark
+msgid "Remove from my schedule"
+msgstr ""
+
+#. Default: "Requirements"
+#: components/View/TrainingView
+msgid "Requirements"
+msgstr ""
+
+#. Default: "Revert"
+#: components/Registrations/RegistrationItem
+msgid "Revert"
+msgstr ""
+
+#. Default: "Schedule Block"
+#: components/Blocks/Schedule/schema
+msgid "Schedule Block"
+msgstr ""
+
+#. Default: "Shrink toolbar"
+#: components/Toolbar/Toolbar
+msgid "Shrink toolbar"
+msgstr ""
+
+#. Default: "Sign in to start session"
+#: components/Login/Login
+msgid "Sign in to start session"
+msgstr ""
+
+#. Default: "Site Setup"
+#: components/Personal/PersonalTools
+msgid "Site Setup"
 msgstr ""
 
 #. Default: "Source"
@@ -92,6 +524,7 @@ msgid "Sponsor Us"
 msgstr ""
 
 #. Default: "Sponsors"
+#: components/AttendeeCard/AttendeeCategory
 #: components/Blocks/SponsorLevel/DefaultView
 #: components/Sponsors/Sponsors
 msgid "Sponsors"
@@ -100,6 +533,17 @@ msgstr ""
 #. Default: "Sponsorship Form"
 #: components/Blocks/SponsorLevel/schema
 msgid "Sponsorship Form"
+msgstr ""
+
+#. Default: "State"
+#: components/AttendeeManagement/AttendeeManagement
+#: components/Registrations/RegistrationsManagement
+msgid "State"
+msgstr ""
+
+#. Default: "Stream Management"
+#: components/View/ManageStream
+msgid "Stream Management"
 msgstr ""
 
 #. Default: "Switch to"
@@ -112,9 +556,65 @@ msgstr ""
 msgid "This site is built using Python and Plone."
 msgstr ""
 
+#. Default: "Ticket"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Ticket"
+msgstr ""
+
 #. Default: "Title"
 #: components/Blocks/SponsorLevel/schema
 msgid "Title"
+msgstr ""
+
+#. Default: "Total"
+#: components/Registrations/RegistrationsManagement
+msgid "Total"
+msgstr ""
+
+#. Default: "Total Seats"
+#: components/Registrations/Register
+msgid "Total Seats"
+msgstr ""
+
+#. Default: "Training"
+#: components/Registrations/RegistrationsManagement
+msgid "Training"
+msgstr ""
+
+#. Default: "Trainings"
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Trainings"
+msgstr ""
+
+#. Default: "Unlock"
+#: components/Toolbar/Toolbar
+msgid "Unlock"
+msgstr ""
+
+#. Default: "Upcoming Sessions"
+#: components/MyScheduleComponent/MyScheduleComponent
+msgid "Upcoming Sessions"
+msgstr ""
+
+#. Default: "Warning"
+#: components/View/MySchedule
+msgid "Warning"
+msgstr ""
+
+#. Default: "Watch Stream"
+#: components/LiveStream/SlotLiveStream
+#: components/View/SessionView
+msgid "Watch Stream"
+msgstr ""
+
+#. Default: "Workflow updated."
+#: components/AttendeeManagement/AttendeeManagement
+msgid "Workflow updated."
+msgstr ""
+
+#. Default: "Forgot your password?"
+#: components/Login/Login
+msgid "box_forgot_password_option"
 msgstr ""
 
 #. Default: "Color"
@@ -150,4 +650,14 @@ msgstr ""
 #. Default: "Subtitle"
 #: components/Blocks/Teaser/coloredCTAschema
 msgid "subtitle"
+msgstr ""
+
+#. Default: "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
+#: components/View/MySchedule
+msgid "the time here is shown in YOUR COMPUTER'S time zone. Activities start at 9:00, Brasília time (UTC-0300)"
+msgstr ""
+
+#. Default: "user avatar"
+#: components/Personal/PersonalTools
+msgid "user avatar"
 msgstr ""

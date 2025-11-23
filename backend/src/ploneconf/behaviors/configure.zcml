@@ -17,6 +17,14 @@
       provides=".session.IConferenceSession"
       />
 
+
+  <plone:behavior
+      name="ploneconf.materials"
+      title="Conference: Session Materials"
+      description=""
+      provides=".materials.IConferenceMaterials"
+      />
+
   <plone:behavior
       name="ploneconf.links"
       title="Conference: Links Informatiin"

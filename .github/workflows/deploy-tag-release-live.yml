@@ -1,4 +1,4 @@
-name: Release and deploy tag to live website 2023.ploneconf.org
+name: Release and deploy tag to live website 2024.ploneconf.org
 
 on:
   workflow_dispatch:
@@ -10,6 +10,9 @@ env:
   IMAGE_NAME_PREFIX: ghcr.io/plone/ploneconf-2024
   BACKEND_IMAGE_NAME_SUFFIX: backend
   FRONTEND_IMAGE_NAME_SUFFIX: frontend
+  STACK_NAME: 2024-ploneconf-org
+  PUBLIC_URL: 2024.ploneconf.org
+  STACK_FILE: devops/stacks/2024.ploneconf.org.yml
 
 jobs:
 
@@ -39,7 +42,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Docker meta
         id: meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: |
             ${{ env.IMAGE_NAME_PREFIX }}-${{ env.FRONTEND_IMAGE_NAME_SUFFIX }}
@@ -58,7 +61,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v5
         with:
           platforms: linux/amd64
           context: frontend
@@ -78,7 +81,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Docker meta
         id: meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: |
             ${{ env.IMAGE_NAME_PREFIX }}-${{ env.BACKEND_IMAGE_NAME_SUFFIX }}
@@ -100,7 +103,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v5
         with:
           platforms: linux/amd64
           context: backend
@@ -141,8 +144,20 @@ jobs:
           remote_port: ${{ vars.DEPLOY_PORT }}
           remote_user: ${{ vars.DEPLOY_USER }}
           remote_private_key: ${{ secrets.DEPLOY_SSH }}
-          stack_file: devops/stacks/2024.ploneconf.org.yml
-          stack_name: 2024-ploneconf-org
+          stack_file: ${{ env.STACK_FILE }}
+          stack_name: ${{ env.STACK_NAME }}
           stack_param: ${{ needs.config.outputs.TAG }}
-          env_file: ${{ secrets.ENV_FILE }}
+          env_file: |
+            STACK_NAME=${{ env.STACK_NAME }}
+            DB_HOST=${{ vars.DB_HOST }}
+            DB_PORT=${{ vars.DB_PORT }}
+            DB_NAME=${{ vars.DB_NAME }}
+            DB_USER=${{ vars.DB_USER }}
+            DB_PASSWORD=${{ secrets.DB_PASSWORD }}
+            EVENTBRITE_BASE_URL=${{ secrets.EVENTBRITE_BASE_URL }}
+            EVENTBRITE_EVENT_ID=${{ secrets.EVENTBRITE_EVENT_ID }}
+            EVENTBRITE_KEY=${{ secrets.EVENTBRITE_KEY }}
+            EVENTBRITE_ORG_ID=${{ secrets.EVENTBRITE_ORG_ID }}
+            HONEYPOT_FIELD=your_mail
+            ZOPE_FORM_MEMORY_LIMIT=250MB
           deploy_timeout: 480

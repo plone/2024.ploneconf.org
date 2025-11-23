@@ -16,6 +16,15 @@
           name="Person"
   />
   <object meta_type="Dexterity FTI"
+          name="OpenSpace"
+  />
+  <object meta_type="Dexterity FTI"
+          name="LightningTalks"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Break"
+  />
+  <object meta_type="Dexterity FTI"
           name="Slot"
   />
   <object meta_type="Dexterity FTI"
@@ -26,5 +35,17 @@
   />
   <object meta_type="Dexterity FTI"
           name="Keynote"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Meeting"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Attendees"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Attendee"
+  />
+  <object meta_type="Dexterity FTI"
+          name="OnlineAttendee"
   />
 </object>

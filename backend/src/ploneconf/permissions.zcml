@@ -39,6 +39,34 @@
         title="ploneconf: Add Keynote"
         />
 
+    <permission
+        id="ploneconf.addAttendees"
+        title="ploneconf: Add Attendees"
+        />
+    <permission
+        id="ploneconf.addAttendee"
+        title="ploneconf: Add Attendee"
+        />
+
+    <permission
+        id="ploneconf.viewMySchedule"
+        title="ploneconf: View MySchedule"
+        />
+    <permission
+        id="ploneconf.manageSessionBookmark"
+        title="ploneconf: Manage SessionBookmark"
+        />
+    <permission
+        id="ploneconf.registerTraining"
+        title="ploneconf: Register for a Training"
+        />
+
+    <!-- Streaming -->
+    <permission
+        id="ploneconf.manageStreaming"
+        title="ploneconf: Manage Streaming"
+        />
+
   </configure>
 
 </configure>

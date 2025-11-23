@@ -14,6 +14,14 @@ exclude *-mxdev.txt
 exclude Dockerfile
 exclude mx.ini
 exclude Makefile
+exclude scripts/.env_local
+exclude scripts/.env_live
+exclude scripts/.env_stag
+exclude scripts/update_streamyard.py
+exclude scripts/send_emails.py
+exclude scripts/send_emails*.py
+exclude scripts/data/*.txt
+exclude scripts/data/*.json
 recursive-exclude frontend *
 exclude instance.yaml
 global-exclude *.pyc

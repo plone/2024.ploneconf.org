@@ -5,8 +5,20 @@
       component=".sponsorship.sponsorship_levels"
       />
   <utility
+      name="ploneconf.vocabularies.slot_categories"
+      component=".slot.slot_categories"
+      />
+  <utility
+      name="ploneconf.vocabularies.slot_rooms"
+      component=".slot.slot_rooms"
+      />
+  <utility
       name="ploneconf.vocabularies.slot_tracks"
       component=".slot.slot_tracks"
+      />
+  <utility
+      name="ploneconf.vocabularies.talk_tracks"
+      component=".slot.talk_tracks"
       />
   <utility
       name="ploneconf.vocabularies.slot_levels"
@@ -31,6 +43,23 @@
   <utility
       name="ploneconf.vocabularies.person_labels"
       component=".person.person_labels"
+      />
+  <!-- Attendees -->
+  <utility
+      name="ploneconf.vocabularies.attendee_types"
+      component=".attendees.attendee_types"
+      />
+  <utility
+      name="ploneconf.vocabularies.attendee_states"
+      component=".attendees.attendee_states"
+      />
+  <utility
+      name="ploneconf.vocabularies.attendee_categories"
+      component=".attendees.attendee_categories"
+      />
+  <utility
+      name="ploneconf.vocabularies.attendees"
+      component=".attendees.attendees_vocab"
       />
 
 </configure>

@@ -1,0 +1,106 @@
+.session-view {
+  &.too-many-speakers {
+    .session-wrapper {
+      .session-content,
+      .listing-presenters {
+        width: 100%;
+      }
+      .listing-presenters {
+        .listing-presenter {
+          width: 30%;
+        }
+      }
+    }
+  }
+  .session-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .session-header {
+      min-width: 100%;
+      .session-track {
+        margin: $spacing-xs 0 $spacing-medium (-$spacing-medium);
+      }
+      .slot-actions {
+        padding: $spacing-small 0 0 0;
+        margin-top: $spacing-xs;
+      }
+      h1.documentFirstHeading {
+        margin: $spacing-xs 0 $spacing-small;
+        text-align: left;
+      }
+    }
+    .session-content {
+      width: 75%;
+    }
+    .listing-presenters {
+      width: 25%;
+      .listing-presenter {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: $tablet-breakpoint) {
+    &.too-many-speakers {
+      .session-wrapper {
+        .session-content,
+        .listing-presenters {
+          width: 100%;
+        }
+        .listing-presenters {
+          .listing-presenter {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .session-wrapper {
+      padding-right: $spacing-medium;
+      padding-left: $spacing-medium;
+      .session-content,
+      .listing-presenters {
+        width: 100%;
+      }
+      .session-header {
+        h1.documentFirstHeading {
+          font-size: var(--font-size-2xl);
+          line-height: var(--line-height-2xl);
+        }
+        .session-track {
+          margin: $spacing-xs 0 $spacing-xs (-$spacing-xs);
+        }
+      }
+      .listing-presenters {
+        .listing-presenter {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .liveStreamContainer {
+    display: flex;
+    justify-items: center;
+    button.liveStreamButton {
+      display: flex;
+      align-items: center;
+      padding: $spacing-small;
+      border-color: var(--stream-color) !important;
+      border-radius: $spacing-xs;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: var(--stream-color) !important;
+      color: var(--reverse-color) !important;
+      span {
+        padding-left: 10px;
+      }
+      svg {
+        height: 20px !important;
+        fill: var(--reverse-color);
+      }
+      &:hover {
+        border-color: var(--stream-color-alternate) !important;
+        background-color: var(--stream-color-alternate) !important;
+        color: var(--reverse-alternate) !important;
+      }
+    }
+  }
+}

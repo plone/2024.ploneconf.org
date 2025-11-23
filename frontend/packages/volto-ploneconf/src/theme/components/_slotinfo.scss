@@ -1,0 +1,35 @@
+.slot-info {
+  display: flex;
+  width: 100%;
+  min-height: 25px !important;
+  justify-content: space-between;
+  .slotInfoItem {
+    flex-grow: 1;
+  }
+  .session-room {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0;
+    color: $grey;
+    .categoryIcon {
+      height: $spacing-small !important;
+    }
+    .room {
+      width: 100% !important;
+      @include pillText();
+    }
+  }
+  .session-language {
+    text-align: right;
+    .language-flag {
+      width: 20px;
+      aspect-ratio: 1/1;
+    }
+  }
+  @media screen and (max-width: $tablet-breakpoint) {
+    .slotInfoItem {
+      align-items: unset;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+body.contenttype-attendee,
+body.contenttype-onlineattendee {
+  .attendee-view {
+    margin-top: $spacing-medium;
+    .certificates {
+      .certificateDownload {
+        .react-aria-Button {
+          padding: $spacing-small $spacing-xs;
+          border-color: var(--main-color);
+          background-color: var(--main-color);
+          color: var(--reverse-color);
+          svg {
+            margin-left: $spacing-xs;
+            fill: var(--reverse-color);
+          }
+        }
+      }
+    }
+    .attendee-labels {
+      margin: $spacing-xs 0;
+    }
+    .attendee-name {
+      @include add(size, 3xl);
+      @include add(weight, bold);
+      @include add(height, 3xl);
+    }
+    .attendee-description {
+      @include add(size, m);
+      @include add(height, m);
+      color: $grey;
+    }
+    .attendee-preview-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10%;
+      aspect-ratio: 1;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+    .links {
+      justify-content: left;
+      .links.wrapper {
+        .link.item {
+          > svg {
+            height: 24px !important;
+            filter: grayscale(100%) contrast(1.1);
+          }
+          &:hover {
+            > svg {
+              filter: unset;
+            }
+          }
+        }
+      }
+    }
+    .attendee-activity {
+      h2 {
+        margin-top: $spacing-small;
+        margin-bottom: $spacing-small;
+        text-align: left;
+      }
+    }
+  }
+  @media only screen and (max-width: $tablet-breakpoint) {
+    .attendee-view {
+      padding-right: $spacing-medium;
+      padding-left: $spacing-medium;
+    }
+  }
+}

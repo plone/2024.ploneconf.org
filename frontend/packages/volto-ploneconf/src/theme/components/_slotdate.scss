@@ -1,0 +1,9 @@
+.slotDate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .wrapper {
+    @include pillText();
+    color: $grey;
+  }
+}

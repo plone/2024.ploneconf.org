@@ -1,12 +1,12 @@
 // This theme extends the volto-light-theme
 // it is injected
-
 @import 'root';
 @import 'layout';
 @import 'typography';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/breadcrumbs';
+@import 'components/bookmark';
 @import 'components/links';
 @import 'components/tags';
 @import 'components/sponsor';
@@ -22,9 +22,33 @@
 @import 'components/block_sponsors';
 @import 'components/block_statistics';
 @import 'components/color_picker';
+@import 'components/attendeecategory';
+@import 'components/attendeelabel';
+@import 'components/attendeemanagement';
+@import 'components/registrationsmanagement';
 @import 'components/person_label';
+@import 'components/presenterimage';
+@import 'components/presenters_info';
+@import 'components/schedule';
+@import 'components/sessionaudience';
+@import 'components/sessionlevel';
+@import 'components/slotinfo';
+@import 'components/sessiontrack';
+@import 'components/slotactions';
+@import 'components/slotical';
+@import 'components/attendeecard';
+@import 'components/sessioncard';
+@import 'components/register';
+@import 'components/slotdate';
+@import 'components/toolbar';
+@import 'components/managestream';
+@import 'components/view_attendee';
 @import 'components/view_person';
+@import 'components/view_session';
+@import 'components/view_slot';
+@import 'components/view_myschedule';
 @import 'components/view_sponsor';
+@import 'components/livestream';
 @import 'sections/section_root';
 @import 'sections/section_about';
 @import 'sections/section_sponsors';

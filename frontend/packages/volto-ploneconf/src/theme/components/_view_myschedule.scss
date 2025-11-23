@@ -1,0 +1,15 @@
+#myschedule.container.narrow {
+  @media screen and (max-width: $tablet-breakpoint) {
+    padding: $spacing-xs $spacing-small;
+  }
+}
+
+.myScheduleButton {
+  &.loading {
+    svg.icon.circled {
+      @include animate-loading();
+      color: var(--main-color);
+      fill: var(--main-color);
+    }
+  }
+}

@@ -9,4 +9,20 @@
       factory=".sponsor.level_indexer"
       name="level"
       />
+  <adapter
+      factory=".attendee.searchable_text_indexer"
+      name="SearchableText"
+      />
+  <adapter
+      factory=".attendee.subject_indexer"
+      name="Subject"
+      />
+  <adapter
+      factory=".slot.slot_room"
+      name="room"
+      />
+  <adapter
+      factory=".slot.has_stream"
+      name="has_stream"
+      />
 </configure>

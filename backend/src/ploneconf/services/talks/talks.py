@@ -23,10 +23,7 @@ class Get(Service):
 
     def get_talks(self) -> List[Dict[str, Any]]:
         results = api.content.find(
-            portal_type="Talk",
-            review_state="published",
-        ) + api.content.find(
-            portal_type="Keynote",
+            portal_type=["Talk", "Keynote"],
             review_state="published",
         )
         return [self._serialize_brain(brain) for brain in results]

@@ -1,0 +1,14 @@
+.streamsbyday {
+  h3 {
+    padding-top: $spacing-small;
+  }
+  .streams {
+    width: 100%;
+    .stream {
+      td {
+        padding: $spacing-xs 0;
+        border-bottom: 1px solid var(--main-color);
+      }
+    }
+  }
+}

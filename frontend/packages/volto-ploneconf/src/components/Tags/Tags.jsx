@@ -21,12 +21,12 @@ const Tags = ({ tags }) =>
     <Container layout className="tags">
       <Icon name={tagSVG} />
       {tags.map((tag, i) => (
-        <>
+        <React.Fragment key={i}>
           <Link className="ui tag" key={tag} to={`/search?Subject=${tag}`}>
             {tag}
           </Link>
           {tags.length > i + 1 && <span className="divider">,</span>}
-        </>
+        </React.Fragment>
       ))}
     </Container>
   ) : (

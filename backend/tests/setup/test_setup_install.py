@@ -16,7 +16,7 @@ class TestSetupInstall:
 
     def test_latest_version(self, profile_last_version):
         """Test latest version of default profile."""
-        assert profile_last_version(f"{PACKAGE_NAME}:default") == "20240709001"
+        assert profile_last_version(f"{PACKAGE_NAME}:default") == "20241204001"
 
     @pytest.mark.parametrize(
         "profile",
@@ -25,6 +25,7 @@ class TestSetupInstall:
             "plone.app.multilingual:default",
             "collective.volto.formsupport:default",
             "pas.plugins.authomatic:default",
+            "Products.membrane:default",
         ],
     )
     def test_dependency_installed(self, installer, profile):

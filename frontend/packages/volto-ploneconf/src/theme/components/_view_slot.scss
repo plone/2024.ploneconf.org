@@ -1,0 +1,75 @@
+.slot-view {
+  .session-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .session-header {
+      min-width: 100%;
+      .session-info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: $spacing-medium 0 $spacing-xs 0;
+        .session-language {
+          .language-flag {
+            width: 20px;
+            aspect-ratio: 1/1;
+          }
+        }
+        .timing {
+          display: flex;
+          @include add(size, xs);
+          @include add(weight, light);
+          @include add(height, s);
+          .icon {
+            height: 18px !important;
+            margin-right: $spacing-xs;
+          }
+        }
+      }
+      .session-track {
+        margin: $spacing-xs 0 $spacing-medium (-$spacing-medium);
+      }
+      h1.documentFirstHeading {
+        margin: $spacing-xs 0 $spacing-small;
+        text-align: left;
+      }
+    }
+    .session-content {
+      width: 75%;
+    }
+    .listing-presenters {
+      width: 25%;
+      .listing-presenter {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: $tablet-breakpoint) {
+    &.too-many-speakers {
+      .session-wrapper {
+        .session-content,
+        .listing-presenters {
+          width: 100%;
+        }
+        .listing-presenters {
+          .listing-presenter {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .session-wrapper {
+      padding-right: $spacing-medium;
+      padding-left: $spacing-medium;
+      .session-content,
+      .listing-presenters {
+        width: 100%;
+      }
+      .listing-presenters {
+        .listing-presenter {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

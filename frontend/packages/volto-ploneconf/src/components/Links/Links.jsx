@@ -1,6 +1,7 @@
 import React from 'react';
 import { Icon, UniversalLink } from '@plone/volto/components';
 import cx from 'classnames';
+import blueskyIcon from '@plonegovbr/volto-network-block/icons/bluesky.svg';
 import facebookIcon from '@plonegovbr/volto-network-block/icons/facebook.svg';
 import githubIcon from '@plonegovbr/volto-network-block/icons/github.svg';
 import instagramIcon from '@plonegovbr/volto-network-block/icons/instagram.svg';
@@ -15,6 +16,11 @@ const categories = {
     title: 'Site',
     className: 'site',
     icon: siteIcon,
+  },
+  bluesky: {
+    title: 'Bluesky',
+    className: 'bluesky',
+    icon: blueskyIcon,
   },
   github: {
     title: 'GitHub',

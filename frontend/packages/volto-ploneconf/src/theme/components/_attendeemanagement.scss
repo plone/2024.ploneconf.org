@@ -1,0 +1,32 @@
+.attendee-management {
+  h2 {
+    padding-top: $spacing-medium;
+    margin-bottom: $spacing-small;
+    text-align: left;
+  }
+  .attendee-state {
+    .attendee-actions {
+      display: flex;
+      .transitionButton {
+        padding: $spacing-small;
+        margin-right: auto;
+        margin-left: auto;
+        &.revert {
+          background-color: var(--plone-color) !important;
+          color: var(--plone-on-color) !important;
+        }
+        &.checkin {
+          background-color: var(--tertiary-color) !important;
+          color: var(--reverse-color) !important;
+        }
+      }
+    }
+  }
+  .attendee-registrations {
+    .registration {
+      .state {
+        @include pill();
+      }
+    }
+  }
+}

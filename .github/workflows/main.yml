@@ -1,7 +1,8 @@
 name: Main
 
 on:
-  push:
+  workflow_dispatch:
+  push:  
     paths:
       - "backend/**"
       - "frontend/**"
@@ -9,7 +10,6 @@ on:
       - ".github/workflows/frontend.yml"
       - ".github/workflows/main.yml"
       - "devops/**"
-  workflow_dispatch:
 
 jobs:
   config:
@@ -47,33 +47,3 @@ jobs:
     permissions:
       contents: read
       packages: write
-
-  deploy:
-    if: ${{ always() && github.ref == 'refs/heads/main' && !contains(needs.*.result, 'failure') }}
-    needs:
-      - config
-      - backend
-      - frontend
-    runs-on: ubuntu-latest
-    environment:
-      name: testing.ploneconf.org
-      url: https://testing.ploneconf.org
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Deploy to cluster
-        uses: kitconcept/docker-stack-deploy@v1.2.0
-        with:
-          registry: "ghcr.io"
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          remote_host: ${{ vars.DEPLOY_HOST }}
-          remote_port: ${{ vars.DEPLOY_PORT }}
-          remote_user: ${{ vars.DEPLOY_USER }}
-          remote_private_key: ${{ secrets.DEPLOY_SSH }}
-          stack_file: devops/stacks/testing.ploneconf.org.yml
-          stack_name: testing-ploneconf-org
-          stack_param: ${{ github.ref_name }}
-          env_file: ${{ secrets.ENV_FILE }}
-          deploy_timeout: 480

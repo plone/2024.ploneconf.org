@@ -1,0 +1,20 @@
+<svg id='beer' xmlns="http://www.w3.org/2000/svg" width="123" height="123" viewBox="0 0 123 123">
+  <rect id="Rectangle_58" data-name="Rectangle 58" width="123" height="123" fill="#ffda3b"/>
+  <g id="food-and-restaurant" transform="translate(18.579 4.981)">
+    <g id="Groupe_61" data-name="Groupe 61" transform="translate(0 22.691)">
+      <g id="Groupe_60" data-name="Groupe 60" transform="translate(0 0)">
+        <path id="Tracé_47" data-name="Tracé 47" d="M22.084,68.675,20.018,48.016H6.673L4.608,68.675A13.233,13.233,0,0,0,0,78.71v40.036a2.669,2.669,0,0,0,2.669,2.669H24.022a2.668,2.668,0,0,0,2.668-2.669V78.71A13.232,13.232,0,0,0,22.084,68.675Zm-8.738,39.4H6.673V81.379h6.673Z" transform="translate(0 -48.016)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Groupe_63" data-name="Groupe 63" transform="translate(6.636 16.019)">
+      <g id="Groupe_62" data-name="Groupe 62" transform="translate(0 0)">
+        <rect id="Rectangle_67" data-name="Rectangle 67" width="14" height="3" transform="translate(-0.215)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Groupe_65" data-name="Groupe 65" transform="translate(30.035 30.113)">
+      <g id="Groupe_64" data-name="Groupe 64">
+        <path id="Tracé_48" data-name="Tracé 48" d="M194.074,102.876h-5.551a11.3,11.3,0,0,0-13.8-16.992,12.958,12.958,0,0,0-14.674,0,11.33,11.33,0,0,0-12.677,18.346v45.354h40.036V139.576h6.673a6.671,6.671,0,0,0,6.673-6.673V109.549A6.683,6.683,0,0,0,194.074,102.876Zm-13.345,10.009h-3.336v-6.673h3.336Zm-1.334-12.011H174.06a3.341,3.341,0,0,0-3.34,3.34v18.64a3.336,3.336,0,1,1-6.673,0v-9.969H154.038v-6.673h10.009v-2a3.339,3.339,0,0,0-3.34-3.34h-5.334a4.671,4.671,0,1,1,0-9.341,4.559,4.559,0,0,1,2.923,1.061,3.343,3.343,0,0,0,4.631-.374,6.061,6.061,0,0,1,8.915,0,3.34,3.34,0,0,0,4.631.374,4.552,4.552,0,0,1,2.923-1.061,4.671,4.671,0,0,1,0,9.341ZM194.074,132.9H187.4V109.549h6.673Z" transform="translate(-144.037 -83.607)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

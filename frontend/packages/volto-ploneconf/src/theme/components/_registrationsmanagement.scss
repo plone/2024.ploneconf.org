@@ -1,0 +1,29 @@
+.registrations-management {
+  margin-top: $spacing-medium;
+  .trainingsList,
+  .registrationsList {
+    margin: $spacing-xs $spacing-small;
+  }
+  .registration {
+    .state {
+      @include pill();
+    }
+    .actions {
+      margin: $spacing-small auto;
+      text-align: left;
+      button.action {
+        @include ctaIconButton();
+        &.checkin {
+          border-color: var(--secondary-color) !important;
+          background-color: var(--secondary-color) !important;
+          color: var(--reverse-color) !important;
+        }
+        &.revert {
+          border-color: var(--main-color) !important;
+          background-color: var(--main-color) !important;
+          color: var(--reverse-color) !important;
+        }
+      }
+    }
+  }
+}

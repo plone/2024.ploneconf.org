@@ -1,0 +1,33 @@
+.bookmark {
+  button.bookmarkButton {
+    padding: 2px;
+    border-color: var(--main-color) !important;
+    border-radius: 20%;
+    background-color: var(--main-color) !important;
+    color: var(--main-color) !important;
+    svg {
+      height: 20px !important;
+      fill: var(--reverse-color);
+    }
+    &:hover {
+      border-color: var(--secondary-color) !important;
+      background-color: var(--secondary-color) !important;
+      color: var(--secondary-color) !important;
+    }
+  }
+  &.bookmarked {
+    button.bookmarkButton {
+      border-color: var(--secondary-color) !important;
+      background-color: var(--secondary-color) !important;
+      color: var(--secondary-color) !important;
+      svg {
+        fill: var(--reverse-color);
+      }
+      &:hover {
+        border-color: var(--main-color) !important;
+        background-color: var(--main-color) !important;
+        color: var(--main-color) !important;
+      }
+    }
+  }
+}

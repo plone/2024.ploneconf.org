@@ -1,9 +1,34 @@
 <configure xmlns="http://namespaces.zope.org/zope">
 
+  <subscriber
+      for="ploneconf.users.content.attendee.IAttendee
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".user.creation_handler"
+      />
+
   <!-- Login Subscribers-->
   <subscriber
       for="Products.PluggableAuthService.interfaces.events.IUserLoggedInEvent"
-      handler=".login.login_handler"
+      handler=".user.login_handler"
+      />
+
+  <!-- Attendee Subscribers -->
+  <subscriber
+      for="ploneconf.users.content.attendee.IAttendee
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".attendee.attendee_added"
+      />
+
+  <!-- File Subscribers -->
+  <subscriber
+      for="plone.app.contenttypes.interfaces.IFile
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".file.check_certificate_permission"
+      />
+  <subscriber
+      for="plone.app.contenttypes.interfaces.IFile
+           zope.lifecycleevent.IObjectModifiedEvent"
+      handler=".file.check_certificate_permission"
       />
 
   <!-- Conference SponsorsDB Subscribers -->
@@ -20,6 +45,11 @@
            zope.lifecycleevent.IObjectModifiedEvent"
       handler=".session.modification_handler"
       />
-
+  <!-- Conference Person Subscribers -->
+  <subscriber
+      for="ploneconf.content.person.IPerson
+           zope.lifecycleevent.IObjectModifiedEvent"
+      handler=".person.modification_handler"
+      />
 
 </configure>

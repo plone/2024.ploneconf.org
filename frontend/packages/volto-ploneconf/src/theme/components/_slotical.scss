@@ -1,0 +1,29 @@
+.slotIcal,
+.myScheduleIcal {
+  .ical {
+    &.external {
+      &::after {
+        content: '' !important;
+      }
+    }
+    button.icalButton {
+      padding: 2px;
+      border-color: var(--main-color) !important;
+      border-radius: 20%;
+      background-color: var(--main-color) !important;
+      svg {
+        height: 20px !important;
+        fill: var(--reverse-color) !important;
+      }
+      &:hover {
+        border-color: var(--secondary-color) !important;
+        background-color: var(--secondary-color) !important;
+      }
+    }
+  }
+}
+
+.myScheduleIcal {
+  display: inline;
+  margin-left: $spacing-small;
+}
